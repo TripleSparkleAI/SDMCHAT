@@ -1,0 +1,292 @@
+{
+ "lane": "SDMNEXT",
+ "prereg": "experiments/track4/sdmllm/runs_sdmchats/PREREG_SDMNEXT_2026-10-03.md",
+ "stamp": {
+  "utc": "2026-10-03T02:46:21Z",
+  "host": "spark-f9cd",
+  "load": [
+   2.05,
+   1.86,
+   2.04
+  ]
+ },
+ "bootstrap": "2000 window resamples, numpy default_rng(0)",
+ "results": {
+  "sdmchats_SWL_d768_s0_600M": {
+   "test": 1.4028486989757938,
+   "chat": 1.635173998508872,
+   "zero_read": 1.5415524156763447,
+   "shuffle_keys": 1.4406367686987467,
+   "stamp_start": {
+    "utc": "2026-10-02T06:14:05Z",
+    "load": [
+     12.3,
+     9.28,
+     5.49
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 103.8
+   },
+   "stamp_end": {
+    "utc": "2026-10-02T17:15:37Z",
+    "load": [
+     1.33,
+     1.22,
+     1.22
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 105.7
+   }
+  },
+  "sdmchats_SWLC_d768_chat_100M": {
+   "test": 1.442353704537,
+   "chat": 1.063863661722177,
+   "zero_read": 1.6246532072011708,
+   "shuffle_keys": 1.49284978793907,
+   "stamp_start": {
+    "utc": "2026-10-03T00:37:27Z",
+    "load": [
+     0.37,
+     0.35,
+     0.26
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 109.7
+   },
+   "stamp_end": {
+    "utc": "2026-10-03T02:36:52Z",
+    "load": [
+     2.33,
+     2.24,
+     2.21
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 98.3
+   }
+  },
+  "sdmchats_SWC_d512_chat_100M": {
+   "test": 1.4795173851608268,
+   "chat": 1.112093253518244,
+   "zero_read": 1.6115352815239266,
+   "shuffle_keys": 1.5294810262555028,
+   "stamp_start": {
+    "utc": "2026-10-02T06:43:01Z",
+    "load": [
+     5.38,
+     6.86,
+     7.72
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 96.0
+   },
+   "stamp_end": {
+    "utc": "2026-10-02T08:09:47Z",
+    "load": [
+     2.27,
+     2.88,
+     4.82
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 98.5
+   }
+  },
+  "sdmchats_NW_d512_s0_300M": {
+   "test": 1.430121480214176,
+   "chat": 1.6492760815903886,
+   "zero_read": null,
+   "shuffle_keys": null,
+   "stamp_start": {
+    "utc": "2026-10-02T02:26:01Z",
+    "load": [
+     2.93,
+     2.63,
+     2.7
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 30.9
+   },
+   "stamp_end": {
+    "utc": "2026-10-02T06:11:53Z",
+    "load": [
+     12.91,
+     7.62,
+     4.45
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 100.6
+   }
+  },
+  "sdmchats_SW_d512_s0_300M": {
+   "test": 1.4299475819772045,
+   "chat": 1.654083462777377,
+   "zero_read": 1.6146367509851594,
+   "shuffle_keys": 1.498308486467655,
+   "stamp_start": {
+    "utc": "2026-10-02T02:19:28Z",
+    "load": [
+     3.24,
+     2.76,
+     2.8
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 36.5
+   },
+   "stamp_end": {
+    "utc": "2026-10-02T06:38:29Z",
+    "load": [
+     7.23,
+     7.84,
+     8.2
+    ],
+    "ncpu": 20,
+    "powermode": "unknown",
+    "torch": "2.14.1+cu130",
+    "host": "spark-f9cd",
+    "cuda": "13.0",
+    "gpu": "NVIDIA GB10",
+    "driver": "580.159.03",
+    "mem_available_gb": 98.6
+   }
+  }
+ },
+ "test_pairs": {
+  "sdmchats_SWL_d768_s0_600M - sdmchats_SW_d512_s0_300M": {
+   "delta_bpb": -0.027098881267527228,
+   "se": 0.0004900047617461417,
+   "z": -55.303301892332286,
+   "resolved": true
+  },
+  "sdmchats_SWLC_d768_chat_100M - sdmchats_SWL_d768_s0_600M": {
+   "delta_bpb": 0.03950500616350281,
+   "se": 0.0006189362304484405,
+   "z": 63.827263973350014,
+   "resolved": true
+  },
+  "sdmchats_SWLC_d768_chat_100M - sdmchats_SWC_d512_chat_100M": {
+   "delta_bpb": -0.037163680569072495,
+   "se": 0.00036123233113425675,
+   "z": -102.88027224025006,
+   "resolved": true
+  }
+ },
+ "chat_pairs": {
+  "sdmchats_SWLC_d768_chat_100M - sdmchats_SWC_d512_chat_100M": {
+   "delta_bpb": -0.048229600397813724,
+   "se": 0.00039756765749483937,
+   "z": -121.31167988291344,
+   "resolved": true
+  },
+  "sdmchats_SWLC_d768_chat_100M - sdmchats_SWL_d768_s0_600M": {
+   "delta_bpb": -0.5713103443377769,
+   "se": 0.006626422463840964,
+   "z": -86.21701188768162,
+   "resolved": true
+  }
+ },
+ "judged": {
+  "NL1": {
+   "sealed": "see PREREG",
+   "value": null,
+   "verdict": "WAITING"
+  },
+  "NL2": {
+   "sealed": "see PREREG",
+   "value": null,
+   "verdict": "WAITING"
+  },
+  "NL3": {
+   "sealed": "see PREREG",
+   "value": null,
+   "verdict": "WAITING"
+  },
+  "NL4": {
+   "sealed": "see PREREG",
+   "value": null,
+   "verdict": "WAITING"
+  },
+  "NL5": {
+   "sealed": "see PREREG",
+   "value": null,
+   "verdict": "WAITING"
+  },
+  "LC1": {
+   "sealed": "SWLC CHAT in 1.070 to 1.105",
+   "value": 1.063863661722177,
+   "verdict": "MISS"
+  },
+  "LC2": {
+   "sealed": "SWLC TEST worse than SWL by 0.030 to 0.070",
+   "value": 0.039505005561206286,
+   "verdict": "HIT"
+  },
+  "LC3": {
+   "sealed": "SWLC zero_read cost +0.08 to +0.20",
+   "value": 0.18229950266417072,
+   "verdict": "HIT"
+  },
+  "PROMOTION_CHAT_HALF": {
+   "rule": "SWLC CHAT below SWC's on the same windows, |z| > 2 (LC4 >= 0.90 also needed)",
+   "value": {
+    "delta_bpb": -0.048229600397813724,
+    "se": 0.00039756765749483937,
+    "z": -121.31167988291344,
+    "resolved": true
+   },
+   "verdict": "PASS"
+  }
+ }
+}

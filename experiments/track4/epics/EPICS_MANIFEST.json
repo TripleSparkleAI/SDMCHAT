@@ -1,0 +1,1449 @@
+{
+ "name": "EPICS corpus",
+ "built_utc": "2026-10-02T05:33:15Z",
+ "builder": "experiments/track4/epics/track4_epics_build_corpus.py",
+ "catalog": {
+  "file": "raw/pg_catalog.csv",
+  "url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv",
+  "sha256": "52cc0ffbef2b79d8d07fdd16dada95d29952f47ce21a1557598c580ee6188bea"
+ },
+ "works": [
+  {
+   "slug": "iliad-butler",
+   "title": "The Iliad",
+   "original": "Homer",
+   "translator": "Samuel Butler",
+   "editor": null,
+   "translation_first_published": 1898,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 2199,
+    "url": "https://www.gutenberg.org/cache/epub/2199/pg2199.txt",
+    "landing": "https://www.gutenberg.org/ebooks/2199",
+    "catalog_title": "The Iliad",
+    "catalog_authors": "Homer, 751? BCE-651? BCE; Butler, Samuel, 1835-1902 [Translator]",
+    "catalog_issued": "2000-06-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/iliad-butler.pg2199.txt",
+    "sha256": "72673dcefeaa5d302b4ac1cc9ce6fd0b236831e816de41391e5cfe138ab5b077",
+    "bytes": 928957,
+    "downloaded_utc": "2026-10-02T05:23:24Z"
+   },
+   "clean": {
+    "file": "clean/iliad-butler.txt",
+    "sha256": "cd05dd9cd944a235f5772c67707f69ea42f0514e445204c33df8357cf74ed65b",
+    "chars": 888943,
+    "utf8_bytes": 894611,
+    "lines": 14558,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1898, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1902",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "odyssey-butler",
+   "title": "The Odyssey",
+   "original": "Homer",
+   "translator": "Samuel Butler",
+   "editor": null,
+   "translation_first_published": 1900,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 1727,
+    "url": "https://www.gutenberg.org/cache/epub/1727/pg1727.txt",
+    "landing": "https://www.gutenberg.org/ebooks/1727",
+    "catalog_title": "The Odyssey\nRendered into English prose for the use of those who cannot read the original",
+    "catalog_authors": "Homer, 751? BCE-651? BCE; Butler, Samuel, 1835-1902 [Translator]",
+    "catalog_issued": "1999-04-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/odyssey-butler.pg1727.txt",
+    "sha256": "ffbdb29c3dda284b65c11243db1a98167826a70c81bca2ed4b6232f86c905fb9",
+    "bytes": 717784,
+    "downloaded_utc": "2026-10-02T05:23:37Z"
+   },
+   "clean": {
+    "file": "clean/odyssey-butler.txt",
+    "sha256": "83b5ab26a6c80445db52fd5bc64ba0679041a7b54edc4155a4b42e858b5462d1",
+    "chars": 678823,
+    "utf8_bytes": 686140,
+    "lines": 11856,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1900, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1902",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "iliad-pope",
+   "title": "The Iliad",
+   "original": "Homer",
+   "translator": "Alexander Pope (with Theodore Alois Buckley's notes)",
+   "editor": null,
+   "translation_first_published": 1720,
+   "form": "verse",
+   "alternate_of": "iliad-butler",
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 6130,
+    "url": "https://www.gutenberg.org/cache/epub/6130/pg6130.txt",
+    "landing": "https://www.gutenberg.org/ebooks/6130",
+    "catalog_title": "The Iliad",
+    "catalog_authors": "Homer, 751? BCE-651? BCE; Buckley, Theodore Alois, 1825-1856 [Annotator]; Pope, Alexander, 1688-1744 [Translator]",
+    "catalog_issued": "2004-07-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/iliad-pope.pg6130.txt",
+    "sha256": "ca4f23115b384b0219427ef208e875f0351820b8f80f28259272997ea581c36b",
+    "bytes": 1161373,
+    "downloaded_utc": "2026-10-02T05:23:43Z"
+   },
+   "clean": {
+    "file": "clean/iliad-pope.txt",
+    "sha256": "f7672c513b22d4cdf25aa187048fd41c206bb2388c459a70a82a86bd2844fdb3",
+    "chars": 1097444,
+    "utf8_bytes": 1115825,
+    "lines": 25670,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1720, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1856",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "odyssey-pope",
+   "title": "The Odyssey",
+   "original": "Homer",
+   "translator": "Alexander Pope",
+   "editor": null,
+   "translation_first_published": 1726,
+   "form": "verse",
+   "alternate_of": "odyssey-butler",
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 3160,
+    "url": "https://www.gutenberg.org/cache/epub/3160/pg3160.txt",
+    "landing": "https://www.gutenberg.org/ebooks/3160",
+    "catalog_title": "The Odyssey",
+    "catalog_authors": "Homer, 751? BCE-651? BCE; Pope, Alexander, 1688-1744 [Translator]",
+    "catalog_issued": "2002-04-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/odyssey-pope.pg3160.txt",
+    "sha256": "b375bc6b56f5d87f8173c69f06b02c71e2799c0c97c6ba73dfcaf4e3ffbe1553",
+    "bytes": 746380,
+    "downloaded_utc": "2026-10-02T05:23:48Z"
+   },
+   "clean": {
+    "file": "clean/odyssey-pope.txt",
+    "sha256": "58a2c086862629764fb3fd3bd228d8f1de15ab7fa5fbc6bb1195745dfdedc543",
+    "chars": 698310,
+    "utf8_bytes": 709880,
+    "lines": 16699,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1726, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1744",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "aeneid-dryden",
+   "title": "The Aeneid",
+   "original": "Virgil",
+   "translator": "John Dryden",
+   "editor": null,
+   "translation_first_published": 1697,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 228,
+    "url": "https://www.gutenberg.org/cache/epub/228/pg228.txt",
+    "landing": "https://www.gutenberg.org/ebooks/228",
+    "catalog_title": "The Aeneid",
+    "catalog_authors": "Virgil, 71 BCE-20 BCE; Dryden, John, 1631-1700 [Translator]",
+    "catalog_issued": "1995-03-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/aeneid-dryden.pg228.txt",
+    "sha256": "398117fc34d7876e681e1feae1ebabfc72485be17f819779796d3dcfe886a504",
+    "bytes": 746759,
+    "downloaded_utc": "2026-10-02T05:23:52Z"
+   },
+   "clean": {
+    "file": "clean/aeneid-dryden.txt",
+    "sha256": "319b724d76ff504946385228e999007adaf764bdd4517a774e948a6984fee2d4",
+    "chars": 696961,
+    "utf8_bytes": 712489,
+    "lines": 14484,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1697, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1700",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "beowulf-gummere",
+   "title": "Beowulf",
+   "original": "anonymous (Old English)",
+   "translator": "Francis Barton Gummere",
+   "editor": null,
+   "translation_first_published": 1910,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 981,
+    "url": "https://www.gutenberg.org/cache/epub/981/pg981.txt",
+    "landing": "https://www.gutenberg.org/ebooks/981",
+    "catalog_title": "Beowulf",
+    "catalog_authors": "Gummere, Francis Barton, 1855-1919 [Translator]",
+    "catalog_issued": "1997-07-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/beowulf-gummere.pg981.txt",
+    "sha256": "112fe18ee0690a88451c928b0c4382adf5a2be828d8d8a12d638f53650d07b40",
+    "bytes": 170898,
+    "downloaded_utc": "2026-10-02T05:23:55Z"
+   },
+   "clean": {
+    "file": "clean/beowulf-gummere.txt",
+    "sha256": "b753263189463ce69b60e6a16ac5e166a2a482089dbd98e722feadcfe5f3a67d",
+    "chars": 147247,
+    "utf8_bytes": 147247,
+    "lines": 3867,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1910, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1919",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "paradise-lost",
+   "title": "Paradise Lost",
+   "original": "John Milton",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1674,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 26,
+    "url": "https://www.gutenberg.org/cache/epub/26/pg26.txt",
+    "landing": "https://www.gutenberg.org/ebooks/26",
+    "catalog_title": "Paradise Lost",
+    "catalog_authors": "Milton, John, 1608-1674",
+    "catalog_issued": "1992-02-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/paradise-lost.pg26.txt",
+    "sha256": "aeedc9f33e0c2a6422d2f557462fb87cd2430974c6aed30a26803be5394a741a",
+    "bytes": 491461,
+    "downloaded_utc": "2026-10-02T05:24:00Z"
+   },
+   "clean": {
+    "file": "clean/paradise-lost.txt",
+    "sha256": "672d4eee7feaf0a794b06bc3b46bc105841e40d17236548a0f9a3b85b9870378",
+    "chars": 459534,
+    "utf8_bytes": 460988,
+    "lines": 10728,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1674, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1674",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "paradise-regained",
+   "title": "Paradise Regained",
+   "original": "John Milton",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1671,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 58,
+    "url": "https://www.gutenberg.org/cache/epub/58/pg58.txt",
+    "landing": "https://www.gutenberg.org/ebooks/58",
+    "catalog_title": "Paradise Regained",
+    "catalog_authors": "Milton, John, 1608-1674",
+    "catalog_issued": "1993-03-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/paradise-regained.pg58.txt",
+    "sha256": "27b677e84e3a17129c5995c4d51e6a7bda0a3b65e4c1d18f058b9ab5bb3ccee1",
+    "bytes": 113442,
+    "downloaded_utc": "2026-10-02T05:24:03Z"
+   },
+   "clean": {
+    "file": "clean/paradise-regained.txt",
+    "sha256": "96e73dc6f117305a0a7b4c02b377043681ed90c580e718a6c0718b62d5cb88e7",
+    "chars": 90704,
+    "utf8_bytes": 91568,
+    "lines": 2111,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1671, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1674",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "divine-comedy-longfellow",
+   "title": "The Divine Comedy",
+   "original": "Dante Alighieri",
+   "translator": "Henry Wadsworth Longfellow",
+   "editor": null,
+   "translation_first_published": 1867,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 1004,
+    "url": "https://www.gutenberg.org/cache/epub/1004/pg1004.txt",
+    "landing": "https://www.gutenberg.org/ebooks/1004",
+    "catalog_title": "Divine Comedy, Longfellow's Translation, Complete",
+    "catalog_authors": "Dante Alighieri, 1265-1321; Longfellow, Henry Wadsworth, 1807-1882 [Translator]",
+    "catalog_issued": "1997-08-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/divine-comedy-longfellow.pg1004.txt",
+    "sha256": "c233a7ef9444890cb7f16071ff54d997307a3c60dcd6506cfd415bae2430eac2",
+    "bytes": 709055,
+    "downloaded_utc": "2026-10-02T05:24:10Z"
+   },
+   "clean": {
+    "file": "clean/divine-comedy-longfellow.txt",
+    "sha256": "b3ba0dc02fc08981102b6bc16f8774ad2e8246546b4f0abdcfa26a0f57299bd1",
+    "chars": 662725,
+    "utf8_bytes": 669121,
+    "lines": 19995,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1867, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1882",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "kalevala-crawford",
+   "title": "Kalevala, the Epic Poem of Finland",
+   "original": "Elias Lönnrot (compiler)",
+   "translator": "John Martin Crawford",
+   "editor": null,
+   "translation_first_published": 1888,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 5186,
+    "url": "https://www.gutenberg.org/cache/epub/5186/pg5186.txt",
+    "landing": "https://www.gutenberg.org/ebooks/5186",
+    "catalog_title": "Kalevala : the Epic Poem of Finland — Complete",
+    "catalog_authors": "Lönnrot, Elias, 1802-1884 [Compiler]; Crawford, John Martin, 1845-1916 [Translator]",
+    "catalog_issued": "2004-02-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/kalevala-crawford.pg5186.txt",
+    "sha256": "e98322160b0161120f0d0ceda251ca7f12a38915d33db6d9517734f4489d6017",
+    "bytes": 870311,
+    "downloaded_utc": "2026-10-02T05:24:15Z"
+   },
+   "clean": {
+    "file": "clean/kalevala-crawford.txt",
+    "sha256": "145e6022190f83e66ede384b105a3c4f3c15d798a173cfa043bb24034d91092a",
+    "chars": 816721,
+    "utf8_bytes": 824739,
+    "lines": 25578,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1888, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1916",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "gilgamesh-jastrow-clay",
+   "title": "An Old Babylonian Version of the Gilgamesh Epic",
+   "original": "anonymous (Old Babylonian)",
+   "translator": "Morris Jastrow and Albert Tobias Clay",
+   "editor": null,
+   "translation_first_published": 1920,
+   "form": "scholarly edition (transliteration, translation and commentary)",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 11000,
+    "url": "https://www.gutenberg.org/cache/epub/11000/pg11000.txt",
+    "landing": "https://www.gutenberg.org/ebooks/11000",
+    "catalog_title": "An Old Babylonian Version of the Gilgamesh Epic",
+    "catalog_authors": "Jastrow, Morris, 1861-1921; Clay, Albert Tobias, 1866-1925",
+    "catalog_issued": "2006-07-04",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/gilgamesh-jastrow-clay.pg11000.txt",
+    "sha256": "5c031b38575310168898753578b03ed23fe51f6ddac3b7437aea441959505a8f",
+    "bytes": 251875,
+    "downloaded_utc": "2026-10-02T05:24:20Z"
+   },
+   "clean": {
+    "file": "clean/gilgamesh-jastrow-clay.txt",
+    "sha256": "91f42c4ec9a46cc05f1ab65a84caba64d9350bda3bc5b88a866c2613a9ecdf0e",
+    "chars": 226153,
+    "utf8_bytes": 226862,
+    "lines": 5068,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1920, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1925",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "ramayana-griffith",
+   "title": "The Rámáyan of Válmíki",
+   "original": "Valmiki",
+   "translator": "Ralph T. H. Griffith",
+   "editor": null,
+   "translation_first_published": 1874,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 24869,
+    "url": "https://www.gutenberg.org/cache/epub/24869/pg24869.txt",
+    "landing": "https://www.gutenberg.org/ebooks/24869",
+    "catalog_title": "The Rámáyan of Válmíki, translated into English verse",
+    "catalog_authors": "Valmiki; Griffith, Ralph T. H. (Ralph Thomas Hotchkin), 1826-1906 [Translator]",
+    "catalog_issued": "2008-03-18",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/ramayana-griffith.pg24869.txt",
+    "sha256": "4310b710a9c6942490bf8270a8a6620f314dcc2adf7b413833596ca9aaebca6f",
+    "bytes": 2395956,
+    "downloaded_utc": "2026-10-02T05:24:34Z"
+   },
+   "clean": {
+    "file": "clean/ramayana-griffith.txt",
+    "sha256": "c9076ed1053db0d7530ee278aff5d77072f05237314255854af2a16ae976c0be",
+    "chars": 2264291,
+    "utf8_bytes": 2308568,
+    "lines": 67444,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1874, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1906",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "mahabharata-ganguli-v1",
+   "title": "The Mahabharata, Volume 1 (Books 1, 2 and 3)",
+   "original": "Vyasa",
+   "translator": "Kisari Mohan Ganguli",
+   "editor": null,
+   "translation_first_published": 1883,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 15474,
+    "url": "https://www.gutenberg.org/cache/epub/15474/pg15474.txt",
+    "landing": "https://www.gutenberg.org/ebooks/15474",
+    "catalog_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1\nBooks 1, 2 and 3",
+    "catalog_authors": "Ganguli, Kisari Mohan [Translator]",
+    "catalog_issued": "2005-03-26",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/mahabharata-ganguli-v1.pg15474.txt",
+    "sha256": "246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826",
+    "bytes": 3752901,
+    "downloaded_utc": "2026-10-02T05:25:00Z"
+   },
+   "clean": {
+    "file": "clean/mahabharata-ganguli-v1.txt",
+    "sha256": "d4c6581a726536296ad16f845c3373f1015c833fa5b55e743dfa789586823d49",
+    "chars": 3674439,
+    "utf8_bytes": 3674439,
+    "lines": 58482,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1883, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "no death year in the catalog entry",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "mahabharata-ganguli-v2",
+   "title": "The Mahabharata, Volume 2 (Books 4, 5, 6 and 7)",
+   "original": "Vyasa",
+   "translator": "Kisari Mohan Ganguli",
+   "editor": null,
+   "translation_first_published": 1883,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 15475,
+    "url": "https://www.gutenberg.org/cache/epub/15475/pg15475.txt",
+    "landing": "https://www.gutenberg.org/ebooks/15475",
+    "catalog_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 2\nBooks 4, 5, 6 and 7",
+    "catalog_authors": "Ganguli, Kisari Mohan [Translator]",
+    "catalog_issued": "2005-03-26",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/mahabharata-ganguli-v2.pg15475.txt",
+    "sha256": "009689aec55696f0d40201138c867db4c306671e6a5ba0091d783f812f395b5b",
+    "bytes": 4023497,
+    "downloaded_utc": "2026-10-02T05:25:07Z"
+   },
+   "clean": {
+    "file": "clean/mahabharata-ganguli-v2.txt",
+    "sha256": "953aec7869c8265776537bb017b911ced6f79a63e16badbd2c0970f38474839b",
+    "chars": 3942125,
+    "utf8_bytes": 3942125,
+    "lines": 61382,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1883, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "no death year in the catalog entry",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "mahabharata-ganguli-v3",
+   "title": "The Mahabharata, Volume 3 (Books 8 to 12)",
+   "original": "Vyasa",
+   "translator": "Kisari Mohan Ganguli",
+   "editor": null,
+   "translation_first_published": 1883,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 15476,
+    "url": "https://www.gutenberg.org/cache/epub/15476/pg15476.txt",
+    "landing": "https://www.gutenberg.org/ebooks/15476",
+    "catalog_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 3\nBooks 8, 9, 10, 11 and 12",
+    "catalog_authors": "Ganguli, Kisari Mohan [Translator]",
+    "catalog_issued": "2005-03-26",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/mahabharata-ganguli-v3.pg15476.txt",
+    "sha256": "2d4d53b9c4892ebdc5a4bfa59458d0e0acf9742d3ce0f3b7b1b428ab838f402d",
+    "bytes": 4864546,
+    "downloaded_utc": "2026-10-02T05:25:36Z"
+   },
+   "clean": {
+    "file": "clean/mahabharata-ganguli-v3.txt",
+    "sha256": "bb12342b31ba3a500146d0592f14407122fc581d6cb796799befcde93d62f901",
+    "chars": 4769554,
+    "utf8_bytes": 4769554,
+    "lines": 74997,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1883, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "no death year in the catalog entry",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "mahabharata-ganguli-v4",
+   "title": "The Mahabharata, Volume 4 (Books 13 to 18)",
+   "original": "Vyasa",
+   "translator": "Kisari Mohan Ganguli",
+   "editor": null,
+   "translation_first_published": 1883,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 15477,
+    "url": "https://www.gutenberg.org/cache/epub/15477/pg15477.txt",
+    "landing": "https://www.gutenberg.org/ebooks/15477",
+    "catalog_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 4\nBooks 13, 14, 15, 16, 17 and 18",
+    "catalog_authors": "Ganguli, Kisari Mohan [Translator]",
+    "catalog_issued": "2005-03-26",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/mahabharata-ganguli-v4.pg15477.txt",
+    "sha256": "60de2a2f82f22247fdb72096c7ebbb01b63ad42770506c10f6d7c7a82868e437",
+    "bytes": 2621948,
+    "downloaded_utc": "2026-10-02T05:25:40Z"
+   },
+   "clean": {
+    "file": "clean/mahabharata-ganguli-v4.txt",
+    "sha256": "19663d0d44586e9c69df82ab1ac75233685c62f88c2c1eec54bb02893a983798",
+    "chars": 2561145,
+    "utf8_bytes": 2561145,
+    "lines": 40780,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1883, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "no death year in the catalog entry",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "hiawatha",
+   "title": "The Song of Hiawatha",
+   "original": "Henry Wadsworth Longfellow",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1855,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 19,
+    "url": "https://www.gutenberg.org/cache/epub/19/pg19.txt",
+    "landing": "https://www.gutenberg.org/ebooks/19",
+    "catalog_title": "The Song of Hiawatha",
+    "catalog_authors": "Longfellow, Henry Wadsworth, 1807-1882; Morris, Woodrow W. [Editor]",
+    "catalog_issued": "2004-06-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/hiawatha.pg19.txt",
+    "sha256": "d3f9f0ce63af1c4dc56f80ab32c1c544a20ae879247e137e7619e392ff87975f",
+    "bytes": 215771,
+    "downloaded_utc": "2026-10-02T05:25:47Z"
+   },
+   "clean": {
+    "file": "clean/hiawatha.txt",
+    "sha256": "a29b95d579f9046aecc9a9e8b10a07d6cf8de6becd4e291e2f06dfcdbeea1e16",
+    "chars": 187546,
+    "utf8_bytes": 189538,
+    "lines": 6438,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1855, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1882",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "idylls-of-the-king",
+   "title": "Idylls of the King",
+   "original": "Alfred, Lord Tennyson",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1885,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 610,
+    "url": "https://www.gutenberg.org/cache/epub/610/pg610.txt",
+    "landing": "https://www.gutenberg.org/ebooks/610",
+    "catalog_title": "Idylls of the King",
+    "catalog_authors": "Tennyson, Alfred Tennyson, Baron, 1809-1892",
+    "catalog_issued": "1996-08-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/idylls-of-the-king.pg610.txt",
+    "sha256": "3210463c9f5d3a5d7d0bff60cbdb9ab98f7d9a26a19c9f6f6e4cb08a858473ab",
+    "bytes": 514628,
+    "downloaded_utc": "2026-10-02T05:25:51Z"
+   },
+   "clean": {
+    "file": "clean/idylls-of-the-king.txt",
+    "sha256": "bf96dd737e7b0233de2e0d5a76cb068e034fb6753104af5b96af8702e4d18dc5",
+    "chars": 476737,
+    "utf8_bytes": 483617,
+    "lines": 11201,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1885, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1892",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "nibelungenlied-needler",
+   "title": "The Nibelungenlied",
+   "original": "anonymous (Middle High German)",
+   "translator": "George Henry Needler",
+   "editor": null,
+   "translation_first_published": 1904,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 7321,
+    "url": "https://www.gutenberg.org/cache/epub/7321/pg7321.txt",
+    "landing": "https://www.gutenberg.org/ebooks/7321",
+    "catalog_title": "The Nibelungenlied\nTranslated into Rhymed English Verse in the Metre of the Original",
+    "catalog_authors": "Needler, G. H. (George Henry), 1866-1962 [Translator]",
+    "catalog_issued": "2005-01-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/nibelungenlied-needler.pg7321.txt",
+    "sha256": "44126d25dc2cd5fea93bfc30bcd75dec71135175e1e4817b6381d77459413ef5",
+    "bytes": 675427,
+    "downloaded_utc": "2026-10-02T05:25:59Z"
+   },
+   "clean": {
+    "file": "clean/nibelungenlied-needler.txt",
+    "sha256": "7a7f1d779abc6ae4e07272815b1ec3f4216fd02bdbde8cbbf026fb0659735c17",
+    "chars": 637368,
+    "utf8_bytes": 637368,
+    "lines": 18180,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1904, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "a person named in the Gutenberg catalog entry died in 1962; not public domain under life + 70 until 2033",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "song-of-roland",
+   "title": "The Song of Roland",
+   "original": "anonymous (Old French)",
+   "translator": "C. K. Scott-Moncrieff",
+   "editor": null,
+   "translation_first_published": 1919,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 391,
+    "url": "https://www.gutenberg.org/cache/epub/391/pg391.txt",
+    "landing": "https://www.gutenberg.org/ebooks/391",
+    "catalog_title": "The Song of Roland",
+    "catalog_authors": "Scott-Moncrieff, C. K. (Charles Kenneth), 1889-1930 [Translator]",
+    "catalog_issued": "1996-01-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/song-of-roland.pg391.txt",
+    "sha256": "5d65c011d753c05d38930798f14b1dc8bff037b609757607f3b654c8932d1c57",
+    "bytes": 217169,
+    "downloaded_utc": "2026-10-02T05:26:02Z"
+   },
+   "clean": {
+    "file": "clean/song-of-roland.txt",
+    "sha256": "91a83f5da52cac17b5c76a6697c00ea309de12c99ca88174a8a80221d617752e",
+    "chars": 192263,
+    "utf8_bytes": 192263,
+    "lines": 5069,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1919, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1930",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "shahnameh-atkinson",
+   "title": "The Shah Nameh (abridged)",
+   "original": "Firdausi",
+   "translator": "James Atkinson (as reprinted in The Persian Literature, vol. 1, ed. Richard Gottheil)",
+   "editor": null,
+   "translation_first_published": 1832,
+   "form": "verse and prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 10315,
+    "url": "https://www.gutenberg.org/cache/epub/10315/pg10315.txt",
+    "landing": "https://www.gutenberg.org/ebooks/10315",
+    "catalog_title": "The Persian Literature, Comprising The Shah Nameh, The Rubaiyat, The Divan, and The Gulistan, Volume 1",
+    "catalog_authors": "Firdawsī, 940-1020; Ḥāfiẓ, active 14th century; Omar Khayyam, 1048-1122; Gottheil, Richard J. H. (Richard James Horatio), 1862-1936 [Contributor]; Atkinson, James, 1780-1852 [Translator]; Bicknell, Herman, 1830-1875 [Translator]; FitzGerald, Edward, 1809-1883 [Translator]",
+    "catalog_issued": "2003-11-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/shahnameh-atkinson.pg10315.txt",
+    "sha256": "4bb38293e9f56c7f91892fe3dd972304741a1aedccbd6bf5a1d53e112130f60d",
+    "bytes": 883822,
+    "downloaded_utc": "2026-10-02T05:26:06Z"
+   },
+   "clean": {
+    "file": "clean/shahnameh-atkinson.txt",
+    "sha256": "d1434af2856fda28abcb6830a374ef174d3a5cd90dbc3c14fdcb24649850bf82",
+    "chars": 726024,
+    "utf8_bytes": 730822,
+    "lines": 14138,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited; then the section from the heading 'THE SHÁH NÁMEH' up to the heading 'THE RUBÁIYÁT OF OMAR KHAYYÁM'"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1832, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1936",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "argonautica-seaton",
+   "title": "The Argonautica",
+   "original": "Apollonius of Rhodes",
+   "translator": "R. C. Seaton",
+   "editor": null,
+   "translation_first_published": 1912,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 830,
+    "url": "https://www.gutenberg.org/cache/epub/830/pg830.txt",
+    "landing": "https://www.gutenberg.org/ebooks/830",
+    "catalog_title": "The Argonautica",
+    "catalog_authors": "Apollonius, Rhodius; Seaton, R. C. (Robert Cooper), 1853-1915 [Translator]",
+    "catalog_issued": "1997-02-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/argonautica-seaton.pg830.txt",
+    "sha256": "464f45b1ce9991df361b95a28bea78aaf610db2cc73f812b641122613b856947",
+    "bytes": 360386,
+    "downloaded_utc": "2026-10-02T05:31:21Z"
+   },
+   "clean": {
+    "file": "clean/argonautica-seaton.txt",
+    "sha256": "b639ce8c978dd4a03255ba654056a7d85f643d80d98e5315a3d0314a852d6b2d",
+    "chars": 333438,
+    "utf8_bytes": 335015,
+    "lines": 5536,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1912, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1915",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "lusiad-mickle",
+   "title": "The Lusiad",
+   "original": "Luís de Camões",
+   "translator": "William Julius Mickle",
+   "editor": null,
+   "translation_first_published": 1776,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 32528,
+    "url": "https://www.gutenberg.org/cache/epub/32528/pg32528.txt",
+    "landing": "https://www.gutenberg.org/ebooks/32528",
+    "catalog_title": "The Lusiad; Or, The Discovery of India, an Epic Poem",
+    "catalog_authors": "Camões, Luís de, 1524?-1580; Mickle, William Julius, 1735-1788 [Translator]",
+    "catalog_issued": "2010-05-26",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/lusiad-mickle.pg32528.txt",
+    "sha256": "370af2900c620b935e0c6cc80297776a49444b2486639cbecefbfc8e780edf13",
+    "bytes": 1045418,
+    "downloaded_utc": "2026-10-02T05:31:33Z"
+   },
+   "clean": {
+    "file": "clean/lusiad-mickle.txt",
+    "sha256": "766be2bfd336fe8947a291bc923e78121dadc2e012d0b82d2f10f5b453dbd17e",
+    "chars": 1005115,
+    "utf8_bytes": 1005690,
+    "lines": 19619,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1776, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1788",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "orlando-furioso-rose",
+   "title": "Orlando Furioso",
+   "original": "Ludovico Ariosto",
+   "translator": "William Stewart Rose",
+   "editor": null,
+   "translation_first_published": 1823,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 615,
+    "url": "https://www.gutenberg.org/cache/epub/615/pg615.txt",
+    "landing": "https://www.gutenberg.org/ebooks/615",
+    "catalog_title": "Orlando Furioso",
+    "catalog_authors": "Ariosto, Lodovico, 1474-1533; Rose, William Stewart, 1775-1843 [Translator]",
+    "catalog_issued": "1996-08-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/orlando-furioso-rose.pg615.txt",
+    "sha256": "7a3e5115e32a7ba73fadf027ce9b5d8cacd0bc8016db0922b66b399549a42a83",
+    "bytes": 1860932,
+    "downloaded_utc": "2026-10-02T05:31:44Z"
+   },
+   "clean": {
+    "file": "clean/orlando-furioso-rose.txt",
+    "sha256": "973e56776cf618d82bb174c25c4d6eefcdfd95aeeb9e11a23b66fda52350dc34",
+    "chars": 1792153,
+    "utf8_bytes": 1792153,
+    "lines": 48942,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1823, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1843",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "jerusalem-delivered-fairfax",
+   "title": "Jerusalem Delivered",
+   "original": "Torquato Tasso",
+   "translator": "Edward Fairfax",
+   "editor": null,
+   "translation_first_published": 1600,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 392,
+    "url": "https://www.gutenberg.org/cache/epub/392/pg392.txt",
+    "landing": "https://www.gutenberg.org/ebooks/392",
+    "catalog_title": "Jerusalem Delivered",
+    "catalog_authors": "Tasso, Torquato, 1544-1595; Fairfax, Edward, -1635 [Translator]",
+    "catalog_issued": "1996-01-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/jerusalem-delivered-fairfax.pg392.txt",
+    "sha256": "5480a08bcdcfd12ca1add7eea9cd394db5c0921f550f93dc2002170d3fe74fc6",
+    "bytes": 751386,
+    "downloaded_utc": "2026-10-02T05:31:55Z"
+   },
+   "clean": {
+    "file": "clean/jerusalem-delivered-fairfax.txt",
+    "sha256": "acc2a3909cc4daeb87e6a22e02d7245ba66a2e1173ff320a93f044dfb942e266",
+    "chars": 705748,
+    "utf8_bytes": 712048,
+    "lines": 19518,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1600, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1635",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "faerie-queene-v1",
+   "title": "Spenser's Faerie Queene, Vol. 1",
+   "original": "Edmund Spenser",
+   "translator": null,
+   "editor": "J. C. Smith",
+   "translation_first_published": 1909,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 70717,
+    "url": "https://www.gutenberg.org/cache/epub/70717/pg70717.txt",
+    "landing": "https://www.gutenberg.org/ebooks/70717",
+    "catalog_title": "Spenser's Faerie Queene, Vol. 1 (of 2)",
+    "catalog_authors": "Spenser, Edmund, 1552?-1599; Smith, J. C. (James Cruickshanks), 1867-1946 [Editor]",
+    "catalog_issued": "2023-05-07",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/faerie-queene-v1.pg70717.txt",
+    "sha256": "50c39558176779d02f3e9b3498f235e353489f5f51e7cd41527c6eb9ff819d4e",
+    "bytes": 1087234,
+    "downloaded_utc": "2026-10-02T05:32:05Z"
+   },
+   "clean": {
+    "file": "clean/faerie-queene-v1.txt",
+    "sha256": "302e5a29dc410980b69c20f16d8a8b48fa3891275063900e75c324946f68fe06",
+    "chars": 1040874,
+    "utf8_bytes": 1043258,
+    "lines": 23823,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1909, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1946",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "faerie-queene-v2",
+   "title": "Spenser's Faerie Queene, Vol. 2",
+   "original": "Edmund Spenser",
+   "translator": null,
+   "editor": "J. C. Smith",
+   "translation_first_published": 1909,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 72698,
+    "url": "https://www.gutenberg.org/cache/epub/72698/pg72698.txt",
+    "landing": "https://www.gutenberg.org/ebooks/72698",
+    "catalog_title": "Spenser's Faerie Queene, Vol. 2 (of 2)",
+    "catalog_authors": "Spenser, Edmund, 1552?-1599; Smith, J. C. (James Cruickshanks), 1867-1946 [Editor]",
+    "catalog_issued": "2024-01-12",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/faerie-queene-v2.pg72698.txt",
+    "sha256": "f10bc49ebd8441466a0940a0eda83a572ae90a120b1c5282e44308e00d32c5d9",
+    "bytes": 1053843,
+    "downloaded_utc": "2026-10-02T05:32:24Z"
+   },
+   "clean": {
+    "file": "clean/faerie-queene-v2.txt",
+    "sha256": "dac15deabfaadcba32fb54183335e839cae71f0ccfb2f2c349b61488a32ffe9c",
+    "chars": 1007498,
+    "utf8_bytes": 1011149,
+    "lines": 22619,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1909, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1946",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "metamorphoses-riley-1",
+   "title": "The Metamorphoses of Ovid, Books I-VII",
+   "original": "Ovid",
+   "translator": "Henry Thomas Riley",
+   "editor": null,
+   "translation_first_published": 1851,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 21765,
+    "url": "https://www.gutenberg.org/cache/epub/21765/pg21765.txt",
+    "landing": "https://www.gutenberg.org/ebooks/21765",
+    "catalog_title": "The Metamorphoses of Ovid, Books I-VII",
+    "catalog_authors": "Ovid, 44 BCE-18?; Riley, Henry T. (Henry Thomas), 1816-1878 [Translator]",
+    "catalog_issued": "2007-06-08",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/metamorphoses-riley-1.pg21765.txt",
+    "sha256": "aa2ddc510fb57f7b5fffcb166144928422d28605e8273ca2ddd4c906df2e172c",
+    "bytes": 779972,
+    "downloaded_utc": "2026-10-02T05:32:30Z"
+   },
+   "clean": {
+    "file": "clean/metamorphoses-riley-1.txt",
+    "sha256": "7c689b9c30c986286b159105ca41e34a372bc8dad105e3f370668bcdbaaea921",
+    "chars": 740247,
+    "utf8_bytes": 747002,
+    "lines": 13033,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1851, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1878",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "metamorphoses-riley-2",
+   "title": "The Metamorphoses of Ovid, Books VIII-XV",
+   "original": "Ovid",
+   "translator": "Henry Thomas Riley",
+   "editor": null,
+   "translation_first_published": 1851,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 26073,
+    "url": "https://www.gutenberg.org/cache/epub/26073/pg26073.txt",
+    "landing": "https://www.gutenberg.org/ebooks/26073",
+    "catalog_title": "The Metamorphoses of Ovid, Books VIII-XV",
+    "catalog_authors": "Ovid, 44 BCE-18?; Riley, Henry T. (Henry Thomas), 1816-1878 [Translator]",
+    "catalog_issued": "2008-07-16",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/metamorphoses-riley-2.pg26073.txt",
+    "sha256": "6eb477505c6e19bbefbe0d78ba5a9642f661d5cbbbc5f754bfb3e45bc611ba35",
+    "bytes": 853821,
+    "downloaded_utc": "2026-10-02T05:32:37Z"
+   },
+   "clean": {
+    "file": "clean/metamorphoses-riley-2.txt",
+    "sha256": "d2d2d6a61a7e6a50e2cb0db10dcb7a1cd1558d61eb29fcb3801c2f86286948e8",
+    "chars": 813519,
+    "utf8_bytes": 819845,
+    "lines": 14030,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1851, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1878",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "poetic-edda-bellows",
+   "title": "The Poetic Edda",
+   "original": "anonymous (Old Norse)",
+   "translator": "Henry Adams Bellows",
+   "editor": null,
+   "translation_first_published": 1923,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 73533,
+    "url": "https://www.gutenberg.org/cache/epub/73533/pg73533.txt",
+    "landing": "https://www.gutenberg.org/ebooks/73533",
+    "catalog_title": "The poetic Edda",
+    "catalog_authors": "Bellows, Henry Adams, 1885-1939 [Translator]",
+    "catalog_issued": "2024-05-04",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/poetic-edda-bellows.pg73533.txt",
+    "sha256": "be983f2e4f2f97a57bb72095354eb9574bb656d185f16ce460efc7da2574438b",
+    "bytes": 977828,
+    "downloaded_utc": "2026-10-02T05:32:43Z"
+   },
+   "clean": {
+    "file": "clean/poetic-edda-bellows.txt",
+    "sha256": "d63d6de4a8d5274977bdbc81f7d8b082bba080c11e8e59f6e30f346a94ed1545",
+    "chars": 916975,
+    "utf8_bytes": 933825,
+    "lines": 23916,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1923, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1939",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "ossian-fragments",
+   "title": "Fragments of Ancient Poetry",
+   "original": "James Macpherson (presented as Ossian)",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1760,
+   "form": "prose poetry",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 8161,
+    "url": "https://www.gutenberg.org/cache/epub/8161/pg8161.txt",
+    "landing": "https://www.gutenberg.org/ebooks/8161",
+    "catalog_title": "Fragments of Ancient Poetry",
+    "catalog_authors": "Macpherson, James, 1736-1796",
+    "catalog_issued": "2005-05-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/ossian-fragments.pg8161.txt",
+    "sha256": "515fecebfe1e009a77204bfb9d258ef87ea4b4f38d4cbde462638df4af753b75",
+    "bytes": 90035,
+    "downloaded_utc": "2026-10-02T05:32:47Z"
+   },
+   "clean": {
+    "file": "clean/ossian-fragments.txt",
+    "sha256": "7a54aec82432062738a5cdfdc7391023db8a5b6b1ec0cc0bcdad306f45014560",
+    "chars": 68169,
+    "utf8_bytes": 68173,
+    "lines": 1910,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1760, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1796",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "mabinogion-guest",
+   "title": "The Mabinogion",
+   "original": "anonymous (Middle Welsh)",
+   "translator": "Lady Charlotte Guest",
+   "editor": null,
+   "translation_first_published": 1849,
+   "form": "prose",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 5160,
+    "url": "https://www.gutenberg.org/cache/epub/5160/pg5160.txt",
+    "landing": "https://www.gutenberg.org/ebooks/5160",
+    "catalog_title": "The Mabinogion",
+    "catalog_authors": "Schreiber, Charlotte, Lady, 1812-1895 [Translator]",
+    "catalog_issued": "2004-02-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/mabinogion-guest.pg5160.txt",
+    "sha256": "e177d7c2ff357bc5e3f506c7131d158d8b8f5e05883110bdf495f0d9d7f49886",
+    "bytes": 617553,
+    "downloaded_utc": "2026-10-02T05:32:54Z"
+   },
+   "clean": {
+    "file": "clean/mabinogion-guest.txt",
+    "sha256": "67c33691b3ce58fb3f4a23b86b4c65401fdb12ba25680e3902195de9c8ba4e77",
+    "chars": 576921,
+    "utf8_bytes": 588241,
+    "lines": 9533,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1849, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1895",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "sigurd-the-volsung",
+   "title": "The Story of Sigurd the Volsung and the Fall of the Niblungs",
+   "original": "William Morris",
+   "translator": null,
+   "editor": null,
+   "translation_first_published": 1876,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 18328,
+    "url": "https://www.gutenberg.org/cache/epub/18328/pg18328.txt",
+    "landing": "https://www.gutenberg.org/ebooks/18328",
+    "catalog_title": "The Story of Sigurd the Volsung and the Fall of the Niblungs",
+    "catalog_authors": "Morris, William, 1834-1896",
+    "catalog_issued": "2006-05-06",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/sigurd-the-volsung.pg18328.txt",
+    "sha256": "4d30ff1d423a39f474051f2311104978facb7b45dc5ddd231f22ea1f469b4b75",
+    "bytes": 743507,
+    "downloaded_utc": "2026-10-02T05:33:03Z"
+   },
+   "clean": {
+    "file": "clean/sigurd-the-volsung.txt",
+    "sha256": "0aa8beb2ec8c66660840195f45d1db7c3b7bf79a33c21d8ac22835bbcb958b90",
+    "chars": 710241,
+    "utf8_bytes": 710241,
+    "lines": 13269,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1876, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": true,
+    "life_plus_70_basis": "every person named in the Gutenberg catalog entry died by 1896",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "lay-of-the-cid",
+   "title": "The Lay of the Cid",
+   "original": "anonymous (Old Spanish)",
+   "translator": "R. Selden Rose and Leonard Bacon",
+   "editor": null,
+   "translation_first_published": 1919,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 6088,
+    "url": "https://www.gutenberg.org/cache/epub/6088/pg6088.txt",
+    "landing": "https://www.gutenberg.org/ebooks/6088",
+    "catalog_title": "The Lay of the Cid",
+    "catalog_authors": "Rose, R. Selden (Robert Selden), 1888-1964 [Translator]; Bacon, Leonard, 1887-1954 [Translator]",
+    "catalog_issued": "2004-07-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/lay-of-the-cid.pg6088.txt",
+    "sha256": "8cb5a70fdaf122cc365c57d6b67e0c04e9f7837101722e8fcbae298f7b87973e",
+    "bytes": 256130,
+    "downloaded_utc": "2026-10-02T05:33:10Z"
+   },
+   "clean": {
+    "file": "clean/lay-of-the-cid.txt",
+    "sha256": "71b445153340b88080871f903e7d645dbd009977b31e42e25889aa0f738bcb75",
+    "chars": 230733,
+    "utf8_bytes": 231547,
+    "lines": 4753,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1919, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "a person named in the Gutenberg catalog entry died in 1964; not public domain under life + 70 until 2035",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  },
+  {
+   "slug": "pharsalia-ridley",
+   "title": "Pharsalia",
+   "original": "Lucan",
+   "translator": "Sir Edward Ridley",
+   "editor": null,
+   "translation_first_published": 1896,
+   "form": "verse",
+   "alternate_of": null,
+   "source": {
+    "site": "Project Gutenberg",
+    "ebook": 602,
+    "url": "https://www.gutenberg.org/cache/epub/602/pg602.txt",
+    "landing": "https://www.gutenberg.org/ebooks/602",
+    "catalog_title": "Pharsalia; Dramatic Episodes of the Civil Wars",
+    "catalog_authors": "Lucan, 39-65",
+    "catalog_issued": "1996-07-01",
+    "catalog_language": "en"
+   },
+   "raw": {
+    "file": "raw/pharsalia-ridley.pg602.txt",
+    "sha256": "ece7a27db86f652d830fdf2054c6cd982d8e3b532bcb4604064061b20a58cc23",
+    "bytes": 506552,
+    "downloaded_utc": "2026-10-02T05:33:14Z"
+   },
+   "clean": {
+    "file": "clean/pharsalia-ridley.txt",
+    "sha256": "98a0032d7c84023e5a1fe18e4df72b88d73b4e9011d933601e35ba3b9cbef115",
+    "chars": 475616,
+    "utf8_bytes": 475638,
+    "lines": 11018,
+    "cleaning": "utf-8 decode; BOM removed; CRLF and CR to LF; kept the lines strictly between the '*** START OF' and '*** END OF' Project Gutenberg marker lines; leading and trailing blank lines removed; nothing inside edited"
+   },
+   "licence": {
+    "us_public_domain": true,
+    "us_basis": "published 1896, before 1931 (US works published before 1931 are in the public domain as of 2026)",
+    "life_plus_70_public_domain": false,
+    "life_plus_70_basis": "no death year in the catalog entry",
+    "gutenberg_licence": "the Project Gutenberg wrapper and trademark text are removed; the remaining text is public domain in the US per Project Gutenberg"
+   }
+  }
+ ],
+ "total_chars": 36312304,
+ "total_utf8_bytes": 36502734
+}

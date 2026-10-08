@@ -1,0 +1,15 @@
+order 1: 78,533 contexts, 8,630,905 joints  144s
+/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/_worktrees/dwarfstar-settle-sdmllm/experiments/track4/sdmllm/track4_sdmllm_count_store_floors.py:45: RuntimeWarning: overflow encountered in scalar multiply
+  h = np.full(len(pos), np.uint64(k) * P2, dtype=np.uint64)
+order 2: 8,630,905 contexts, 32,210,715 joints  293s
+order 3: 32,210,715 contexts, 51,416,884 joints  463s
+order 4: 51,416,884 contexts, 59,885,681 joints  675s
+order 5: 59,885,681 contexts, 62,958,741 joints  886s
+UNIGRAM {'test_bpb': 2.304928118198362, 'calib_bpb': 2.347261311173952}
+EXACT1 {'masses': [300.0], 'calib_bpb': 1.8182288481918485, 'test_bpb': 1.7700362665984521}
+EXACT2 {'masses': [300.0, 300.0], 'calib_bpb': 1.7598440696118804, 'test_bpb': 1.7061722232915268}
+EXACT3 {'masses': [300.0, 300.0, 300.0], 'calib_bpb': 1.7541801393437593, 'test_bpb': 1.6990883919673812}
+EXACT4 {'masses': [300.0, 300.0, 300.0, 300.0], 'calib_bpb': 1.7535201141378567, 'test_bpb': 1.6982392520740053}
+EXACT5 {'masses': [300.0, 300.0, 300.0, 300.0, 30.0], 'calib_bpb': 1.7522412474887827, 'test_bpb': 1.6968814638893723}
+SHUF3_control {'test_bpb': 1.7376358829243053}
+NEXT -> python3 track4_sdmllm_samples_and_repetition.py

@@ -1,0 +1,2 @@
+# wave 41 on box m: the never-fading mixer with the new body at width 768 and the best batch. Sealed in the plan.
+w41_cnmix_d768_T1024_B128_hm3072_400M new sdmonly_none 0 400000000 train_big --d 768 --hop-mlp 3072 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 128 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

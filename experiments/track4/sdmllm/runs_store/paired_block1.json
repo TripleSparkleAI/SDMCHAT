@@ -1,0 +1,75 @@
+{
+ "windows": 3892,
+ "stamp": {
+  "utc": "2026-09-30T17:03:24Z",
+  "load": [
+   27.64,
+   27.82,
+   30.34
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "bpb": {
+  "sdm_nostore_s0_20M": 1.6053586625903409,
+  "sdm_qstop_s0_20M": 1.606658102021822,
+  "sdm_s0_20M": 1.6301952845810266,
+  "sdm_softness2_s0_20M": 1.6081544534002898,
+  "sdm_storeopt_qscale01_s0_20M": 1.6058181237999765,
+  "sdm_storeopt_qstop_s0_20M": 1.6054139833347487,
+  "sdm_storeopt_s0_20M": 1.7292399006979335
+ },
+ "pairs": {
+  "sdm_storeopt_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.12388123810759263,
+   "se": 0.0005339610479525172,
+   "z": 232.0042605778406,
+   "resolved": true
+  },
+  "sdm_qstop_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.001299509808906143,
+   "se": 0.00021598975734989074,
+   "z": 6.016534417421532,
+   "resolved": true
+  },
+  "sdm_storeopt_qstop_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 5.528728957890805e-05,
+   "se": 0.00021761259180461768,
+   "z": 0.2540629157551115,
+   "resolved": false
+  },
+  "sdm_storeopt_qscale01_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.00045945785137654243,
+   "se": 0.00021684135023098793,
+   "z": 2.1188664011135785,
+   "resolved": true
+  },
+  "sdm_storeopt_qstop_s0_20M - sdm_qstop_s0_20M": {
+   "delta_bpb": -0.0012442226470870833,
+   "se": 0.00016184480024716036,
+   "z": -7.687751754687057,
+   "resolved": true
+  },
+  "sdm_qstop_s0_20M - sdm_s0_20M": {
+   "delta_bpb": -0.023537035379859288,
+   "se": 0.00022378133517507985,
+   "z": -105.17872440721928,
+   "resolved": true
+  },
+  "sdm_storeopt_s0_20M - sdm_s0_20M": {
+   "delta_bpb": 0.09904470021938996,
+   "se": 0.0004439046696022993,
+   "z": 223.12155514859882,
+   "resolved": true
+  },
+  "sdm_storeopt_qstop_s0_20M - sdm_softness2_s0_20M": {
+   "delta_bpb": -0.0027405401509435485,
+   "se": 0.00016901364555030153,
+   "z": -16.214904672462758,
+   "resolved": true
+  }
+ }
+}

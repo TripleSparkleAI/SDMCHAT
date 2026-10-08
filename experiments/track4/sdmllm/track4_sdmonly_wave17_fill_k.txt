@@ -1,0 +1,3 @@
+# wave 17 on box k: the learning rate at the best batch (B 512), both rates scaled together. Sealed in the plan.
+w17_cn_d256_B512_lr2x_400M new sdmonly_none 0 400000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 2 --lr 0.006 --muon-lr 0.04 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w17_cn_d256_B512_lr4x_400M new sdmonly_none 0 400000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 2 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,7 @@
+# wave 10 on box d (4x RTX 5090): the mixer on the best no-reads recipe, and long windows. Sealed in the plan before it runs.
+w10_cn_mix4_200M        new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w10_cn_mix4_T1024_200M  new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --T 1024 --B 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w10_cn_T1024_200M       new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --T 1024 --B 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w10_cn_mix4_nofade_200M new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w10_cn_mix4_T4096_200M  new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --T 4096 --B 2 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w10_cn_mix4_500M        new sdmonly_none 0 500000000 train --hop-mlp 192 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --eval-every 2000 --ckpt-every 2000 --log-every 100 --body-opt muon

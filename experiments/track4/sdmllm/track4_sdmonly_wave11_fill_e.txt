@@ -1,0 +1,3 @@
+# wave 11 fill, box e: lines moved from the h, n-wide and i2-wide queues onto GPUs that finish early. Same sealed lines.
+w11_mq_d1536_100M new qwen 0 100000000 train_big --d 1536 --qwen-f 4096 --body-opt muon --eval-every 2000 --ckpt-every 2000 --log-every 100
+w11_cn_d1536_100M new sdmonly_none 0 100000000 train_big --d 1536 --hop-mlp 192 --untie --conj 2 --body-opt muon --eval-every 2000 --ckpt-every 2000 --log-every 100

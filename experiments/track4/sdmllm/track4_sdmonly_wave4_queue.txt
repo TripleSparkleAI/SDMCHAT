@@ -1,0 +1,28 @@
+# wave 4: 60M confirmations (seed 0) and seed 1 of the wave-1 arms. name trainer arm seed tokens train flags
+c60_A_c new sdmonly 0 60000000 train --eval-every 500 --ckpt-every 500 --log-every 100
+c60_A_none new sdmonly_none 0 60000000 train --eval-every 500 --ckpt-every 500 --log-every 100
+c60_A_dense new sdmonly_dense 0 60000000 train --eval-every 500 --ckpt-every 500 --log-every 100
+c60_R_S s0 sdm 0 60000000 train --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --softness 0.25 --qgrad 0 --value-init zero --store-lr-mult 3 --store-wd 0 --eval-every 500 --ckpt-every 500 --log-every 100
+c60_R_N s0 sdm_nostore 0 60000000 train --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --eval-every 500 --ckpt-every 500 --log-every 100
+c60_R_Q s0 qwen 0 60000000 train --eval-every 500 --ckpt-every 500 --log-every 100
+p0_R_S_s1 s0 sdm 1 20000000 train --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --softness 0.25 --qgrad 0 --value-init zero --store-lr-mult 3 --store-wd 0 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_R_N_s1 s0 sdm_nostore 1 20000000 train --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_R_Q_s1 s0 qwen 1 20000000 train --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_lr1_s1 new sdmonly 1 20000000 train --lr 1e-3 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_lr6_s1 new sdmonly 1 20000000 train --lr 6e-3 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_lr10_s1 new sdmonly 1 20000000 train --lr 1e-2 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_slr1_s1 new sdmonly 1 20000000 train --store-lr-mult 1 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_slr10_s1 new sdmonly 1 20000000 train --store-lr-mult 10 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_h2_s1 new sdmonly 1 20000000 train --hops 2 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_h8_s1 new sdmonly 1 20000000 train --hops 8 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_n128_s1 new sdmonly 1 20000000 train --n-sub 128 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_n512_s1 new sdmonly 1 20000000 train --n-sub 512 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_k16_s1 new sdmonly 1 20000000 train --k 16 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_k64_s1 new sdmonly 1 20000000 train --k 64 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_heads4_s1 new sdmonly 1 20000000 train --heads 4 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_share_s1 new sdmonly 1 20000000 train --share-store --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_soft5_s1 new sdmonly 1 20000000 train --softness 0.5 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_qg1_s1 new sdmonly 1 20000000 train --qgrad 1 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_ro_s1 new sdmonly 1 20000000 train --readout-f 688 --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_wsd_s1 new sdmonly 1 20000000 train --sched wsd --eval-every 500 --ckpt-every 500 --log-every 100
+p0_A_wd_s1 new sdmonly 1 20000000 train --store-wd 0.1 --eval-every 500 --ckpt-every 500 --log-every 100

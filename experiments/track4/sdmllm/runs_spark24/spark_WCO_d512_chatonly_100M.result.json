@@ -1,0 +1,124 @@
+{
+ "run": "spark_WCO_d512_chatonly_100M",
+ "arm": "sdm_ngram",
+ "seed": 0,
+ "cfg": {
+  "d": 512,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 1376,
+  "train_name": "chat_train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 100000000,
+ "steps": 12207,
+ "lr": 0.001,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 66191360,
+  "non_embedding_trainable": 9478656,
+  "frozen_store_values": 0,
+  "total_trainable": 75670016
+ },
+ "flops_per_token_fwd": {
+  "head": 132382720,
+  "body": 11698176.0,
+  "total": 144080896.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T22:49:26Z",
+  "load": [
+   0.6,
+   0.69,
+   1.36
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 112.0
+ },
+ "resumed_from_step": 0,
+ "init": "/home/hologram/settle24/ck/main/spark_W2_d512_s0_300M/last.pt",
+ "train_name": "chat_train",
+ "stamp_end": {
+  "utc": "2026-10-01T23:23:02Z",
+  "load": [
+   1.39,
+   1.3,
+   1.22
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 93.4
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 2.0156909600854584
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.9926920565036632
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6672781783453863,
+  "nats_per_token": 5.6018018047753095,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_extra": {
+  "chat_test": {
+   "bpb": 1.0806505244366111,
+   "nats_per_token": 3.5294372460243895,
+   "tokens": 1022736,
+   "bytes": 4819015
+  }
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.0500253460275113,
+  "nats_per_token": 6.88777423729533,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.8810528332123277,
+  "nats_per_token": 6.320052222133544,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

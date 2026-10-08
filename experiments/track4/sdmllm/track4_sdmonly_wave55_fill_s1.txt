@@ -1,0 +1,2 @@
+# Wave 55's 128-hop line, moved from box e to s1 GPU 0 (freed when qgrad1 ended, 17:40Z)
+w55_cn_d1024_B512_hm3072_hops128_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 128 --untie --conj 2 --body-opt muon --B 512 --accum 128 --eval-every 5000 --ckpt-every 1000 --log-every 100

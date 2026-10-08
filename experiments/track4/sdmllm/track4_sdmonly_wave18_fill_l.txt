@@ -1,0 +1,2 @@
+# wave 18 on box l: width past 1,536 at the big batch. Sealed in the plan.
+w18_cn_d2048_B128_400M new sdmonly_none 0 400000000 train_big --d 2048 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 128 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

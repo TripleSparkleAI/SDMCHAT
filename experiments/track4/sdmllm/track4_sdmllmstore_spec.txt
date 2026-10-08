@@ -1,0 +1,33 @@
+# SDMLLMSTORE run spec: run_name arm seed [trainer flags]. Softness 0.5 unless given. 20M tokens each (S0 protocol).
+# block 1, sealed 2026-09-30 15:55Z (seal commit 453a3f1ed): the store-optimisation factorial, the reproduction control, two transformer seeds
+sdm_storeopt_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero
+sdm_qstop_s0_20M sdm 0 --qgrad 0
+sdm_storeopt_qstop_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0
+sdm_storeopt_qscale01_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0.1
+qwen_s3_20M qwen 3
+qwen_s4_20M qwen 4
+sdm_repro_s0_20M sdm 0
+# block 2 (sealed rule): softness 0.25 1 2 4 8 on the block-1 store recipe with the lowest seed-0 TEST bpb; appended when block 1's store arms finish
+# block 3 (sealed rule): seeds 1 and 2 of the store arm with the lowest seed-0 TEST bpb across blocks 1 and 2
+# block 1b, sealed 2026-09-30 16:07Z (before any block-1 result): the n-gram hash address arm at matched params
+sdm_ngram_s0_20M sdm_ngram 0 --store-lr-mult 3 --store-wd 0
+# block 2, appended 2026-09-30 17:03Z by the sealed rule: the lowest seed-0 block-1 store recipe is storeopt_qstop
+# (storeopt 1.72924, qstop 1.60666, storeopt_qstop 1.60541, storeopt_qscale01 1.60582); softness 0.5 is that arm itself
+sdm_storeopt_qstop_soft0p25_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 0.25
+sdm_storeopt_qstop_soft1_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 1
+sdm_storeopt_qstop_soft2_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 2
+sdm_storeopt_qstop_soft4_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 4
+sdm_storeopt_qstop_soft8_s0_20M sdm 0 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 8
+# block 3 addition, appended 2026-09-30T17:53Z by the sealed rule: sdm_ngram seed 0 (1.60195) beats every
+# similarity-address arm on seed 0 (best 1.60541), so it gets seeds 1 and 2
+sdm_ngram_s1_20M sdm_ngram 1 --store-lr-mult 3 --store-wd 0
+sdm_ngram_s2_20M sdm_ngram 2 --store-lr-mult 3 --store-wd 0
+# control, sealed 2026-09-30 17:55Z (P14): the hash table addressed by the current token only, same params
+sdm_ngram_unigram_s0_20M sdm_ngram 0 --store-lr-mult 3 --store-wd 0 --ngram-orders 1
+# block 3, appended 2026-09-30T19:38Z by the sealed rule: the lowest seed-0 similarity-address store arm across
+# blocks 1 and 2 is storeopt_qstop at softness 0.25 (1.60506; sweep 0.25/0.5/1/2/4/8 = 1.60506/1.60541/1.60557/1.60572/1.60603/1.60569)
+sdm_storeopt_qstop_soft0p25_s1_20M sdm 1 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 0.25
+sdm_storeopt_qstop_soft0p25_s2_20M sdm 2 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 0.25
+# seeds for the unigram control, sealed 2026-09-30 20:12Z (P15)
+sdm_ngram_unigram_s1_20M sdm_ngram 1 --store-lr-mult 3 --store-wd 0 --ngram-orders 1
+sdm_ngram_unigram_s2_20M sdm_ngram 2 --store-lr-mult 3 --store-wd 0 --ngram-orders 1

@@ -1,0 +1,45 @@
+{
+ "repo": "HuggingFaceFW/fineweb-edu",
+ "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+ "licence": "odc-by",
+ "file": "sample/10BT/000_00000.parquet",
+ "config": "sample/10BT",
+ "selection": "documents in file order until the dataset's gpt2 token_count column sums to target",
+ "target_gpt2_tokens": 70000000,
+ "row_groups_read": 67,
+ "val_docs": 2000,
+ "doc_format": "[BOS id 0] + tokenizer ids of text, no EOS",
+ "split": {
+  "train": {
+   "docs": 64488,
+   "tokens": 65522263,
+   "utf8_bytes": 312597547,
+   "token_bytes_sum_non_bos": 312599637,
+   "doc_index_range": [
+    0,
+    64488
+   ],
+   "first_id": "<urn:uuid:0d8a309d-25c5-405d-a08a-c11239f0d717>",
+   "last_id": "<urn:uuid:4580767c-0523-43d1-a1a3-5dc110e521ca>",
+   "sha256": "c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7",
+   "token_bytes_minus_utf8_bytes": 2090
+  },
+  "val": {
+   "docs": 2000,
+   "tokens": 2000916,
+   "utf8_bytes": 9623335,
+   "token_bytes_sum_non_bos": 9623392,
+   "doc_index_range": [
+    64488,
+    66488
+   ],
+   "first_id": "<urn:uuid:23a67428-4a53-4a7e-afd3-c553c8c32226>",
+   "last_id": "<urn:uuid:a4bc932f-9c96-47b4-b854-8fd2405988df>",
+   "sha256": "89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f",
+   "token_bytes_minus_utf8_bytes": 57
+  }
+ },
+ "tokenizer_sha256": "cb1c3615936c53db8b95ce97ad39e7ff9f944b68ff55c32497225436a544b2c4",
+ "token_bytes_check": "sum of token_bytes over non-BOS ids minus utf-8 bytes of the source text, per split (0 = exact)",
+ "made_utc": "2026-09-30T10:57:26Z"
+}

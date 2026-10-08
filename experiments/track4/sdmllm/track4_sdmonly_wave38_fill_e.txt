@@ -1,0 +1,3 @@
+# wave 38 on box e: the new best recipe pushed and combined. Sealed in the plan.
+w38_cn_d1536_B512_hm6144_hops16_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 6144 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w38_cn_d1536_B512_hm6144_hops8_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 6144 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

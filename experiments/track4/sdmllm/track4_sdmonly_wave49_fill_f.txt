@@ -1,0 +1,2 @@
+# wave 49 on box f: 32 hops with the new body at width 1,024. Sealed in the plan.
+w49_cn_d1024_B512_hm3072_hops32_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 32 --untie --conj 2 --body-opt muon --B 512 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

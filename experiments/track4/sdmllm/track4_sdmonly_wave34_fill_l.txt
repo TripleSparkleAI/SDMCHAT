@@ -1,0 +1,3 @@
+# wave 34 on box l: the hop MLP past 3,072 (same 4x chain as wave 29). Sealed in the plan.
+w34_cn_d1536_B512_lr4x_hm6144_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 6144 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w34_cn_d1536_B512_lr4x_hm12288_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 12288 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

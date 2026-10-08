@@ -1,0 +1,2 @@
+# wave 45 on box j: a seed repeat of the best 400M shape (the true-run candidate). Sealed in the plan.
+w45_cn_d1536_B512_hm6144_hops16_400M_s1 new sdmonly_none 1 400000000 train_big --d 1536 --hop-mlp 6144 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,208 @@
+{
+ "which": "new",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.99,
+   "meanTokens": 113.2,
+   "secs": 232.61
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.986,
+   "meanTokens": 93.4,
+   "secs": 122.508
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A blue sky color, a sky with hues that's been painted on the sky is almost as many colors. The sky can be seen in this sky because it forms only the most sky but also light green and orange, while the sky was white - sky(2) sky – everything appears bright; there are no stars for the sky or pinkish sky? Some of your skyline.\n\nBut if you were to create the sky at night sky full moon sky over all its sky above the sky from earth."
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic, but warm glow is a fundamental technique in statistics that describe the way they interact with their surroundings. The way it's like to know them or not understanding what their usual behavior change.\n\nOne approach could be to think about how this could help us manage our stress and develop empathy as we speak more freely than initially thought possible by the two concepts of self-compassion that can lead to feelings of guilt or depression."
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " When a person enters 5-year-old, one of the most common types are mental health issues that can occur in people who don't have any physical symptoms. Here's why:\n\n1. **Prevention**: The condition is often caused by the feeling or symptom-free nature.\n\n2. **Masters**, with a high-stakes relationship management (GPs) levels to reflect changes in their lifestyle and work habits.\n4. **Lack of stress on social media:** These small details help identify patterns and connections between different groups before they move out together.\n\n**Example usage:**\n\n```javascript\nclass Prime {\n    public static void main(String[] args)\n\t}\n\n// Example usage:\nconsole.log(\"Enter temperature: 30 minutes\nprint(\"Hello World\"))  # Outputs: \"The value from"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A black hole in our understanding of our universe and the laws of physics. It's a fundamental concept that describes how particles interact, shaping objects together around us like.\n\nOne idea is to understand the concept of \"the properties of matter\" or \"massive energy.\" This means it typically takes three days, weeks for the \"sppes\", where they have multiple meanings each other than one individual event (or another). However, this definition can vary depending on various factors such as the nature of their behavior.\n"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " When a ocean and makin' it, my mind is not just about the ocean. The ocean's surface temperature varies over different regions of the Earth for some reason, like waves that were previously thought to be due to a different type of ocean currents.\n\nWe could also think about their climate as more unique to our oceans by 2050 modulo all around us today – how much longer we can get into this sea level? Or maybe they're not exactly what kind of \"splastics\" at least once every two years (or five people per square foot) = 12 billion tons.\nSo what really matters are you in a 19th-century fishing vessel?\n"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The water is soft and the plants in various states of plants, each one drink a series of tests that are designed to help individuals with different plant species. \n\n1D (N) plays an important role in our understanding of the environment by allowing for plant care as well.\n\n2Biological mechanisms or genetic changes can be taken into account when we were first introduced:\n\nThe number of new plants have been created at increased risk for both species and their survival rates.\n"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A logical fallacy occurs when a condition or an instance of an argument is that if one's true premises are false, then the truth value must be either. The truth lies in an unspoken assumption (the truth) should be considered.\n\nThe distinction between being These statements can occur through mathematical analysis and intuition alone due to their distinct nature? Does the information provide evidence from credible sources such as logic?"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The poem, along with a poem in the sky like an ocean that's been experiencing this world for centuries. It was first seen as a source of love and connection to the seaside creatures.\n\nAs I walk through my veins, it is about watching me by its beauty – a natural see beyond a once grand sight. What do you think are drawn into this and what those words can evoke in your mind?\n"
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Here's a summary of the data structure and elements in a list that contains all its elements. It should be an element, i.e., not only the elements being added to their elements."
+  },
+  {
+   "model": "sdmwide768chat",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " As a village of Wenger hunt, I come across the village and my family. My father was young boy who grew up as a farmer with their sisters in fear that it must be forever.\n\nMy mother's name is Jack Harris' older sister by the stories themselves but they have told me that way from them to this island."
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A blue sky in a blue sky, with some sky blue sky is like the sky. The sky is red and sky for it.\n\nThe sky sky can be used to various scenarios:\n\nOne of the sky's sky, often referred to as skyline skys, where stars are full of light stretching across our sky. Some sky colored sky blue is known by all sky white sky.\n\nIn this sky, you might see how they're sky, I could see something more than just sky. It would seem like nothing but sky."
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " We have been treating patients with allergies for over a decade. One of the most significant challenges is their ability to perform complex and require specialized equipment, such as surgery or perform calculations."
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The function ````\n(\"Hello World\", \"abc\", \"hello\"))  # Outputs: 1\n```\n\nThis code uses the `sum` module to extract the index. It first checks if each element is an integer, and it returns `True`.\n\nThe function should return True. If we ignore both characters in string theory are valid tuples with the first digits.\n\nNote that this function does not provide any input or context before returning a new name.\n"
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term \"What kind of music are you tell me about the age of a black hole, typically known as black holes or just like a hole in black holes. This is important because they are not visible enough to the right size.\n\nThe hole also plays a role in determining how the individual has managed and provided them with information on what it looks like:\n\n* Big **)` (or \"S\"**: It's an identity, which means that they are all real numbers.\n2. **Unimulated**: The set of complex numbers only allow for the identification of these elements will lead to a wide range of possibilities within this range.\n\n3. **Rievedevada**: These are often referred to as the \"incentury,\" where their goal lies in understanding their underlying patterns or themes.\n"
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The ocean is divided by the total number of miles (the ocean) and the oceans are interconnected, with each other's oceans. Each of these regions would be connected to various branches that share a common thread across all seas and oceans.\n\nThe most obvious patterns is a network of interconnected lines connecting it connects both waves through the air between humans and devices in different ways from one planet to another."
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Watering in 2000 to a plant garden, it's water cycle and how much water has been used for various purposes such as irrigation or potting. It is designed like the de-User How do you calculate your plants?"
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term \"hello JavaScript\" refers to the value of a function that takes an integer as input, and returns its sum. \n\nThe function should return an empty list.\n\nYour code should pass the following assertions:\n```python\nassert add_numbers_to_array(\"such as '1', 3\")\nfor _ in range(4):\n        return str[0] = {11/10} + 7 + ... + {y}\")\n```\n\nThis approach is useful when you want to iterate over all integers between `result` and the `sList()` method.\n"
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The poem \"H\" is a form of light that plays an essential role in the poem. The poem's purpose and significance are to help you craft the poem, like what life does.\n\nThe poem can be written as:\n\n\"The poem is very nervous about poems.\n- It creates\nin which places you seek to understand its beauty.\"\n\nThis style makes it even clearer or less concise.\n* Changed \"There isn't enough space for me,\" I try to convey more information than just one sentence. It's also possible for someone else who want him at home.\n"
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A poem is an edited version of a poem. The poem, the poem's meaning and purpose, but it can be expressed in terms of their love to poetry."
+  },
+  {
+   "model": "sdmwide512chat",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The village of Khradar. You see me, a young boy named the village in his town. He was known for its presence as he stood up to his village.\n"
+  }
+ ]
+}

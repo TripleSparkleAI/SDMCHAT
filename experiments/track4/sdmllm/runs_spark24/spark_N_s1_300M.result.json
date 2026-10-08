@@ -1,0 +1,122 @@
+{
+ "run": "spark_N_s1_300M",
+ "arm": "sdm_nostore",
+ "seed": 1,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 1,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train_big"
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 300000000,
+ "steps": 36621,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 1.0,
+ "store_wd": 0.1,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 924160,
+  "frozen_store_values": 0,
+  "total_trainable": 34019840
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 1974272.0,
+  "total": 68165632.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T10:39:57Z",
+  "load": [
+   3.18,
+   3.16,
+   3.21
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 89.7
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-01T21:46:19Z",
+  "load": [
+   3.02,
+   3.13,
+   3.08
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 85.7
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.816791492245277
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.788564813686858
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.7915684192546624
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.7545232123328436
+  },
+  {
+   "step": 25000,
+   "tokens": 204800000,
+   "bpb_quick": 1.7518219210536166
+  },
+  {
+   "step": 30000,
+   "tokens": 245760000,
+   "bpb_quick": 1.7271113269420424
+  },
+  {
+   "step": 35000,
+   "tokens": 286720000,
+   "bpb_quick": 1.7306823848139425
+  }
+ ],
+ "val_test": {
+  "bpb": 1.506454845710964,
+  "nats_per_token": 5.061459799042622,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

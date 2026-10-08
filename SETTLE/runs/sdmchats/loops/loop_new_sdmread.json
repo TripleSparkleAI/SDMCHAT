@@ -1,0 +1,163 @@
+{
+ "which": "new",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.99,
+   "meanTokens": 137.1,
+   "secs": 301.656
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.978,
+   "meanTokens": 117.7,
+   "secs": 81.953
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the two color? The word of 3:1?\nWhat are the difference between? How do you look? Where? Why is the other way in which people might be right? Is it? Do they want to say that a? How is it?\nHow do they compare with numbers, don't know? It will not help to get any change? Have your children? Does this work? Let us call up the answer and answers.\n- Don’t let me think about it!\nYou have never heard this one’s questions. If you got to put what you were reading?\nAnd if you had an eye on our own eyes but not yet there is no question of God!\nI believe that I’m going to talk about where I was able to find something."
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The first time period – 5% of children ages and age\n- 3. They will be a good time to show that they have to spend more about their time? How did you do it?\nWhat does the mean? What do this mean (I think we would believe as in their days than the other animals? You may expect you to keep and eat during your diet, or if there are a few reasons for a long-term illness.\nIf you can get a lot of food allergies is important, especially when they are running as you’re going home, such as:\nThe results also look at how much water can help the body, just because they are better able to grow through on the road. The process of getting the nutrients from its weight. A study found that if people"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1. Use these methods to avoid using, and use a combination of tools or techniques for various materials.\n- They are designed to make an individual that can help them achieve long-term energy efficiency."
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The American Black white Black, American\nNew women’s black men and women have a little difference in the world? A small number of children to take a big amount. After all this is about 2 million people. It has been the age of ten times per year for several weeks, since we started to grow to the baby's ability to be at an average one.\nIn the early years of 1990 and after 2007\n- 6th grade students were able to gain more than $30 billion dollars on public or as much as possible.\"\nThe first of the United States, who was born with 14 percent higher than every single male group, which was given the age as 50% of Americans who had been the most widely used in women who are under 8"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the true most important to people who is a planet?\nThe answer is a question that comes from the fact that they have been in danger of this kind, but you've never made it difficult for me. We will be able to look around the difference between them and how far I don’t find out what would happen, or we may want.\nThat’s why it’s going to take it as far before you get a message about the time? How do you know when the computer is working with the machine learning machine will try to help you can see when moving your car? In reality, if you need a new app or start getting enough on the other hand, you won’t work. If your computer is doing more, as you might use it as a better choice"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The water, for your food is and the more important to make sure that you eat a healthy body. It’s why your dog will get better. If they have symptoms? How does it happen?\n- Do you do not know what we know about\n- How do this same effect on blood or sex?\nWhat should I don't look like?\nDo some of a good news? Is there are no evidence that their relationship between life?\nWhat can you feel about?\nA person who has many of us? Or maybe one might consider “have a lot of history,” but says. But I've asked me to say if they are afraid of? Where are my friends, and how much for him? And he is asking for the reason is that these things in his eyes are at once said"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The idea of energy that is a form of our body. It can be used to describe the use of the earth and how we have a positive impact on the brain.\nA research team was able to determine whether the factors they are using the same in which students were involved with this one particular project; you are interested in determining what this activity needs by doing so we will go through and down to 6 years after the school or school level, in the classroom (a) for example, the work that has been a good goal for students of them. This is all about these ways to make such decisions on their own.\nThe main reason to note this chapter in an essay. If you want you had to do with your student, I’ve heard when I read about it? You don't"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the right about your eyes?\nWhat causes the body to get a healthy food? It will be an important factor in its diet. How can you find this kind of effect on what you are going to eat when you eat and how they produce, are called the foods they should also do if there was no difference.\n- And what means people who think these things should be like to be a great way for them and where it’s easy to use, it’ll be able to give some sense of how to look at (although our children have been on the topic.”\nThe authors and others also have a very simple step with any of them:\nThere is a few different ways that which must be used as a teacher or student to share their lives without other learning.\nIf I've made"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " It is a powerful figure of the artist's design, and it can be used to describe a glass of paper. This paper contains an important source of what you will need.\nStep 2: How do I have written the word for the writing (and maybe no) it does with words and other letters for the same things as ‘The right to see how things are a good idea. For example, when I think the child is not the next thing that the word is in the case of being an object that was a form of love among different people who are all about. It’s quite nice but if we want to understand what to do you do with, and why we use them the ‘filling’ or “to make the job” you should know when you’re having something"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " It is a lot about the way it is for your children. This will help you get the most important things in this process as you can take over.\n- Learn more to teach students with your child’s skills, and how they are working at home during an age of 16 hours each week!\nMost people have taken their life around – when you can also be connected to others. If you feel that someone has access the language and learning from them to start in school or college."
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " and the upper border from the Atlantic.\n- Or it was a small, flat or\na blue and white. The color in the\nSent. The color of blackwood is dark brown and red. The purple green\nA black-white orange is sometimes blue and\ndives as yellow black paint by the\ntime with winter or small amount of paper are\nwater to produce a white and a good reason for making rain.\nThe soil water is not recommended, but\nthe most common areas for the plants and the plants\nNo human was a very important occurrence of life, but\nhe"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ": 2002,\nThe truth was a central aspect of the world\nand we can use as a way to keep our eyes\nthe old life in the past. So to see my mind that there is no thing. I will be like on the 17th century and from being to place or a\n\n, when we live on what he says. A person. And if\nis that they should have been passed after the\nfather of the temple and the people who are living on this\nit’s best to stay through its\nin the development of God or the Lord is"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ".\n- ↑ That event is to provide a name of the\nthe world's best known as his mother, and the\nconformed by an open plant. They are on and around a tree that was not a person, but they can easily come from mind because they're too very. So do some very\n\n. That means in a thing I have found you\nhas a good idea. And that if\na friend. I don't be sure to think of a particular kind of man would want to look for a real life—just 1/2 times per year? How do\n\n"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "’s The Next Trench, we can and\na great deal of the natural world, especially for\nthe heart. These are the highest part\nof the entire state because they don't know. They are just what they are in a local environment – some people think about by any human family and if they are an older group of species of\n\nites by the environment.\nThis is a small problem of people who eat for\nThe disease does not have any way to get their own health, so that you need to care for to feed in the wild. No one was another example of their"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "ation of the term; but I know it could be\na few times to take a closer look at the\nPathering and the legs\nwe can now use any type of paper. It is also known that this is the most popular examples of images\nand is still of it - they were more\nthe researchers, or that have the same\nnot only some people are not having the\nappposed to me of the 1/4/14\nIn the first time the Earth had been\n(3) the moon at first\nof the V2c test. The\n"
+  }
+ ]
+}

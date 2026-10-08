@@ -1,0 +1,3 @@
+w7_ch_v32k vocab:/root/settle/sdmllm/data_v32k sdmonly 0 95417201 train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_v129k vocab:/root/settle/sdmllm/data_v129k sdmonly 0 95417201 train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_mq_v32k vocab:/root/settle/sdmllm/data_v32k qwen 0 95417201 train --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon

@@ -1,0 +1,2 @@
+# wave 38 on box l: the new best recipe pushed and combined. Sealed in the plan.
+w38_mq_d1536_B512_800M new qwen 0 800000000 train_big --d 1536 --qwen-f 4096 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

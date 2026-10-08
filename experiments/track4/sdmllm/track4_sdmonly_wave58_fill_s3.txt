@@ -1,0 +1,2 @@
+# Wave 58 on box s3 GPU 1 (freed by the window-1,024 control): push the window past its edge, then the store at window 1,024.
+w58_cn_d1024_T2048_B64_hm3072_hops16_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --T 2048 --B 64 --accum 32

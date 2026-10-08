@@ -1,0 +1,14 @@
+{
+  "what": "speed bench of the launch shapes on the Spark, track4_sdmonly_train.py --bench-steps 15, random tokens, vocab 32768, 12 layers, T 2048, B 8, chunked loss; tok_per_s is the median of 13 timed steps after 2 warm steps",
+  "stamp": {"utc": "2026-10-07T04:13Z to 04:40Z", "host": "spark-f9cd", "gpu": "NVIDIA GB10", "driver": "580.159.03", "torch": "2.14.1+cu130", "cuda": "13.0", "other_gpu_jobs": "w50s runs paused (SIGSTOP) for the bench"},
+  "names": {"onesdm": "PARTIAL (run-time SDM plus a SwiGLU MLP per layer)", "onesdm_allsdm": "FULL (run-time SDM plus a trained SDM table per layer)", "plain": "memory off (no path between positions)"},
+  "rows": [
+    {"arm": "onesdm", "d": 512, "compile_body": false, "tok_per_s_median": 8071.5, "peak_mem_gib": 12.077, "non_embedding": 33321056, "embedding": 16777216},
+    {"arm": "onesdm", "d": 768, "compile_body": false, "tok_per_s_median": 6369.4, "peak_mem_gib": 17.42, "non_embedding": 73254240, "embedding": 25165824},
+    {"arm": "onesdm", "d": 768, "B": 16, "compile_body": false, "tok_per_s_median": 6159.7, "peak_mem_gib": 33.654},
+    {"arm": "onesdm", "d": 768, "compile_body": true, "tok_per_s_median": 15861.8, "peak_mem_gib": 12.801, "non_embedding": 73254240, "first_losses": [10.554141, 10.550784, 10.544442]},
+    {"arm": "onesdm_allsdm", "d": 768, "compile_body": true, "tok_per_s_median": 13407.4, "peak_mem_gib": 12.446, "non_embedding": 72775056, "first_losses": [15.348717, 10.538728, 10.545515]},
+    {"arm": "plain", "d": 768, "compile_body": true, "tok_per_s_median": 65083.2, "peak_mem_gib": 5.194, "non_embedding": 73254240, "first_losses": [10.554141, 10.544104, 10.535392]}
+  ],
+  "eager_first_losses_onesdm_d768": [10.554099, 10.549720, 10.543095]
+}

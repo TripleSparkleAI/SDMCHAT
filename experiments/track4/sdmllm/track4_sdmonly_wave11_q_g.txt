@@ -1,0 +1,7 @@
+# wave 11, box g (2 GPUs: worker 0 takes lines 1,3,5..; worker 1 takes 2,4,6..). Sealed in the plan before it runs.
+w11_mq_d256_1600M new qwen 0 1600000000 train_big --d 256 --qwen-f 688 --body-opt muon --eval-every 20000 --ckpt-every 5000 --log-every 100
+w11_cn_d256_1600M new sdmonly_none 0 1600000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --eval-every 20000 --ckpt-every 5000 --log-every 100
+w11_mq_d512_100M new qwen 0 100000000 train_big --d 512 --qwen-f 1376 --body-opt muon --eval-every 2000 --ckpt-every 2000 --log-every 100
+w11_cn_d256_400M new sdmonly_none 0 400000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 5000 --log-every 100
+w11_mq_d768_100M new qwen 0 100000000 train_big --d 768 --qwen-f 2048 --body-opt muon --eval-every 2000 --ckpt-every 2000 --log-every 100
+w11_cn_d512_400M new sdmonly_none 0 400000000 train_big --d 512 --hop-mlp 192 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 5000 --log-every 100

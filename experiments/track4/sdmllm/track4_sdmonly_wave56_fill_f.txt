@@ -1,0 +1,2 @@
+# Wave 56 on box f GPU 0 (frees about 13:00Z, after the width 2,048 true run): the MEMORY-ON twin of true_cn_d1024 (1.03599).
+true_sdm_d1024_hm6144_hops16_2B new sdmonly 0 2000000000 train_big --d 1024 --hop-mlp 6144 --hops 16 --share-store --untie --conj 2 --body-opt muon --B 512 --accum 64 --eval-every 5000 --ckpt-every 1000 --log-every 100

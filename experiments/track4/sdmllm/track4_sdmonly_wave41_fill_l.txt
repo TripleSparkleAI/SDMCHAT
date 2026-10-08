@@ -1,0 +1,2 @@
+# wave 41 on box l: 16 hops with twice the data at width 1,024. Sealed in the plan.
+w41_cn_d1024_B512_hm3072_hops16_800M new sdmonly_none 0 800000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

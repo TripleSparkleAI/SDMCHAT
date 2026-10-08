@@ -1,0 +1,2 @@
+# Wave 53 on box f, second line: 64 hops at width 1,024 (sealed as AU2), moved here from the Spark (cooled off for Claude 1). Starts when f GPU 1 frees after 48 hops.
+w53_cn_d1024_B512_hm3072_hops64_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 64 --untie --conj 2 --body-opt muon --B 512 --accum 32 --eval-every 5000 --ckpt-every 1000 --log-every 100

@@ -1,0 +1,2 @@
+# wave 25 resume on box f: width 4,096 resumes from its step-5,000 checkpoint with a smaller eval batch (SDM_EVAL_TOKENS=2048).
+w25_cn_d4096_B128_400M new sdmonly_none 0 400000000 train_big --d 4096 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 128 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,104 @@
+{
+ "run": "sdm_ngram_s0_20M",
+ "arm": "sdm_ngram",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2898432,
+  "frozen_store_values": 0,
+  "total_trainable": 35994112
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 1974272.0,
+  "total": 68165632.0
+ },
+ "device": "mps",
+ "stamp_start": {
+  "utc": "2026-09-30T17:28:47Z",
+  "load": [
+   52.48,
+   52.74,
+   48.22
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "resumed_from_step": 0,
+ "stamp_end": {
+  "utc": "2026-09-30T17:50:17Z",
+  "load": [
+   55.62,
+   62.81,
+   59.7
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.0744226690516383
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9434242401814965
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.8890140752122884
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.8524302495686673
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6019535925100095,
+  "nats_per_token": 5.382321104085055,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.614648039407329,
+  "nats_per_token": 5.4249725203055945,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.6079110105864645,
+  "nats_per_token": 5.402337125266119,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

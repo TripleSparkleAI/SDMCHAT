@@ -1,0 +1,106 @@
+{
+ "windows": 3892,
+ "stamp": {
+  "utc": "2026-09-30T19:41:23Z",
+  "load": [
+   166.84,
+   153.47,
+   144.14
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "bpb": {
+  "qwen_s3_20M": 1.5779702591272025,
+  "qwen_s4_20M": 1.568042577754413,
+  "sdm_mlp_s0_20M": 1.6093306920388195,
+  "sdm_ngram_s0_20M": 1.6019535960142794,
+  "sdm_ngram_s1_20M": 1.6030917081938254,
+  "sdm_nostore_s0_20M": 1.6053586625903409,
+  "sdm_nostore_s1_20M": 1.6061340501052024,
+  "sdm_repro_s0_20M": 1.6275904250970474,
+  "sdm_s0_20M": 1.6301952845810266,
+  "sdm_storeopt_qstop_soft0p25_s0_20M": 1.6050629208810474,
+  "sdm_storeopt_qstop_soft1_s0_20M": 1.6055649940154295,
+  "sdm_storeopt_qstop_soft2_s0_20M": 1.6057197425842458,
+  "sdm_storeopt_qstop_soft4_s0_20M": 1.6060305853616073,
+  "sdm_storeopt_qstop_soft8_s0_20M": 1.605685503528923
+ },
+ "pairs": {
+  "sdm_storeopt_qstop_soft0p25_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": -0.00029577569341314615,
+   "se": 0.00021164716491970647,
+   "z": -1.3974942377581854,
+   "resolved": false
+  },
+  "sdm_storeopt_qstop_soft1_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.00020637887874644338,
+   "se": 0.00022108099685465282,
+   "z": 0.9334989514369018,
+   "resolved": false
+  },
+  "sdm_storeopt_qstop_soft2_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.0003610394757814789,
+   "se": 0.00021839882414873842,
+   "z": 1.6531200531354346,
+   "resolved": false
+  },
+  "sdm_storeopt_qstop_soft4_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.0006719075860958178,
+   "se": 0.0002127261873697648,
+   "z": 3.1585560499323715,
+   "resolved": true
+  },
+  "sdm_storeopt_qstop_soft8_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": 0.0003268327619518756,
+   "se": 0.00021557897197010777,
+   "z": 1.5160697676821389,
+   "resolved": false
+  },
+  "sdm_ngram_s0_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": -0.003405060735611267,
+   "se": 0.00017358586534509056,
+   "z": -19.616002310107277,
+   "resolved": true
+  },
+  "sdm_ngram_s1_20M - sdm_nostore_s1_20M": {
+   "delta_bpb": -0.003042183051131198,
+   "se": 0.0001587621708913789,
+   "z": -19.161888717259878,
+   "resolved": true
+  },
+  "sdm_ngram_s0_20M - sdm_storeopt_qstop_soft0p25_s0_20M": {
+   "delta_bpb": -0.0031092851517065625,
+   "se": 0.00022379449994373103,
+   "z": -13.893483318349354,
+   "resolved": true
+  },
+  "sdm_ngram_s0_20M - sdm_mlp_s0_20M": {
+   "delta_bpb": -0.007377144500276734,
+   "se": 0.00029218470238293764,
+   "z": -25.248222922390504,
+   "resolved": true
+  },
+  "sdm_repro_s0_20M - sdm_s0_20M": {
+   "delta_bpb": -0.0026046813502477693,
+   "se": 0.00017047965921098112,
+   "z": -15.278546204883508,
+   "resolved": true
+  },
+  "qwen_s3_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": -0.027388342722456365,
+   "se": 0.00048594778307109606,
+   "z": -56.36067017194179,
+   "resolved": true
+  },
+  "qwen_s4_20M - sdm_nostore_s0_20M": {
+   "delta_bpb": -0.03731608717210807,
+   "se": 0.0005193417767522175,
+   "z": -71.85265819643833,
+   "resolved": true
+  }
+ }
+}

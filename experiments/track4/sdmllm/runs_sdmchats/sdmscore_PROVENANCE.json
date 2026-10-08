@@ -1,0 +1,91 @@
+{
+ "lane": "SDMSCORE",
+ "pulled_utc": "2026-10-02T13:11:15Z",
+ "machine": "Spark GB10 (spark-f9cd), NVIDIA driver 580.159.03, torch 2.14.1+cu130, CUDA 13.0",
+ "trained_by": "lane SDMCHATS through SPARK24's queue ~/settle24/code/q (done/1002083135-0177.json, -0178.json)",
+ "commands": {
+  "sdmchats_SW_d512_s1_300M": "nice -n 10 ~/settle24/code/sdm_arm.sh sdmchats_SW_d512_s1_300M sdm 1 300000000 --d 512 --f 1376 --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --extra-val chat_test --ckpt-every 1000 --store-lr-mult 3 --store-wd 0 --value-init zero --qgrad 0 --softness 0.25 0 0",
+  "sdmchats_NW_d512_s1_300M": "nice -n 10 ~/settle24/code/sdm_arm.sh sdmchats_NW_d512_s1_300M sdm_nostore 1 300000000 --d 512 --f 1376 --n-back 8 --decays 0.5,0.8,0.9,0.97,0.99 --extra-val chat_test --ckpt-every 1000 0 0",
+  "paired": "~/settle24/venv/bin/python ~/settle24/sdmscore/track4_sdmscore_paired_from_npz.py --ck ~/settle24/ck/main --out sdmscore_seeds_paired_result.json <pairs> --mean SW_s0:NW_s0,SW_s1:NW_s1 (script in this folder)",
+  "sdmchats_SWL_d768_s0_600M": "SDMCHATS-SWL-d768-s0-600M through ~/settle24/code/q at priority 1 (job 1002052544-0138): sdm_arm.sh with SW s0 recipe at --d 768 --f 2064, 600,000,000 tokens, seed 0 (see the run log start event for the full cfg)",
+  "swl_paired": "~/settle24/venv/bin/python ~/settle24/sdmscore/track4_sdmscore_paired_from_npz.py --ck ~/settle24/ck/main --out sdmscore_swl_paired_result.json SWL:SW_s0 SWL:SW_s1 SWL:NW_s0 SWL:NW_s1 SWL:epics_FW12"
+ },
+ "both_s1_runs": "seed 1, 300M tokens of train_big, one start each (resumed_from_step 0), 2026-10-02 08:31:40Z to 12:56:46Z (SW) and 12:10:21Z (NW)",
+ "test_windows": "3,892 non-overlapping T=256 TEST windows, 4,824,566 bytes, the same windows as SW s0, NW s0 and SPARK24's W2",
+ "checkpoints_on_spark_not_pulled": {
+  "spark:~/settle24/ck/main/sdmchats_SW_d512_s1_300M/last.pt": {
+   "sha256": "171e6c7c872693fff7af41bbb3040b067c36f5a14168f65d0f81eb92170fc3c6"
+  },
+  "spark:~/settle24/ck/main/sdmchats_NW_d512_s1_300M/last.pt": {
+   "sha256": "401a033e57e63c1fd24d945f0a412ba81570fde3a936e6ad8b8a462fcc298657"
+  },
+  "spark:~/settle24/ck/main/sdmchats_SWL_d768_s0_600M/last.pt": {
+   "sha256": "380a0e6346cdc694cd83a4a3b2767f8e4fed16416888e307f38ab3a139de6370",
+   "note": "also copied to the main checkout experiments/track4/sdmllm/checkpoints/ (gitignored) for the export"
+  }
+ },
+ "files": {
+  "sdmchats_NW_d512_s1_300M.log": {
+   "sha256": "f96d1fc99590216b9f1e9fe1e0544aed60ba6c42dfcbd728ab2a4d8f5c8d3e13",
+   "from": "spark:~/settle24/runs/main/sdmchats_NW_d512_s1_300M.log"
+  },
+  "sdmchats_NW_d512_s1_300M.result.json": {
+   "sha256": "a9d8ef581d8c19825528be857dfab42852268733aac375d428dba55593d9ddca",
+   "from": "spark:~/settle24/runs/main/sdmchats_NW_d512_s1_300M.result.json"
+  },
+  "sdmchats_SW_d512_s1_300M.log": {
+   "sha256": "aed68d3f4a5fb6ce0585ca8d4a4b023de987624058555171848e48affc95619f",
+   "from": "spark:~/settle24/runs/main/sdmchats_SW_d512_s1_300M.log"
+  },
+  "sdmchats_SW_d512_s1_300M.result.json": {
+   "sha256": "11cda1339ad9851dc8390f7b5a694d5aa9e6edca2103fe0f6440ce8c6324854f",
+   "from": "spark:~/settle24/runs/main/sdmchats_SW_d512_s1_300M.result.json"
+  },
+  "sdmscore_seeds_paired_result.json": {
+   "sha256": "ab212fb1376261fc3dde14f4bd3a8bbd56c7318397500152198c012c78cc8142",
+   "from": "spark:~/settle24/sdmscore/sdmscore_seeds_paired_result.json"
+  },
+  "per_window/sdmchats_NW_d512_s0_300M.test_per_window.npz": {
+   "sha256": "e20cd1c8c8e99b28331ceb463450adbea08bfe982f4c4218a4bfb157001f3eec",
+   "from": "spark:~/settle24/ck/main/sdmchats_NW_d512_s0_300M/test_per_window.npz"
+  },
+  "per_window/sdmchats_NW_d512_s1_300M.test_per_window.npz": {
+   "sha256": "d3f41e3a92ec8d0a5d45ab2abbad268b09ac4698b90823dc8d4b5c9d057dc985",
+   "from": "spark:~/settle24/ck/main/sdmchats_NW_d512_s1_300M/test_per_window.npz"
+  },
+  "per_window/sdmchats_SW_d512_s0_300M.test_per_window.npz": {
+   "sha256": "a8498e3432ee2f09da69534bbec9f5a562de9fc9cd48315c595c0c9dbee356e5",
+   "from": "spark:~/settle24/ck/main/sdmchats_SW_d512_s0_300M/test_per_window.npz"
+  },
+  "per_window/sdmchats_SW_d512_s1_300M.test_per_window.npz": {
+   "sha256": "4ed9dd9a550adf2472b9cb2166bc2c8a4e7f6a82920e31b2c56c40905cdf0ee1",
+   "from": "spark:~/settle24/ck/main/sdmchats_SW_d512_s1_300M/test_per_window.npz"
+  },
+  "per_window/spark_W2_d512_s0_300M.test_per_window.npz": {
+   "sha256": "c1ebe3a9a912e5c545c50dbad9b0fa0a88a83da2f7e0bd82045272390f875dde",
+   "from": "spark:~/settle24/ck/main/spark_W2_d512_s0_300M/test_per_window.npz"
+  },
+  "sdmchats_SWL_d768_s0_600M.result.json": {
+   "sha256": "af3a3390b4f1e2adeda8caa4d0939b1ad75c9a71f15442758f1e22b418f5ce16",
+   "from": "spark:~/settle24/runs/main/sdmchats_SWL_d768_s0_600M.result.json"
+  },
+  "sdmchats_SWL_d768_s0_600M.log": {
+   "sha256": "cf6048b28607da8082deb7f6537667712e4fe7b8f2ac98975e52b3b08f4ff2ca",
+   "from": "spark:~/settle24/runs/main/sdmchats_SWL_d768_s0_600M.log"
+  },
+  "sdmscore_swl_paired_result.json": {
+   "sha256": "2f9e478b0039acdc5ce5cfc417c71ef64066ddd206ff690de5c9d7e3b53fc4cc",
+   "from": "spark:~/settle24/sdmscore/sdmscore_swl_paired_result.json"
+  },
+  "per_window/sdmchats_SWL_d768_s0_600M.test_per_window.npz": {
+   "sha256": "5583d075fad7079b76527d6172b43bce7217a22343b4b7d0a82622c13b861fa9",
+   "from": "spark:~/settle24/ck/main/sdmchats_SWL_d768_s0_600M/test_per_window.npz"
+  },
+  "per_window/epics_FW12.test_per_window.npz": {
+   "sha256": "93b71f0312dcec0829e653a54bdbd174f5ecaf3929acbc97d4c3f7b61a229fe3",
+   "from": "spark:~/settle24/ck/main/epics_FW12/test_per_window.npz"
+  }
+ },
+ "swl_run": "seed 0, 600M tokens of train_big, one start (resumed_from_step 0), 2026-10-02 06:14:05Z to 17:15:37Z, pulled 2026-10-02T20:2xZ",
+ "updated_utc": "2026-10-02T20:54:56Z"
+}

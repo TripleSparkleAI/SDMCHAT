@@ -1,0 +1,3 @@
+# wave 32 on box n: the base rate at width 2,048, and more data at the best shape. Sealed in the plan.
+w32_cn_d2048_B512_400M new sdmonly_none 0 400000000 train_big --d 2048 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w32_cn_d1536_B512_800M new sdmonly_none 0 800000000 train_big --d 1536 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

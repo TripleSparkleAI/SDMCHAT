@@ -1,0 +1,305 @@
+{
+ "manifest_built_utc": "2026-10-02T05:33:15Z",
+ "block_lines": 64,
+ "test_rule": "block index % 20 == 7",
+ "cap_train_chars_per_group": 3000000,
+ "cap_test_chars_per_group": 150000,
+ "groups": {
+  "iliad-butler": {
+   "works": [
+    "iliad-butler"
+   ],
+   "train_chars": 843328,
+   "test_chars": 45616,
+   "train_chars_available": 843328,
+   "test_docs": 12
+  },
+  "odyssey-butler": {
+   "works": [
+    "odyssey-butler"
+   ],
+   "train_chars": 644543,
+   "test_chars": 34281,
+   "train_chars_available": 644543,
+   "test_docs": 9
+  },
+  "iliad-pope": {
+   "works": [
+    "iliad-pope"
+   ],
+   "train_chars": 1041667,
+   "test_chars": 55778,
+   "train_chars_available": 1041667,
+   "test_docs": 20
+  },
+  "odyssey-pope": {
+   "works": [
+    "odyssey-pope"
+   ],
+   "train_chars": 662515,
+   "test_chars": 35796,
+   "train_chars_available": 662515,
+   "test_docs": 13
+  },
+  "aeneid-dryden": {
+   "works": [
+    "aeneid-dryden"
+   ],
+   "train_chars": 663439,
+   "test_chars": 33523,
+   "train_chars_available": 663439,
+   "test_docs": 11
+  },
+  "beowulf-gummere": {
+   "works": [
+    "beowulf-gummere"
+   ],
+   "train_chars": 139882,
+   "test_chars": 7366,
+   "train_chars_available": 139882,
+   "test_docs": 3
+  },
+  "paradise-lost": {
+   "works": [
+    "paradise-lost"
+   ],
+   "train_chars": 436320,
+   "test_chars": 23215,
+   "train_chars_available": 436320,
+   "test_docs": 9
+  },
+  "paradise-regained": {
+   "works": [
+    "paradise-regained"
+   ],
+   "train_chars": 85100,
+   "test_chars": 5605,
+   "train_chars_available": 85100,
+   "test_docs": 2
+  },
+  "divine-comedy-longfellow": {
+   "works": [
+    "divine-comedy-longfellow"
+   ],
+   "train_chars": 628718,
+   "test_chars": 34008,
+   "train_chars_available": 628718,
+   "test_docs": 16
+  },
+  "kalevala-crawford": {
+   "works": [
+    "kalevala-crawford"
+   ],
+   "train_chars": 775018,
+   "test_chars": 41704,
+   "train_chars_available": 775018,
+   "test_docs": 20
+  },
+  "gilgamesh-jastrow-clay": {
+   "works": [
+    "gilgamesh-jastrow-clay"
+   ],
+   "train_chars": 213832,
+   "test_chars": 12322,
+   "train_chars_available": 213832,
+   "test_docs": 4
+  },
+  "ramayana-griffith": {
+   "works": [
+    "ramayana-griffith"
+   ],
+   "train_chars": 2149896,
+   "test_chars": 114396,
+   "train_chars_available": 2149896,
+   "test_docs": 53
+  },
+  "mahabharata-ganguli": {
+   "works": [
+    "mahabharata-ganguli-v1",
+    "mahabharata-ganguli-v2",
+    "mahabharata-ganguli-v3",
+    "mahabharata-ganguli-v4"
+   ],
+   "train_chars": 3000000,
+   "test_chars": 150000,
+   "train_chars_available": 14196355,
+   "test_docs": 38
+  },
+  "hiawatha": {
+   "works": [
+    "hiawatha"
+   ],
+   "train_chars": 178397,
+   "test_chars": 9150,
+   "train_chars_available": 178397,
+   "test_docs": 5
+  },
+  "idylls-of-the-king": {
+   "works": [
+    "idylls-of-the-king"
+   ],
+   "train_chars": 451913,
+   "test_chars": 24825,
+   "train_chars_available": 451913,
+   "test_docs": 9
+  },
+  "nibelungenlied-needler": {
+   "works": [
+    "nibelungenlied-needler"
+   ],
+   "train_chars": 605535,
+   "test_chars": 31834,
+   "train_chars_available": 605535,
+   "test_docs": 14
+  },
+  "song-of-roland": {
+   "works": [
+    "song-of-roland"
+   ],
+   "train_chars": 182543,
+   "test_chars": 9721,
+   "train_chars_available": 182543,
+   "test_docs": 4
+  },
+  "shahnameh-atkinson": {
+   "works": [
+    "shahnameh-atkinson"
+   ],
+   "train_chars": 690511,
+   "test_chars": 35514,
+   "train_chars_available": 690511,
+   "test_docs": 11
+  },
+  "argonautica-seaton": {
+   "works": [
+    "argonautica-seaton"
+   ],
+   "train_chars": 317770,
+   "test_chars": 15669,
+   "train_chars_available": 317770,
+   "test_docs": 4
+  },
+  "lusiad-mickle": {
+   "works": [
+    "lusiad-mickle"
+   ],
+   "train_chars": 955915,
+   "test_chars": 49201,
+   "train_chars_available": 955915,
+   "test_docs": 15
+  },
+  "orlando-furioso-rose": {
+   "works": [
+    "orlando-furioso-rose"
+   ],
+   "train_chars": 1702736,
+   "test_chars": 89418,
+   "train_chars_available": 1702736,
+   "test_docs": 38
+  },
+  "jerusalem-delivered-fairfax": {
+   "works": [
+    "jerusalem-delivered-fairfax"
+   ],
+   "train_chars": 670892,
+   "test_chars": 34857,
+   "train_chars_available": 670892,
+   "test_docs": 15
+  },
+  "faerie-queene": {
+   "works": [
+    "faerie-queene-v1",
+    "faerie-queene-v2"
+   ],
+   "train_chars": 1947411,
+   "test_chars": 100963,
+   "train_chars_available": 1947411,
+   "test_docs": 37
+  },
+  "metamorphoses-riley": {
+   "works": [
+    "metamorphoses-riley-1",
+    "metamorphoses-riley-2"
+   ],
+   "train_chars": 1477908,
+   "test_chars": 75860,
+   "train_chars_available": 1477908,
+   "test_docs": 21
+  },
+  "poetic-edda-bellows": {
+   "works": [
+    "poetic-edda-bellows"
+   ],
+   "train_chars": 869538,
+   "test_chars": 47438,
+   "train_chars_available": 869538,
+   "test_docs": 19
+  },
+  "ossian-fragments": {
+   "works": [
+    "ossian-fragments"
+   ],
+   "train_chars": 63291,
+   "test_chars": 4879,
+   "train_chars_available": 63291,
+   "test_docs": 2
+  },
+  "mabinogion-guest": {
+   "works": [
+    "mabinogion-guest"
+   ],
+   "train_chars": 547196,
+   "test_chars": 29726,
+   "train_chars_available": 547196,
+   "test_docs": 8
+  },
+  "sigurd-the-volsung": {
+   "works": [
+    "sigurd-the-volsung"
+   ],
+   "train_chars": 675126,
+   "test_chars": 35116,
+   "train_chars_available": 675126,
+   "test_docs": 11
+  },
+  "lay-of-the-cid": {
+   "works": [
+    "lay-of-the-cid"
+   ],
+   "train_chars": 218724,
+   "test_chars": 12010,
+   "train_chars_available": 218724,
+   "test_docs": 4
+  },
+  "pharsalia-ridley": {
+   "works": [
+    "pharsalia-ridley"
+   ],
+   "train_chars": 451056,
+   "test_chars": 24561,
+   "train_chars_available": 451056,
+   "test_docs": 9
+  }
+ },
+ "split": {
+  "train": {
+   "docs": 466,
+   "tokens": 6023067,
+   "utf8_bytes": 23472015,
+   "token_bytes_sum_non_bos": 23472129,
+   "token_bytes_minus_utf8_bytes": 114,
+   "sha256": "bcd9f0b10e9aad5ee5391cb2674c6dc5f64ccb7f5e666583b72f41e4949cbea5",
+   "file": "epics_train.u32"
+  },
+  "test": {
+   "docs": 436,
+   "tokens": 315730,
+   "utf8_bytes": 1233487,
+   "token_bytes_sum_non_bos": 1233487,
+   "token_bytes_minus_utf8_bytes": 0,
+   "sha256": "89099cf3db54de2bf9a511a091cd0dc984c933fa31fd63cf342b515a23826f5f",
+   "file": "epics_test.u32"
+  }
+ },
+ "tokenizer_sha256": "cb1c3615936c53db8b95ce97ad39e7ff9f944b68ff55c32497225436a544b2c4"
+}

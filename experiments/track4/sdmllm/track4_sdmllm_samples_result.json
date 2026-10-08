@@ -1,0 +1,797 @@
+{
+ "n_new": 128,
+ "modes": [
+  [
+   "greedy",
+   0.0,
+   1
+  ],
+  [
+   "t0.8_top50",
+   0.8,
+   50
+  ]
+ ],
+ "prompts": [
+  "The water cycle describes how water moves",
+  "In 1776, the thirteen American colonies",
+  "Photosynthesis is the process by which plants",
+  "To solve a quadratic equation, students first",
+  "The most important thing about learning a new language is",
+  "Once upon a time, in a small village near the mountains,"
+ ],
+ "summary": {
+  "qwen_s0_20M": {
+   "greedy": {
+    "distinct_1": 0.1237,
+    "distinct_2": 0.1798,
+    "distinct_3": 0.2183,
+    "rep4": 0.7493,
+    "longest_repeat": 42.1667
+   },
+   "t0.8_top50": {
+    "distinct_1": 0.5847,
+    "distinct_2": 0.9186,
+    "distinct_3": 0.9921,
+    "rep4": 0.0013,
+    "longest_repeat": 2.5
+   }
+  },
+  "sdm_s0_20M": {
+   "greedy": {
+    "distinct_1": 0.1185,
+    "distinct_2": 0.1759,
+    "distinct_3": 0.2129,
+    "rep4": 0.756,
+    "longest_repeat": 32.6667
+   },
+   "t0.8_top50": {
+    "distinct_1": 0.6146,
+    "distinct_2": 0.9186,
+    "distinct_3": 0.9815,
+    "rep4": 0.0067,
+    "longest_repeat": 3.1667
+   }
+  },
+  "sdm_nostore_s0_20M": {
+   "greedy": {
+    "distinct_1": 0.0755,
+    "distinct_2": 0.0958,
+    "distinct_3": 0.1058,
+    "rep4": 0.8893,
+    "longest_repeat": 54.3333
+   },
+   "t0.8_top50": {
+    "distinct_1": 0.5911,
+    "distinct_2": 0.9121,
+    "distinct_3": 0.9868,
+    "rep4": 0.0027,
+    "longest_repeat": 3.3333
+   }
+  },
+  "sdm_mlp_s0_20M": {
+   "greedy": {
+    "distinct_1": 0.1211,
+    "distinct_2": 0.1614,
+    "distinct_3": 0.1825,
+    "rep4": 0.8013,
+    "longest_repeat": 45.5
+   },
+   "t0.8_top50": {
+    "distinct_1": 0.5989,
+    "distinct_2": 0.9278,
+    "distinct_3": 0.9855,
+    "rep4": 0.004,
+    "longest_repeat": 3.1667
+   }
+  },
+  "EXACT3_count_store": {
+   "greedy": {
+    "distinct_1": 0.0924,
+    "distinct_2": 0.105,
+    "distinct_3": 0.1072,
+    "rep4": 0.892,
+    "longest_repeat": 60.1667
+   },
+   "t0.8_top50": {
+    "distinct_1": 0.6784,
+    "distinct_2": 0.9606,
+    "distinct_3": 0.996,
+    "rep4": 0.0013,
+    "longest_repeat": 2.1667
+   }
+  }
+ },
+ "samples": {
+  "qwen_s0_20M": {
+   "greedy": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " to the water and water in the water. The water is a good way to keep the water from the water. The water is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and water it is the water. It is the water and",
+     "stats": {
+      "distinct_1": 0.1172,
+      "distinct_2": 0.1811,
+      "distinct_3": 0.2222,
+      "rep4": 0.744,
+      "longest_repeat": 48
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": " were killed by the 1920s, and the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920s, the 1920",
+     "stats": {
+      "distinct_1": 0.0781,
+      "distinct_2": 0.0866,
+      "distinct_3": 0.0952,
+      "rep4": 0.896,
+      "longest_repeat": 58
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are used to make a difference between the plant and the plant. The plant is used to create a variety of materials that are used to create a variety of materials that are used to create a variety of materials that are used to create a variety of materials. The plant is used to create a variety of materials that are used to create a variety of materials that are used to create a variety of materials. The plant is used to create a variety of materials that are used to create a variety of materials that are used to create a variety of materials. The plant is used to create a variety of materials that are used to create a variety of materials",
+     "stats": {
+      "distinct_1": 0.1406,
+      "distinct_2": 0.1811,
+      "distinct_3": 0.2063,
+      "rep4": 0.776,
+      "longest_repeat": 45
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " understand the following:\n- The following is a number of different types of data\n- The following is a number of different types of data\n- The number of data is the same as the number of data\n- The number of data is the same as the\n- The number of data is the same as the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n- The number of data is the\n",
+     "stats": {
+      "distinct_1": 0.125,
+      "distinct_2": 0.189,
+      "distinct_3": 0.2302,
+      "rep4": 0.736,
+      "longest_repeat": 32
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " to make a difference between the world and the world. The world is a good way to do is to be able to make a difference in the world. The world is a good way to do is to be able to make a difference. The world is a good way to do is to be able to make a difference. The world is a good way to do is to be able to make a difference. The world is a good way to do is to be able to make it easier. It is a good idea to do this. It is a good idea to do this. It is a good idea to do this. It is",
+     "stats": {
+      "distinct_1": 0.1719,
+      "distinct_2": 0.2677,
+      "distinct_3": 0.3175,
+      "rep4": 0.648,
+      "longest_repeat": 32
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the city was a large, and the city was a small, and the city was a great place of the city. The city was a great place in the city of the city. The city was a city of the city of the city. The city was the city of the city, and the city was the city of the city. The city was the city of the city, and the city was the city of the city. The city was the city of the city, and the city was the city of the city. The city was the city of the city, and the city was the city of the city. The city was",
+     "stats": {
+      "distinct_1": 0.1094,
+      "distinct_2": 0.1732,
+      "distinct_3": 0.2381,
+      "rep4": 0.696,
+      "longest_repeat": 38
+     }
+    }
+   ],
+   "t0.8_top50": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " in its water, the soil will be an important place for the soil. The soil that causes water to be used, so the growing soil is well worth the water. This means that air energy is not just a kind of soil that produces oil from it as well as the other elements. We also can develop a natural system of water, which provides energy from the soil to the natural environment.\nFor example, water temperature is a large, acidic, and vitamin A. The gas system, as the water source is relatively low. The water is a vital step to us is a lot less than we can be a very small area of water",
+     "stats": {
+      "distinct_1": 0.5547,
+      "distinct_2": 0.9134,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": " in this country were killed in the 7th century, and 5th century was in the 19th century and 1869, for he was a group of Jews who worked with the British Army and the United States, the Irish people who made their lives in some of their days to do with the first American people. But, that's a great place to be on the island, and the world are the land of the continent, and the South where they get there, it’s not of the world’s most important people with a new village and one for its own. The Great Depression has been a rich state",
+     "stats": {
+      "distinct_1": 0.6016,
+      "distinct_2": 0.8976,
+      "distinct_3": 0.9841,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are known as the plants. There are two ways in which the plant is growing into an important way. The plant that makes the main plant to see where the plants are not a good option for the plants to be eaten. It’s especially the plant and, if the whole plant can grow to a surface, it’s a big option for which they are able to grow the plant.\nTo the plant, these plants are extremely important.\nTight is a variety of that has a very different roots and natural flavor. It is a great way to get the most beautiful, yellow.\nThis is a high quality plant to create a little",
+     "stats": {
+      "distinct_1": 0.5547,
+      "distinct_2": 0.9055,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " set their own data to use and discuss a list of different languages, each of which we find in the same way:\n1. Some students have made in the first place, so they want them to see that we cannot be able to give information, so if you will not try to make it possible for the data, please contact the list and give your choice to read a list in the next, and use the content of the user to put it back to the software.\nClick on this section on the same page:\n- The current model is a little time to answer.\n- It contains a different range of data that we will find an",
+     "stats": {
+      "distinct_1": 0.625,
+      "distinct_2": 0.9528,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " that they are not a great thing. This is what is good to know in a classroom.\n- The first time of education is something to do with many other things. This can be good and interesting to help them (or, we will share more of all my friends) who are doing them as you begin to read, and they do not get it in a school, but not only a young person who will take a year to get one of the most, since the American teacher has a child’s own world. The second person is a student's own self- or more of the family, who has the best idea of the",
+     "stats": {
+      "distinct_1": 0.6328,
+      "distinct_2": 0.9606,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the sun is a small and white man who is still in the city of the region is very high, and it's also the lake, and the Earth’s solar system of the city.\nThe world, and the world, the sky provides for the 500 acres, its center is 4 feet (1.5 feet) to 20,000 feet of diameter, or 1.5 feet.\nThe world is often called the earth. The moon is a year or a little. It has the perfect time to go to the sun of it. Each other person's atmosphere is, the world will have a place of life",
+     "stats": {
+      "distinct_1": 0.5391,
+      "distinct_2": 0.8819,
+      "distinct_3": 0.9683,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    }
+   ]
+  },
+  "sdm_s0_20M": {
+   "greedy": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " in the water and water is the water and water. The water is the water and water is the water and water. The water is the water and water is the water and water supply. The water is the water and water is the water and water supply. The water is the water and water supply, the water is the water and water supply. The water is the water and water supply, the water is the water and water supply. The water is the water supply system, the water and water supply. The water is the water supply system, the water supply and water supply. The water supply is a water supply system, the water",
+     "stats": {
+      "distinct_1": 0.0859,
+      "distinct_2": 0.1496,
+      "distinct_3": 0.2222,
+      "rep4": 0.712,
+      "longest_repeat": 18
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": ", the United States, the United States, the United States, and the United States, the United States, and the United States, the United States, and the United States, the United States, and the United States, and the United States, the United States, and the United States, and the United States, the United States, and the United States, and the United States, and the United States, the United States, and the United States, and the United States, and the United States, the United States, and the United States, and the United States, and the United States, the United States, and the United",
+     "stats": {
+      "distinct_1": 0.0391,
+      "distinct_2": 0.0472,
+      "distinct_3": 0.0556,
+      "rep4": 0.936,
+      "longest_repeat": 38
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are used to produce a variety of materials. The materials are used to produce a variety of materials, including the use of the materials used to produce a variety of materials. The materials are used to produce a variety of materials, including the use of the materials used to produce a variety of materials, including the use of the materials used to produce a variety of materials, including the use of the materials used to produce a variety of materials, including the use of the materials used to produce a variety of materials, including the use of the materials used to produce a variety of materials, including the use of the materials used to produce a variety of materials",
+     "stats": {
+      "distinct_1": 0.1094,
+      "distinct_2": 0.1496,
+      "distinct_3": 0.1587,
+      "rep4": 0.832,
+      "longest_repeat": 42
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " started to learn how to use the computer to create a new technology. The first step is to create a new technology that is a new technology that is a very important step in the future. The first step is to be a new tool for the first time. The first step is to be a new tool for the first time. The first step is to be a new tool for the first time. The first time is to be a new and more effective way to get the first time to get a new study. The first time, the first time to get a new study of the American Academy of Sciences, which is a very important step",
+     "stats": {
+      "distinct_1": 0.2891,
+      "distinct_2": 0.4646,
+      "distinct_3": 0.5635,
+      "rep4": 0.368,
+      "longest_repeat": 17
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " a great way to learn about the world. It is a great way to learn about the world. It is a great way to learn about the world. It is a great way to learn about the world. It is a great way to learn about the world. It is a great way to learn about the world. It is a great way to get a lot of things. It is a good idea to be a good idea to be a good idea. It is a good idea to be a good idea to be a good idea to be a good idea to be a good idea to be a good idea to be a good idea to",
+     "stats": {
+      "distinct_1": 0.1406,
+      "distinct_2": 0.1811,
+      "distinct_3": 0.2063,
+      "rep4": 0.768,
+      "longest_repeat": 33
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the town of the river, the river, the river, the river, the river, the river, the river, the river, and the river, the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river, and the river, the river,",
+     "stats": {
+      "distinct_1": 0.0469,
+      "distinct_2": 0.063,
+      "distinct_3": 0.0714,
+      "rep4": 0.92,
+      "longest_repeat": 48
+     }
+    }
+   ],
+   "t0.8_top50": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " the atmosphere is the most common form of energy is called energy development.\nThe heat, temperature becomes a key to the atmosphere. Since so many people choose to say that the temperature and temperature may not be the result of the heat. It should allow to maintain heat from hot air?\nB-6) The current temperature\n- The temperature is the only water and temperature\n- The main temperature is about 1,800-800-2F\n- 25-year-old F-2. This is an active cause of 1-2 in your daily life – a person will start to avoid the water and make your own healthy foods",
+     "stats": {
+      "distinct_1": 0.6016,
+      "distinct_2": 0.8976,
+      "distinct_3": 0.9841,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": " in America, the American Revolution. The only part of the French government, the world is an international threat to the nation. While no matter is 12,500 people are a place by government, the world, and the United States for them to become so busy. It took place to come back into the world.\nThe first step was to start in the 2012, with the American Civil War, the Great Depression, the United States and the United States, and if they have made it back in the last 20 years, and it may come to become an issue, in the future of the United States, and the state",
+     "stats": {
+      "distinct_1": 0.5391,
+      "distinct_2": 0.811,
+      "distinct_3": 0.9286,
+      "rep4": 0.032,
+      "longest_repeat": 5
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are often used to produce the nutrients and minerals that produce a low energy supply in place in an environment. The body contains many benefits and minerals are grown mainly in a variety of foods, minerals and minerals. These are mainly used to make nutrients use minerals to help preserve our food quality.\nIf the organic plant is a natural source of nutrients.\nIf your soil is a healthy and healthy body nutrients are important to our body fat, more fatty acids, which are linked to skin and digesty. They are also a boost of nutrients, which are the most healthy body of plants that have to take the natural body.\n- A long term, are",
+     "stats": {
+      "distinct_1": 0.5391,
+      "distinct_2": 0.9291,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " created data from the Internet and Windows 2020\nThis would be a good choice?\nIt is a very important tool that enables help you to consider their 10% of all the software to get the first thing to do.\nIf we haven’t heard about these questions please think that’s about being built on the Internet. This is called an array of new information on what is the primary value of the program. What is the one thing and what I will see, where it's going to have the more information about the world, and they do not think.|Puden, who is not going on the future",
+     "stats": {
+      "distinct_1": 0.6875,
+      "distinct_2": 0.9764,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " that they are in a way they are interested in and is now in the early stages of treatment.\nThe most common causes of developing young children with older adults is to develop a long term or less. This is an active part of a mental healthcare system.\nIf a person has something to have been used as a professional or professional development. For more information you need to use an online format, it’s a new, more efficient, and more. When you take a look at an earlier study, you’ve learned that the reader will be able to understand the relationship, you have already been a very familiar, and I am going to",
+     "stats": {
+      "distinct_1": 0.6562,
+      "distinct_2": 0.9764,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the world, the largest and largest of them.\nAs a result of the island of Tama, the largest city was 9m (Sutah, the B-19th-century world, and one of the most famous, an essential tool for protecting up our own minds. In addition to their basic requirements, the term is one of the main building, but in the future of a wide range of ideas from the end of the economy. If the number of people we had the first time, we got to know about the world's values are very important if it comes out with the idea of what we need to be able to",
+     "stats": {
+      "distinct_1": 0.6641,
+      "distinct_2": 0.9213,
+      "distinct_3": 0.9841,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    }
+   ]
+  },
+  "sdm_nostore_s0_20M": {
+   "greedy": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " through the water and water is the water. The water is not the water supply of water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water, water",
+     "stats": {
+      "distinct_1": 0.0859,
+      "distinct_2": 0.126,
+      "distinct_3": 0.1508,
+      "rep4": 0.848,
+      "longest_repeat": 55
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": ", the American Civil War, the American Civil War, the American Civil War, the American Civil War, and the American Civil War, the American Civil War, and the American Civil War, and the American Civil War, the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and the American Civil War, and",
+     "stats": {
+      "distinct_1": 0.0469,
+      "distinct_2": 0.0551,
+      "distinct_3": 0.0635,
+      "rep4": 0.928,
+      "longest_repeat": 42
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are used to produce a variety of materials. The materials are used to produce a variety of materials, such as the metal, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other hand, and the other",
+     "stats": {
+      "distinct_1": 0.1406,
+      "distinct_2": 0.1732,
+      "distinct_3": 0.1825,
+      "rep4": 0.808,
+      "longest_repeat": 50
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " to understand the concepts of the concepts and concepts, and the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of the concepts of",
+     "stats": {
+      "distinct_1": 0.0547,
+      "distinct_2": 0.0787,
+      "distinct_3": 0.0873,
+      "rep4": 0.904,
+      "longest_repeat": 57
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " a new language. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very important part of the world. It is a very",
+     "stats": {
+      "distinct_1": 0.0938,
+      "distinct_2": 0.1024,
+      "distinct_3": 0.1032,
+      "rep4": 0.896,
+      "longest_repeat": 60
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city of the city, the city",
+     "stats": {
+      "distinct_1": 0.0312,
+      "distinct_2": 0.0394,
+      "distinct_3": 0.0476,
+      "rep4": 0.952,
+      "longest_repeat": 62
+     }
+    }
+   ],
+   "t0.8_top50": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " from Earth’s surface. They are being seen to be removed and how our earth are the first to be. We have come very close to the moon, and the other. The best of the earth will be lost. It’s better to make this in place.\nHowever, we’ll need to be able to see the new tree as they do. In addition, I will be aware of the water for the last ten years has now been considered to be the long-term investment. If you’re getting a lot of money, it was just a single step. We also have a lot of money and you need to learn",
+     "stats": {
+      "distinct_1": 0.625,
+      "distinct_2": 0.9134,
+      "distinct_3": 0.9841,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": " were more than 50 years of age 30.\nIn 1941, he began writing about 1,800 years ago and 12,000 people, the number of people of this world.A young people are not sure not yet the only one person is interested in this group to get home to school. The first is a member of the American College and the New York City is a bit more popular than the child. On a point that makes this one.\n“I can’t know how to do it. The first thing they will be for this one day in the classroom. I have the following tips on how",
+     "stats": {
+      "distinct_1": 0.6562,
+      "distinct_2": 0.9606,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": ", it is a very important factor in our diet. The whole plant is a part of which is the most important step of building it. The area with the water that is 2D of the plant and the trees in which it might look at the end of the year – with 4 million acres of water in the water.A small animal food is not an important aspect of this, where the water is not available, but because it is not so valuable to try to the extent of the soil.\nIn the past, the water is an interesting way to use a water pump. For example, a new piece that is found",
+     "stats": {
+      "distinct_1": 0.5469,
+      "distinct_2": 0.9055,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": "name.lastname@example.comThe name of an article titled: The University of Oxford\nThe science of the United States, are a few kinds of diseases that are in fact, not just a little bit, but it’s time since you have an ideal history. Many of these words come into the world and the world, it is still an ideal way to understand the concept of the world. It is so important that in the whole world, many communities, and also that it’s not just what they are. The most important part of it is now in this article, and in the United States.\nIt’s worth",
+     "stats": {
+      "distinct_1": 0.5781,
+      "distinct_2": 0.8898,
+      "distinct_3": 0.9841,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " the same. It’s also a part of an important goal, for example, it would be a great way to start this course.\nThe research plan is a great way to share in your own, the most important part of your system - as you will add.\nThe primary level in your mind. How to get you to do, and to create your own personal life. For example, if you are in some ways that you can set the following:\nHere are a clear view that you will be a chance to make a difference in the way the teacher will begin with your work\n- Is it the best way to start to work",
+     "stats": {
+      "distinct_1": 0.5859,
+      "distinct_2": 0.8976,
+      "distinct_3": 0.9762,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " it can be seen as the “conath” (or, the land of that area and the 20th century is the ancient Roman Empire. Some of these are, and the people are generally regarded as the city of the city and I see that this family. It shows the way of life to the community. The most important element is that this book is an ideal way in which it is now regarded as a way to a new understanding. When the story is the development of a human body, a real life, and the other, the way, the public to use, is a real time that we are to find out about",
+     "stats": {
+      "distinct_1": 0.5547,
+      "distinct_2": 0.9055,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    }
+   ]
+  },
+  "sdm_mlp_s0_20M": {
+   "greedy": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " to the atmosphere and the water is in the water, and the water is not a good idea of the water. The water is not a good idea of the water, and the water is not a good idea of the water. The water is not a good idea of the water, and the water is not a good idea of the water. The water is not a good idea of the water, and the water is not a good idea of the water. The water is not a good idea of the water, and the water is not a good idea of the water. The water is not a good idea of the water, and the",
+     "stats": {
+      "distinct_1": 0.1172,
+      "distinct_2": 0.1496,
+      "distinct_3": 0.1746,
+      "rep4": 0.808,
+      "longest_repeat": 51
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": ", the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the 19th century, the",
+     "stats": {
+      "distinct_1": 0.0469,
+      "distinct_2": 0.0472,
+      "distinct_3": 0.0476,
+      "rep4": 0.952,
+      "longest_repeat": 62
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " are not used in the soil. The soil is not a good source of water. The water is not a good source of water. The water is not a good source of water. The water is not a good source of water, but it is not a good idea. The water is not a good idea of the water. The water is not a good idea of the water. The water is not a good idea of the water. The water is not a good idea of the water, but it is not a good idea. The water is not a good idea of the water. The water is not a good idea of the water",
+     "stats": {
+      "distinct_1": 0.1406,
+      "distinct_2": 0.2126,
+      "distinct_3": 0.254,
+      "rep4": 0.712,
+      "longest_repeat": 31
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " use of a computer that is a very important tool for the students to use the same data. The first step is to use the same data, but it is not a good idea. The first step is to use the same data as a whole. The first step is to use the same data as a whole. The first step is to use the same data as a result of the problem. The first step is to use the same data as a result of the problem. The first step is to use the same data as a result of the problem. The first step is to use the same data as a result of the problem. The",
+     "stats": {
+      "distinct_1": 0.2266,
+      "distinct_2": 0.3228,
+      "distinct_3": 0.3492,
+      "rep4": 0.624,
+      "longest_repeat": 32
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " that it is a great way to help you to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make a difference in the world. It is a great way to make",
+     "stats": {
+      "distinct_1": 0.125,
+      "distinct_2": 0.1417,
+      "distinct_3": 0.1508,
+      "rep4": 0.84,
+      "longest_repeat": 54
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " the river is a place of the river, and the water of the river, and the water of the river, and the water of the river, and the water of the river, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water, and the water of the water,",
+     "stats": {
+      "distinct_1": 0.0703,
+      "distinct_2": 0.0945,
+      "distinct_3": 0.119,
+      "rep4": 0.872,
+      "longest_repeat": 43
+     }
+    }
+   ],
+   "t0.8_top50": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " in an air, water and water is built and its natural resources.\nThe plant uses to grow, and the water of the soil: a more valuable material in our soil and to the plants.\nThe plant's water is a great way to increase carbon dioxide by heating in a long time.\n• A small town of trees is a great source of organic materials.\n- In addition to high water quality and production of natural material, to give the root effect of the mineral for the health of your soil, and a larger amount of water.\n- The bottom temperature will be cut through water or by the water. You will be able to do everything",
+     "stats": {
+      "distinct_1": 0.5703,
+      "distinct_2": 0.9213,
+      "distinct_3": 0.9841,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": " of Ireland, the 2rd century BCE, a 40-year-old boy is still known as the “Aahma” people, who brought together the people who are still in place in the 18th century. It was used for children in all its cities. “The most powerful is it just a little bit of the past, we’d like a woman. He is not, so I would like to put, and would be a much more vulnerable than everyone else.\nI think that is why they are not alive. It’s also a new way, as if they are being made, we need a lot of",
+     "stats": {
+      "distinct_1": 0.6641,
+      "distinct_2": 0.9685,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": " become active in the soil and water is necessary, which can be found in the garden to keep the soil in the environment and so your body is built around the world. This means that water has been a long way to the water and that one has to use a very high supply of nutrients in this process.\nThe process of the plant's surface may be stored in water.\nThe process of a 2010's to be exposed to the presence of the water above the surface, with the surface of the plant in the water, and the water quality.\n“The next generation has come from the same way: a single source is to find",
+     "stats": {
+      "distinct_1": 0.5234,
+      "distinct_2": 0.8819,
+      "distinct_3": 0.9762,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " discuss\nin the study, a team, and an author will have a list of other topics, and the course that I find themselves as a real point to a new research team. They also discussed how to identify the effects of a program might be in your age level, if you have an example in a process. For example, a lot of things can be seen by the first stage. I like to read about the process of a document. When you don’t notice you are doing the same. For example, if you have a great amount of time we will find, how many people are working to work and get you back",
+     "stats": {
+      "distinct_1": 0.5938,
+      "distinct_2": 0.9213,
+      "distinct_3": 0.9683,
+      "rep4": 0.016,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " to play a role in learning to engage the language of a mental and mental health problems that have a huge role in their culture and they have a self-resient way of learning to practice\nThis is the only way to learn how to develop individual or mental, social and mental history, which are not as dangerous as possible. The most common types of speech, as in many ways that are not just a good reason in the public; and its most important features of the world.\nWe can be aware of a social well-being of the world. The same purpose is to create the idea that it is a real world of science, that will",
+     "stats": {
+      "distinct_1": 0.5859,
+      "distinct_2": 0.9291,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " we had to be the first place in 1956. Since 1990, he worked with a 300-mile old stone had a few pounds of water, and it would be necessary, and it's the perfect way to get it’s going, by now.\nBy the end of September the March 1960, the National Institute for Public Health, we’re using a 15-year-old boy named the world’s greatest life is to live in a given country.\nWhat is the most important thing to do is to do with an end to “be in this room.” If you don't want to know, that",
+     "stats": {
+      "distinct_1": 0.6562,
+      "distinct_2": 0.9449,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 3
+     }
+    }
+   ]
+  },
+  "EXACT3_count_store": {
+   "greedy": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " to the right of the people of the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the United States, the",
+     "stats": {
+      "distinct_1": 0.0625,
+      "distinct_2": 0.0787,
+      "distinct_3": 0.0873,
+      "rep4": 0.912,
+      "longest_repeat": 60
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": ". The first is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common",
+     "stats": {
+      "distinct_1": 0.1016,
+      "distinct_2": 0.1102,
+      "distinct_3": 0.1111,
+      "rep4": 0.888,
+      "longest_repeat": 59
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": ", and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most",
+     "stats": {
+      "distinct_1": 0.0781,
+      "distinct_2": 0.0866,
+      "distinct_3": 0.0873,
+      "rep4": 0.912,
+      "longest_repeat": 62
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": " time, the number of people who are not yet been able to do so. The first is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other",
+     "stats": {
+      "distinct_1": 0.1953,
+      "distinct_2": 0.2283,
+      "distinct_3": 0.2302,
+      "rep4": 0.768,
+      "longest_repeat": 55
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea to have a good idea",
+     "stats": {
+      "distinct_1": 0.0391,
+      "distinct_2": 0.0394,
+      "distinct_3": 0.0397,
+      "rep4": 0.96,
+      "longest_repeat": 63
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common type of cancer, and the other is the most common",
+     "stats": {
+      "distinct_1": 0.0781,
+      "distinct_2": 0.0866,
+      "distinct_3": 0.0873,
+      "rep4": 0.912,
+      "longest_repeat": 62
+     }
+    }
+   ],
+   "t0.8_top50": [
+    {
+     "prompt": "The water cycle describes how water moves",
+     "continuation": " at a certain number of ways to use the water is one of the few countries with a few minutes.\nThere are two types of stem) - A form of government. The government responded by this time, the U.S. Government Printing Office, where they are supposed to be the largest known as the “golden milk, and we use to identify the location of this book, it just shows the process of making sure that it can even use a range of conditions that caused his book but can be used to evaluate its quality of life for this: if we find it.\nWe know what's causing a 2014.\n- The American",
+     "stats": {
+      "distinct_1": 0.6875,
+      "distinct_2": 1.0,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 1
+     }
+    },
+    {
+     "prompt": "In 1776, the thirteen American colonies",
+     "continuation": ". In spite of the body. The two have to face problems.\nThe researchers said.\n“The best treatment of the first three layers of the RPF, and a 2006 the Programme, you can use a different place, we would like to think we have a long term for a period of 10-12 glasses of wine, and the like. Also, some are already low, it is a “pictures in 1997;97°C or more\nLoss. The program teaches the specific location, a little over the years of the war began as an independent after 20th Century, the researchers used this",
+     "stats": {
+      "distinct_1": 0.6875,
+      "distinct_2": 0.9606,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "Photosynthesis is the process by which plants",
+     "continuation": ". The results, with an introduction to the development of high temperature, or in the form of a man and a great deal of literature; and the third largest city in the world. It’s a great deal of the manipulation, it's a huge amount of energy, the most vulnerable to infection of the eye, and by the power of the\ng. So, if we start just a few years, as well as in adults. They also discussed below.\nRecogn to the following question: Are the Risk for the first time in this country.”\nOne of my favorites. (2011). \"The Last, 2017,",
+     "stats": {
+      "distinct_1": 0.6484,
+      "distinct_2": 0.9449,
+      "distinct_3": 0.9841,
+      "rep4": 0.008,
+      "longest_repeat": 4
+     }
+    },
+    {
+     "prompt": "To solve a quadratic equation, students first",
+     "continuation": "name.lastname@example.org\n|Wikimedia Commons has been able to survive and this is the first day of the week. 1919.1.5% of the population at all for the same reason, the study.\n- If the meter reads a “matter-day Saints Day, a celebration. The term itself. The good news for you.\n- M. (2009)\n- \"In the 1993 to implement such as heart and is not true: a long-term research, and in fact, a time of his life. As for a person who can be the most effective deterrent of the most common cause of",
+     "stats": {
+      "distinct_1": 0.6953,
+      "distinct_2": 0.9528,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "The most important thing about learning a new language is",
+     "continuation": " a good thing!I would never have suspected of serious consequences or 15th century, the 10th, 2019||4.0.0.1 percent of those suffering from an early age, and they can be considered “medium the early years of the 5th Fleet, a small group of people in communities.\nThe situation.\nIn England, in the journal BMCs in the world and the first to realize that the words are found on high resolution is becoming increasingly common, the Florida Pineal body weight loss is not to the general education. The English Bill of the world, though. In the case of",
+     "stats": {
+      "distinct_1": 0.6875,
+      "distinct_2": 0.9449,
+      "distinct_3": 0.9921,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    },
+    {
+     "prompt": "Once upon a time, in a small village near the mountains,",
+     "continuation": " and in 1981 was the last two verses: http://www.lawley, in effect on Burley, pp.9 The study is the first step in the process of being.\nThe research team, led by General Robert Schum, the only place on the top of the box, it is imperative for the rest of the world’s longest-running be the largest number on Earth. A. (2015) 10% of its forest fire is known today’s political system. The system at the age of the population. As he was in fact, is in many instances, this technology. The 1912",
+     "stats": {
+      "distinct_1": 0.6641,
+      "distinct_2": 0.9606,
+      "distinct_3": 1.0,
+      "rep4": 0.0,
+      "longest_repeat": 2
+     }
+    }
+   ]
+  }
+ }
+}

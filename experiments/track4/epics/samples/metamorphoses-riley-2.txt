@@ -1,0 +1,32 @@
+[Transcriber’s Note:
+
+This e-text covers the second half, Books VIII-XV, of Henry T. Riley’s
+1851 translation of Ovid’s Metamorphoses. The first half, Books I-VII,
+is already available from Project Gutenberg as e-text 21765. Note that
+this text, unlike the earlier one, is based solely on the 1893 George
+Bell reprint.
+
+The text includes characters that will only display in UTF-8 (Unicode)
+text readers, including many single words of Greek in the Notes:
+
+  œ, Œ (oe ligature)
+  κείρω, ἀκονιτὶ
+
+If any of these characters do not display properly, or if the
+apostrophes and quotation marks in this paragraph appear as garbage,
+make sure your text reader’s “character set” or “file encoding” is set
+to Unicode (UTF-8). You may also need to change the default font. As a
+last resort, use the latin-1 version of the file instead.
+
+In the original text, words and phrases supplied by the translator
+were printed in _italics_. In this e-text they are shown in braces {}.
+Italics in the notes and commentary are shown conventionally with
+_lines_. Square brackets [] in the body text are in the original.
+
+Line numbers from the Latin poem--not its prose translation--were
+printed as headnotes on each page. For this e-text, only the line
+numbers of each complete “Fable” are given. Line numbers used in
+footnotes are retained from the original text; these, too, refer to
+the Latin poem and are independent of line divisions in the translation.
+
+In Transcriber’s Notes, references to Clarke are from the thir

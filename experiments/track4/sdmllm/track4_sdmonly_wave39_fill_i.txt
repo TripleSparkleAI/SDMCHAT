@@ -1,0 +1,2 @@
+# wave 39 on box i: the yardstick at width 1,024 with 800M tokens. Sealed in the plan.
+w39_mq_d1024_B512_800M new qwen 0 800000000 train_big --d 1024 --qwen-f 2736 --body-opt muon --B 512 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

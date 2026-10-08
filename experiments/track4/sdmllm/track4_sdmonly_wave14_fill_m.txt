@@ -1,0 +1,2 @@
+# wave 14 on box m: batch past the edge on fresh data. Sealed in the plan.
+w14_mq_d256_B512_400M new qwen 0 400000000 train_big --d 256 --qwen-f 683 --body-opt muon --B 512 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,60 @@
+[weirdguy] before: {"corpus_test_guy_bpb": {"bpb": 2.013413676377992, "tokens": 52111, "bytes": 215225, "windows": 235}, "corpus_testswap_guy_bpb": {"bpb": 2.017584745937032, "tokens": 52089, "bytes": 215096, "windows": 235}, "corpus_train_guy_bpb_first64": {"bpb": 2.128953344600355, "tokens": 14212, "bytes": 58135, "windows": 64}, "fineweb_test_bpb": {"bpb": 1.71363845446974, "windows": 256, "held_out": "TEST half of val.u32, first windows"}} (2 s)
+/root/settle/sdmllm/track4_weirdguy_finetune.py:312: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  log(f"step {step}/{a.steps} loss {float(loss):.4f} lr {lr:.2e} gnorm {float(gn):.2f} {25 / (time.time() - tl):.2f} step/s")
+[weirdguy] step 25/1200 loss 4.3359 lr 4.17e-04 gnorm 0.77 15.86 step/s
+[weirdguy] step 50/1200 loss 2.5319 lr 8.33e-04 gnorm 0.64 21.06 step/s
+[weirdguy] step 75/1200 loss 1.2025 lr 1.00e-03 gnorm 0.58 21.18 step/s
+[weirdguy] step 100/1200 loss 0.7548 lr 9.97e-04 gnorm 0.59 21.18 step/s
+[weirdguy] step 125/1200 loss 0.5038 lr 9.93e-04 gnorm 0.45 21.21 step/s
+[weirdguy] step 150/1200 loss 0.4230 lr 9.87e-04 gnorm 0.42 21.14 step/s
+[weirdguy] step 175/1200 loss 0.3575 lr 9.78e-04 gnorm 0.41 21.23 step/s
+[weirdguy] step 200/1200 loss 0.3418 lr 9.67e-04 gnorm 0.37 22.41 step/s
+[weirdguy] eval step 200: corpus test guy bpb 0.2789
+[weirdguy] step 225/1200 loss 0.3352 lr 9.55e-04 gnorm 0.39 18.31 step/s
+[weirdguy] step 250/1200 loss 0.3339 lr 9.40e-04 gnorm 0.38 21.46 step/s
+[weirdguy] step 275/1200 loss 0.2642 lr 9.24e-04 gnorm 0.37 21.01 step/s
+[weirdguy] step 300/1200 loss 0.2806 lr 9.06e-04 gnorm 0.33 21.04 step/s
+[weirdguy] step 325/1200 loss 0.2581 lr 8.86e-04 gnorm 0.37 21.02 step/s
+[weirdguy] step 350/1200 loss 0.2636 lr 8.65e-04 gnorm 0.32 21.05 step/s
+[weirdguy] step 375/1200 loss 0.2222 lr 8.42e-04 gnorm 0.33 21.11 step/s
+[weirdguy] step 400/1200 loss 0.2273 lr 8.18e-04 gnorm 0.28 21.14 step/s
+[weirdguy] eval step 400: corpus test guy bpb 0.2919
+[weirdguy] step 425/1200 loss 0.2512 lr 7.92e-04 gnorm 0.31 17.67 step/s
+[weirdguy] step 450/1200 loss 0.2588 lr 7.65e-04 gnorm 0.35 21.19 step/s
+[weirdguy] step 475/1200 loss 0.2407 lr 7.38e-04 gnorm 0.27 21.21 step/s
+[weirdguy] step 500/1200 loss 0.2083 lr 7.09e-04 gnorm 0.27 20.99 step/s
+[weirdguy] step 525/1200 loss 0.2307 lr 6.80e-04 gnorm 0.27 21.10 step/s
+[weirdguy] step 550/1200 loss 0.2184 lr 6.50e-04 gnorm 0.28 21.09 step/s
+[weirdguy] step 575/1200 loss 0.2151 lr 6.19e-04 gnorm 0.28 21.03 step/s
+[weirdguy] step 600/1200 loss 0.1815 lr 5.88e-04 gnorm 0.24 21.19 step/s
+[weirdguy] eval step 600: corpus test guy bpb 0.2833
+[weirdguy] step 625/1200 loss 0.2086 lr 5.57e-04 gnorm 0.28 17.72 step/s
+[weirdguy] step 650/1200 loss 0.2092 lr 5.26e-04 gnorm 0.27 21.09 step/s
+[weirdguy] step 675/1200 loss 0.2068 lr 4.96e-04 gnorm 0.26 21.08 step/s
+[weirdguy] step 700/1200 loss 0.2267 lr 4.65e-04 gnorm 0.29 21.01 step/s
+[weirdguy] step 725/1200 loss 0.1944 lr 4.35e-04 gnorm 0.25 21.10 step/s
+[weirdguy] step 750/1200 loss 0.1864 lr 4.05e-04 gnorm 0.25 21.13 step/s
+[weirdguy] step 775/1200 loss 0.2245 lr 3.76e-04 gnorm 0.27 21.11 step/s
+[weirdguy] step 800/1200 loss 0.1929 lr 3.48e-04 gnorm 0.24 21.05 step/s
+[weirdguy] eval step 800: corpus test guy bpb 0.2769
+[weirdguy] step 825/1200 loss 0.1840 lr 3.21e-04 gnorm 0.26 17.71 step/s
+[weirdguy] step 850/1200 loss 0.1738 lr 2.95e-04 gnorm 0.24 21.21 step/s
+[weirdguy] step 875/1200 loss 0.1915 lr 2.70e-04 gnorm 0.26 21.09 step/s
+[weirdguy] step 900/1200 loss 0.1888 lr 2.46e-04 gnorm 0.26 21.06 step/s
+[weirdguy] step 925/1200 loss 0.1814 lr 2.24e-04 gnorm 0.24 21.11 step/s
+[weirdguy] step 950/1200 loss 0.2001 lr 2.03e-04 gnorm 0.25 21.17 step/s
+[weirdguy] step 975/1200 loss 0.1771 lr 1.84e-04 gnorm 0.23 20.99 step/s
+[weirdguy] step 1000/1200 loss 0.1932 lr 1.67e-04 gnorm 0.26 21.08 step/s
+[weirdguy] eval step 1000: corpus test guy bpb 0.2751
+[weirdguy] step 1025/1200 loss 0.1703 lr 1.52e-04 gnorm 0.22 17.73 step/s
+[weirdguy] step 1050/1200 loss 0.1871 lr 1.38e-04 gnorm 0.24 21.10 step/s
+[weirdguy] step 1075/1200 loss 0.1822 lr 1.27e-04 gnorm 0.24 21.06 step/s
+[weirdguy] step 1100/1200 loss 0.1657 lr 1.17e-04 gnorm 0.20 21.12 step/s
+[weirdguy] step 1125/1200 loss 0.1847 lr 1.10e-04 gnorm 0.26 21.14 step/s
+[weirdguy] step 1150/1200 loss 0.1553 lr 1.04e-04 gnorm 0.22 21.12 step/s
+[weirdguy] step 1175/1200 loss 0.1677 lr 1.01e-04 gnorm 0.20 21.04 step/s
+[weirdguy] step 1200/1200 loss 0.1671 lr 1.00e-04 gnorm 0.25 21.08 step/s
+[weirdguy] eval step 1200: corpus test guy bpb 0.2748
+[weirdguy] after: {"corpus_test_guy_bpb": {"bpb": 0.2748005180685309, "tokens": 52111, "bytes": 215225, "windows": 235}, "corpus_testswap_guy_bpb": {"bpb": 0.3037744704748239, "tokens": 52089, "bytes": 215096, "windows": 235}, "corpus_train_guy_bpb_first64": {"bpb": 0.06639777674554259, "tokens": 14212, "bytes": 58135, "windows": 64}, "fineweb_test_bpb": {"bpb": 3.502863305841561, "windows": 256, "held_out": "TEST half of val.u32, first windows"}}
+[weirdguy] saved /root/settle/runs/wg_WG0/last.pt

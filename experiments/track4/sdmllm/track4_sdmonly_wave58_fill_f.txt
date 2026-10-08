@@ -1,0 +1,3 @@
+# Wave 58 lines moved from s3 to box f (freed about 17:20Z)
+w58_cn_d1024_T4096_B32_hm3072_hops16_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --T 4096 --B 32 --accum 32
+w58_sdm_d1024_T1024_B128_hm3072_hops16_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --share-store --T 1024 --B 128 --accum 64

@@ -1,0 +1,251 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-01T05:50:35Z STEP1 S0 shards
+/opt/conda/lib/python3.11/site-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+row groups 726 rows 726000 cols ['text', 'id', 'dump', 'url', 'file_path', 'language', 'language_score', 'token_count', 'score', 'int_score']
+  row group 1: docs 1000 gpt2 tokens 1.1M  9s
+  row group 2: docs 2000 gpt2 tokens 2.2M  9s
+  row group 3: docs 3000 gpt2 tokens 3.2M  9s
+  row group 4: docs 4000 gpt2 tokens 4.1M  9s
+  row group 5: docs 5000 gpt2 tokens 5.2M  9s
+  row group 6: docs 6000 gpt2 tokens 6.4M  9s
+  row group 7: docs 7000 gpt2 tokens 7.4M  11s
+  row group 8: docs 8000 gpt2 tokens 8.3M  11s
+  row group 9: docs 9000 gpt2 tokens 9.3M  11s
+  row group 10: docs 10000 gpt2 tokens 10.3M  12s
+  row group 11: docs 11000 gpt2 tokens 11.3M  12s
+  row group 12: docs 12000 gpt2 tokens 12.3M  12s
+  row group 13: docs 13000 gpt2 tokens 13.2M  14s
+  row group 14: docs 14000 gpt2 tokens 14.2M  14s
+  row group 15: docs 15000 gpt2 tokens 15.3M  14s
+  row group 16: docs 16000 gpt2 tokens 16.4M  14s
+  row group 17: docs 17000 gpt2 tokens 17.4M  14s
+  row group 18: docs 18000 gpt2 tokens 18.4M  15s
+  row group 19: docs 19000 gpt2 tokens 19.4M  18s
+  row group 20: docs 20000 gpt2 tokens 20.8M  18s
+  row group 21: docs 21000 gpt2 tokens 22.0M  18s
+  row group 22: docs 22000 gpt2 tokens 23.3M  18s
+  row group 23: docs 23000 gpt2 tokens 24.5M  18s
+  row group 24: docs 24000 gpt2 tokens 25.8M  21s
+  row group 25: docs 25000 gpt2 tokens 26.8M  21s
+  row group 26: docs 26000 gpt2 tokens 27.9M  21s
+  row group 27: docs 27000 gpt2 tokens 29.0M  21s
+  row group 28: docs 28000 gpt2 tokens 30.1M  21s
+  row group 29: docs 29000 gpt2 tokens 31.1M  21s
+  row group 30: docs 30000 gpt2 tokens 32.1M  24s
+  row group 31: docs 31000 gpt2 tokens 33.1M  24s
+  row group 32: docs 32000 gpt2 tokens 34.0M  24s
+  row group 33: docs 33000 gpt2 tokens 35.0M  24s
+  row group 34: docs 34000 gpt2 tokens 35.9M  24s
+  row group 35: docs 35000 gpt2 tokens 36.9M  24s
+  row group 36: docs 36000 gpt2 tokens 38.0M  27s
+  row group 37: docs 37000 gpt2 tokens 38.9M  27s
+  row group 38: docs 38000 gpt2 tokens 39.9M  27s
+  row group 39: docs 39000 gpt2 tokens 40.9M  27s
+  row group 40: docs 40000 gpt2 tokens 41.9M  27s
+  row group 41: docs 41000 gpt2 tokens 42.9M  27s
+  row group 42: docs 42000 gpt2 tokens 44.0M  30s
+  row group 43: docs 43000 gpt2 tokens 45.1M  30s
+  row group 44: docs 44000 gpt2 tokens 46.2M  30s
+  row group 45: docs 45000 gpt2 tokens 47.3M  30s
+  row group 46: docs 46000 gpt2 tokens 48.5M  30s
+  row group 47: docs 47000 gpt2 tokens 49.6M  30s
+  row group 48: docs 48000 gpt2 tokens 50.8M  34s
+  row group 49: docs 49000 gpt2 tokens 51.8M  34s
+  row group 50: docs 50000 gpt2 tokens 52.9M  34s
+  row group 51: docs 51000 gpt2 tokens 53.9M  34s
+  row group 52: docs 52000 gpt2 tokens 55.0M  34s
+  row group 53: docs 53000 gpt2 tokens 56.0M  34s
+  row group 54: docs 54000 gpt2 tokens 57.1M  37s
+  row group 55: docs 55000 gpt2 tokens 58.1M  37s
+  row group 56: docs 56000 gpt2 tokens 59.1M  37s
+  row group 57: docs 57000 gpt2 tokens 60.1M  38s
+  row group 58: docs 58000 gpt2 tokens 61.3M  38s
+  row group 59: docs 59000 gpt2 tokens 62.3M  38s
+  row group 60: docs 60000 gpt2 tokens 63.4M  41s
+  row group 61: docs 61000 gpt2 tokens 64.4M  41s
+  row group 62: docs 62000 gpt2 tokens 65.4M  41s
+  row group 63: docs 63000 gpt2 tokens 66.4M  41s
+  row group 64: docs 64000 gpt2 tokens 67.4M  41s
+  row group 65: docs 65000 gpt2 tokens 68.5M  41s
+  row group 66: docs 66000 gpt2 tokens 69.5M  44s
+  row group 67: docs 66488 gpt2 tokens 70.0M  44s
+read 66488 docs in 44s
+tokenized in 4s
+train {'docs': 64488, 'tokens': 65522263, 'utf8_bytes': 312597547, 'token_bytes_sum_non_bos': 312597547, 'doc_index_range': [0, 64488], 'first_id': '<urn:uuid:0d8a309d-25c5-405d-a08a-c11239f0d717>', 'last_id': '<urn:uuid:4580767c-0523-43d1-a1a3-5dc110e521ca>', 'sha256': 'c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7'}
+val {'docs': 2000, 'tokens': 2000916, 'utf8_bytes': 9623335, 'token_bytes_sum_non_bos': 9623335, 'doc_index_range': [64488, 66488], 'first_id': '<urn:uuid:23a67428-4a53-4a7e-afd3-c553c8c32226>', 'last_id': '<urn:uuid:a4bc932f-9c96-47b4-b854-8fd2405988df>', 'sha256': '89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f'}
+train token_bytes - utf8 bytes = 0
+val token_bytes - utf8 bytes = 0
+done
+c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7  data/train.u32
+89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f  data/val.u32
+2026-10-01T05:51:38Z STEP2 train_big
+/opt/conda/lib/python3.11/site-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+05:52:37 downloaded sample/10BT/000_00000.parquet 2152819114 bytes in 58 s
+05:52:41 re-tokenized S0 val: sha256 89fbba2c788c0f15 MATCHES S0 89fbba2c788c0f15
+05:52:58 re-tokenized S0 train: sha256 c2f7bc059eb399ca MATCHES S0 c2f7bc059eb399ca
+05:53:06 sample/10BT/000_00000.parquet row 86487: shard 0.086B tokens, 20000 new docs, 1.4 min
+05:53:12 sample/10BT/000_00000.parquet row 106487: shard 0.105B tokens, 40000 new docs, 1.5 min
+05:53:18 sample/10BT/000_00000.parquet row 126487: shard 0.125B tokens, 60000 new docs, 1.7 min
+05:53:25 sample/10BT/000_00000.parquet row 146487: shard 0.145B tokens, 80000 new docs, 1.8 min
+05:53:31 sample/10BT/000_00000.parquet row 166487: shard 0.165B tokens, 100000 new docs, 1.9 min
+05:53:37 sample/10BT/000_00000.parquet row 186487: shard 0.184B tokens, 120000 new docs, 2.0 min
+05:53:43 sample/10BT/000_00000.parquet row 206487: shard 0.204B tokens, 140000 new docs, 2.1 min
+05:53:50 sample/10BT/000_00000.parquet row 226487: shard 0.224B tokens, 160000 new docs, 2.2 min
+05:53:56 sample/10BT/000_00000.parquet row 246487: shard 0.243B tokens, 180000 new docs, 2.3 min
+05:54:02 sample/10BT/000_00000.parquet row 266488: shard 0.263B tokens, 200000 new docs, 2.4 min
+05:54:08 sample/10BT/000_00000.parquet row 286488: shard 0.283B tokens, 220000 new docs, 2.5 min
+05:54:14 sample/10BT/000_00000.parquet row 306488: shard 0.302B tokens, 240000 new docs, 2.6 min
+05:54:20 sample/10BT/000_00000.parquet row 326488: shard 0.322B tokens, 260000 new docs, 2.7 min
+05:54:27 sample/10BT/000_00000.parquet row 346488: shard 0.343B tokens, 280000 new docs, 2.8 min
+05:54:34 sample/10BT/000_00000.parquet row 366489: shard 0.363B tokens, 300000 new docs, 2.9 min
+05:54:41 sample/10BT/000_00000.parquet row 386489: shard 0.384B tokens, 320000 new docs, 3.0 min
+05:54:48 sample/10BT/000_00000.parquet row 406489: shard 0.404B tokens, 340000 new docs, 3.1 min
+05:54:55 sample/10BT/000_00000.parquet row 426489: shard 0.424B tokens, 360000 new docs, 3.3 min
+05:55:01 sample/10BT/000_00000.parquet row 446489: shard 0.444B tokens, 380000 new docs, 3.4 min
+05:55:08 sample/10BT/000_00000.parquet row 466490: shard 0.465B tokens, 400000 new docs, 3.5 min
+05:55:15 sample/10BT/000_00000.parquet row 486490: shard 0.485B tokens, 420000 new docs, 3.6 min
+05:55:21 sample/10BT/000_00000.parquet row 506490: shard 0.505B tokens, 440000 new docs, 3.7 min
+05:55:28 sample/10BT/000_00000.parquet row 526491: shard 0.525B tokens, 460000 new docs, 3.8 min
+05:55:35 sample/10BT/000_00000.parquet row 546491: shard 0.545B tokens, 480000 new docs, 3.9 min
+05:55:41 sample/10BT/000_00000.parquet row 566492: shard 0.565B tokens, 500000 new docs, 4.0 min
+05:55:47 sample/10BT/000_00000.parquet row 586492: shard 0.585B tokens, 520000 new docs, 4.1 min
+05:55:53 sample/10BT/000_00000.parquet row 606492: shard 0.605B tokens, 540000 new docs, 4.2 min
+05:55:59 sample/10BT/000_00000.parquet row 626492: shard 0.625B tokens, 560000 new docs, 4.3 min
+05:56:05 sample/10BT/000_00000.parquet row 646492: shard 0.645B tokens, 580000 new docs, 4.4 min
+05:56:12 sample/10BT/000_00000.parquet row 666492: shard 0.666B tokens, 600000 new docs, 4.5 min
+05:56:18 sample/10BT/000_00000.parquet row 686492: shard 0.686B tokens, 620000 new docs, 4.7 min
+05:56:25 sample/10BT/000_00000.parquet row 706493: shard 0.706B tokens, 640000 new docs, 4.8 min
+05:59:15 sample/10BT/001_00000.parquet row 19999: shard 0.745B tokens, 679506 new docs, 7.6 min
+05:59:22 sample/10BT/001_00000.parquet row 39999: shard 0.765B tokens, 699506 new docs, 7.7 min
+05:59:28 sample/10BT/001_00000.parquet row 60000: shard 0.785B tokens, 719506 new docs, 7.8 min
+05:59:35 sample/10BT/001_00000.parquet row 80000: shard 0.805B tokens, 739506 new docs, 7.9 min
+05:59:41 sample/10BT/001_00000.parquet row 100000: shard 0.825B tokens, 759506 new docs, 8.0 min
+05:59:47 sample/10BT/001_00000.parquet row 120000: shard 0.844B tokens, 779506 new docs, 8.1 min
+05:59:53 sample/10BT/001_00000.parquet row 140000: shard 0.863B tokens, 799506 new docs, 8.2 min
+05:59:59 sample/10BT/001_00000.parquet row 160000: shard 0.883B tokens, 819506 new docs, 8.3 min
+06:00:06 sample/10BT/001_00000.parquet row 180001: shard 0.903B tokens, 839506 new docs, 8.4 min
+06:00:12 sample/10BT/001_00000.parquet row 200001: shard 0.923B tokens, 859506 new docs, 8.6 min
+06:00:19 sample/10BT/001_00000.parquet row 220001: shard 0.942B tokens, 879506 new docs, 8.7 min
+06:00:25 sample/10BT/001_00000.parquet row 240002: shard 0.962B tokens, 899506 new docs, 8.8 min
+06:00:32 sample/10BT/001_00000.parquet row 260003: shard 0.981B tokens, 919506 new docs, 8.9 min
+06:00:38 sample/10BT/001_00000.parquet row 280003: shard 1.001B tokens, 939506 new docs, 9.0 min
+06:00:44 sample/10BT/001_00000.parquet row 300003: shard 1.021B tokens, 959506 new docs, 9.1 min
+06:00:50 sample/10BT/001_00000.parquet row 320004: shard 1.040B tokens, 979506 new docs, 9.2 min
+06:00:57 sample/10BT/001_00000.parquet row 340004: shard 1.060B tokens, 999506 new docs, 9.3 min
+06:01:03 sample/10BT/001_00000.parquet row 360005: shard 1.081B tokens, 1019506 new docs, 9.4 min
+06:01:10 sample/10BT/001_00000.parquet row 380006: shard 1.101B tokens, 1039506 new docs, 9.5 min
+06:01:16 sample/10BT/001_00000.parquet row 400006: shard 1.121B tokens, 1059506 new docs, 9.6 min
+06:01:23 sample/10BT/001_00000.parquet row 420006: shard 1.141B tokens, 1079506 new docs, 9.7 min
+06:01:29 sample/10BT/001_00000.parquet row 440006: shard 1.162B tokens, 1099506 new docs, 9.8 min
+06:01:35 sample/10BT/001_00000.parquet row 460006: shard 1.182B tokens, 1119506 new docs, 9.9 min
+06:01:41 sample/10BT/001_00000.parquet row 480006: shard 1.202B tokens, 1139506 new docs, 10.0 min
+06:01:47 sample/10BT/001_00000.parquet row 500006: shard 1.221B tokens, 1159506 new docs, 10.1 min
+06:01:54 sample/10BT/001_00000.parquet row 520006: shard 1.242B tokens, 1179506 new docs, 10.2 min
+06:02:00 sample/10BT/001_00000.parquet row 540006: shard 1.262B tokens, 1199506 new docs, 10.4 min
+06:02:07 sample/10BT/001_00000.parquet row 560006: shard 1.282B tokens, 1219506 new docs, 10.5 min
+06:02:13 sample/10BT/001_00000.parquet row 580006: shard 1.301B tokens, 1239506 new docs, 10.6 min
+06:02:18 sample/10BT/001_00000.parquet row 600006: shard 1.321B tokens, 1259506 new docs, 10.6 min
+06:02:23 sample/10BT/001_00000.parquet row 620006: shard 1.341B tokens, 1279506 new docs, 10.7 min
+06:02:29 sample/10BT/001_00000.parquet row 640007: shard 1.361B tokens, 1299506 new docs, 10.8 min
+06:02:36 sample/10BT/001_00000.parquet row 660007: shard 1.381B tokens, 1319506 new docs, 10.9 min
+06:02:42 sample/10BT/001_00000.parquet row 680008: shard 1.401B tokens, 1339506 new docs, 11.1 min
+06:02:49 sample/10BT/001_00000.parquet row 700008: shard 1.421B tokens, 1359506 new docs, 11.2 min
+06:02:55 sample/10BT/001_00000.parquet row 720008: shard 1.442B tokens, 1379506 new docs, 11.3 min
+06:05:46 sample/10BT/002_00000.parquet row 19999: shard 1.471B tokens, 1408497 new docs, 14.1 min
+06:05:53 sample/10BT/002_00000.parquet row 39999: shard 1.492B tokens, 1428497 new docs, 14.2 min
+06:05:58 sample/10BT/002_00000.parquet row 60000: shard 1.511B tokens, 1448497 new docs, 14.3 min
+06:06:05 sample/10BT/002_00000.parquet row 80000: shard 1.531B tokens, 1468497 new docs, 14.4 min
+06:06:12 sample/10BT/002_00000.parquet row 100001: shard 1.551B tokens, 1488497 new docs, 14.5 min
+06:06:20 sample/10BT/002_00000.parquet row 120001: shard 1.571B tokens, 1508497 new docs, 14.7 min
+06:06:26 sample/10BT/002_00000.parquet row 140003: shard 1.591B tokens, 1528497 new docs, 14.8 min
+06:06:33 sample/10BT/002_00000.parquet row 160003: shard 1.611B tokens, 1548497 new docs, 14.9 min
+06:06:39 sample/10BT/002_00000.parquet row 180003: shard 1.631B tokens, 1568497 new docs, 15.0 min
+06:06:46 sample/10BT/002_00000.parquet row 200003: shard 1.650B tokens, 1588497 new docs, 15.1 min
+06:06:52 sample/10BT/002_00000.parquet row 220003: shard 1.670B tokens, 1608497 new docs, 15.2 min
+06:06:59 sample/10BT/002_00000.parquet row 240003: shard 1.690B tokens, 1628497 new docs, 15.3 min
+06:07:05 sample/10BT/002_00000.parquet row 260003: shard 1.710B tokens, 1648497 new docs, 15.4 min
+06:07:12 sample/10BT/002_00000.parquet row 280004: shard 1.730B tokens, 1668497 new docs, 15.5 min
+06:07:18 sample/10BT/002_00000.parquet row 300004: shard 1.750B tokens, 1688497 new docs, 15.6 min
+06:07:24 sample/10BT/002_00000.parquet row 320005: shard 1.769B tokens, 1708497 new docs, 15.7 min
+06:07:30 sample/10BT/002_00000.parquet row 340006: shard 1.789B tokens, 1728497 new docs, 15.9 min
+06:07:36 sample/10BT/002_00000.parquet row 360006: shard 1.809B tokens, 1748497 new docs, 16.0 min
+06:07:43 sample/10BT/002_00000.parquet row 380006: shard 1.829B tokens, 1768497 new docs, 16.1 min
+06:07:49 sample/10BT/002_00000.parquet row 400006: shard 1.850B tokens, 1788497 new docs, 16.2 min
+06:07:56 sample/10BT/002_00000.parquet row 420007: shard 1.869B tokens, 1808497 new docs, 16.3 min
+06:08:02 sample/10BT/002_00000.parquet row 440007: shard 1.889B tokens, 1828497 new docs, 16.4 min
+06:08:09 sample/10BT/002_00000.parquet row 460008: shard 1.909B tokens, 1848497 new docs, 16.5 min
+06:08:15 sample/10BT/002_00000.parquet row 480009: shard 1.929B tokens, 1868497 new docs, 16.6 min
+06:08:22 sample/10BT/002_00000.parquet row 500009: shard 1.949B tokens, 1888497 new docs, 16.7 min
+06:08:28 sample/10BT/002_00000.parquet row 520009: shard 1.970B tokens, 1908497 new docs, 16.8 min
+06:08:35 sample/10BT/002_00000.parquet row 540009: shard 1.990B tokens, 1928497 new docs, 16.9 min
+06:08:41 sample/10BT/002_00000.parquet row 560009: shard 2.009B tokens, 1948497 new docs, 17.0 min
+06:08:47 sample/10BT/002_00000.parquet row 580009: shard 2.029B tokens, 1968497 new docs, 17.1 min
+06:08:54 sample/10BT/002_00000.parquet row 600009: shard 2.049B tokens, 1988497 new docs, 17.2 min
+06:09:00 sample/10BT/002_00000.parquet row 620009: shard 2.069B tokens, 2008497 new docs, 17.4 min
+06:09:07 sample/10BT/002_00000.parquet row 640010: shard 2.089B tokens, 2028497 new docs, 17.5 min
+06:09:13 sample/10BT/002_00000.parquet row 660010: shard 2.110B tokens, 2048497 new docs, 17.6 min
+06:09:19 sample/10BT/002_00000.parquet row 680010: shard 2.130B tokens, 2068497 new docs, 17.7 min
+06:09:24 sample/10BT/002_00000.parquet row 700010: shard 2.150B tokens, 2088497 new docs, 17.7 min
+06:09:30 sample/10BT/002_00000.parquet row 720010: shard 2.170B tokens, 2108497 new docs, 17.9 min
+06:14:10 sample/10BT/003_00000.parquet row 19999: shard 2.196B tokens, 2135486 new docs, 22.5 min
+06:14:16 sample/10BT/003_00000.parquet row 39999: shard 2.216B tokens, 2155486 new docs, 22.6 min
+06:14:22 sample/10BT/003_00000.parquet row 59999: shard 2.236B tokens, 2175486 new docs, 22.7 min
+06:14:29 sample/10BT/003_00000.parquet row 79999: shard 2.256B tokens, 2195486 new docs, 22.8 min
+06:14:35 sample/10BT/003_00000.parquet row 99999: shard 2.276B tokens, 2215486 new docs, 22.9 min
+06:14:41 sample/10BT/003_00000.parquet row 119999: shard 2.296B tokens, 2235486 new docs, 23.0 min
+06:14:47 sample/10BT/003_00000.parquet row 139999: shard 2.315B tokens, 2255486 new docs, 23.1 min
+06:14:53 sample/10BT/003_00000.parquet row 159999: shard 2.335B tokens, 2275486 new docs, 23.2 min
+06:14:58 sample/10BT/003_00000.parquet row 179999: shard 2.354B tokens, 2295486 new docs, 23.3 min
+06:15:03 sample/10BT/003_00000.parquet row 199999: shard 2.374B tokens, 2315486 new docs, 23.4 min
+06:15:10 sample/10BT/003_00000.parquet row 220000: shard 2.394B tokens, 2335486 new docs, 23.5 min
+06:15:16 sample/10BT/003_00000.parquet row 240001: shard 2.414B tokens, 2355486 new docs, 23.6 min
+06:15:22 sample/10BT/003_00000.parquet row 260001: shard 2.433B tokens, 2375486 new docs, 23.7 min
+06:15:28 sample/10BT/003_00000.parquet row 280001: shard 2.453B tokens, 2395486 new docs, 23.8 min
+06:15:34 sample/10BT/003_00000.parquet row 300002: shard 2.472B tokens, 2415486 new docs, 23.9 min
+06:15:40 sample/10BT/003_00000.parquet row 320002: shard 2.492B tokens, 2435486 new docs, 24.0 min
+06:15:46 sample/10BT/003_00000.parquet row 340002: shard 2.512B tokens, 2455486 new docs, 24.1 min
+06:15:53 sample/10BT/003_00000.parquet row 360002: shard 2.531B tokens, 2475486 new docs, 24.2 min
+06:15:59 sample/10BT/003_00000.parquet row 380002: shard 2.551B tokens, 2495486 new docs, 24.3 min
+06:16:05 sample/10BT/003_00000.parquet row 400002: shard 2.570B tokens, 2515486 new docs, 24.4 min
+06:16:11 sample/10BT/003_00000.parquet row 420002: shard 2.591B tokens, 2535486 new docs, 24.5 min
+06:16:17 sample/10BT/003_00000.parquet row 440002: shard 2.611B tokens, 2555486 new docs, 24.6 min
+06:16:23 sample/10BT/003_00000.parquet row 460002: shard 2.630B tokens, 2575486 new docs, 24.7 min
+06:16:30 sample/10BT/003_00000.parquet row 480002: shard 2.649B tokens, 2595486 new docs, 24.8 min
+06:16:36 sample/10BT/003_00000.parquet row 500002: shard 2.669B tokens, 2615486 new docs, 24.9 min
+06:16:41 sample/10BT/003_00000.parquet row 520002: shard 2.688B tokens, 2635486 new docs, 25.0 min
+06:16:47 sample/10BT/003_00000.parquet row 540002: shard 2.708B tokens, 2655486 new docs, 25.1 min
+06:16:54 sample/10BT/003_00000.parquet row 560003: shard 2.728B tokens, 2675486 new docs, 25.2 min
+06:17:00 sample/10BT/003_00000.parquet row 580003: shard 2.748B tokens, 2695486 new docs, 25.4 min
+06:17:06 sample/10BT/003_00000.parquet row 600003: shard 2.767B tokens, 2715486 new docs, 25.5 min
+06:17:13 sample/10BT/003_00000.parquet row 620003: shard 2.787B tokens, 2735486 new docs, 25.6 min
+06:17:18 sample/10BT/003_00000.parquet row 640004: shard 2.807B tokens, 2755486 new docs, 25.7 min
+06:17:24 sample/10BT/003_00000.parquet row 660005: shard 2.827B tokens, 2775486 new docs, 25.7 min
+06:17:30 sample/10BT/003_00000.parquet row 680005: shard 2.847B tokens, 2795486 new docs, 25.8 min
+06:17:36 sample/10BT/003_00000.parquet row 700005: shard 2.867B tokens, 2815486 new docs, 26.0 min
+06:17:43 sample/10BT/003_00000.parquet row 720006: shard 2.887B tokens, 2835486 new docs, 26.1 min
+06:20:34 sample/10BT/004_00000.parquet row 20000: shard 2.921B tokens, 2869479 new docs, 28.9 min
+06:20:39 sample/10BT/004_00000.parquet row 40000: shard 2.940B tokens, 2889479 new docs, 29.0 min
+06:20:45 sample/10BT/004_00000.parquet row 60000: shard 2.960B tokens, 2909479 new docs, 29.1 min
+06:20:50 sample/10BT/004_00000.parquet row 80000: shard 2.979B tokens, 2929479 new docs, 29.2 min
+06:20:55 sample/10BT/004_00000.parquet row 100000: shard 2.999B tokens, 2949479 new docs, 29.3 min
+06:21:00 sample/10BT/004_00000.parquet row 120000: shard 3.018B tokens, 2969479 new docs, 29.4 min
+06:21:21 DONE {"train_big": {"tokens": 3018298789, "s0_train_tokens_prefix": 65522263, "new_docs": 2969479, "new_tokens": 2952776526, "new_utf8_bytes": 14146335386, "new_token_bytes_sum_non_bos": 14146335386, "skipped_exact_duplicates_of_val_docs": 34, "sha256": "624b04a94bdbd7683d1b8746e1540579e19fa106a0e64c938f1d8416df3850f6"}}
+2026-10-01T06:21:22Z STEP3 chat shards
+/opt/conda/lib/python3.11/site-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+chat_test {'conversations': 24229, 'tokens': 19809072, 'utf8_bytes': 92938994, 'sha256': 'f88ec2c2cd858a5c40ab66d5c9b354da005493f8d9a9ca995a2f60b9b19c19bc', 'files': ['data/test-00000-of-00001.parquet']}
+chat_train {'conversations': 460341, 'tokens': 378859013, 'utf8_bytes': 1777891598, 'sha256': 'b280437d9373cb30cf7f50cb6081fccd1e4065509bed527d53d5b3be8f256046', 'files': ['data/train-00000-of-00004.parquet', 'data/train-00001-of-00004.parquet', 'data/train-00002-of-00004.parquet', 'data/train-00003-of-00004.parquet']}
+DONE {"tokens": 757718026, "chat_tokens": 378859013, "web_tokens_from_end_of_train_big": 378859013, "sha256": "1a2e1724e760342e997e283fe803f5867251820390067ae2707f1e362acaf977"}
+2026-10-01T06:31:35Z STEP4 sha256 check
+train.u32 MATCH
+val.u32 MATCH
+train_big.u32 MATCH
+chat_test.u32 MATCH
+chat_train.u32 MATCH
+chat_mix.u32 MATCH
+ALL_MATCH
+2026-10-01T06:31:55Z DONE

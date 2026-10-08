@@ -1,0 +1,23 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+START 2026-10-01T11:42:48Z gpu=0 run=vast_sdmread_s2_20M driver=570.181 load=4.00 4.17 3.87
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:221: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "vast_sdmread_s2_20M", "arm": "sdm", "seed": 2, "cfg": {"d": 256, "T": 256, "seed": 2, "M": 3600, "k": 32, "hops": 2, "softness": 0.25, "n_layer": 4, "M_big": 16384, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [2, 3], "f": 688, "train_name": "train"}, "B": 32, "T": 256, "tokens_target": 20000000, "steps": 2441, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 2898432, "frozen_store_values": 0, "total_trainable": 35994112}, "flops_per_token_fwd": {"head": 66191360, "body": 5988352.0, "total": 72179712.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-01T11:42:53Z", "load": [4.0, 4.16, 3.87], "ncpu": 128, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "41ac7b578b34", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "570.181\n570.181\n570.181\n570.181", "mem_available_gb": 480.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 200, "loss": 6.4778, "lr": 0.0029735607388399585, "gnorm": 0.281, "tok_per_s": 92894.0, "load": 5.216796875}
+{"event": "step", "step": 400, "loss": 6.3518, "lr": 0.002859189861351509, "gnorm": 0.294, "tok_per_s": 252081.6, "load": 5.119140625}
+{"event": "step", "step": 600, "loss": 6.0012, "lr": 0.002661934667020818, "gnorm": 0.276, "tok_per_s": 250870.9, "load": 5.02685546875}
+{"event": "step", "step": 800, "loss": 5.9103, "lr": 0.0023953160780357456, "gnorm": 0.315, "tok_per_s": 250223.4, "load": 4.9443359375}
+{"event": "step", "step": 1000, "loss": 5.6424, "lr": 0.002077609553289712, "gnorm": 0.347, "tok_per_s": 250222.1, "load": 4.86865234375}
+{"event": "step", "step": 1200, "loss": 5.5244, "lr": 0.0017305923910396388, "gnorm": 0.36, "tok_per_s": 249385.4, "load": 4.89501953125}
+{"event": "step", "step": 1400, "loss": 5.5936, "lr": 0.001378050996832694, "gnorm": 0.357, "tok_per_s": 246594.8, "load": 5.30419921875}
+{"event": "step", "step": 1600, "loss": 5.4449, "lr": 0.0010441504365128757, "gnorm": 0.378, "tok_per_s": 249557.4, "load": 5.27978515625}
+{"event": "step", "step": 1800, "loss": 5.5629, "lr": 0.0007517780338329788, "gnorm": 0.429, "tok_per_s": 249717.9, "load": 5.17724609375}
+{"event": "step", "step": 2000, "loss": 5.192, "lr": 0.0005209745513185531, "gnorm": 0.405, "tok_per_s": 249406.3, "load": 4.99560546875}
+{"event": "step", "step": 2200, "loss": 5.3989, "lr": 0.00036756048960763494, "gnorm": 0.422, "tok_per_s": 222798.5, "load": 4.91552734375}
+{"event": "step", "step": 2400, "loss": 5.3794, "lr": 0.0003020516660299287, "gnorm": 0.468, "tok_per_s": 249177.4, "load": 4.77392578125}
+{"event": "step", "step": 2441, "loss": 5.3327, "lr": 0.0003000011633705311, "gnorm": 0.439, "tok_per_s": 1228339.0, "load": 4.77392578125}
+FINAL vast_sdmread_s2_20M {"bpb": 1.602033097390655, "nats_per_token": 5.382588228425597, "tokens": 995323, "bytes": 4824566}
+NEXT -> python3 track4_sdmllm_evaluate_floors_and_samples.py
+vast_sdmread_s2_20M step 2441 tensors 25
+END 2026-10-01T11:44:43Z rc=0

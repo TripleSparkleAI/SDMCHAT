@@ -1,0 +1,2 @@
+# wave 30 on box m: the hop count at the best SDM shape (4 is the only value tried). Sealed in the plan.
+w30_cn_d1536_B512_lr4x_hops8_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 192 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,2 @@
+# wave 27 on box e: the base rate at the best SDM shape. Sealed in the plan.
+w27_cn_d1536_B512_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

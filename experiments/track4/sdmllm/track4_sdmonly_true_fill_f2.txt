@@ -1,0 +1,2 @@
+# THE TRUE RUN on box f (GPU 1 after its 32-hop sweep line): the smaller sibling on all 2.0B tokens. Sealed in the plan.
+true_cn_d1024_hm6144_hops16_2B new sdmonly_none 0 2000000000 train_big --d 1024 --hop-mlp 6144 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 1000 --log-every 100

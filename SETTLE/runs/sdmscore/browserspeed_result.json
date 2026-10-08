@@ -1,0 +1,126 @@
+{
+ "base": "http://localhost:5240",
+ "keys": [
+  "sdmwide512",
+  "sdmwide768"
+ ],
+ "stamp_start": {
+  "utc": "2026-10-02T20:17:52Z",
+  "load": [
+   5.0224609375,
+   6.55078125,
+   5.93798828125
+  ],
+  "ncpu": 18,
+  "powermode": "2"
+ },
+ "params": {
+  "temperature": 0.8,
+  "topK": 50,
+  "topP": 0.95,
+  "repetitionPenalty": 1.25,
+  "repeatWindow": 128,
+  "noRepeatNgram": 3,
+  "wordPenalty": 0.4,
+  "noAdjacentWord": true,
+  "maxTokens": 96
+ },
+ "runs": {
+  "sdmwide512": [
+   {
+    "n": 96,
+    "tps": 18.08522663048606,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 18.004838800457804,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 18.424689083403333,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 18.48678002655353,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 18.468286489315343,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 18.174245579483138,
+    "reason": "max tokens"
+   }
+  ],
+  "sdmwide768": [
+   {
+    "n": 96,
+    "tps": 11.802601490061141,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 11.750593649787636,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.084135795480535,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.1166224914805,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 11.942823731368279,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 11.5139666814548,
+    "reason": "max tokens"
+   }
+  ]
+ },
+ "load": {
+  "sdmwide512": {
+   "load_ms": 311.59999999403954
+  },
+  "sdmwide768": {
+   "load_ms": 151.20000000298023
+  }
+ },
+ "stamp_end": {
+  "utc": "2026-10-02T20:19:26Z",
+  "load": [
+   5.6904296875,
+   6.3525390625,
+   5.92236328125
+  ],
+  "ncpu": 18,
+  "powermode": "2"
+ },
+ "summary": {
+  "sdmwide512": {
+   "median_tps": 18.299467331443235,
+   "best_tps": 18.48678002655353,
+   "tokens": 576
+  },
+  "sdmwide768": {
+   "median_tps": 11.87271261071471,
+   "best_tps": 12.1166224914805,
+   "tokens": 576
+  },
+  "ratio_median": 0.6488009948964093,
+  "ratio_best": 0.6554209264175136
+ }
+}

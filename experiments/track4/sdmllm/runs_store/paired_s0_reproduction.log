@@ -1,0 +1,17 @@
+qwen_s0_20M 1.61161
+qwen_s1_20M 1.55801
+qwen_s2_20M 1.5972
+sdm_nostore_s0_20M 1.60536
+sdm_nostore_s1_20M 1.60613
+sdm_nostore_s2_20M 1.60501
+sdm_s0_20M 1.6302
+sdm_s1_20M 1.62932
+sdm_s2_20M 1.62199
+sdm_softness2_s0_20M 1.60815
+sdm_s0_20M - sdm_nostore_s0_20M 0.02484 se 0.00026
+sdm_s1_20M - sdm_nostore_s1_20M 0.02319 se 0.00028
+sdm_s2_20M - sdm_nostore_s2_20M 0.01699 se 0.00024
+qwen_s0_20M - sdm_nostore_s0_20M 0.00625 se 0.00041
+qwen_s1_20M - sdm_nostore_s1_20M -0.04812 se 0.0005
+qwen_s2_20M - sdm_nostore_s2_20M -0.0078 se 0.00044
+sdm_softness2_s0_20M - sdm_nostore_s0_20M 0.0028 se 0.00022

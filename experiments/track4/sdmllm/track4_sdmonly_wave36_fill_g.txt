@@ -1,0 +1,2 @@
+# wave 36 on box g: the never-fading mixer at width 1,024 and the best batch (131,072 tokens per step). Sealed in the plan.
+w36_cnmix_d1024_T1024_B128_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 128 --accum 32 --eval-every 5000 --ckpt-every 5000 --log-every 100

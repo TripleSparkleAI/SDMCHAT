@@ -1,0 +1,2 @@
+# wave 18 on box n: the transformer yardstick at the same shape. Sealed in the plan.
+w18_mq_d1024_B512_400M new qwen 0 400000000 train_big --d 1024 --qwen-f 2736 --body-opt muon --B 512 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

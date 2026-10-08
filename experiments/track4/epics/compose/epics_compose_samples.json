@@ -1,0 +1,93 @@
+{
+ "cues": [
+  {
+   "work": "paradise-lost",
+   "cue": "Lest from this flying steed unreined, (as once\nBellerophon, though from a lower clime,)\n"
+  },
+  {
+   "work": "kalevala-crawford",
+   "cue": "Did not know where to ingraft it,\nPlaced, alas! the little scion\n"
+  },
+  {
+   "work": "song-of-roland",
+   "cue": "  He owned his faults often and every way,\n  And for his sins his glove to God upraised.\n"
+  },
+  {
+   "work": "invented",
+   "cue": "Sing, goddess, of the starship and the crew that sailed beyond the moon,\n"
+  }
+ ],
+ "tokens": 120,
+ "settings": [
+  "greedy",
+  "T 0.8 top-50 seed 0"
+ ],
+ "samples": {
+  "BASE (SW)": [
+   {
+    "work": "paradise-lost",
+    "greedy": "The clover of the clover is the clover of the clover, and the clover of the clover clover. It is a clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover, clover,",
+    "sampled": "- L. (The name \"Burtles are the four main sources of American Cider.\" The American Journal of American American Independence Association (2006).\nThe American American Association of Language and Society, the American Association of American Association for Food of American Indians, according to the American Journal of American Journal of American American Association (ASO) or American Society of American Society ofAmerican Journal of American American Association for American Society of American Journal of Clinical Practice, 42(2):1-3.\nThe American Journal of American Society of American Society in the American Journal of Psychiatry.\n- American Journal"
+   },
+   {
+    "work": "kalevala-crawford",
+    "greedy": "of the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth. The earth is the earth, and the earth is the earth, and the earth is the earth, and the earth is the earth. The earth is the earth, and the earth is the earth, and the earth is the earth. The earth is the earth, and the earth is the earth, and the earth is the earth.",
+    "sampled": "to your body, the most effective way for your own\nbausing for your own blood flow to your body\nfor your blood glucose level in the blood, your body needs for your feet, and\ncauses of blood cells\nYou body your risk if you have diabetes—recent\nA lot of reasons to use your blood sugar level when you’re drinking too much.\nWhat are the ways to prevent you from heart disease?\nAs with other health questions, you may even have some symptoms. If you have a heart disease, you should know the best possible\nand do well with your"
+   },
+   {
+    "work": "song-of-roland",
+    "greedy": "The Bible is a great example of the Bible, which is a great example of the Bible, which is the Bible, and the Bible is a great example of the Bible. The Bible is a great example of the Bible, which is the Bible, and the Bible is a great example of the Bible. The Bible is a great example of the Bible, which is a great example of the Bible, which is a great example of the Bible. The Bible is a great example of the Bible, which is a great example of the Bible, which is the Bible, and the Bible is a great example",
+    "sampled": "And He is the one of the most common sins and the LORD of God has the same meaning.\nGod has been given up in Matthew 1:7 and He is a servant of Jesus.\nGod has a very powerful and very good name ever given.\nIn contrast to God he has a sacrifice that was also a good man, and the God he will create.\nIn Jesus Christ of the time of the very best known God is eternal. There are many things a particular sin, that is a very good man who is God. This is the perfect sin that is eternal life and that will be made"
+   },
+   {
+    "work": "invented",
+    "greedy": "and the stars of the stars, and the stars of the stars.\nThe stars are the most important part of the stars are the stars of the stars, and the stars are the stars of the stars. The stars are also called stars, the stars are the stars of the stars, and the stars are also called stars. The stars are also called stars, the stars are called stars, the stars are called stars. The stars are called stars, which are stars and stars are called stars. The stars are called stars, which are called stars, stars, and stars are called stars. The stars",
+    "sampled": "the Sun, and the moon. The\ntook of the sun. The sun\nwill not be seen as one of the earth, and he said, \"The Sun has a \"losing the moon,\" and the moon, is where it is said that this man never has been lost to his eye.\"\nIn the 16,000 light years in the world to be discovered, and we find that the world is \"unrezed,\" and that I think it's going to be able to do this by the sun.\"\nThe sun is in our view - is that our Sun is in"
+   }
+  ],
+  "EP12 (epics)": [
+   {
+    "work": "paradise-lost",
+    "greedy": "The flying steed, and from the steed, and from the steed\nOf the steed, and from the steed steed,\nThe steed, and steed, and steed, and steed,\n  And steed, and steed, and steed, and steed,\n  And steed, and steed, and steed, and steed,\n  And steed, and steed, and steed, and steed,\n  And steed, and steed, and steed, and steed,\n  And steed, and",
+    "sampled": "In vain, to some, that would find his home,\nBut to the Phrygian’s coast, and Phaëron’s deep\nGives, and in the same grove of Phœnician rocks,\nHe gives in fury, and, o’ert the gods.\nFrom Phœbus, Phœbus to the ethereal host:\nAnd in the midst of Phœbus spoke, and spoke\nHe spoke, and sought the Phœbus spoke,\nAnd thus to Venus’ immortal race, and thus the hero spoke:\n“The goddess was this, and"
+   },
+   {
+    "work": "kalevala-crawford",
+    "greedy": "Of the ancient and ancient times, and ancient\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\nHastened to the ancient Wainamoinen\n",
+    "sampled": "Of many a host of heroes.\n\nLVI\nThus fell the hero, sooth he found his way,\nAnd as the chief saw the host that held\nIn the camp the Christian troop and the camp\nAnd forth the host, on th journey led:\n\nXXIII\nA host with eager heart the eager host\nOf hosts of men, hostess, and host, host to host\nHastened host the host of host, host and host\nWill host of host and hostess host\nWho host and host of host, host and host to host\nThat host may host of host"
+   },
+   {
+    "work": "song-of-roland",
+    "greedy": "  And he, with the God of mercy, and the God\n  Of God, and of his faith, and his faithless faith,\n  And faithless faith, and faithless faith.\n  And faithless faith, and faithless faith, and faithless faith.\n  And faithless faith, and faithless faithless faith.\n  And faithless faithless faithless faithless faithless faithless faith.\n  And faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faithless faith",
+    "sampled": "  \"I have not so many, that I will not in his faith,\n  To do what he should do his wrong.  I\n  Do you, and I, that with my brother's right.\n  And if he came away from his head\n  To what he said to her he could not do so.\n  But, not I, who, as he would have said, the royal sage,\n  (His father would not so, when he was more ill;\n  And, by my consort, by his side,\n  She, therefore, was in vain, was"
+   },
+   {
+    "work": "invented",
+    "greedy": "and the moon, and the moon, and the moon, and the moon\nand the moon, and the moon, and the moon, and the moon, and the moon\nand the moon, and the moon, and the moon, and the moon, and the moon\nand the moon, and the moon, and the moon, and the moon, and the moon\nand the moon, and the moon, and the moon, and the moon, and the moon\nand the moon, and the moon, and the moon, and the moon, and the moon\nand the moon,",
+    "sampled": "  In the first place of the moon; and on the next, the\nmatter is the next; and after her command his own ship, and the next\nwith her own is called the third daughter of Scythia.\n\nwhere, however, here it appears that the goddess was known.\n\nThe origin of the story of Othys, was the third son of Ægyl, and\nthe island of Meleager, who was the name of the story. It was also\nthe ship of the Nymphs, and his wife, after he had killed many of his"
+   }
+  ],
+  "FW12 (control)": [
+   {
+    "work": "paradise-lost",
+    "greedy": "The most common is the C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. 2000. The C. C. C. C. 2000. The C. C. C. 2000. The C. C. C. 2000. The C. C. C. 2000. The C. C. C. 2000. The C. C. C. 2000. The C. C. C. 2000.",
+    "sampled": "It would be a very long journey to you to your destination, but if you're looking at a trail, you're still standing tall and you're seeing a little bit of time. In a few days, the new way you're flying some distance away and seeing from your ground.\nIf you don't know what you're going to see, or even where you'll get to you, it's all about to take a look at the table.\nHere's a great example of a real estate that is a giant boon that you can see that they were going as early as your first step by"
+   },
+   {
+    "work": "kalevala-crawford",
+    "greedy": "to be a little more than a little, but the little one is\nto the little of the little little to the little little\nto the little little to the little little\nto the little little to the little little to the little little\nto the little little to the little little to the little little\nto the little little to the little little to the little little\nto the little little to the little little to the little little\nto the little little to the little little to the little little to the little little\nto the little little to the little little to the little little to the little",
+    "sampled": "of these are the ones who may be heard. They may be the best,\nso if your hands are not in touch with them,\nbut they may be so, and if the\nthe right hand, or when they are not, for men or women; or their hands become\nin this position.\nMany women have been given the opportunity to give the necessary knowledge\nand the right hand to their fathers, and if they are made\none, so that he could be exposed to\nthis may be a useful measure of the force of the body which can be broken\nto form a body of"
+   },
+   {
+    "work": "song-of-roland",
+    "greedy": "The first thing that is the most important thing that is to be the most important thing that you can do is to make a difference. The most important thing is that you can do is to make a difference. You can also use the same thing as a way to do. You can also use the same thing as a way to do it. You can also use the same thing as a way to do it. You can also use the same thing as a way to do it. You can also use the same thing as a way to do it. You can also use the same thing as a",
+    "sampled": "Then when he was the last thing he did for himself. By the time he became so, and he was also very powerful, at which he had said, and he said that he will never be a man, and he was not one.\"\n- And it was one of the most famous poems. It is said to have been a friend of this one and that was in the first place. I felt that he thought that he was a saint. He was at the heart of the most powerful, and it was much more difficult to learn. He thought about the cause of this problem, and he"
+   },
+   {
+    "work": "invented",
+    "greedy": "and the moon, and the moon.\nThe moon is the moon of the moon, and the moon, and the moon, and the moon.\nThe moon is the moon's moon, and the moon is the moon, and the moon is the moon.\nThe moon is the moon's moon and moon, and the moon is the moon's moon, and the moon is the moon's moon.\nThe moon is the moon's moon and moon phases. The moon is the moon's moon and moon phases. The moon is the moon's moon and moon phases. The moon is the moon's moon and",
+    "sampled": "the sky, and the stars in the constellation of the stars. These stars are in this way, and the stars. They are at a greater velocity than the star of the sun, where stars are, of course, the sun is from and out of reach of the sun.”\nThe sun and Venus of the sun is the most important aspect of our lives. The planets in the shadow of our solar system, which in turn is considered a perfect example of the sun's moon.\nAnd finally, the sun, and the sun is the sun, the solar eclipses have not seen at Earth. However"
+   }
+  ]
+ }
+}

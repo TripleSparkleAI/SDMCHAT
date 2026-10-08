@@ -1,0 +1,2 @@
+# wave 46 on box m: 4 exact past tokens (below the best, 8). Sealed in the plan.
+w46_cn_d1536_B512_hm3072_hops16_nb4_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 3072 --hops 16 --n-back 4 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

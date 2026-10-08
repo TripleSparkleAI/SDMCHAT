@@ -1,0 +1,3 @@
+# wave 25 on box l: throw more data at the undecided mixer-at-the-big-batch pair (I1). Sealed in the plan.
+w25_cnmix_d256_T1024_B32_800M new sdmonly_none 0 800000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 32 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w25_cn_d256_B128_800M new sdmonly_none 0 800000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 128 --eval-every 5000 --ckpt-every 5000 --log-every 100

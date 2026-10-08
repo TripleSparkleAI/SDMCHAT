@@ -1,0 +1,3 @@
+# wave 19 on box j: more data at the best batch, and the yardstick at the faster rate. Sealed in the plan.
+w19_cn_d256_B512_1600M new sdmonly_none 0 1600000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w19_mq_d256_B512_lr4x_400M new qwen 0 400000000 train_big --d 256 --qwen-f 683 --body-opt muon --B 512 --accum 2 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

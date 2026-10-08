@@ -1,0 +1,38 @@
+{
+ "stamp": {
+  "utc": "2026-10-08T08:48:47Z",
+  "load": [
+   1.14,
+   1.16,
+   1.17
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 63.7
+ },
+ "val": {
+  "test": {
+   "bpb": 1.2921596651651146,
+   "nats_per_token": 4.212755201933772,
+   "tokens": 1031158,
+   "bytes": 4850090,
+   "windows": 504,
+   "T": 2048,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 1.38968441477855,
+   "nats_per_token": 4.004821175066359,
+   "tokens": 8183254,
+   "bytes": 34022601,
+   "windows": 4000,
+   "T": 2048,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ }
+}

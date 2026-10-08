@@ -1,0 +1,4 @@
+# Wave 56 on box e GPU 1 (frees about 10:35Z): the MEMORY-ON twin of the best hop result first, then wave 55 (the no-store hop push past 64).
+w56_sdm_d1024_B512_hm3072_hops64_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 64 --share-store --untie --conj 2 --body-opt muon --B 512 --accum 128 --eval-every 5000 --ckpt-every 1000 --log-every 100
+w55_cn_d1024_B512_hm3072_hops96_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 96 --untie --conj 2 --body-opt muon --B 512 --accum 64 --eval-every 5000 --ckpt-every 1000 --log-every 100
+w56b_sdm_d1024_B512_hm3072_hops32_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 32 --share-store --untie --conj 2 --body-opt muon --B 512 --accum 128 --eval-every 5000 --ckpt-every 1000 --log-every 100

@@ -1,0 +1,18 @@
+2026-09-30T15:55:34Z start sdm_qstop_s0_20M load { 12.45 18.24 29.94 }  powermode            2
+2026-09-30T16:29:37Z end sdm_qstop_s0_20M exit 0 load { 40.22 52.66 48.51 }
+2026-09-30T16:29:37Z start sdm_storeopt_qscale01_s0_20M load { 40.22 52.66 48.51 }  powermode            2
+2026-09-30T17:00:45Z end sdm_storeopt_qscale01_s0_20M exit 0 load { 24.20 28.77 31.22 }
+2026-09-30T17:00:45Z start qwen_s4_20M load { 24.20 28.77 31.22 }  powermode            2
+2026-09-30T17:28:33Z end qwen_s4_20M exit 0 load { 54.90 53.23 48.31 }
+2026-09-30T17:28:33Z start sdm_ngram_s0_20M load { 54.90 53.23 48.31 }  powermode            2
+2026-09-30T17:52:23Z end sdm_ngram_s0_20M exit 0 load { 58.33 61.55 59.61 }
+2026-09-30T17:52:24Z start sdm_storeopt_qstop_soft0p25_s0_20M load { 58.33 61.55 59.61 }  powermode            2
+2026-09-30T18:23:24Z end sdm_storeopt_qstop_soft0p25_s0_20M exit 0 load { 90.74 87.85 81.80 }
+2026-09-30T18:23:25Z start sdm_storeopt_qstop_soft2_s0_20M load { 90.74 87.85 81.80 }  powermode            2
+2026-09-30T18:57:47Z end sdm_storeopt_qstop_soft2_s0_20M exit 0 load { 104.29 109.34 109.35 }
+2026-09-30T18:57:47Z start sdm_storeopt_qstop_soft8_s0_20M load { 104.29 109.34 109.35 }  powermode            2
+2026-09-30T19:36:13Z end sdm_storeopt_qstop_soft8_s0_20M exit 0 load { 122.21 129.15 134.43 }
+2026-09-30T19:36:14Z start sdm_ngram_unigram_s0_20M load { 122.21 129.15 134.43 }  powermode            2
+2026-09-30T20:04:36Z end sdm_ngram_unigram_s0_20M exit 0 load { 104.62 141.36 151.29 }
+2026-09-30T20:04:36Z start sdm_storeopt_qstop_soft0p25_s2_20M load { 104.62 141.36 151.29 }  powermode            2
+2026-09-30T20:23:21Z queue B stopped at the navigator's request; sdm_storeopt_qstop_soft0p25_s2_20M killed mid-run, checkpoint deleted, handed to queue A to restart from scratch

@@ -1,0 +1,2 @@
+# wave 38 on box m (second GPU): the transformer yardstick at width 2,048 and the best batch. Sealed in the plan.
+w38_mq_d2048_B512_400M new qwen 0 400000000 train_big --d 2048 --qwen-f 5461 --body-opt muon --B 512 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

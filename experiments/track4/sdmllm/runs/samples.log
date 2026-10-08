@@ -1,0 +1,7 @@
+/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/_worktrees/dwarfstar-settle-sdmllm/experiments/track4/sdmllm/track4_sdmllm_count_store_floors.py:45: RuntimeWarning: overflow encountered in scalar multiply
+  h = np.full(len(pos), np.uint64(k) * P2, dtype=np.uint64)
+qwen_s0_20M {"greedy": {"distinct_1": 0.1237, "distinct_2": 0.1798, "distinct_3": 0.2183, "rep4": 0.7493, "longest_repeat": 42.1667}, "t0.8_top50": {"distinct_1": 0.5847, "distinct_2": 0.9186, "distinct_3": 0.9921, "rep4": 0.0013, "longest_repeat": 2.5}}
+sdm_s0_20M {"greedy": {"distinct_1": 0.1185, "distinct_2": 0.1759, "distinct_3": 0.2129, "rep4": 0.756, "longest_repeat": 32.6667}, "t0.8_top50": {"distinct_1": 0.6146, "distinct_2": 0.9186, "distinct_3": 0.9815, "rep4": 0.0067, "longest_repeat": 3.1667}}
+sdm_nostore_s0_20M {"greedy": {"distinct_1": 0.0755, "distinct_2": 0.0958, "distinct_3": 0.1058, "rep4": 0.8893, "longest_repeat": 54.3333}, "t0.8_top50": {"distinct_1": 0.5911, "distinct_2": 0.9121, "distinct_3": 0.9868, "rep4": 0.0027, "longest_repeat": 3.3333}}
+sdm_mlp_s0_20M {"greedy": {"distinct_1": 0.1211, "distinct_2": 0.1614, "distinct_3": 0.1825, "rep4": 0.8013, "longest_repeat": 45.5}, "t0.8_top50": {"distinct_1": 0.5989, "distinct_2": 0.9278, "distinct_3": 0.9855, "rep4": 0.004, "longest_repeat": 3.1667}}
+EXACT3_count_store {"greedy": {"distinct_1": 0.0924, "distinct_2": 0.105, "distinct_3": 0.1072, "rep4": 0.892, "longest_repeat": 60.1667}, "t0.8_top50": {"distinct_1": 0.6784, "distinct_2": 0.9606, "distinct_3": 0.996, "rep4": 0.0013, "longest_repeat": 2.1667}}

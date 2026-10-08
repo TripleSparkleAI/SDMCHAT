@@ -1,0 +1,2 @@
+# Wave 59 on s2 GPU 1: the window past 4,096 (AZ1)
+w59_cn_d1024_T8192_B16_hm3072_hops16_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --T 8192 --B 16 --accum 16 --eval-every 5000 --ckpt-every 1000 --log-every 100

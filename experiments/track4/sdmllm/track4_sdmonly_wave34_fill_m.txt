@@ -1,0 +1,3 @@
+# wave 34 on box m: the hop count past 8 (same 4x chain as wave 30). Sealed in the plan.
+w34_cn_d1536_B512_lr4x_hops16_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 192 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w34_cn_d1536_B512_lr4x_hops32_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 192 --hops 32 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

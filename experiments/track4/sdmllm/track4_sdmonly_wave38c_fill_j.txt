@@ -1,0 +1,2 @@
+# wave 38 on box j (GPU 0 after its wave 37 line): width 3,072 with the best recipe. Sealed in the plan.
+w38_cn_d3072_B512_hm3072_hops8_400M new sdmonly_none 0 400000000 train_big --d 3072 --hop-mlp 3072 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 32 --eval-every 5000 --ckpt-every 5000 --log-every 100

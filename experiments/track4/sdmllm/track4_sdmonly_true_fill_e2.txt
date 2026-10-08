@@ -1,0 +1,2 @@
+# THE TRUE RUN, the SDM twin (navigator option B, applied 2026-10-04 by default after no ruling): the same shape as e GPU 1 with the sparse memory reads ON (arm sdmonly, one shared store of 65,536 locations, k 32), replacing the 24-hop run on e GPU 0.
+true_sdm_d1536_hm6144_hops16_2B new sdmonly 0 2000000000 train_big --d 1536 --hop-mlp 6144 --hops 16 --share-store --untie --conj 2 --body-opt muon --B 512 --accum 64 --eval-every 5000 --ckpt-every 1000 --log-every 100

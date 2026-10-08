@@ -1,0 +1,48 @@
+# B_q32_hf-models-engram-memory-layer
+
+- query url: https://huggingface.co/api/models?search=engram&sort=lastModified&direction=-1&limit=40
+- tool: python3 urllib, Hugging Face Hub API /api/models search
+- fetched_utc: 2026-10-03T10:52:35Z
+
+- items returned: 40
+
+- dongnhdev/DeepSeek-V4.1-Flash-Q2-EngramQ4-GGUF | https://huggingface.co/dongnhdev/DeepSeek-V4.1-Flash-Q2-EngramQ4-GGUF | lastModified 2026-10-03 | created 2026-10-02 | downloads 0 | likes 0
+- abhash-chakraborty/qwen3.5-4b-engram | https://huggingface.co/abhash-chakraborty/qwen3.5-4b-engram | lastModified 2026-09-30 | created 2026-09-30 | downloads 13 | likes 0
+- xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram | https://huggingface.co/xwu-intel/DeepSeek-V4.1-Flash-7layers-compact-engram | lastModified 2026-09-29 | created 2026-09-29 | downloads 27 | likes 0
+- darioooooo0o/spark-1.7b-engram | https://huggingface.co/darioooooo0o/spark-1.7b-engram | lastModified 2026-09-28 | created 2026-09-16 | downloads 747 | likes 2
+- darioooooo0o/spark-4b-engram | https://huggingface.co/darioooooo0o/spark-4b-engram | lastModified 2026-09-28 | created 2026-09-16 | downloads 832 | likes 5
+- senthilvasan/kda-mokre-smollm2-engram-1m | https://huggingface.co/senthilvasan/kda-mokre-smollm2-engram-1m | lastModified 2026-09-27 | created 2026-09-25 | downloads 0 | likes 0
+- kegokang/mini-engram-hanhai | https://huggingface.co/kegokang/mini-engram-hanhai | lastModified 2026-09-27 | created 2026-09-23 | downloads 15 | likes 0
+- kegokang/mini-engram-xinglan | https://huggingface.co/kegokang/mini-engram-xinglan | lastModified 2026-09-27 | created 2026-09-23 | downloads 11 | likes 0
+- Rano23/engram-1b-midfine | https://huggingface.co/Rano23/engram-1b-midfine | lastModified 2026-09-25 | created 2026-09-25 | downloads 0 | likes 0
+- Rano23/e8g8t8-8l-engram-midfine | https://huggingface.co/Rano23/e8g8t8-8l-engram-midfine | lastModified 2026-09-25 | created 2026-09-25 | downloads 0 | likes 0
+- Thanabordee/Qwen3-ASR-0.6B-Thai-Engram | https://huggingface.co/Thanabordee/Qwen3-ASR-0.6B-Thai-Engram | lastModified 2026-09-24 | created 2026-09-24 | downloads 20 | likes 0
+- Rano23/engram-11b-a1b | https://huggingface.co/Rano23/engram-11b-a1b | lastModified 2026-09-23 | created 2026-09-23 | downloads 0 | likes 0
+- Rano23/e8g8t8-8l-engram5b | https://huggingface.co/Rano23/e8g8t8-8l-engram5b | lastModified 2026-09-23 | created 2026-09-23 | downloads 0 | likes 0
+- lewisdog/engram-md-demo | https://huggingface.co/lewisdog/engram-md-demo | lastModified 2026-09-22 | created 2026-08-29 | downloads 716 | likes 0
+- caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5 | https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q5 | lastModified 2026-09-22 | created 2026-09-10 | downloads 73 | likes 0
+- caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4 | https://huggingface.co/caiovicentino1/DeepSeek-V4.1-Flash-HLWQ-Engram-Q4 | lastModified 2026-09-22 | created 2026-09-10 | downloads 99 | likes 0
+- tersemind/mini-engram-hanhai | https://huggingface.co/tersemind/mini-engram-hanhai | lastModified 2026-09-21 | created 2026-09-21 | downloads 19 | likes 0
+- tersemind/mini-engram-xinglan | https://huggingface.co/tersemind/mini-engram-xinglan | lastModified 2026-09-21 | created 2026-09-21 | downloads 27 | likes 0
+- satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000 | https://huggingface.co/satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000 | lastModified 2026-09-17 | created 2026-09-16 | downloads 357 | likes 3
+- Rano23/engram-1b-match-midfine-8n | https://huggingface.co/Rano23/engram-1b-match-midfine-8n | lastModified 2026-09-17 | created 2026-09-17 | downloads 0 | likes 0
+- neko-legends/DeepSeek-V4.1-Flash-uncensored-engram-4x-spark | https://huggingface.co/neko-legends/DeepSeek-V4.1-Flash-uncensored-engram-4x-spark | lastModified 2026-09-16 | created 2026-09-16 | downloads 0 | likes 0
+- aidendle94/DeepSeek-V4.1-Flash-NVFP4-Engram | https://huggingface.co/aidendle94/DeepSeek-V4.1-Flash-NVFP4-Engram | lastModified 2026-09-16 | created 2026-09-16 | downloads 92 | likes 0
+- INCModel3/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound | https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound | lastModified 2026-09-15 | created 2026-09-15 | downloads 309 | likes 1
+- INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound | https://huggingface.co/INCModel3/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound | lastModified 2026-09-15 | created 2026-09-15 | downloads 416 | likes 2
+- lvkaokao/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound | https://huggingface.co/lvkaokao/DeepSeek-V4.1-Flash-MXFP4-Engram-AutoRound | lastModified 2026-09-14 | created 2026-09-14 | downloads 186 | likes 0
+- lvkaokao/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound | https://huggingface.co/lvkaokao/DeepSeek-V4.1-Flash-W4A16-Engram-AutoRound | lastModified 2026-09-14 | created 2026-09-14 | downloads 382 | likes 3
+- nktlabs/dsv41-flash-engram-disk-prestage | https://huggingface.co/nktlabs/dsv41-flash-engram-disk-prestage | lastModified 2026-09-12 | created 2026-09-12 | downloads 0 | likes 2
+- pipenetwork/DeepSeek-V4.1-Flash-MLX-mixed-4_8bit-engram6 | https://huggingface.co/pipenetwork/DeepSeek-V4.1-Flash-MLX-mixed-4_8bit-engram6 | lastModified 2026-09-10 | created 2026-09-10 | downloads 3091 | likes 2
+- Raskoll/qwen3-0.6b-engram | https://huggingface.co/Raskoll/qwen3-0.6b-engram | lastModified 2026-09-01 | created 2026-09-01 | downloads 167 | likes 0
+- engram-ae/Nemotron-3.5-Lightning-Omni-30B-A3B-GGUF | https://huggingface.co/engram-ae/Nemotron-3.5-Lightning-Omni-30B-A3B-GGUF | lastModified 2026-08-26 | created 2026-08-24 | downloads 982 | likes 0
+- engram-ae/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF | https://huggingface.co/engram-ae/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF | lastModified 2026-08-24 | created 2026-07-22 | downloads 872 | likes 1
+- wallfacers/engram-eval-data | https://huggingface.co/wallfacers/engram-eval-data | lastModified 2026-08-22 | created 2026-08-21 | downloads 0 | likes 0
+- wallfacers/engram-planner-lora | https://huggingface.co/wallfacers/engram-planner-lora | lastModified 2026-08-04 | created 2026-08-04 | downloads 12 | likes 0
+- mradermacher/engram-8B-A1B-GGUF | https://huggingface.co/mradermacher/engram-8B-A1B-GGUF | lastModified 2026-07-11 | created 2026-07-11 | downloads 168 | likes 0
+- brahmairesearch/engram-8B-A1B | https://huggingface.co/brahmairesearch/engram-8B-A1B | lastModified 2026-07-10 | created 2026-07-10 | downloads 13 | likes 1
+- jchiang11/engram-xenc-v0 | https://huggingface.co/jchiang11/engram-xenc-v0 | lastModified 2026-06-26 | created 2026-06-26 | downloads 17 | likes 0
+- jchiang11/engram-retrieval-v0 | https://huggingface.co/jchiang11/engram-retrieval-v0 | lastModified 2026-06-26 | created 2026-06-26 | downloads 10 | likes 0
+- tpersson/engramera-vintage-lora | https://huggingface.co/tpersson/engramera-vintage-lora | lastModified 2026-05-23 | created 2026-05-23 | downloads 0 | likes 0
+- DefEki/tinyllama-engram-test | https://huggingface.co/DefEki/tinyllama-engram-test | lastModified 2026-04-24 | created 2026-04-23 | downloads 4 | likes 0
+- Engram-protocol/engram | https://huggingface.co/Engram-protocol/engram | lastModified 2026-04-03 | created 2026-04-03 | downloads 0 | likes 0

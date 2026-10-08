@@ -1,0 +1,2 @@
+# wave 16 on box n: the transformer yardstick past B 512. Sealed in the plan.
+w16_mq_d256_B512_800M new qwen 0 800000000 train_big --d 256 --qwen-f 683 --body-opt muon --B 512 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100

@@ -1,0 +1,173 @@
+{
+ "run": "sdmchats_NWL_d768_s0_600M",
+ "arm": "sdm_nostore",
+ "seed": 0,
+ "cfg": {
+  "d": 768,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 2064,
+  "train_name": "train_big",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 600000000,
+ "steps": 73242,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 1.0,
+ "store_wd": 0.1,
+ "params": {
+  "embedding": 99287040,
+  "non_embedding_trainable": 12436224,
+  "frozen_store_values": 0,
+  "total_trainable": 111723264
+ },
+ "flops_per_token_fwd": {
+  "head": 198574080,
+  "body": 25829376.0,
+  "total": 224403456.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T00:37:27Z",
+  "load": [
+   0.37,
+   0.35,
+   0.26
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 109.8
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-03T06:13:10Z",
+  "load": [
+   1.28,
+   1.39,
+   1.36
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 107.7
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.7221766908334113
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.7083631742414997
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.6873738459646745
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.6686964072813972
+  },
+  {
+   "step": 25000,
+   "tokens": 204800000,
+   "bpb_quick": 1.6596161421359716
+  },
+  {
+   "step": 30000,
+   "tokens": 245760000,
+   "bpb_quick": 1.6638354909312576
+  },
+  {
+   "step": 35000,
+   "tokens": 286720000,
+   "bpb_quick": 1.6542954264767007
+  },
+  {
+   "step": 40000,
+   "tokens": 327680000,
+   "bpb_quick": 1.631178666199463
+  },
+  {
+   "step": 45000,
+   "tokens": 368640000,
+   "bpb_quick": 1.6392761330624255
+  },
+  {
+   "step": 50000,
+   "tokens": 409600000,
+   "bpb_quick": 1.625476933290564
+  },
+  {
+   "step": 55000,
+   "tokens": 450560000,
+   "bpb_quick": 1.613778825734161
+  },
+  {
+   "step": 60000,
+   "tokens": 491520000,
+   "bpb_quick": 1.6043569343688595
+  },
+  {
+   "step": 65000,
+   "tokens": 532480000,
+   "bpb_quick": 1.5971837329329055
+  },
+  {
+   "step": 70000,
+   "tokens": 573440000,
+   "bpb_quick": 1.5830949537234509
+  }
+ ],
+ "val_test": {
+  "bpb": 1.4058870051360741,
+  "nats_per_token": 4.72356710773789,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_extra": {
+  "chat_test": {
+   "bpb": 1.6564471528275535,
+   "nats_per_token": 5.410006422111865,
+   "tokens": 1022736,
+   "bytes": 4819015
+  }
+ }
+}

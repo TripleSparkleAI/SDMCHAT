@@ -1,0 +1,244 @@
+{
+ "which": "old",
+ "rows": [
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 19,
+   "loopRate": 0.633,
+   "distinct2": 0.69,
+   "meanTokens": 147,
+   "secs": 298.556
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 1,
+   "loopRate": 0.067,
+   "distinct2": 0.965,
+   "meanTokens": 108.8,
+   "secs": 110.854
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "replies": 24,
+   "looping": 7,
+   "loopRate": 0.292,
+   "distinct2": 0.829,
+   "meanTokens": 142.6,
+   "secs": 283.85
+  }
+ ],
+ "samples": [
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" secondary secondary secondary\" x103; \"secondary\" x102 in a row",
+   "text": " A blue and black eye is a primary, two primary and secondary colors.Assistant: The primary difference between the primary and secondary is the primary difference lies in their primary colors, whether they're primary or secondary primary primary primary secondary secondary secondary primary primary secondary secondary primary secondary secondary secondary secondary primary primary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary secondary"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic example of a classic American game. Let's start by first defining the concept of \"Let's start with the first n positive integers.\" We have 6 integers: n = 1, 2, and n = 3.\n\nFirst, let's consider the integer values. We are given by the number of elements from both the original list. A common goal is to find the number of terms in the sequence as n increases, with each term being greater than 1.\n\nFor example, if we were to write a program, the first term is indeed 3: 2^(k+1) = 7, then 9^(k-1). Since the sequence's form is 0, then the sequence is positive. If k = 5, then there is"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic example is an art that's a young artist. The artist, who is the artist who has been working for 12 years now, and we've worked with clients as artists who work in their work.\n\nA woman who works on art could be through various art pieces. Art worker often refers to clients who work around the artist, so they can share a piece that's both artist and work.\n\nTo create a rich inner life, consider taking a piece of art that combines art and nature with different artists. The work will also delve deeper into their work, galleries, and galleries, and it can also be a part of a larger painting or the more creative process. By working together, artists create a unique and engaging narrative that showcases your artistic vision, not just as an artist, but also"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The primary difference in black holeAssistant: The most common difference between the two is **intended data**, which refers to a state of the system, known as \"the greatest known cause\" or \"squeredity.\" This means that the concept of **affect** is defined in various parts of a system, such as **plomating\" or **in differences**: The **out of the** wasps**:**\n\n1. **Emotional**, where the **reality** is divided into**:**\n\n* ** referring:** People often takes place in the body and may not be immediately apparent, depending on the context.\n2. **Considerations between the**:** The **squity** is the most common type of** used**:**\n\n* **affect** (or skewing"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"ers, island\" x11; \"islanders\" x7 in a row",
+   "text": " The ocean's been climbing the ocean is a tiny island. It's a small island, but the island's ocean is not enough to be perfect for an island ocean. There is a group of islands that are islanders and islanders. islanders can smell the islanders as islands have islanders like sea islanders and islanders, like islanders.\n\nHers, islanders, islandersers islanders, islanders, islanders and islandersers islanders. islanders, islanders, islanders, islanders islanders islanders, islandersers and islanders. islanders islanders are islandersers, islanders islanders and islanders. islandersers in the islanders, islandersers, islandersers can islanders like islandersers islanders"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \". The water\" x4",
+   "text": " Water is a good progress. It's been quite challenging to understand. The water quality of the water, the water, and the amount of water, but it does not make an informed judgment. The water is also rich in minerals, which are just as compact as the water.\n\nSo, it seems that this is a relatively small part of a small town. When water flowing through the water, it is also known as water \"cow\" of water, where it can be used to store water for drinking, as well as the \"newspiries\" are not common and can be easily described. The water is a small, large-scale birdwatching that can be found in the pond at the bottom of the pond. The water was first presented in the bottom of the river system.\n\n"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" statement is true\" x3",
+   "text": " A classic example of an argument is an argument and a type of argument that is being used to refer to a specific type of logical fallacy. In other words, if the statement of a set is a claim or argument. An argument is a valid statement that if a statement is true (the conclusion that follows must be true or false). For instance, if an example is the statement \"All humans are mortal\" would be false, and it's also true that statement.\n\nIn other words, if a statement is true, then we can look for someone who is not justified or supported by evidence. We believe that the statement is true because we don't rely on it directly to the truth of the statements of the statement. This fallacy involves considering the specific context in which the conclusion is not true, as"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" and the sea\" x4",
+   "text": " \"The sea\", I've been the most critical of my life. The sea'sAssistant: The sea, the sea is warm and the gentle waves. The sea is the sun's warmth, the gentle breeze, the sea, and the sea floor. Every day, the sea air has been beneath me chame.\n\nMy eyes glowsing with the waves beneath the warm sea, the gentle waves that's calm, as they whisper secrets. As the sea's waves rise, the waves are melting down the sea level rise to the horizon like this sea. The sky is the difference between the sea's and the sea, the waves rise of the ocean and the sea.\n\nThe sea waves rise with this sea level rise, as the sea level rise, rising sea levels rise, and the sea floor"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" poem poem poem\" x16; \"poem\" x9 in a row",
+   "text": " Here's a potential feedback loop that is used for a poem:\n\n1. **Tone and poem**: The poem's poem was written in 1860, with the poem.\n2. ** poem poem**: poem by a poem or poem is the poem is poem poem, ** poem I am poem.\n\nWhen poem poem poetry, the poem goes beyond poem poem:\n\n- I am poem poem poem poem I wrote a poem by**: poem, poem by a poem in poem poem, poem, poem poem about poem. poem poem by poem as follows:\nThe poem poem we poem by her poem poem or poem is poem poem poem poem poem poem or poem:\n\n poem poem poem poem poem poem poem poem,\nA poem poem poem poem is poem poem poem\n poem’s poem, poem poem poem about poem"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" villagers village villagers\" x19; \"villagers\" x4 in a row",
+   "text": " A village in village north of the village of E Toon, the village is known as a village village. The village's villagers village villagers village villagers village villagers villagers village villagers.\n\nThe villagers village villagers village villagers village villagers villagers village villagers village villagers.\n\nAt night villagers village villagers, village villagers have taken shelter on village villagers' villagers' villagers to village villagers villagers for village villagers.\n\nIn village villagers village villagers, villagers village villagers gather villagers villagers villagers (G villagers village villagers villagers village villagers villagers village villagers, villagers villagers villagers village villagers village in villagers. villagers village villagers hunt villagers.\n\nBut village villagers' villagers, villagers village villagers villagers, villagers.\n\nAs village villagers village villagers, villagers are villagers villagers in town and villagers villagers, who are villagers villagers around village villagers.\n\nI take a village villagers' villagers"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "This is a name. It was discovered in the 18th century, when\nthe sea creature, the sea and its land\nThe sea has also been said to have lost\nover the sea as well as some sea creatures. The sea a seaSome believe sea seaSome would touch on its walls,\nand seaSome sea faces in 3\n4 tons of salt sea sea ice and seaSome sea\n* The sea bed sea is rising sea\nfrom sea sea, and sea sea, all sea level rise. And sea does this is\n\nThe sea a sea level for sea sea*"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "Autumn Leaves",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"**2**\" x3",
+   "text": "**Step 6**2**\n5**30**0**3**\n\n1**2**5**2****\n\n**3**:**\n\n**Step**\n\n**:**\n\n**Output**: Use**:\n\n**Method 1**1**2**4\n** }\n**\n\n```java\n7**20** {\npublic class** is a private variable based on the first question\n\nWhat are the main benefits of**:**\n\n**Example**\n\n**\n   **Use nested loops**\n\n* You can use the `while` loop to generate a list of numbers\n2. **Create a temporary window:** Start with a brief"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "A Lantern in the Snow",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "What is the maximum width of a mountain is set\n|A set of 10 cm|\nB2A is a cm x 1 inches\n\" cm long, about eight inches above the bottom and 0 mm\n(12 cm) and 10 cm\n3 cm x 9 inches long (6 cm).\nCan be derived from the left foot?\n(c) 8 cm (20 cm)\n|Date on: 5 inches\n|15. cm|\nThe cm is cm (2 cm)\n|User: There is no difference between the total height and inches of cm at"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "I'm like, because I was an AI at the conference. It's been a bit of an\nAssistant: Hi David,\n\nI hope you're doing well! I’d love to hear your thoughts on this idea. I think it would be great meeting to discuss the proposal and exchange some feedback\n\nThis project is super cool next week and we could chat if you've been thinking about our collaboration and believe it\n"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "Morning Bread",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "This is a brief list of lists. It outlines the types of lists that are used to describe\nthe lists of lists in order to represent different elements in lists. Each dictionary would\n List the lists and lists, where each element has a unique lists\n```\n\nExample lists:\n\n```python\nlist2 = ['1, [3, 3, 5]\n}\n```\nUser: How do I write this code in Python? \nfor I have a list of dictionaries with a list comprehension for the first element\nList one that exists only and not in the input list.\n\nYou can use Python"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "is an autopilot real?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A city in that is a city city. We're called to city streets, but it's the city of the city, a city that's not easy to find out about urban and industrial cities. What are the main reasons for this city? I've chosen that city is not my only one of those who have been displaced by many of its people.\n\nThe city's character is also known as the \"Hobos.\" - The city's official city is not just a city, but it is also a city. It's a cultural event like a city, town, and people are all known to it. What's your name, so you could think about it? I'm here to stay behind the city's history.\n\nBut what's more, for example: how can we afford the city"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "I have a question about a comet",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1,4 3, 2 and 5 are both positive and negative. What are the benefits of using this technique?\nAssistant: The key difference between a new smartphone and a smartphone is a measure of the distance between two points, typically at their own pace. It allows the audience to have the same level of precision for each key.\n\nFor example, if your data set is normally distributed or have a fixed standard deviation of 1.2, 3.5, 4.2, 4.0, to each score in the dataset (x, y) is relatively symmetrical, and the standard deviation of the distribution.\n\nThink about the central tendency of the data, whether that's a normal distribution, is skewed or symmetric. For example, if the mean is \"no"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "is curiosity just chemicals?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" chemicals called chemicals\" x22; \"chemicals\" x3 in a row",
+   "text": " The chemicals in an increase in chemicals in the production of chemicals. In chemicals, chemicals are chemicals, chemicals and chemicals. They release chemicals that can cause chemical chemicals into chemicals in them. Some chemicals can cause chemicals to be chemicals called chemicals. So chemicals are used in chemicals called chemicals can interfere with chemicals in our bodies.\nA chemicals: chemicals released in chemicals that disrupt chemicals released from chemicals called chemicals called chemicals. chemicals called chemicals: chemicals called chemicals to chemicals chemicals like chemicals and chemicals. chemicals chemicals in chemicals called chemicals called chemicals. chemicals.\nK chemicals chemicals called chemicals compounds called chemicals. chemicals called chemicals, chemicals called chemicals called chemicals called chemicals which chemicals known chemicals chemicals called chemicals called chemicals chemicals called chemicals which chemicals chemicals called chemicals chemicals called chemicals called chemicals called chemicals chemicals called chemicals called chemicals chemicals. These"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "why does a bus ticket matter?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1.00am\nAssistant: The United States Constitution is a classic example of a classic \"Mystick's Revenge.\" It's a bit like the classic \"emaple\" or \"A classic problem that requires a classic example of a classic French classic \"one-and-bank game,\" can be used to describe different ways, depending on the rules and context.\n\nIn this case, we've made a few subtle changes to enhance clarity and flow:\n\n- Changed \"The ball is playing a game\" to \"peats the need for a more formal \"took\" to make a mental note of the game's tone and flow. A specific type of play is also important in providing them with a more nuanced and nuanced understanding of their behavior.\n\nHowever, the more specific aspect of this"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "draw me a little animal",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" draw conclusions drawn\" x10; \"draw\" x5 in a row",
+   "text": " A 4-12 inches long and a second draw.\nAssistant: To draw a draw, you can draw a draw in draw, draw from a draw, draw conclusions about drawing draw draw from draw conclusions drawn from drawing draw draw draw conclusions drawn, draw, draw draw conclusions drawn.\n\n drawn draw draw draw drawn draw draw drawn draw drawn from conclusions drawn draw drawn conclusions drawn, draw draw from drawn draw from draw draw conclusions drawn drawn from drawn draw. draw draw drawn into the draw draw from draw draw draw conclusions drawn draw draw from draw, drawn drawn from drawing draw heart draw conclusions drawn from draw draw conclusions drawn draw drawn from drawn draw draw from drawn.\n\n drawn draw draw draw draw draw conclusions drawn, drawing draw conclusions drawn from draw drawn draw drawn into draw conclusions drawn from draw drawn from draw draw from"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "show me your face",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \", and safety\" x3",
+   "text": " The first day a car was going on and about the car. What is your car? What kind of car do you do during this trip?\nAssistant: When planning your vehicle or car, it's essential to consider how the car will affect your vehicle. Before driving, consider any vehicles with vehicle in an open, honest vehicle, or car will all be expected of all available vehicles. If you're vehicle for a car or in a car, they can be used to car and car parts. A car is also important for you to set safety concerns and car safety measures.\n\nIt's also essential to avoid overfitting and car safety, as the car car Safetyer's safety features, such as in cars, and safety features like car safety, the safety, and safety, and safety precautions when the"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "what do you collect?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A person's relationship can be described as having physical or emotional, physical, and emotional state. Here are some examples of what's going on.\nAssistant: The relationship between exercise and mental health is a physical and mental state. It's a form of physical examination, which is essential in daily life. One study found that exercise is physically active or more physically active and engaging than the physical activity. The physical activity itself can also help to reduce stress. This can include activities such as walking, cycling, yoga, or physical activity, to stay within minutes of physical activity."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "wlg",
+   "prompt": "what is the capital of France?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1, e has a short history and many countries in the world. What is the most interesting thing about this?\nAssistant: The Great Red is the Great used to describe people's actions and decisions that are not considered by humans. It's not a specific event or situation where humans or animals, usually denoted as \"God\". In fact, this is the event that follows the event of a specific event, but it's still a matter of minutes or days. \n\nIn general, the event of an event, a event is typically created as the event itself, followed by the event itself. However, there are several ways to create a theme that allows users to take on the event, such as using a combination of social media and email marketing, where everyone is actively working with the company. In"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+# SHAPESOLVE on box f GPU 0 (freed from true_sdm_d1024).
+w57_sdm_d1024_hm3072_hops16_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --share-store --B 512 --accum 64

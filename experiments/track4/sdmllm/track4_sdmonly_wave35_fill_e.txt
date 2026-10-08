@@ -1,0 +1,3 @@
+# wave 35 on box e: the best body knobs together, and the plain twin of the width-512 mixer at the best batch. Sealed in the plan.
+w35_cn_d1536_B512_hm3072_hops8_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 3072 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w35_cn_d512_B512_400M new sdmonly_none 0 400000000 train_big --d 512 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100

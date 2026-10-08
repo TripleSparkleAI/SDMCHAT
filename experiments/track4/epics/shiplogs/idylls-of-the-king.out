@@ -1,0 +1,1 @@
+{"id":"idylls-of-the-king","shipped":false,"reason":"over the 8388608-byte budget","attempts":[{"M":30720,"radius":103,"binBytes":7864320,"wordPerfect":false,"teacherForcedAcc":0.9999475600751778,"openingFirstError":6374,"buildSeconds":786.404,"verifySeconds":516.974}]}

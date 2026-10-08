@@ -1,0 +1,2 @@
+# wave 38 on box j: the new best recipe pushed and combined. Sealed in the plan.
+w38_cnmix_d512_T1024_B128_hm3072_400M new sdmonly_none 0 400000000 train_big --d 512 --hop-mlp 3072 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 128 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

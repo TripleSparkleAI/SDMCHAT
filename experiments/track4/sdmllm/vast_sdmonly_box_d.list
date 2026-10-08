@@ -1,0 +1,4 @@
+# vast_sdmonly_boxes.list - the SDMONLY test fleet, rented 2026-10-03 (UTC). An explicit list, one line per box.
+# Rented for 5 hours on the navigator's word; ALL are destroyed at the deadline 2026-10-03T15:45:00Z.
+# Transfer prices are per TB. A first RTX 5090 (instance 54001274, machine 136723, $0.5022/h) charged $39.06/TB both
+54007096     sdmonly-d-4x5090   4x_RTX_5090        114.34.26.236   43788     2.1481     2.60       3.91     137090   575.64.03    2026-10-03T11:49:05Z

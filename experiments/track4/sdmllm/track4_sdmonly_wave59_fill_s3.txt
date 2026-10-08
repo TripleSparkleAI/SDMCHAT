@@ -1,0 +1,2 @@
+# Wave 59 on s3 GPU 1: the base run's memory-off twin (BA4)
+true_cn_d1536_hm6144_hops16_T2048_wsd_2B new sdmonly_none 0 2000000000 train_big --d 1536 --hop-mlp 6144 --hops 16 --untie --conj 2 --body-opt muon --T 2048 --B 64 --accum 8 --sched wsd --wsd-decay 0.2 --keep-at 1600000000 --eval-every 5000 --ckpt-every 1000 --log-every 100

@@ -1,0 +1,7 @@
+# data, token shards, checkpoints and downloaded tokenizer copies stay local
+data/
+checkpoints/
+*.pt
+*.bin
+*.npy
+runs/*.stdout

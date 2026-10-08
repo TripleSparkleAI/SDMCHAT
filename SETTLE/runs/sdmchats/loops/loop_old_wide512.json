@@ -1,0 +1,244 @@
+{
+ "which": "old",
+ "rows": [
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 17,
+   "loopRate": 0.567,
+   "distinct2": 0.775,
+   "meanTokens": 153.3,
+   "secs": 310.202
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 1,
+   "loopRate": 0.067,
+   "distinct2": 0.908,
+   "meanTokens": 120,
+   "secs": 136.463
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "replies": 24,
+   "looping": 7,
+   "loopRate": 0.292,
+   "distinct2": 0.889,
+   "meanTokens": 160,
+   "secs": 307.754
+  }
+ ],
+ "samples": [
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" red blood cells\" x18",
+   "text": " It is a rare situation in which it is associated with a red flag, and has a red blood cell.\nThe red blood cells are red and blue (red blood cells). Since the blood is red blood cells, it can be red blood cells and red blood cells. This blood in response to the red blood cells, causing red blood cells red blood cells that respond to white blood cells.\nIf you have a red blood cells or red blood cells called red blood cells. This is a red blood cell red blood cells (red blood cells and red blood cells). The body also works like red blood cells and red blood cells. This can be given to white blood cells.\nThe red blood cells are very healthy red blood cells, and red blood cells in the left red blood cells. These red cells grow"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " We have the periods where we live, we feel we need to know how to survive and what is needed for us?\nHow to get started:\n- What is needed\nWhat you need is to take a lot of work?\n- What is needed\n- How to make sure your health insurance works better than in the future?\n- How can you tell me what happened?\nWhen you’re ready to go to school, the difference between your child and parents.\nHow does this happen if you have an asthma attack?\nYou can try to stop on how to use it during your pregnancy and how much will work? What is the best solution to make sure it was for your child to do so. Also be sure to check with your child’s breathing or body in order to avoid the need to make"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": true,
+   "why": "\"cold\" x3 in a row",
+   "text": " The term “hot, cold and hot water has been used to describe the cold symptoms of cold, cold, cold, or cold. The cold can help you find colds of cold and cold.\nIf you have colds you have cold, a cold period.\nThe cold has made an interesting hot weather? You can still see in cold days or cold winters over cold cold. This is a cold state fluv2017-2023 cold: cold air for some cold symptoms.\n- cold weather: cold air\nThis is a short and very cold. The air cold air warm air can result in cold air.\nIf you are cold at cold or even cold. You may have colds some very cold air, but this can be cold symptoms. But you should never be cold?\nNo."
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"?\\n- What\" x7",
+   "text": " What is the sun for the moon?\n- How does it work?\n- What is the difference between the two?\n- What are the differences between the two?\n- What are two different ways of doing?\n- What are the differences between the two terms?\nA-1 What is a structure and an expression or a combination of two factors?\n2. What are some of these terms?\n- What is the difference between the two types of words?\n- What is the difference between the two?\n- What is the difference between the two?\nWhen each type of question is based on a second question, why do I think it’s important to define the above. For example, if you have a situation like this:\n- What are the differences between people and animals? How are the two groups that do"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" rising sea levels\" x3",
+   "text": " the ocean is warm due to climate change, global warming has been increasing. But in recent years it has been a rising sea levels since 2019 when the U.S. warming is warming and the increase in warming by rising sea levels.\n- Scientists say some changes in sea level rise – as climate increases will be more. But a recent release from the NOAA on Climate predict that warming will be a stronger warming trend than it’s warming. Now, the report states that warming up the trend at the same period. The authors say:\n\"We were beginning to increase energy levels in global warming, because rising sea levels are rising.\nThis is where rising temperatures from 40 degrees F and rising sea level. This is why the trend is rising. So what do we think will be rising from global warming"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The water of salt. The body has a red blood cells called the body to produce oxygen, called the body.\n- When your body is located in your body (the lower form) it is called a body.\nIn many cases, the body converts energy is absorbed into the body in our body for healing energy. It causes inflammation to the organs that are broken up and functioning.\nIf you have any problems with this condition, your body will be a very serious health issue.\n- The body needs your body to produce oxygen and then it damages its tissues. This is how your body will work.\nIf you want to make sure your body has sufficient energy throughout your body and work as well as the amount of energy needed for your body. It is called a process called the “freedom”. A “"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" What is it\" x4",
+   "text": " What is the basic physical body of an organism as it has its own functions. What is it in itself? What is it: What is it?\nA: What is a soul? What is the body of the body or soul?\nWhat is this term function in which it means a lot of good. There are many forms of tissue that may be used for pain relief as well as the body of soul, which is used in the body. How does it differ from one another?\n- What does it mean? What is it that gives to this point of view in the body or mind?\nThere is a very specific type of treatment you will need.\n2. What is the difference between the types and the body?\nThe primary objective of this term is its use in any form of energy or strength"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A poem about this word, the place where “toe” is a place where the poet would be.\n- In this poem, the poem will describe the poet’s actions and its meaning. It is a great way to do it in English.\nHow To Read a Writing? Write the English Essay below:\nThe best of most popular texts and the poem from the Hanging or the English poet's works by the example?\n- What is Shakespeare's most important in the poem, which is one of the most popular poems, and especially one on the other. That is a place where the poem comes with the poem.\nThis is the case for students to see a poem, as well as you could see, the poem would be written by your own father or a poet.\n- What a poet"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" piece of paper\" x3",
+   "text": " 1:20 minutes\nA literary piece, which is a piece of paper and a piece of paper.\n3. A good essay is about 1/4 in. for the work of a paper or paper or piece of paper. In some cases there is no clear definition to understand what they need, but it's important.\nIn an essay, I believe that for the paper is the main point of the paper was printed on paper and what it means to be used as a tool for research papers. In fact, some people make great progress in writing this report. They write a paper, they said, \"The idea that there were no things about it and not a lot of things on that matter.\n- The authors are saying that this is only the beginning. The paper also points out"
+  },
+  {
+   "model": "wide512",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" village village village\" x79; \"village\" x32 in a row",
+   "text": " A village is small, village of Lava Nambara, a village village, village, is village village.\nThe village is village village, village in the village village and town village, village village village village village. village village village village village on village village village village village village was village village village village village village village village village village village.\n village village village on village village village village village village village village village village village village village village village village.\n village village village village village village village village village village village village village village village, village\nhe village village village village was village village. village village village village village village village village village village village is village village village village village village village village village village of  village village village village village village village village village village and village village village village village village village.\n"
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " is a type of the Sea coast from 1798 to 1879\nThe Sea of Britain was the first European Sea for the\nland Sea is home to the first born in Britain\nIn the early 1890s, the population would be as much more than half by Europe and now being responsible for the expansion of sea-astral landings – the Gulf of\n\n mark the\nUSN Sea. One region has been the major\nThe development of the Sea is that of a considerable number of new cases is not listed to represent the\nmost devastating climate of any country in North"
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "prompt": "Autumn Leaves",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "ra\nSulfana – An English translation that is the\nLon language of the language that is spoken in\nto English, the official language for the most part and pronunciation of a\nA native to the state language.\nThe official language for the Spanish in the\nthri English in English from which the\nC. of 1791, in one language which was translated into English as an “discovery”, from the\n“Although it is more important than the\nsafre, the Spanish were a\nproced, this is not a perfect\nexdise the fact"
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "prompt": "A Lantern in the Snow",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Ice\nA well-being is a good way for kids\nThe best way to build a well balanced diet\nand good eating well in the middle of high school students.\nWe talk about nutrition and eating disorders. It is important\nto eat the well, while our\nother community from others\nDo not look at the most important questions that could\nbe the environment.\nSays for children to learn the different types of\nschools, but just a few.\nWhen you think about the different ways we can talk about\nhow much milk? First, let us examine\nbe how we have collected"
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Park\nThe Homsday, called the Clough\nThe Clostridium to the Clkings\nIn 1886 the town of Kinnabia\nin its turn on its name and the\nGunna. The name given is\nit also includes a description which comes from\nof great value for them.\nI see to us in a 2-page\nwith the word \"sad\".\nThe letter Hound is called “Buddling\nor.\" The word of \"chuck\" means that a\ncompiling with the word \"meet.\"\nFossil for"
+  },
+  {
+   "model": "wide512",
+   "surface": "poem",
+   "prompt": "Morning Bread",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Station\nThis document defines the number of symbols connected to the\nmystery of the text which is\nthe expression that gives a new idea for writing.\n2. A letter in a text\nand write an end and a text.\nTo highlight the symbols of the text itself and write it as\nc. The teacher will always use their name, then or\nend to give you the title. It should\nl any number of words written by the\nThe first paragraph is written for your paper\nis given in writing.\nLarnishes are the most practical way\nwith the words on"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "is an autopilot real?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" car car car\" x63; \"car\" x50 in a row",
+   "text": " a device used by vehicles and other devices to build the car’s vehicle, or a car?\nThe car is an engine with a car and a car.\nWhen it comes out of car, it can be used in car cars. It’s also great car car, so there is a wide variety of car parts including car seat car while still car parts as car age.\nAs car car car parts are car car parts. car car car, car car car car car car car car car car car car car car car car car or car car car car car.\n- car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car car"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "I have a question about a comet",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the word for all children in this family.\nWhy do you think that the word “taste”\nThe word “spar”\n“to give to our children,” “an older, especially of the\ndise.” In the Bible, a Hebrew word (i.e. it appears), but what he may have done through\na letter (for example) we can get\nto see that there are many\nthe things they need to do, and they want them to be\nof their own, or\nto be aware of each word and the word “mone”.\nWhen you read and take pictures of the word\nand use your words “go” is a\n“I am only thinking about what you have” or “the meaning of”\nThis is why I think we will discuss"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "is curiosity just chemicals?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" Earth orbit?\\n\" x3",
+   "text": " What is a concept? What is it about Earth?\nWhat is the difference between two terms?\nFirst of the Earth orbit?\nWhy is Earth orbit?\nTo understand why Earth’s orbit in Earth orbit?\nIt is only known as Earth orbit around the Sun (the Earth) orbit about our sun in 3 billion years? What makes Earth's orbit?\nThere is no sign that Earth orbit is the largest moon, but Earth isn’t there enough to be an orbit of Earth. There are a lot of the orbit around us.\nI do know that orbit is roughly 8 million times more orbit than Earth. It is a 1000 times farther apart than it was thought to be 70 miles away from Earth orbit (and 1.2 billion years ago)\nThis is not possible about"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "why does a bus ticket matter?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the most common source for electricity. The most important part of the public is that it is the least important part of the solution, but it does not cause any other problem to it.\n2. The problem is that a computer can be used as an alternative: It can be difficult if we cannot, at a time when someone has problems with us, and when people are looking for ways to improve their overall health and well-being, it is important that you have been in the right place.\nThe above factor is a crucial step toward achieving health benefits:\n- The right way of treating this disease is the one who is responsible for managing your own unique needs.\nHowever, this is why we need to follow:\n- The right to maintain a healthy lifestyle can be reduced and eliminated\n- The average weight of"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "draw me a little animal",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The animal of God was the one God, where the earth is a\nGod's name and salvation. The word is \"chick\" and is God's God who does in the name of God. He is born on the earth, and that God be revealed to us all will understand them with all humans.\nThe human God in this place has been made, but rather like a man or woman as an individual who may want to be born a day or another.\nIn the Bible, we should look at God's name as \"mashch\" (Matthew 5:15). The day was then given to us. In this chapter, there are two words of God and his wife have all the things that are needed to be made to bring our salvation in heaven. We must first look"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "show me your face",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " my heart\nwas to be the best way you can.\nYou are not only about your own heart, but also\nwill still be a part of the heart and soul,\nsnow! You have been so much done.\nThe heart of God will be hearted in your heart for no reason as this: it is that God gives you great heart. What he does about you? What do you need to take in you to make sure that what you are eating? What is the best way to get your heart and soul, and see them! You can also check out what’s called it to give you a good night of life?\nThe only way to make sure you have enough time for an hour or so.\nI am not alone.\nIt can be difficult for people to come home."
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "what do you collect?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" the user interface\" x7; \"interface\" x3 in a row",
+   "text": " what is a web browser?\nIt can be considered when a user or user interface to access it?\nA user interface, like this: It has been known as an “green network” of the user interface. It was also used to create the same user names on the user.\nYou don’t want the user to download the name and look for the user ID.\n|This user can be created using the user interface by following user interface (like user interface).\nThe user interface is a user interface with the user interface, the user interface will use the user interface for the user interface. The user interface or user interface interface is the user interface interface or an interface.\n- The interface interface between a interface interface and interface interface between the interface interface. The interface interface interface (I interface interface interface)"
+  },
+  {
+   "model": "wide512",
+   "surface": "wlg",
+   "prompt": "what is the capital of France?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" of the capital\" x7; \"capital\" x3 in a row",
+   "text": " a capital city (H) is capital of its capital city, and is the capital of the capital city of the capital city. It is capital of capital, the capital of Ganga.\nThe capital city of the capital of the capital city, where it comes from capital, the capital was created as well. The capital capital of capital was named after the capital in 1567, the capital of capital.\nThe capital is considered to be capitalizing capital, and is capital of the capital, which is the capital of the capital, for most capital, capital, of capital.\nWhen the capital is destroyed by capital, capital, capital of capital, a capital city. The capital was capital of an \"military capital\" is located in the capital capital. The capital city of the capital city was"
+  }
+ ]
+}

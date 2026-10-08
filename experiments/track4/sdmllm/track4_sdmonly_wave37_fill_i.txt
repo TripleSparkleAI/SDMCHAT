@@ -1,0 +1,2 @@
+# wave 37 on box i: the new body at width 256. Sealed in the plan.
+w37_cn_d256_B512_hm3072_400M new sdmonly_none 0 400000000 train_big --d 256 --hop-mlp 3072 --untie --conj 2 --body-opt muon --B 512 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100

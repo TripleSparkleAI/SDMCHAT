@@ -1,0 +1,8 @@
+# vast_sdmonly_fleet11.list - the wave 11 fleet (lane FLEET10), rented 2026-10-03 (UTC). An explicit list, one line per box.
+# Each box is 2x RTX 5090, image pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime, disk 100 GB. Every offer passed the selector
+# (--min-vram 30000 --disk 100) and its transfer veto ($15/TB). The deadline is 7 hours after the last box is ready; the pull
+# loop track4_sdmonly_vast_watch_fleet11.sh destroys every box below by its id at that deadline.
+# Destroyed before use (not in the list): 54033239 (m, machine 24145, the host could not start the container's GPUs),
+# 54033220 (h, image pull stalled), 54036755 (h again, machine 140737, stalled then stopped by the host; slot h left empty),
+# 54033225 (i, machine 52491, network stalled: HF download stuck at 1.14 GB, box-to-box copy about 65 KB/s).
+# instance   label              card               host            ssh_port  dph_total  down_$/TB  up_$/TB  machine  driver       rented_utc

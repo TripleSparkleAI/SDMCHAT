@@ -1,0 +1,109 @@
+{
+ "run": "sdm_storeopt_qstop_soft8_s0_20M",
+ "arm": "sdm",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 8.0,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   2,
+   3
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2898432,
+  "frozen_store_values": 0,
+  "total_trainable": 35994112
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 5988352.0,
+  "total": 72179712.0
+ },
+ "device": "mps",
+ "stamp_start": {
+  "utc": "2026-09-30T18:58:37Z",
+  "load": [
+   82.66,
+   102.68,
+   106.89
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "resumed_from_step": 0,
+ "stamp_end": {
+  "utc": "2026-09-30T19:33:18Z",
+  "load": [
+   115.32,
+   141.62,
+   139.57
+  ],
+  "ncpu": 18,
+  "powermode": "2",
+  "macos_build": "25F71",
+  "torch": "2.8.0",
+  "host": "HappyRobots-MacBook-Pro.local"
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.083571433457636
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9483353840494924
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.8919725155632487
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.857282939679662
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6056854971044279,
+  "nats_per_token": 5.39485973750795,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.615745481027779,
+  "nats_per_token": 5.428659757702399,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.6847998174995364,
+  "nats_per_token": 5.660671854843227,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_last_hop": 0.6711111068725586
+}

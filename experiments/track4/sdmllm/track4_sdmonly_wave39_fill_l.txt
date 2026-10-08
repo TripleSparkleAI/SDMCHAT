@@ -1,0 +1,2 @@
+# wave 39 on box l: hop MLP 6,144 with 8 hops at width 1,024. Sealed in the plan.
+w39_cn_d1024_B512_hm6144_hops8_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 6144 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

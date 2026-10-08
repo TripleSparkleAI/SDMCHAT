@@ -1,0 +1,121 @@
+# D_q16 HF Hub: philosophy / public-domain book datasets
+- tool: python3 urllib, HF Hub API /api/datasets?search=..&sort=lastModified&direction=-1
+- fetched: 2026-10-03 10:54:03 UTC
+
+## search `philosophy`
+- url: https://huggingface.co/api/datasets?search=philosophy&sort=lastModified&direction=-1&limit=30&full=true
+- results: 30, lastModified >= 2026-06-01: 21
+- [2026-09-19] giabaohuynhasu/war-correspondent-philosophy-corpus downloads 127 likes 0 ['license:cc-by-4.0']
+- [2026-09-12] P0u4a/msm-ai-assistant-philosophy-spec downloads 34 likes 0 ['license:mit']
+- [2026-09-11] CristianPelayo/openalex-philosophy downloads 143 likes 0 ['license:cc0-1.0']
+- [2026-09-02] giabaohuynhasu/war-correspondent-philosophy-metadata downloads 39 likes 0 ['license:cc-by-4.0']
+- [2026-08-30] webzuweb/philosophy-as-inductive-bias downloads 54 likes 1 ['license:mit']
+- [2026-08-27] guicybercode/japan-math-philosophy-prompts downloads 70 likes 0 ['license:cc-by-4.0']
+- [2026-08-15] plonemraz/Meta-Philosophy downloads 36 likes 0 ['license:mit']
+- [2026-07-30] dougalldeepmind/2026-07-29-msm-philosophy-spec-focused-discovery downloads 114 likes 0 []
+- [2026-07-29] dougalldeepmind/2026-07-29-msm-philosophy-spec-petri-validation downloads 150 likes 0 ['license:other']
+- [2026-07-29] dougalldeepmind/2026-07-29-msm-philosophy-spec-surf-audit downloads 83 likes 0 ['license:other']
+- [2026-07-29] dougalldeepmind/2026-07-29-msm-philosophy-spec-fabrication-probes downloads 77 likes 0 ['license:other']
+- [2026-07-29] dougalldeepmind/2026-07-29-msm-philosophy-spec-fixed-eval downloads 92 likes 0 ['license:other']
+- [2026-07-18] gmahia/philosophy-classics-structured downloads 20 likes 0 ['license:mit']
+- [2026-07-08] AngelWarmSmile123/deep-philosophy-reasoning-zh downloads 35 likes 1 ['license:cc-by-nc-sa-4.0']
+- [2026-06-30] joyboseroy/buddhist-philosophy-graph downloads 24 likes 0 ['license:cc-by-4.0']
+- [2026-06-25] Zhatex0/strix-philosophy-qa downloads 13 likes 0 []
+- [2026-06-10] chloeli/aft-no-cot-qwen3-philosophy-spec downloads 25 likes 0 ['license:mit']
+- [2026-06-10] chloeli/aft-no-cot-qwen2.5-philosophy-spec downloads 59 likes 0 ['license:mit']
+- [2026-06-10] chloeli/aft-cot-qwen2.5-philosophy-spec downloads 34 likes 0 ['license:mit']
+- [2026-06-10] chloeli/aft-cot-qwen3-philosophy-spec downloads 22 likes 0 ['license:mit']
+- [2026-06-10] chloeli/msm-qwen-philosophy-spec downloads 65 likes 0 ['license:mit']
+- [2026-05-10] 11-47/philosophy_dialectics_25k downloads 8 likes 0 ['license:apache-2.0']
+- [2026-04-28] ruggsea/stanford-encyclopedia-of-philosophy_instruct downloads 211 likes 17 []
+- [2026-04-13] philosophyFire/Ai_ethics_dataset downloads 18 likes 0 []
+- [2026-04-08] PAUL1122/philosophyAIEdu downloads 10 likes 0 []
+- [2026-04-03] DinhIchMinhHoang/RAG-Philosophy downloads 3 likes 0 []
+- [2026-02-26] LisaMegaWatts/philosophy-corpus downloads 220 likes 0 ['license:mit']
+- [2026-02-24] mstyslavity/philosophy_undergrad downloads 24 likes 0 ['license:apache-2.0']
+- [2026-02-23] Applied-Ai-Philosophy/Finetuned_cognos downloads 2 likes 0 ['license:mit']
+- [2026-02-23] nowsika/Eastern-Philosophy-Safety-Prompt downloads 69 likes 0 ['license:cc-by-4.0']
+
+## search `stanford encyclopedia`
+- url: https://huggingface.co/api/datasets?search=stanford+encyclopedia&sort=lastModified&direction=-1&limit=30&full=true
+- results: 7, lastModified >= 2026-06-01: 0
+- [2026-04-28] ruggsea/stanford-encyclopedia-of-philosophy_instruct downloads 211 likes 17 []
+- [2025-08-15] johnnyboycurtis/stanford_encyclopedia_of_philosophy downloads 42 likes 1 ['license:apache-2.0']
+- [2024-10-13] AiresPucrs/stanford-encyclopedia-philosophy downloads 978 likes 53 ['license:other']
+- [2024-08-07] ruggsea/stanford-encyclopedia-of-philosophy_chat_multi_turn_mistral_large downloads 65 likes 5 []
+- [2024-08-06] ruggsea/stanford-encyclopedia-of-philosophy_chat_multi_turn_athene downloads 29 likes 2 []
+- [2024-08-06] ruggsea/stanford-encyclopedia-of-philosophy_chat_multi_turn downloads 56 likes 14 []
+- [2024-02-03] dmarx/stanford-encyclopedia-of-philosophy_dec23 downloads 34 likes 1 []
+
+## search `gutenberg`
+- url: https://huggingface.co/api/datasets?search=gutenberg&sort=lastModified&direction=-1&limit=30&full=true
+- results: 30, lastModified >= 2026-06-01: 30
+- [2026-10-01] Alexey240577/project-gutenberg downloads 23 likes 0 ['license:cc0-1.0']
+- [2026-09-26] Lokeshlks/gutenberg_books_text downloads 80 likes 0 ['license:mit']
+- [2026-09-22] juniot/qualc-gutenberg-en downloads 36 likes 0 ['license:other']
+- [2026-09-21] audibeal74/panta_picto_gutenberg_v3 downloads 23 likes 0 []
+- [2026-09-20] sirunchained/LLM-texts-gutenberg downloads 233 likes 0 ['license:cc-by-4.0']
+- [2026-09-19] thomasdewitte/gutenberg-nl downloads 63 likes 0 []
+- [2026-08-28] asimov-datasets/gutenberg.org downloads 9 likes 0 ['license:cc0-1.0']
+- [2026-08-10] audibeal74/Gutenberg_v2 downloads 13 likes 0 []
+- [2026-07-30] estrogen/gutenberg-v1-predictions downloads 7 likes 0 []
+- [2026-07-28] nandhakumarms/qualc-gutenberg-en downloads 54 likes 0 ['license:other']
+- [2026-07-24] gutenbergpbc/aria-reward-hacking-5k downloads 21 likes 0 ['license:other']
+- [2026-07-21] glossAPI/Ellinika_Keimena_Project_Gutenberg downloads 13 likes 0 ['license:cc-by-4.0']
+- [2026-07-20] gutenbergpbc/aria-reward-hacking downloads 45 likes 0 ['license:other']
+- [2026-07-16] Mwanzau/Tumbuka_Text_Corpus_Translated_Gutenberg downloads 101 likes 0 ['license:apache-2.0']
+- [2026-07-09] flymin/Project_Gutenberg_EPUB downloads 50 likes 0 []
+- [2026-07-09] flymin/Project_Gutenberg_KF8_MOBI downloads 20 likes 0 []
+- [2026-07-09] rwcitek/gutenberg downloads 25 likes 0 ['license:mit']
+- [2026-07-07] lazos/gutenberg-hu downloads 39 likes 1 ['license:cc0-1.0']
+- [2026-07-07] zongqing0068/EvolvingWorld-Books-Gutenberg downloads 25 likes 1 []
+- [2026-07-05] br-llm-data/books-gutenberg-project-pt-br downloads 4 likes 0 []
+- [2026-07-05] br-llm-data/books-gutenberg-project-instruct downloads 5 likes 0 []
+- [2026-07-05] costadev00/books-gutenberg-project-instruct downloads 3 likes 0 []
+- [2026-07-05] costadev00/books-gutenberg-project-pt-br downloads 5 likes 0 []
+- [2026-07-01] Despina/project-gutenberg-fiction-relations downloads 18 likes 0 []
+- [2026-07-01] ambrosfitz/gutenberg-19c-clean-v4 downloads 34 likes 0 []
+- [2026-06-30] wjn922-01/gutenberg downloads 22 likes 0 []
+- [2026-06-27] LeData/media-metadata-gutenberg-books downloads 214 likes 0 ['license:cc0-1.0']
+- [2026-06-25] gutenbergpbc/pangram-editlens-100 downloads 37 likes 0 ['license:cc-by-nc-sa-4.0']
+- [2026-06-01] osvoorhe/gutenberg-english-text downloads 275 likes 0 []
+- [2026-06-01] xlr8harder/talkie-yarn-32k-gutenberg-pre1931-265m downloads 37 likes 0 ['license:other']
+
+## search `public domain books`
+- url: https://huggingface.co/api/datasets?search=public+domain+books&sort=lastModified&direction=-1&limit=30&full=true
+- results: 0, lastModified >= 2026-06-01: 0
+EMPTY
+
+## search `pg19`
+- url: https://huggingface.co/api/datasets?search=pg19&sort=lastModified&direction=-1&limit=30&full=true
+- results: 30, lastModified >= 2026-06-01: 3
+- [2026-09-16] Delta351/pg19-icr-data-v1 downloads 210 likes 0 ['license:apache-2.0']
+- [2026-07-15] jet-ai/pg19-subsample downloads 32 likes 0 ['license:apache-2.0']
+- [2026-06-12] Attestrum/deepmind-pg19-sealed downloads 25 likes 0 ['license:apache-2.0']
+- [2026-05-18] virtualkevin/pg19-jsonl downloads 43 likes 0 []
+- [2026-05-14] nnilayy/pg19-stability-bench downloads 11 likes 0 ['license:apache-2.0']
+- [2026-05-12] nnilayy/pg19-concurrency-bench downloads 26 likes 0 ['license:apache-2.0']
+- [2026-05-02] MonumentalSystems/pg19-filtered-enriched-v1 downloads 116 likes 0 ['license:unknown']
+- [2026-04-21] ZengXiangyu/pg19-and-proof-pile downloads 56 likes 1 ['license:other']
+- [2026-02-24] wfzimmerman/pg19-semantic-novelty downloads 32 likes 0 ['license:cc-by-4.0']
+- [2026-02-14] LarryLovestein/pg19_1k downloads 14 likes 0 []
+- [2026-01-25] mrsndmn/pg19-random-suffix-shuffle-4096 downloads 7 likes 0 []
+- [2026-01-25] mrsndmn/pg19-partial-lowercased-4096-tokens downloads 8 likes 0 []
+- [2026-01-25] mrsndmn/pg19-random-suffix-shuffle-2048 downloads 8 likes 0 []
+- [2026-01-25] mrsndmn/pg19-partial-lowercased-2048-tokens downloads 14 likes 0 []
+- [2026-01-16] mrsndmn/pg19-model-sampled-llama3.1-8B-prefix-64-max_len-2048-temperature-2.0 downloads 9 likes 0 []
+- [2026-01-16] mrsndmn/pg19-model-sampled-llama3.1-8B-prefix-64-max_len-2048-temperature-1.0 downloads 20 likes 0 []
+- [2026-01-15] mrsndmn/pg19-model-sampled-llama3.1-8B-prefix-64-max_len-2048 downloads 15 likes 0 []
+- [2026-01-15] mrsndmn/pg19-model-sampled-prefix-64-max_len-2048 downloads 5 likes 0 []
+- [2026-01-13] mrsndmn/pg19-random-suffix-shuffle-64 downloads 7 likes 0 []
+- [2026-01-13] mrsndmn/pg19-partial-paraphrases-64-of-256-tokens downloads 11 likes 0 []
+- [2026-01-13] mrsndmn/pg19-full-paraphrases-256-tokens downloads 17 likes 0 []
+- [2026-01-13] mrsndmn/pg19-lowercased-partial-64 downloads 6 likes 0 []
+- [2026-01-13] mrsndmn/pg19-lowercased downloads 5 likes 0 []
+- [2025-12-23] pvd232/pg19 downloads 2 likes 0 []
+- [2025-12-16] Tanushreeeeee/pg19 downloads 21 likes 0 ['license:apache-2.0']
+- [2025-11-27] hcyy/pg19-yarn-6400 downloads 11 likes 0 ['license:apache-2.0']
+- [2025-11-26] hcyy/pg19-test downloads 15 likes 0 ['license:apache-2.0']
+- [2025-11-10] yoki123/qwen25_72b_pg19 downloads 4 likes 0 []
+- [2025-11-10] yoki123/qwen25_7b_pg19 downloads 11 likes 0 []
+- [2025-10-22] mrsndmn/pg19 downloads 14 likes 0 []

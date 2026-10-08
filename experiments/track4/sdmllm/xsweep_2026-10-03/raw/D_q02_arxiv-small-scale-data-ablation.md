@@ -1,0 +1,22 @@
+# D_q02 arXiv small-scale data ablation
+- query (arXiv Atom search_query): `abs:"pretraining data" AND (abs:"small-scale" OR abs:"small language model" OR abs:"proxy model") AND (abs:ablation OR abs:mixture)`
+- url: http://export.arxiv.org/api/query?search_query=abs%3A%22pretraining+data%22+AND+%28abs%3A%22small-scale%22+OR+abs%3A%22small+language+model%22+OR+abs%3A%22proxy+model%22%29+AND+%28abs%3Aablation+OR+abs%3Amixture%29&start=0&max_results=40&sortBy=submittedDate&sortOrder=descending
+- tool: python3 urllib, arXiv Atom API, sortBy=submittedDate desc
+- fetched: 2026-10-03 10:48:15 UTC
+
+- results: 7, in window (>=2026-06-01): 0
+
+- [2026-05-13] Always Learning, Always Mixing: Efficient and Simple Data Mixing All The Time - http://arxiv.org/abs/2605.15220v1
+  snippet: Data mixing decides how to combine different sources or types of data and is a consequential problem throughout language model training. In pretraining, data composition is a key determinant of model quality; in continual learning and adaptation, it governs what is retained and acquired. Yet existing data mixing methods address only one phase of this lifecycle at a time: some require smaller proxy models tied to a si
+- [2025-04-10] Echo Chamber: RL Post-training Amplifies Behaviors Learned in Pretraining - http://arxiv.org/abs/2504.07912v2
+  snippet: Reinforcement learning (RL)-based fine-tuning has become a crucial step in post-training language models for advanced mathematical reasoning and coding. Following the success of frontier reasoning models, recent work has demonstrated that RL fine-tuning consistently improves performance, even in smaller-scale models; however, the underlying mechanisms driving these improvements are not well-understood. Understanding 
+- [2024-10-15] Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws - http://arxiv.org/abs/2410.11820v1
+  snippet: The composition of pretraining data is a key determinant of foundation models' performance, but there is no standard guideline for allocating a limited computational budget across different data sources. Most current approaches either rely on extensive experiments with smaller models or dynamic data adjustments that also require proxy models, both of which significantly increase the workflow complexity and computatio
+- [2024-03-25] Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance - http://arxiv.org/abs/2403.16952v2
+  snippet: Pretraining data of large language models composes multiple domains (e.g., web texts, academic papers, codes), whose mixture proportions crucially impact the competence of outcome models. While existing endeavors rely on heuristics or qualitative strategies to tune the proportions, we discover the quantitative predictability of model performance regarding the mixture proportions in function forms, which we refer to a
+- [2023-10-23] DoGE: Domain Reweighting with Generalization Estimation - http://arxiv.org/abs/2310.15393v2
+  snippet: The coverage and composition of the pretraining data significantly impacts the generalization ability of Large Language Models (LLMs). Despite its importance, recent LLMs still rely on heuristics and trial and error to increase or reduce the influence of data-domains. We propose DOmain reweighting with Generalization Estimation (DoGE), which optimizes the probability of sampling from each domain (domain weights) in a
+- [2023-05-17] DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining - http://arxiv.org/abs/2305.10429v4
+  snippet: The mixture proportions of pretraining data domains (e.g., Wikipedia, books, web text) greatly affect language model (LM) performance. In this paper, we propose Domain Reweighting with Minimax Optimization (DoReMi), which first trains a small proxy model using group distributionally robust optimization (Group DRO) over domains to produce domain weights (mixture proportions) without knowledge of downstream tasks. We t
+- [2021-11-03] An Explanation of In-context Learning as Implicit Bayesian Inference - http://arxiv.org/abs/2111.02080v6
+  snippet: Large language models (LMs) such as GPT-3 have the surprising ability to do in-context learning, where the model learns to do a downstream task simply by conditioning on a prompt consisting of input-output examples. The LM learns from these examples without being explicitly pretrained to learn. Thus, it is unclear what enables in-context learning. In this paper, we study how in-context learning can emerge when pretra

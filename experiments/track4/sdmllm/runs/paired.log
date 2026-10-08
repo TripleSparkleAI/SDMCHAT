@@ -1,0 +1,91 @@
+qwen_s0_20M 1.61161
+qwen_s1_20M 1.55801
+qwen_s2_20M 1.5972
+sdm_s0_20M 1.6302
+sdm_s1_20M 1.62932
+sdm_s2_20M 1.62199
+sdm_nostore_s0_20M 1.60536
+sdm_nostore_s1_20M 1.60613
+sdm_nostore_s2_20M 1.60501
+sdm_mlp_s0_20M 1.60933
+sdm_frozen_s0_20M 1.60745
+sdm_big_s0_20M 1.62494
+sdm_softness2_s0_20M 1.60815
+qwen_s0_20M - qwen_s1_20M 0.05359 se 0.00047
+qwen_s0_20M - qwen_s2_20M 0.0144 se 0.00037
+qwen_s0_20M - sdm_s0_20M -0.01859 se 0.00041
+qwen_s0_20M - sdm_s1_20M -0.01772 se 0.00046
+qwen_s0_20M - sdm_s2_20M -0.01038 se 0.00048
+qwen_s0_20M - sdm_nostore_s0_20M 0.00625 se 0.00041
+qwen_s0_20M - sdm_nostore_s1_20M 0.00547 se 0.00046
+qwen_s0_20M - sdm_nostore_s2_20M 0.0066 se 0.00047
+qwen_s0_20M - sdm_mlp_s0_20M 0.00228 se 0.00036
+qwen_s0_20M - sdm_frozen_s0_20M 0.00416 se 0.00041
+qwen_s0_20M - sdm_big_s0_20M -0.01333 se 0.00041
+qwen_s0_20M - sdm_softness2_s0_20M 0.00345 se 0.00041
+qwen_s1_20M - qwen_s2_20M -0.03919 se 0.00041
+qwen_s1_20M - sdm_s0_20M -0.07218 se 0.0006
+qwen_s1_20M - sdm_s1_20M -0.07131 se 0.00056
+qwen_s1_20M - sdm_s2_20M -0.06398 se 0.0006
+qwen_s1_20M - sdm_nostore_s0_20M -0.04734 se 0.00056
+qwen_s1_20M - sdm_nostore_s1_20M -0.04812 se 0.0005
+qwen_s1_20M - sdm_nostore_s2_20M -0.04699 se 0.00057
+qwen_s1_20M - sdm_mlp_s0_20M -0.05132 se 0.00055
+qwen_s1_20M - sdm_frozen_s0_20M -0.04943 se 0.00056
+qwen_s1_20M - sdm_big_s0_20M -0.06692 se 0.00059
+qwen_s1_20M - sdm_softness2_s0_20M -0.05014 se 0.00057
+qwen_s2_20M - sdm_s0_20M -0.03299 se 0.00052
+qwen_s2_20M - sdm_s1_20M -0.03212 se 0.00051
+qwen_s2_20M - sdm_s2_20M -0.02479 se 0.00047
+qwen_s2_20M - sdm_nostore_s0_20M -0.00816 se 0.0005
+qwen_s2_20M - sdm_nostore_s1_20M -0.00893 se 0.00049
+qwen_s2_20M - sdm_nostore_s2_20M -0.0078 se 0.00044
+qwen_s2_20M - sdm_mlp_s0_20M -0.01213 se 0.00047
+qwen_s2_20M - sdm_frozen_s0_20M -0.01024 se 0.0005
+qwen_s2_20M - sdm_big_s0_20M -0.02773 se 0.00051
+qwen_s2_20M - sdm_softness2_s0_20M -0.01095 se 0.00051
+sdm_s0_20M - sdm_s1_20M 0.00087 se 0.00035
+sdm_s0_20M - sdm_s2_20M 0.0082 se 0.00036
+sdm_s0_20M - sdm_nostore_s0_20M 0.02484 se 0.00026
+sdm_s0_20M - sdm_nostore_s1_20M 0.02406 se 0.00038
+sdm_s0_20M - sdm_nostore_s2_20M 0.02519 se 0.00037
+sdm_s0_20M - sdm_mlp_s0_20M 0.02086 se 0.0003
+sdm_s0_20M - sdm_frozen_s0_20M 0.02275 se 0.00021
+sdm_s0_20M - sdm_big_s0_20M 0.00526 se 0.00019
+sdm_s0_20M - sdm_softness2_s0_20M 0.02204 se 0.00021
+sdm_s1_20M - sdm_s2_20M 0.00733 se 0.00036
+sdm_s1_20M - sdm_nostore_s0_20M 0.02396 se 0.00038
+sdm_s1_20M - sdm_nostore_s1_20M 0.02319 se 0.00028
+sdm_s1_20M - sdm_nostore_s2_20M 0.02432 se 0.00037
+sdm_s1_20M - sdm_mlp_s0_20M 0.01999 se 0.00039
+sdm_s1_20M - sdm_frozen_s0_20M 0.02188 se 0.00036
+sdm_s1_20M - sdm_big_s0_20M 0.00438 se 0.00036
+sdm_s1_20M - sdm_softness2_s0_20M 0.02117 se 0.00037
+sdm_s2_20M - sdm_nostore_s0_20M 0.01663 se 0.00036
+sdm_s2_20M - sdm_nostore_s1_20M 0.01586 se 0.00037
+sdm_s2_20M - sdm_nostore_s2_20M 0.01699 se 0.00024
+sdm_s2_20M - sdm_mlp_s0_20M 0.01266 se 0.00039
+sdm_s2_20M - sdm_frozen_s0_20M 0.01455 se 0.00035
+sdm_s2_20M - sdm_big_s0_20M -0.00295 se 0.00035
+sdm_s2_20M - sdm_softness2_s0_20M 0.01384 se 0.00036
+sdm_nostore_s0_20M - sdm_nostore_s1_20M -0.00078 se 0.00037
+sdm_nostore_s0_20M - sdm_nostore_s2_20M 0.00035 se 0.00035
+sdm_nostore_s0_20M - sdm_mlp_s0_20M -0.00397 se 0.00029
+sdm_nostore_s0_20M - sdm_frozen_s0_20M -0.00209 se 0.00021
+sdm_nostore_s0_20M - sdm_big_s0_20M -0.01958 se 0.00024
+sdm_nostore_s0_20M - sdm_softness2_s0_20M -0.0028 se 0.00022
+sdm_nostore_s1_20M - sdm_nostore_s2_20M 0.00113 se 0.00036
+sdm_nostore_s1_20M - sdm_mlp_s0_20M -0.0032 se 0.00037
+sdm_nostore_s1_20M - sdm_frozen_s0_20M -0.00131 se 0.00035
+sdm_nostore_s1_20M - sdm_big_s0_20M -0.0188 se 0.00037
+sdm_nostore_s1_20M - sdm_softness2_s0_20M -0.00202 se 0.00036
+sdm_nostore_s2_20M - sdm_mlp_s0_20M -0.00433 se 0.00039
+sdm_nostore_s2_20M - sdm_frozen_s0_20M -0.00244 se 0.00035
+sdm_nostore_s2_20M - sdm_big_s0_20M -0.01993 se 0.00037
+sdm_nostore_s2_20M - sdm_softness2_s0_20M -0.00315 se 0.00036
+sdm_mlp_s0_20M - sdm_frozen_s0_20M 0.00188 se 0.00028
+sdm_mlp_s0_20M - sdm_big_s0_20M -0.01561 se 0.00029
+sdm_mlp_s0_20M - sdm_softness2_s0_20M 0.00118 se 0.00028
+sdm_frozen_s0_20M - sdm_big_s0_20M -0.01749 se 0.0002
+sdm_frozen_s0_20M - sdm_softness2_s0_20M -0.00071 se 0.00015
+sdm_big_s0_20M - sdm_softness2_s0_20M 0.01678 se 0.00019

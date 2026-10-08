@@ -1,0 +1,10 @@
+w7_ch_200M       new sdmonly      0 200000000 train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_mq_200M       new qwen         0 200000000 train --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_rt8_200M   new sdmonly      0 200000000 train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --rt-write 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_none_200M  new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_s1         new sdmonly      1 20000000  train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_mq_20M        new qwen         0 20000000  train --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_B64        new sdmonly      0 20000000  train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --B 64 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_nong       new sdmonly      0 20000000  train --hop-mlp 192 --untie --conj 2 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_ch_rt8        new sdmonly      0 20000000  train --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --rt-write 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_mq_s1         new qwen         1 20000000  train --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon

@@ -1,0 +1,2 @@
+# wave 35 on box k: more data for the wide body. Sealed in the plan.
+w35_cn_d1536_B512_lr4x_hm3072_800M new sdmonly_none 0 800000000 train_big --d 1536 --hop-mlp 3072 --untie --conj 2 --body-opt muon --B 512 --accum 8 --lr 0.012 --muon-lr 0.08 --eval-every 5000 --ckpt-every 5000 --log-every 100

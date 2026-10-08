@@ -1,0 +1,2 @@
+# wave 12a on box n: the T 4,096 mixer line run with the fast mixer. Sealed in the plan.
+w12_cnmix_d256_T4096_400M_fast new sdmonly_none 0 400000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 4096 --B 2 --mix-impl fast --eval-every 5000 --ckpt-every 5000 --log-every 100

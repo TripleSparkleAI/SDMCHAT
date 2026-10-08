@@ -1,0 +1,2 @@
+# wave 13 on box g (fill runner). Sealed in the plan before it runs.
+w13_cnmix_d1024_T1024_200M new sdmonly_none 0 200000000 train_big --d 1024 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 8  --eval-every 2000 --ckpt-every 2000 --log-every 100

@@ -1,0 +1,163 @@
+{
+ "which": "new",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.978,
+   "meanTokens": 116.2,
+   "secs": 444.471
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.99,
+   "meanTokens": 97.4,
+   "secs": 87.531
+  }
+ ],
+ "samples": [
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A blue and 18 blue, also known as the blue sky is blue. This is a yellow, with a blue and yellow, and a blue line. Since we've chosen this identity, we can see that each person has an equal probability of being left for red.\n\nTo verify, let's say that the total number of colors is taken to represent the probability of something (p - 1) / (2 * √3), which gives us 12 = 0. Therefore, we want to find out how many distinct real solutions."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic example of a year, in the second season is 12 months. We've been observing a lot since we've recently started to make sure our customers are going on an average or two years ago. The same amount of time for them in the store was $20.6 = 16 months after the first few weeks' time for their new ones and then multiply by 10% over.\n\nFor example, when they're finished with some basic supplies like 15% of the total amount spent on each product, there's all your ingredients. So, with 25%, you'll have three standard deviations (1) * 8 = 35. Then, 5% of them being sold per year.\n"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic example is an art that's both environmentally friendly and sustainable. One approach is to use the concept of \"One can look at the natural light or a gentle, ethereal glow.\" This could be as simple as using a simple yet elegant approach.\n\nAlternatively, you could consider offering options like:\n\n1. **Use open-ended questions**: These alternatives can help illustrate your argument and provide more context about how the ideas are shared or understood.\n* Provide examples for potential connections between different types of information. For instance, instead of saying \"She\" refers to the way it was during a conversation with other people when they're not being able to do something to see if they don't fit together in real-time.\n\nUltimately, the decision is yours, you might consider asking yourself: \"What are some ways"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The primary difference in primary and secondary education is 2 primary sources of primary care for primary education include:\n\n1. What are the main reasons why we choose to have a high or low, which can be easily identified through a combination of factors such as increased communication with patients who develop severe depression.\n6. grains like wheat:\n- Reddit: A low-pitched (0.5%) is an important source of income.\n4. **Diversification**: Low sense of community and social support services (e.g., social skills, healthcare status), and social interaction between people (p < 500-200) and other relevant variables.\n\nKeep in mind that correlation does not imply causation. For instance, it may indicate that someone has a higher life expectancy compared to other lifestyle changes, but they might"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The ocean's unique geography and the ocean, you can imagine a vast array of oceans. The ocean is an incredible place to thousands of miles (or more) to create oceans every 2 million people worldwide.\n\nThe oceans are home to millions of Americans with unique challenges. One suchImagine hosting the deserama Desert in an Amazon world, featuring waterfowl that live a diverse range of ecosystems, from small islands like mountainsides and forests.\n\nEach of these cities are located on the edge of a sea of endless ocean waves is a hotButteri city, like the x-rays and the Mediterranean. And it's not just about the atmosphere, but rather the very fabric of the ocean. Some coastal regions have been able to absorb some of its most mysterious waters."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Water is a condition of the water and the systems in several ways. One approach is to use this method for drinking water. A simple way can be to collect more water from fresh, flowing through a combination of methods.\n\nOne approach is by using methods that remove excess moisture or pollutants on one side is a little bit too quickly. Here's what we can do when you find it:\n\n```python\nimport math\n\ndef add_list(self):\n    def test_1 = [2, 3]\nprint(hasattr(obj)\n```\n\n**The `is_empty()` method checks if all elements are unique but they don't have the same functionality:\n\n```\nYou will also need to use the `re^x()` function to check if any element in the list."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A classic example of an argument is typically a relationship between two variables. It's known as the difference between a correlation and a person's name, often denoted by \"t'. You're used to describe the relationship between people or groups in a group that represents another variable. The outcome, like a relationship may have different characteristics of one, but this doesn't necessarily imply that your relationship has a specific outcome.\n\nA ** isinstance(obj is a type of physical object that's being studied at any point in time, it's not a logical consequence.\n3. **Noise (or even more)**: When you consider the context, you might want to use an independent variable based on its own values. In contrast, if you want to emphasize the differences in a separate case, there are no other categories."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " \"The sea gods,\" a small,"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Here's a potential feedback loop that is generated as follows:\n\n```python\ndef sum_of_squares(n):\n    if n <= 0:\n        return \"x + b} - c = 1\n\nprint(\"Hello World\")\n```\n\nIn this example, `get_remove)\n\nWhen you want to run the code on the top of an array, you need to ensure that the input list is empty.\n- If a statement is not present at all, it means the output will be printed or any other error checking. If the length of `n` is positive, it checks if the square is divisible by 2, we can call it in this way.\n\nHere's how you could do that:\n\n```cpp\nint main() {\n    int s = ''.join(c for i, c"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A village in  hunting village of Nara forest, a small village near the village. The villagers are known for their children, and they play some food.\n\nA young people living on their own, is a small group that has been around for their families by having lived there."
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "and the poem from all over again\n\n**Mechanism, which is a type of white\n    with a blue-green hair.\nThe most famous in the day was in history\n!\n\nIn this context, the Roman Forum was the first woman's name:\n\nA woman named E Black horse. This family began\nthe boy’s home came and was buried within\nbe it. The young man of her\n"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "And then, once with the dust is not divisible by\nthe next day, I will show that the\nshedding him and his his friends.\nUser: What does Jesus say for you?\nAssistant: The text I've written a\nlosing gaze from the crowd in to their rights face, I\nso I speak with people I am ofus\nright, who are on the ground, as they appear in\ntort.\"\n\nI nod.\"\n\nThis revised sentence is more concise:\n\n\"One way I can suggest is what this subject\nto the left of a soldier's voice,\n"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "P.S. Some wonder how do they\nreserve and the animals that inhabit the forest\nWhich is the most effective?\nFor the above paragraph, you can select the top inch of the forest. It's a rough and\n\nthe tree with each plant stands tall and delicate, narrow pongest\nLet's say about the next 25 inches\nB his head shall be covered in the woods.\n\n\"Some of these include:\n\n* The ground is thick and sturdy, with a thick, sharp edge\n\nThese two feet face up.\nThis summer, with a golden brown patch. The\nL"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "So, when all it was done? Is he\nhappan to be?\nA: He is a man with the land\nof God's world.\nGrowding unto you again.\nM. God said.\n[The word of man for God who will\nthe LORD I had once looked.\n\"The God of Son.\"\nHow would one be more to understand.\nAccording to the Bible.\nAnd you will know that man does not mean anything wrong,\nand so, what is the man of Israel.\nBut in his own world, “Is,\nthat the earth above, or with the\nlife"
+  },
+  {
+   "model": "wide512chat",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "Where do you meet here, then\nthe Great Red Sea is the Great?\nIn the past several years, the\n    back to the day,\nof the winter solvers who are used to\nfrom the ancient river.\nThe Great White Lake City, about 40\n"
+  }
+ ]
+}

@@ -1,0 +1,226 @@
+{
+ "which": "old",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 14,
+   "loopRate": 0.467,
+   "distinct2": 0.839,
+   "meanTokens": 157.2,
+   "secs": 232.312
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.988,
+   "meanTokens": 119.6,
+   "secs": 86.198
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" rich in vitamins\" x3",
+   "text": " the sky is rich. It is found in different colors and has a rich history of rich, which is rich in rich foods. It is an essential part of this rich family and is rich in rich and rich in vitamins and minerals.\nThe rich foods rich with vitamin rich in vitamins rich on essential fatty acids as well as fruits and vegetables. When you are rich in vitamin K, they are rich in calcium, which is why many people have rich nutrients and rich in minerals such as iron, copper, manganese, zinc, iron and iron which provide high levels of iron from the soil. It also makes the minerals rich in vitamins and minerals.\nSome of them help prevent constipation:\n- Iron rich in mineral.\n- Iron rich in calcium\n- Iron and iron content in a rich mineral.\n- Folate"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"? What do\" x3",
+   "text": " Why do you eat animals?\nIn 2 BCE, the first of all we have to eat food and we eat? What do we eat our eating habits? We have come at a certain time. What is the way of life? What are eating? Are there any other ways they are eaten on Earth and how many types of insects you want? How much to eat is it? What about this in our world?\n2. What is your view of food in a different way, what does that mean? What do we mean by 100 years ago? What should we have? What do the differences between these two groups of organisms? In other words: What does this mean for us to continue through the lens of life (or what happens if you find it) you are going to give up"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 3,
+   "loops": true,
+   "why": "\"bodies\" x3 in a row",
+   "text": " How do we know when our body is the body of our bodies? The body is the body in our bodies and our body. These hormones are released from our bodies, our bodies called bodies are created by our bodies.\nThe bodies of our bodies, body organs such as body bodies and vital bodies.\nWhat’ bodies are bodies? Some bodies, like our bodies have bodies but bodies in their bodies form bodies are not known bodies.\n* body and bodies do bodies which are found the bodies that are made from bodies are called bodies. These bodies are created by bodies at bodies of bodies, they are found only through bodies of bodies.\nThe bodies can be moved to bodies such as bodies or bodies. In bodies such bodies are located in one body, bodies, including bodies bodies, bodies and bodies. They"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" It refers to\" x3",
+   "text": " The term “conhood” is an integral element of the concept of a particular function. In addition, it is often referred to as a “sperson.” A definition has emerged from which a term “coward.” It refers to the “miral”. It refers to another way or belief in all things that they are something you think and feel comfortable to others by themselves.\nThe term “disappearing” refers to someone who is really referring to an individual who is not. The term refers to something which means ‘to come of us’ (or God) is it a term of someone else, or who has been referred to as an object, is called the term “to express or act.” This term also refers to a specific term and “fire”. It refers to any"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" hole hole hole\" x16; \"hole\" x6 in a row",
+   "text": " A black hole? To understand what causes the galaxy hole, it's a hole. What is known as the hole?\nThe hole hole in hole is so called hole hole. After hole holes in hole hole hole hole holes through hole hole hole hole holes hole. When hole hole hole holes ( hole 3 hole hole hole holes hole holes in holes holes hole holes the hole holes hole hole hole hole hole holes in hole holes to the hole hole hole holes and hole hole holes in hole holes.\nThe hole hole hole hole hole hole holes hole holes.\nN hole hole hole holes hole holes, hole holes through holes. hole holes hole holes in holes to hole hole hole holes or hole holes holes hole holes ( holes holes hole holes holes at holes). The holes hole hole holes hole holes and holes hole holes are"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 3,
+   "loops": true,
+   "why": "3-gram \" symbol symbol symbol\" x5; \"symbol\" x5 in a row",
+   "text": " The term \"The Three\" is a term coined by describe a particular number. In fact, an image has two different symbols: symbols are the three symbols of a symbol.\n- Three symbols and symbols: A symbol for a word\n- The symbols that serve the symbol or symbolically depict their symbols in terms of symbols and symbols of symbols. The symbols are often used in symbols used by symbols.\n- symbols: A symbols and symbols indicate\n- For symbol of symbols, symbols and symbols.\n- A symbol symbol is shown to represent a symbol for the symbol or symbol of the symbol. It symbolizes symbolically symbolically symbol symbols symbol.\n- For symbol: symbol symbolizing the symbol symbol for the symbol.\n- symbol symbolised symbol symbol symbol symbol\nIn many cultures symbol symbol symbol symbol symbol"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" ocean acidification\" x9",
+   "text": " the ocean of nutrients? The ocean currents are acidic and carbon dioxide, which is called carbon dioxide in the ocean. This is called ocean acidification. The ocean is formed from living organisms through ocean acidification.\nThe ocean is a chemical that forms most ocean Acidification in the ocean that would produce much energy around the ocean by the ocean surface in ocean acidification? It may be released from ocean acidification and therefore, when marine life is made out of the ocean. This is why ocean acidification?\nThe ocean acidification in the oceans makes the ocean acidification rise and so will not be impacted on a ocean acidification.\nThis is the first ocean acidification (which is used to create) food that is acidic by a acidic environment, or acidification.\nIt also has been suggested as a"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A plant is one of the most important plant a plant, which is used to plant the plant and its leaves. It also acts as a fertilizer for a plant, it also called plant disease.\n- When you plant diseases like this plant, you may want it in your plant that makes a good impression.\nThis plant is the best thing when using this plant, we can now use the plant as a part of our plant (such as a plant and plant) in its early stages. The plant can also be used to plant these plants after which you can plant them like a pot, but it should also be used for the plant.\n- For some species that can be used for growing plants in spring 2014, when there is no plant and no seed to use any of these plant in order"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 2,
+   "loops": true,
+   "why": "3-gram \"?\\n• What\" x6",
+   "text": " 1. What do you think about it?\nIn the following steps, you should take them to consider what they say:\n· What does say is that?\n• What is a context for the learner?\n• What is a purpose and the action of all things? Where are your learners have their own learning?\n• How can you use whatever resources you do on them?\n• What does the information mean?\n• What is the difference between each other?\n• What does ‘the difference between the two’s and what are the different from your children?\n• How do you respond to each other?\n• How does the word change be changed when a given priority?\n• What is important in most of what is called an \"p”\n• How does it tell? What should you do about this work as"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the world in which?\na: This is a group of people who have been exposed to the same group of people in their own, but we can think about how certain things affect our lives. We are learning and others that we need it.\n“People have to talk more often than ourselves” in this way; they feel we were better able to respond to all things in life.\nWe hope that everyone is feeling what we can do on the way of being able to communicate with us.\nI think about this is because our time at every moment, and whether it be just as important people understand why we are talking about something different.\nIn another book we learn about how to use a speech therapist or to help others.\nIt is important for your next visit to learn more about the things they"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 2,
+   "loops": true,
+   "why": "3-gram \"?\\n- What\" x7",
+   "text": " The term “mow”.\n- What Is the Meaning of a meaning?\n- In terms of meaning in which words are used or describe in which words describe a particular.\n- What’s more words mean or what is important to them\n- What types of words use for example?\n- How long did you get back into your words “What is”\n- Do you think?\n- What’s the words and phrases that refer to you?\n- What Is the person doing in the words describe what a word or phrase?\n- What has the meaning?\n- What are the key words used to describe\n- What are the words you use?\n- What does the words mean, what exactly is a word?\n- What is the main goal of your noun phrase?\n- What is the meaning of each"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 3,
+   "loops": true,
+   "why": "3-gram \" verb verb verb\" x52; \"verb\" x60 in a row",
+   "text": " The term is used as a verb to describe a thing or an adjective or noun.\n verb: adjective, from the verb:\na. What verb\n verb: noun verb: verb or verb: something like verb.\n- verb: verb.\n verb: noun a verb in the verb verb is that verb. A verb verb: verb in a verb.\n verb: verb: a verb adjective, but verb verb verb verb.\n verb verb to: “ verb verbs with an verb verb to verb verb verb verb verb verb.\n verb verb verb verb verb verb verb verb verb.\n verb verb verb verb verb verb verb verb verb verb verb verb verb verb verb verb verb.\n verb verb verb verb verb verb verb verb verb verb verb verb verb verb verb. verb verb verb verb verb verb verb verb verb verb verb verb verb"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the word \"Muth\" refers to a noun meaning that is a word or a poem.\nA: A: The word or phrase is a particular thing. An English translation indicates a thing in which the word is said to have a particular meaning or thing at its end.\nA lot of the book in its book, where it tells us all things about this object and, when you see something like an article on the Bible that is used to make a statement of God’s Word. This phrase comes from a noun meaning to the poem we want to understand the truth of it; but what can you see in the Bible.\nA common reference to words (as: “I am not sure), who will not be able to speak with them or listen on their own.\n- The Bible also includes"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 3,
+   "loops": true,
+   "why": "3-gram \" poem poem poem\" x94; \"poem\" x45 in a row",
+   "text": " It is a poem from a poem that you may have heard in your poem and poem, but there are also the poem or poem:\nThere are no poem. poem poem poem poem a poem by an poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem.\n poem poem poem poem poem poem poem poem poem a poem. poem by\n poem poem poem Les poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem in a poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem poem, poem The poem poem poem poem poem poem poem poem poem poem poem poem poem on poem poem poem poem poem poem poem poem poem poem poem poem poem"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"?\\n- What\" x6",
+   "text": " What is the idea and what to write?\nB: What is a poem?\nA: What are the main points of each page is called an action, or something else?\nDo you want to know the main point? How do you think about writing your dissertation in a different direction or place it to something?\n- What: What Is The Last?\n- What: What types of words mean and what did you see in terms of what you want or what you think you can do?\n- What are some things you can do in the writing system? What is the type of work we do?\n- What kind of thing you should do to change your emotions from each other?\n- What is the way things that you have done before and after?\n- What did you see as a result of a text"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 2,
+   "loops": true,
+   "why": "3-gram \"?\\n- What\" x5",
+   "text": " It is a popular popular among many people in the US. It's important to know about these things you can do with your health.\n- For example, it is easy to use?\n- What You Need:\n- How Much Is One Remember In This For The Last Time:\n- What Is It: How To Talk?\n- What Is There\n- How does someone talk about this related to that one person has an idea of how many things are made? Can you read the book aloud?\n- How does it work on a daily basis for all of your senses?\n- What are your specific requirements and goals?\n- What is important, what is some important to you?\n- What is best for everyone in your life.\n- What can be done?\n- How much should you use this information?\nThe"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" the village of\" x3",
+   "text": " the village of Adela\n- In the movie, a village or village.\n- The village was called the village of Panga village in Olao. (The village had 25 village) is named after it for a village to get villages on Bora. It has four inhabitants from other village life and are small village fishing village but some village near one village later.\nThe village village was first known as village houses about 1000 by the village of Pai village, which is often referred to village. The village is today old village village in Kua village and villages on a village that now lives there were built two villages to village men on their village village, where they are often livelihoods.\nThe village was surrounded by village village life. Later village houses (where village village is located"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the mid/5th and last\nWetre of 3rd and 8\nThe main purpose of this episode is to capture the\nthe sky as well;\na description of a small stream,\nit can be seen from them over, when there are\nthey give life in very cold situations.\nThe person who speaks at once on the end day. Where they come up with the earth's shadow,\nsugar, and light:\nIt is more than that which is not\nfor our eyes;\n*O them to lie without thee; for you."
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "\nThe fourth camp won the first, but had to\nbe at this time it was very interesting to see\nA common form of a word: from which is made of living\nthat are being raised in the earth’s\ndiversity out on or around them.\nWe present what they now find; and\nappears you may wonder whether your future are\nless than 1,000 years ago,\nand my way to say that those who\nor myself was a good friend. The\nt.co.uk is right: our duty so far as we continue today (not\nand many"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the right time with a long series of windows\nIn this article, we will explore some fundamental principles that can be applied to\nthe principle which may be defined as any real\ntaken from our eyes. What does it mean? If we want so,\nbut not just too long after seeing, because you are aware\nfor your time on the part hand of Nature\nThe most important thing for this is how beautiful or\nand why doesn’t have a lot to do with them\nyour eyes should be removed by using new clothing and\nto make matters worse.\nEven if we understand"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ", or by removing obstacles and being more than twice\n1. In the case of a round-up, it is necessary to take\nthe crown off at least some parts;\nii. Adopting an old woman can easily be removed from\nof a walled room in the windows containing a small\nthe roof of that area between them had not been removed from\n1.4 to 5 inches tall.\nThe top edge of the blade could be cut back into the ground and then re-fusing it as the\ncliffresses being struck by an earthquake at\ntied on, while"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (AADIL or a large band\nOversely, and the most common\nA region of Northern Europe is in your area. In many areas\nand within all populations there are different levels of\nthe Great Wall of Scotland.\nThere's no stone\nIn fact an official 70/600 rule\nof all kinds had been known for over forty or several hours a day, which can be seen at the village in\nthe area during which it is most likely to\nbe more likely than not to mention\nor other church on top of the earth are\nbified by some rather"
+  }
+ ]
+}

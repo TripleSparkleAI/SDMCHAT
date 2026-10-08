@@ -1,0 +1,3 @@
+# SHAPESOLVE box s2
+w57_sdm_d1024_hm3072_hops16_k64_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --share-store --B 512 --accum 64 --k 64
+w57_sdm_d1024_hm3072_hops16_slr10_400M new sdmonly 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --eval-every 5000 --ckpt-every 1000 --log-every 100 --share-store --B 512 --accum 64 --store-lr-mult 10

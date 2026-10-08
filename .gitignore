@@ -1,0 +1,11 @@
+# SDMCHAT: weights, token shards and caches stay out of git (DATA.md lists what is held back)
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+*.pt
+*.partial
+*.u32
+*.i32
+*.u8
+*.i64

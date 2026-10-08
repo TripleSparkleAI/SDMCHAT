@@ -1,0 +1,105 @@
+{
+ "run": "vast_VA_d512_s0_3B",
+ "arm": "sdm_ngram",
+ "seed": 0,
+ "cfg": {
+  "d": 512,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 1376,
+  "train_name": "train_big"
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 3000000000,
+ "steps": 366210,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 66191360,
+  "non_embedding_trainable": 7640064,
+  "frozen_store_values": 0,
+  "total_trainable": 73831424
+ },
+ "flops_per_token_fwd": {
+  "head": 132382720,
+  "body": 7634944.0,
+  "total": 140017664.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T11:33:34Z",
+  "load": [
+   3.72,
+   3.85,
+   3.59
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 481.3
+ },
+ "resumed_from_step": 366210,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-01T11:33:34Z",
+  "load": [
+   3.72,
+   3.85,
+   3.59
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 481.2
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.4692215913080324,
+  "nats_per_token": 4.936361711380376,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_extra": {
+  "chat_test": {
+   "bpb": 1.7057732793246325,
+   "nats_per_token": 5.5711070407893635,
+   "tokens": 1022736,
+   "bytes": 4819015
+  }
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.561692489853097,
+  "nats_per_token": 8.606898236489561,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 3.601255793032335,
+  "nats_per_token": 12.099673265613273,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

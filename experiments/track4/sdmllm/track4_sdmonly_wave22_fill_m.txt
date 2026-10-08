@@ -1,0 +1,3 @@
+# wave 22 on box m: batch past B 512 at width 1,024 (does the optimum move with width). Sealed in the plan.
+w22_cn_d1024_B1024_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 1024 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w22_cn_d1024_B2048_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 2048 --accum 16 --eval-every 5000 --ckpt-every 5000 --log-every 100

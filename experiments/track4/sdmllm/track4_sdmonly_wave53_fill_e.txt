@@ -1,0 +1,2 @@
+# Wave 53 on box e: 32 hops at width 1,536 (the true-run width), when e GPU 1 frees (about 06:50Z). 48 hops moved to box f.
+w53_cn_d1536_B512_hm3072_hops32_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 3072 --hops 32 --untie --conj 2 --body-opt muon --B 512 --accum 32 --eval-every 5000 --ckpt-every 1000 --log-every 100

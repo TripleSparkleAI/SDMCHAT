@@ -1,0 +1,2 @@
+# wave 44 on box f: data for the best recipe at small widths, the yardstick at 1.6B, and the mixer stability fix. Sealed in the plan.
+w44_cn_d768_B512_hm3072_hops8_1600M new sdmonly_none 0 1600000000 train_big --d 768 --hop-mlp 3072 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 4 --eval-every 5000 --ckpt-every 5000 --log-every 100

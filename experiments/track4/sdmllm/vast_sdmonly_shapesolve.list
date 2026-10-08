@@ -1,0 +1,13 @@
+# vast_sdmonly_shapesolve.list - the SHAPESOLVE boxes (wave 57), rented 2026-10-05 (UTC) by lane SHAPESOLVE-FLEET.
+# Each box is 2x RTX 5090, image pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime, disk 100 GB. Every offer passed the
+# selector (--min-vram 30000 --disk 100) and its transfer veto ($15/TB). Each box runs its two sealed lines from
+# track4_sdmonly_wave57_fill_<s1..s4>.txt. No deadline destroy: the boxes are kept after wave 57 for the base model;
+# JIMOTHY decides each box's end. The pull loop (track4_sdmonly_vast_pull_true.sh with WATCH_LIST set to this file)
+# copies the small results home and never destroys a box.
+# Destroyed before use (not in the list): 54324753 (first s3, machine 46959, Thailand: measured 0.45 to 2.0 MB/s from
+# boxes e, s1 and s4, so the 8 GB data copy would have taken hours; replaced once at 14:19Z).
+# instance   label              card               host            ssh_port  dph_total  down_$/TB  up_$/TB  machine  driver       rented_utc
+54324748     sdmonly-s1-2x5090   2x_RTX_5090        65.7.12.94      54036     0.9785     2.60       3.91     34554    570.172.08   2026-10-05T13:48:50Z
+54324752     sdmonly-s2-2x5090   2x_RTX_5090        1.34.114.64     29623     1.0411     0.00       0.00     53714    595.71.05    2026-10-05T13:48:52Z
+54328901     sdmonly-s3-2x5090   2x_RTX_5090        114.32.64.6     40998     1.0852     7.81       11.72    24629    575.57.08    2026-10-05T14:19:25Z
+54324756     sdmonly-s4-2x5090   2x_RTX_5090        114.34.26.236   42876     1.0944     2.60       3.91     137085   570.169      2026-10-05T13:48:55Z

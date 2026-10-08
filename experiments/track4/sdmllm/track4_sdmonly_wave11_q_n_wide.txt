@@ -1,0 +1,3 @@
+# wave 11 WIDE extension, box n (2 GPUs). Sealed in the plan before it runs.
+w11_mq_d1024_1600M new qwen 0 1600000000 train_big --d 1024 --qwen-f 2736 --body-opt muon --eval-every 20000 --ckpt-every 5000 --log-every 100
+w11_cn_d1024_1600M new sdmonly_none 0 1600000000 train_big --d 1024 --hop-mlp 192 --untie --conj 2 --body-opt muon --eval-every 20000 --ckpt-every 5000 --log-every 100

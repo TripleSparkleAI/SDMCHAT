@@ -1,0 +1,62 @@
+{
+ "what": "three byte-level BPE tokenizers fitted on FineWeb-Edu text from the START of the S0 train shard, for the SDMONLY tokenizer wave",
+ "made_by": "lane VOCABSIDE, 2026-10-03T10:49Z on the M5 (scratchpad train_bpe.py); copied into the repo by lane VOCABWAVE 2026-10-03",
+ "copied_from": "/private/tmp/vocabside/",
+ "library": "tokenizers 0.20.3",
+ "settings": {
+  "model": "BPE(byte_fallback=False)",
+  "pre_tokenizer": "Sequence[Split(regex, isolated), ByteLevel(add_prefix_space=False, use_regex=False)]",
+  "split_regex": "'(?i:[sdmt]|ll|ve|re)|[^\\r\\n\\p{L}\\p{N}]?+\\p{L}+|\\p{N}{1,2}| ?[^\\s\\p{L}\\p{N}]++[\\r\\n]*|\\s*[\\r\\n]|\\s+(?!\\S)|\\s+",
+  "decoder": "ByteLevel()",
+  "trainer": "BpeTrainer(vocab_size=V, special_tokens=['<|bos|>'], initial_alphabet=ByteLevel.alphabet())",
+  "bos": "<|bos|> at id 0, the only added token"
+ },
+ "training_text": {
+  "source": "data/train.u32 (sha256 c2f7bc05...), the first 24,000,000 tokens (BOS included), decoded per document with the DeepSeek tokenizer's decode(skip_special_tokens=False)",
+  "docs": 23276,
+  "bytes": 114591532,
+  "deepseek_tokens_non_bos": 23976724,
+  "note": "the 24,000,000-token cut ends inside train document 23,275, so its last 283 tokens (394 bytes by an exact byte join) were not seen; measured by VOCABWAVE. All training text is train; none is val (val is documents 64,488 to 66,487)."
+ },
+ "never_val": true,
+ "files": {
+  "trained_bpe_16384.json": {
+   "sha256": "74d9ba34846717c65f89f90a8ef635fc5e5f3537a5071946faed3f648cc792da",
+   "vocab": 16384,
+   "merges": 16127,
+   "added_tokens": [
+    [
+     0,
+     "<|bos|>"
+    ]
+   ],
+   "train_secs_m5": 4.9
+  },
+  "trained_bpe_32768.json": {
+   "sha256": "1060c4b3c2044ded38fad1d368e322ff475dd36c1dc65aed04c2d1165450b366",
+   "vocab": 32768,
+   "merges": 32511,
+   "added_tokens": [
+    [
+     0,
+     "<|bos|>"
+    ]
+   ],
+   "train_secs_m5": 9.1
+  },
+  "trained_bpe_65536.json": {
+   "sha256": "9405db9f5db93ee90e8cba1172f9a96b01923e71ee327d6e6d21630082157527",
+   "vocab": 65536,
+   "merges": 65279,
+   "added_tokens": [
+    [
+     0,
+     "<|bos|>"
+    ]
+   ],
+   "train_secs_m5": 9.8
+  }
+ },
+ "meta_file_sha256": "01b9b9f982f2ee1f8ace3e017b1df8767f064a027663893f25ca1faec77a412f",
+ "written_utc": "2026-10-03T11:09:31Z"
+}

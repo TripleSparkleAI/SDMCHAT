@@ -1,0 +1,126 @@
+{
+ "base": "http://localhost:5263",
+ "keys": [
+  "sdmwide512chat",
+  "sdmwide768chat"
+ ],
+ "stamp_start": {
+  "utc": "2026-10-03T03:01:34Z",
+  "load": [
+   9.3759765625,
+   15.1416015625,
+   9.82177734375
+  ],
+  "ncpu": 18,
+  "powermode": "2"
+ },
+ "params": {
+  "temperature": 0.8,
+  "topK": 50,
+  "topP": 0.95,
+  "repetitionPenalty": 1.25,
+  "repeatWindow": 128,
+  "noRepeatNgram": 3,
+  "wordPenalty": 0.4,
+  "noAdjacentWord": true,
+  "maxTokens": 96
+ },
+ "runs": {
+  "sdmwide512chat": [
+   {
+    "n": 96,
+    "tps": 19.454858648292635,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 19.36889678001408,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 19.28834059997086,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 19.231539725103318,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 19.16129418576759,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 19.067291650070054,
+    "reason": "max tokens"
+   }
+  ],
+  "sdmwide768chat": [
+   {
+    "n": 96,
+    "tps": 12.803072737477343,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.773091354244178,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.737501326802908,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.70681667769689,
+    "reason": "max tokens"
+   },
+   {
+    "n": 96,
+    "tps": 12.609843559138216,
+    "reason": "max tokens"
+   },
+   {
+    "n": 87,
+    "tps": 12.353743042134267,
+    "reason": "special token <\uff5cbegin\u2581of\u2581sentence\uff5c>"
+   }
+  ]
+ },
+ "load": {
+  "sdmwide512chat": {
+   "load_ms": 352.2999999821186
+  },
+  "sdmwide768chat": {
+   "load_ms": 157.40000000596046
+  }
+ },
+ "stamp_end": {
+  "utc": "2026-10-03T03:03:04Z",
+  "load": [
+   4.42333984375,
+   12.11083984375,
+   9.1943359375
+  ],
+  "ncpu": 18,
+  "powermode": "2"
+ },
+ "summary": {
+  "sdmwide512chat": {
+   "median_tps": 19.259940162537088,
+   "best_tps": 19.454858648292635,
+   "tokens": 576
+  },
+  "sdmwide768chat": {
+   "median_tps": 12.7221590022499,
+   "best_tps": 12.803072737477343,
+   "tokens": 567
+  },
+  "ratio_median": 0.6605502870147041,
+  "ratio_best": 0.658091275240437
+ }
+}

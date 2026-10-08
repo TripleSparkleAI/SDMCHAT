@@ -1,0 +1,2 @@
+# wave 44 on box j: data for the best recipe at small widths, the yardstick at 1.6B, and the mixer stability fix. Sealed in the plan.
+w44_cnmix_d512_T1024_B128_hm3072_wd_400M new sdmonly_none 0 400000000 train_big --d 512 --hop-mlp 3072 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --T 1024 --B 128 --accum 16 --mix-decays 1.0,1.0,1.0,1.0 --muon-wd 0.1 --eval-every 5000 --ckpt-every 5000 --log-every 100

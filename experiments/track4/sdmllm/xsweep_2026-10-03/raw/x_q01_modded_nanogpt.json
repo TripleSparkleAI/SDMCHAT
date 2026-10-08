@@ -1,0 +1,11 @@
+{
+ "query": "\"modded-nanogpt\"",
+ "fetched_utc": "2026-10-03T10:45:18.025668Z",
+ "status": 402,
+ "rate": {
+  "x-rate-limit-limit": "450",
+  "x-rate-limit-reset": "1791025218",
+  "x-rate-limit-remaining": "449"
+ },
+ "body": "{\"detail\":\"credits depleted\",\"status\":402,\"title\":\"Payment Required\",\"type\":\"https://api.x.com/2/problems/credits-depleted\"}"
+}

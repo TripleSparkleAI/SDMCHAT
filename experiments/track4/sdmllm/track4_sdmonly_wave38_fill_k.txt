@@ -1,0 +1,2 @@
+# wave 38 on box k: the new best recipe pushed and combined. Sealed in the plan.
+w38_cn_d1536_B512_hm3072_hops8_800M new sdmonly_none 0 800000000 train_big --d 1536 --hop-mlp 3072 --hops 8 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

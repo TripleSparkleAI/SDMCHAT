@@ -1,0 +1,2 @@
+# wave 31 on box m: width 3,072 at the best batch. Sealed in the plan.
+w31_cn_d3072_B512_400M new sdmonly_none 0 400000000 train_big --d 3072 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 512 --accum 32 --eval-every 5000 --ckpt-every 5000 --log-every 100

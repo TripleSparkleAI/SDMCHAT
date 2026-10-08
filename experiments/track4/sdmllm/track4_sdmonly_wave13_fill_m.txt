@@ -1,0 +1,3 @@
+# wave 13 on box m (fill runner). Sealed in the plan before it runs.
+w13_fastcheck_dense_100M_s1 new sdmonly_none 1 100000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 8 --mix-impl dense --eval-every 2000 --ckpt-every 2000 --log-every 100
+w13_fastcheck_fast_100M_s1 new sdmonly_none 1 100000000 train_big --d 256 --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --T 1024 --B 8 --mix-impl fast --eval-every 2000 --ckpt-every 2000 --log-every 100

@@ -1,0 +1,95 @@
+{
+ "windows": 400,
+ "T": 255,
+ "students": {
+  "corpus_data/checkpoints/student_best.pt": {
+   "n_params": 37629440,
+   "config": {
+    "vocab": 129280,
+    "dim": 256,
+    "n_layers": 4,
+    "n_heads": 4,
+    "window": 64,
+    "mem_slots": 512,
+    "mem_topk": 16,
+    "ffn_mult": 4,
+    "max_pos": 256,
+    "dropout": 0.0
+   },
+   "bpb": 3.023278466269931,
+   "nats_per_token": 9.9364690796737,
+   "tokens": 101900,
+   "bytes": 483173
+  },
+  "latest-findings-round/lane5/ablation_2x2_out/A2_small37M_corpusFULL/seed0/best_on_S.pt": {
+   "n_params": 37629440,
+   "config": {
+    "vocab": 129280,
+    "dim": 256,
+    "n_layers": 4,
+    "n_heads": 4,
+    "window": 64,
+    "mem_slots": 512,
+    "mem_topk": 16,
+    "ffn_mult": 4,
+    "max_pos": 256,
+    "dropout": 0.0,
+    "embed_factor": 0,
+    "attn_sink": "none",
+    "n_sink": 4
+   },
+   "bpb": 2.8035528094509607,
+   "nats_per_token": 9.214306956881746,
+   "tokens": 101900,
+   "bytes": 483173
+  },
+  "latest-findings-round/lane5/ablation_2x2_out/A4_big53M_corpusFULL/seed0/best_on_S.pt": {
+   "n_params": 53392640,
+   "config": {
+    "vocab": 129280,
+    "dim": 320,
+    "n_layers": 6,
+    "n_heads": 4,
+    "window": 96,
+    "mem_slots": 1024,
+    "mem_topk": 32,
+    "ffn_mult": 4,
+    "max_pos": 256,
+    "dropout": 0.0,
+    "embed_factor": 0,
+    "attn_sink": "none",
+    "n_sink": 4
+   },
+   "bpb": 2.909788532379702,
+   "nats_per_token": 9.563466978962218,
+   "tokens": 101900,
+   "bytes": 483173
+  }
+ },
+ "s0_arms_same_windows": {
+  "qwen_s0_20M": {
+   "bpb": 1.6757377314689672,
+   "nats_per_token": 5.507569461481845,
+   "tokens": 101900,
+   "bytes": 483173
+  },
+  "sdm_s0_20M": {
+   "bpb": 1.695493645213551,
+   "nats_per_token": 5.572500306673209,
+   "tokens": 101900,
+   "bytes": 483173
+  },
+  "sdm_nostore_s0_20M": {
+   "bpb": 1.6706350605029252,
+   "nats_per_token": 5.49079874953999,
+   "tokens": 101900,
+   "bytes": 483173
+  },
+  "sdm_mlp_s0_20M": {
+   "bpb": 1.6707399569201555,
+   "nats_per_token": 5.4911435077281645,
+   "tokens": 101900,
+   "bytes": 483173
+  }
+ }
+}

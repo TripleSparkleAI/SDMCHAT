@@ -1,0 +1,14 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+START 2026-10-01T06:05:57Z gpu=1 run=smoke_d768 driver=570.181 load=6.03 6.26 5.32
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:221: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "smoke_d768", "arm": "sdm_ngram", "seed": 0, "cfg": {"d": 768, "T": 256, "seed": 0, "M": 3600, "k": 32, "hops": 2, "softness": 0.5, "n_layer": 4, "M_big": 16384, "value_init": "s0", "qgrad": 1.0, "ngram_orders": [1], "f": 2064, "train_name": "train"}, "B": 32, "T": 256, "tokens_target": 8000000, "steps": 976, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 99287040, "non_embedding_trainable": 14224896, "frozen_store_values": 0, "total_trainable": 113511936}, "flops_per_token_fwd": {"head": 198574080, "body": 16982016.0, "total": 215556096.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-01T06:06:05Z", "load": [6.34, 6.32, 5.35], "ncpu": 128, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "41ac7b578b34", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "570.181\n570.181\n570.181\n570.181", "mem_available_gb": 477.2}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 200, "loss": 6.6481, "lr": 0.002771097116565141, "gnorm": 0.41, "tok_per_s": 67267.9, "load": 15.23828125}
+{"event": "step", "step": 400, "loss": 6.1337, "lr": 0.0020789566221621008, "gnorm": 0.273, "tok_per_s": 151927.5, "load": 13.7373046875}
+{"event": "step", "step": 600, "loss": 5.6782, "lr": 0.0012084582495214807, "gnorm": 0.264, "tok_per_s": 151423.8, "load": 12.3935546875}
+{"event": "step", "step": 800, "loss": 5.6511, "lr": 0.0005215505844254, "gnorm": 0.281, "tok_per_s": 151853.5, "load": 15.6767578125}
+{"event": "step", "step": 976, "loss": 5.5759, "lr": 0.0003000072740997567, "gnorm": 0.304, "tok_per_s": 172832.8, "load": 13.955078125}
+FINAL smoke_d768 {"bpb": 1.6662153945405394, "nats_per_token": 5.598231012382413, "tokens": 995323, "bytes": 4824566}
+NEXT -> python3 track4_sdmllm_evaluate_floors_and_samples.py
+END 2026-10-01T06:07:30Z rc=0

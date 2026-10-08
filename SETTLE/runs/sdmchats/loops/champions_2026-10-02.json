@@ -1,0 +1,473 @@
+{
+ "which": "new",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "replies": 10,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.998,
+   "meanTokens": 120,
+   "secs": 57.387
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "replies": 20,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.991,
+   "meanTokens": 146.3,
+   "secs": 136.66
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "replies": 10,
+   "looping": 1,
+   "loopRate": 0.1,
+   "distinct2": 0.978,
+   "meanTokens": 120,
+   "secs": 53.929
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "replies": 20,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.994,
+   "meanTokens": 150.7,
+   "secs": 148.129
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "replies": 10,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.991,
+   "meanTokens": 117.6,
+   "secs": 61.788
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "replies": 20,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.994,
+   "meanTokens": 148.1,
+   "secs": 147.734
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "When the dawn lightings come, to the door\nOf all things left behind him stand,\nThat from his eyes in silence threw.\nThen the old squire went with a tearful brand,\nAnd bade them not see their faces clear\nUntil they find room for fight; he heard that when\nStood close before it found an ascend\nFrom there where Eumaeus’ handmaid came.\n\n\n\n\nProud of the day before Ulysses rode\nTo the high-souled, and held his face\nIn turnor the great bowman dame;\nOr if the shaft"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "As the clouds light his rays blaze?\nO sacred fire! how great a god\nOf heavenly might, or of heaven, yea\nHad left you in these bright lists are spread:\nSo shall the stars be darken now to shine,\nWhen I give them; and on them to try\nWith darkness o’erlooked sky so bright\nWhere odorous shafts were forged with flame.\nSo as that star with all things had been seen\nThe glittling moonbeams through mid air\nThat shook their horrid shields appeared:—\nThe sun sat down above thy face;\nWhere"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "But now, whosoever with eyes\nThese three together came to pass,\nThe mighty host in which they had done;\nOn every side a lofty summit\nThere sat upon it: that the hero’s hand\nHis hand was raised on earth; high his breast\nDown did broad like one enormous bulk.\nThen the huge mace could have been hurled\nWhen he struck him.  With him I saw\nNo longer hold of iron, but turned\nThe giant’s feet stood nigh:\nThen Ráma in turn himself pressed,\nAnd round them bowed from each other wound"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "Therein a wall made of yore\nWhich seemed to be seen, and in the world\nThe Godfreyed by King Etzel's heart;\nBut as thou may'st love him who art his ire.\nNor did he speak not (the secret command\nOf Rishma), let the night go\nHis wrath impious intent on thee!\nOn earth supreme, that I shall tell thee,\nIf thy wish avails with thine breast\nTo gain our empire.  The fated man\nWas free from ruin? Now near all things\nThrice will perish through the skies above"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "A little distance ran o’er the hills\nAnd to the north-west wind was blowing,\nTried out, and broke them down in rain\nShall they strike for sharpened not their heads;\nBut all their shafts were rent with fury laid\nNo clanging arms around a dreadful flame\nBy horrid blast which flames around them draw.\nThe Vánar trembled on his shield:\nSuch flames from every mast I spread,\nWith blood that gath my temples burnished\nAsuras like thunderbolts of clouds\nShe hung aloft; but held her sword:\nSo far did"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (the moon!) we know\nHow the laws of Fate and how, when to us,\nOur steps are stilling in his own?\nThe time by which I say that ye may tell;\nWhat if our eyes with tears or sighs be sprighted.’\n\n“Thus spoke a dire mistake: why let men die:\nHear now? This arm is bound as fast—\nAnd thus he cries; ‘My name shall hide your crime!\nA thousand years have you fled from Troy.”\n\nThen did my friend’s breast was led.\nUlysses went on high, an island round Phæacia tooka.\nBut then she left him behind this way, / whereon we lay\nIn mournful hearts of Polyphemus to the shore,\nTo soothe her death. She gave his cares no"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " I have heard thy fears\n      or die:\n    And, O king of kings, what should be done?\n    Were not the word in all men? Is it worth as a good thing,\n    If thou wilt look on thee and howst to protect my life.\n    Of my hope he must escape from me cast;\n    Then save for myself again did they fly.”\n\nAnd then she said unto his father:\n\n“Who art thus! We shall see them both our hands,\n    Who is now called ‘Might,’ who we standeth down upon us.'\n\nTo do this deed. So was Sir Lancelot, wherefore say ye; and\nthou hast slain thy death among them?”\n\n\n\n\nCanto XIII. The Master cried: “Behold these things:\nThy power be"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What, when another sort?\n    \"What honor,\" he said;--\"to us I pray.\n    To thee shall give the answer that thou art,\n    And mine desire to have my life and thy heart\n      For what is this great thing unto me!\n    Then if your worth our task at hand has fallen;\n    No whitest of his folly hath failed.\"\n\n    So forth we go about it. / Though a man so glad wast,\n    That all men were inly bright attire with gold:\n    But through whatever other world they be slain.\n\nAnd by their side ye would I tell you well knowne how high are\n\nBy the wise, who on earth mayst save them from harm?\n"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " what is it enough for me to take? Of a single one\n      I will not kill; if the least be dead,\n    And no man’s love, but do you more than myself.”\n\nThus he spake.  “Hector,” answered King Agamemnon saying:\n\n     Then that she said her father:\n“Now as thou seest in counsel and let us go.”\nThe priest replied, Alvar Fañez, speak of him.\nBut when they heard his words had made reply;\nThen spoke up with shame towards their master.\n\nHe rose again unto this place where Eumaeus stood\nTo view them thus: “Wilt have thy handmaidens to death!”\n\nAnd then Minerva saw it not; so the sun was dead,\nWhence arose my mouth"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " O monarch, say so that all is not dead?\n      The world’s only son can see\n    What more to earth? or how could it be known,\n      When the good old man and woman wise?\n      For whatsoe thy mind by such aught has found!\n      Why was Hector thus in secret; let us fight?\n      No need of counsel for my father. I shall die;\n      So ill may we live?   |   though thou art vain.\n      All else are they fighting with this foe?””\n\nThus did he speak,\n      Nor look at him—his mother too well:\n      But if there were nothing further, no one had his own;\n    In which some godlike bull among men is given.\n\nThen spoke Achilles, “I will give you"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the water drink drunk;\n  For when I fated to drink wine,\n  And drank, by one drop of every draught.\n  So he drinking thirsts with warm tears and flow\n  The cup in blood that shed its balm; then poured from the draughted his eyes.\n\n    Yet now at heart was closed out with cold:\n  One day (he said) \"O Brynhild! so wise!\n  Let never be a man but my life is dead.\"\n  He spoke no word nor knew her truth,\n  But she had won him since were born. This while I told thee all alone?\n  Wherefore this hope thy son shall slay me;\n  There will not be any sin to do, O King\n  From sea or land of Lued"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the word, _omart_, I say?--and what is it to me?\n    A woman's name. Ah! for my son!\n      What voice (of banishment?) may be a sign of thy fate.\n    Thou didst keep th' infernal shores?\n    When our ships are fared in ruin by fire;\n    Nor sooth she would not have them perish'd,\n    And still we know that this same day shall bear\n    The glorious sun has ever been.\"\n\n    \"Now how from such rage must you see thee o'er thine eye:\n    Like on their head and breast with joy they sped.\n\nMy dear, though the winds were all about each fair,\n    That I now was born to die: as yet unknown to me is woe.\"\n"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " \"The power, save,\" / spake a message in the land.\nThen bade her father. / -- \"Thy faithful to my mother,\nThou must be full for me,\" / she thus addressed him then:\n\"Wherefore did King Gunther / with all this word may bring?\nWhereat that thy sister sooth 'twere better;\nFor they were well-wrought and eke their hands have.\n\n'st thou such thing as Siegfried's wife.\"\n\n    But Giselher fair daughter gave answer. For Hagen was he\nSince now at the court of Jocund, who had come back again before his queen,\n\nCXXI\n\n\"Now say you tidings told them how ye tell thee what time I took.\n                      AOI\n\n\"The Volker"
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "  “Of” “Sigur’s home   |   and the men of\n      My name, or my sister,\n    The king of Helgi may be said that I know.”\n\n\nHogni spake:\n\n\n35. “Not so swift as thou hast thought\n    For from thine purpose to do good.\n    Thou hast spoken in truth I am called;\n    And there is nothing more than a hundred Kings.\n\n    Then when he saw ye many an ancient one,\n    But this was made ready for thy sake.”\n\n“Verily,” answered Pwyll her answer:\n“Fie on earth shall come into our kingdom?”\n\nWhen it had been told by Minerva’s eyes were opened and the\n      heaven with such a cloud, which shone like lightning fell.”\n   "
+  },
+  {
+   "model": "sdmepic",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " a river is built from the lake itself; on which, in\n"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the Sea at Eilts?\nThe National Park Service is located on a land of\na few miles from its coast.\nIn 1958, when George W. Adams and other men were found to be extremely hotly debated by a Japanese military that killed a\n\nion call the army if this city was destroyed under control and then restored the\nfirst few years back. The original name came to the\nSending was taken off by Thomas M. Lawrence after his death, he became famous as an advocate for\ntroule - while it was still seen today, perhaps\nin November"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ", the dents into a tunnel or an airplane\n- The two wings of a tree is its\n- the diameter of a ring and with\nThe light. This makes your eyes heard in the night sky.\nIf you are not familiar with an eye exam,\nThe sight may give more of all details concerning the\no The rainbow of yellow lights on their light\nchanging the eye. They do have different colors. We have no eyes closed.\nThis happens when the eye is open to\nand it’s one or the clouds can become\nthe eye out of your eye. It helps"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " were the only effective teachers of their children. Because\nof these structures are very rare, and when they\nreigned in common use for example; 1st\nAcein called a thyristine, that it is used to tell your child. These are:\nthe use of both things will, as well\nand will not let the eyes become clearer.\nNow you know what to do when your eyes\nWhat to do if we try this one? In order to be able to be in the\nIn fact all of nature I call my\nmies. In short, the very"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ". The new mative was in a\nindicated person, who had been involved with the\nthe most famous example of how to make one’s\nchoking it) is found that all three people are responsible for their\ngirded and his hands on him\nHis mouth may become one day or two.\nThe Three Dushu is believed that he became\nmore than five years after he left the battle over\nthe King Arthur's death (an age)\nThe first was named in 1952 when Thomas\nWhat’s more about this were:\nHe got an old tree"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \" the;\\n-\" x3",
+   "text": ";\nThe word ooltam and Obe\n|The following is a set of four images:\n- the whole image by step in order to reduce the;\n- To turn off with the;\n- to be better, then,\n- to lower the object or the;\n- first notice as their lower frame;\n- It will feel fine than when you;\nHow do they do?\n- You have;\n- You are free.\n- You must leave them at the right time\n- You may want your child to the\nTo make peace: in the right place:\n- Do not forget that;\n"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " How does the night sky look like this? Explain why we’re going to do it in your sky?\nWhat is a red light that causes light blue lights when you can observe, which are 3. What exactly are these two stars.\nA: E = star (A).\nWe will not find at all of us as white or other galaxies and have something similar over time; they see their dark color from our Sun\nThe same way but also different forms of life. We know how long ago there were times for our galaxy after those hours on Earth. You might get very close to finding any cosmic rays!\nThis is just one."
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term is in Hebrew?\nIn general, one of the three parts that are connected to a given day. In fact, some people have said it means they need not be left alone and there’s no reason why.\nThe main difference between parents and offspring can be very serious on an issue than those born with children (and most likely because young adults do don't agree). It's just as good as all other people -- especially if you would like them get better at school or college.\"\nThere are many ways to think about how difficult to communicate their ideas for thinking about these new things:\n1. For example, when we use words: \"But then what does this mean? How is Jesus made the world more important? Why?\n- Is that right now I read a book called my father"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the average mass of a atom in motion?\nHow do you use this energy to create and use your energy? How are they different things like an electric tooth? A smart home that can be used for electricity. It’s not always just one specific point, but it takes no space!\nIt can be very complicated! However when many companies have tried working together into their own hands on how they could use them with materials.\nWhat makes certain kinds of activities\nThis is where I want students to use technology to make those parts simpler from non-woody music (which doesn't work even more expensive). This is because most people get excited about these issues: the amount of time needed; something else in a particular lesson will help you identify and write what your current needs are?\nSo now"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term is made by a single black hole? A: A. B, C, and R, 2.\nIn general, the most important function of all computer applications—and if you are using it in one of your own data from what we find\nthe best solution to problem solving with such an approach that was used to make these\ninvolences (tall numbers) as well. So far I found out how many people get their answers because they have no idea why this theory might be more likely than other problems so then it’s not something wrong to figure out which kinds them apart:\n- What is possible about real life situation?\nHow can you do a good job training is for me? If only does he know any thing happens.\nThe following is the question, there"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " How does the oceans use a plastic bag?\nGouching is an act of creating and using an electric current to move around on the ocean, making it easier for them to develop their own unique needs. The first time you have made this paper out there was only one that’s all about food security concerns.\nThe paper will provide information while ensuring they are comfortable with us in order to ensure our quality of life as we learn from each other—and how can we communicate effectively through these changes when thinking about others and what causes them!\nThese four questions help me be:\n- They are able to identify new ways of communicating\n– how should I understand such issues\n- How do people respond correctly to a situation?\n- Can you explain why “How Is My Last Essay” or “How do"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is water\nGouching? A method of plant and a water?\nThe answer to this question has been by many thousands of years in the 20th century, however. Some have argued that it was never possible for them.\nA 2003-2014: University of Tennessee scientists studying biological evolution as their own genome from space but they did not know there are several ways to make things easier or better:\nMany people think about natural selection can be more difficult than others because we could not understand how these systems interact with life processes while still allowing us into our understanding. In other words, “I’m thinking,” he explained. What if you look at some of those changes so maybe I would like to thank my students and fellow teachers!"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the “Life” of an organism depends on what type of cells are and how they communicate. How do you have your life?\nThe main thing that has been learned will depend upon, but not all their beliefs in a particular way? Well, they must be able to accomplish everything—for them who can’t understand and predict its way through it or not by any means.\nHow many words do we use each person to make decisions according to our personal beliefs. We need to be more careful about being asked for the information coming into his own mind when explaining why there may be something which one is wrong with us than others. You don’t want things like “you” (just take an image of what the individual does). He also becomes part of you are thinking how hard I"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the poem of Charles C. W poem is very similar to that poem, but in a poem and poem.\nThe poem's short poems are like it as an easy to find together with some poetry\n- The poem should be written by poet Emsch to become famous poets; each prose of her poetry; she must love for every poem that may have been literary or poem.\nTo read this passage through which we can add some poems from other words such as O’s own poems, while writing poems are great.\nIt would seem beautiful yet they will not only provide their work better than them to tell one another. But when you consider something different readers! In fact the poems, if your poets aren't alone at all on a reader, so do certain things and characters don't even like Shakespeare"
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " How to Write A in Writing\nThis is written by a student’s life and the poem of an individual. It also highlights how it should be understood that what we know with our present value.\nWhat are some of these poems?\nThe main reasons for being explored include:\n- Reading a novel to create themes, ideas about different emotions from individuals through their lives than others around them.\n- The book helps us develop new insights into what they want most people think themselves as part of their own personal or personal experiences which will help you understand those more valuable and important.\nBy making this more accessible, deeper and productive, better able to get your chance to write easily when things happen (such as reading stories and events) can be easier to read in a single word."
+  },
+  {
+   "model": "sdmwide512web",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1, A key word of a book with the book.\n- The book is written by Daniel T. Koe's, and I'll look at it from all around O' account for how we can use these books to help you make learning more.\nYou might also find:\nIf you wish or an author\nYou may also want something in your home today! Have fun!\nI hope that if someone wants to see anything else on my screen?\nThis site was inspired by me as well because what he does not know. He got very lucky when they were thinking about themselves in their own room but I think this would be interesting? Will there come to you in his life of a man and made him feel like the word 't'. As long ago as \"how did God\" get back"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the mid/5th and last\nWetre of 3rd and 8\nThe most common\nFatalities are estimated to occur at different stages:\nwhere a species is endemic.\nIn some areas, there are many variations such as temperature\nand the conditions it appears on almost certain portions\nof time. If your turn red or purple it may start to\nthe purple color. This can be achieved with\nthe blue colors,\nor an actual light source.\nThe first color can be applied directly from each of those figures together\nwith the background color will probably be colored in"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "\nThe fourth camp won the first, but had to\nbe at this time it was very interesting to see\nA common form of a word: from which is made of living\nthat are being raised in the earth’s\ndiversity out on, or when he sees any\nhe as small wood and stinking; often\nfrom heaven to right:\nI always think that you should be open for your\nAnd be there. You could be more\nbe seen here.\nThe other reason we have taken our place as a child where young people will\npire so well that they don"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the right time with a long narrow\nat the time of year, it was not uncommon to see\nthe burning of tears and tear up in our eyes.\nIn September a few moments before this happened:\nThe First Man of the Battle of Anthem can be seen\nAs these objects become obsolete in Europe, they had been observed by Pope\nand he gave us thanks to him. This\nare one of those were no longer than any other\nof those who had come from them at the moment\nin which they possessed such freedom so that their\nddening my love for you would"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ", or by removing obstacles and being more than twice\n1. In the case of a round-up, it is necessary to take\nthe position where all the rest is put as\nof the action taken from the center; for the\nof other forms should be understood.\nThis poem reminds us how things move in\nreperformed at its time with us again\nlike our eyes, so that when we do not come before you are\nwho are now subject to them?"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (AADIL or a large band\nOversely, and the most common\nA region of Northern Europe is in between\nthe skyline on the lower left by sea,\nsnowing, which has to be seen\nThe rise, with short,\nor deep as at length above,\nwith clear water.\nBThis means that in one direction is exactly\nlived from its base, called\na. On either side of the roof\nofr. In this case it may not have been taken out of reach for God long time; but they know that if they are\nat"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the sky is seen a cloud, with an idea that we can see in our galaxy. It doesn’t matter how many clouds are visible but there will be huge clusters of cosmic rays. The most common cluster is light from one source to another as it causes other galaxies.\nIn conclusion - Some models predict \"the universe's dark\", so when this cosmic-ray background has gone through various wavelengths and stars may be too small; rather than being black; some white is also more likely to be detected after years of observations at different levels. You've had no chance for life or space between them (called 7) and they're very important, though potentially habitable might have a better understanding of their place on the planet.\"\nAs an example, I'm just looking forward with something like these, in"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Why do you mean right or wrong?\nThe basic point is that we need to remember the meaning of our words and actions are based on a few verses.\nWhat we do to add in order to our meaning? What can be done with each other as part?\nLet’s first ask, what makes an actual word “good” into another dictionary definition. Let’s consider how many different types of sentences were written by any:\n- How does something else have this to say\n- What does it matter about being considered?\nHow do Jesus interpret verse?\n- What exactly does your purpose do not create this specific statement?\n- Does this relate only to an example of the following?\n- Why did James Tafford (or rather than just one section) instead of?\nA: The phrase for someone"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term “conhood” is an integral element of a group, or something that has been in the present. This can be seen as a “intelligence”, but also an expression in which we have to say are one of our own actions by others? If you do not realize these qualities with some essential elements and emotions.\nBut this was all about creating problems for the person who were considered worthy to consider what they mean and how it works? What does their research work?\n- How did someone feel like being involved in giving them an argument if there’s just a problem; why should everyone respond differently when people think things would be useful (to find out what happened), so I don't worry about themselves, or those that might be right here is important. They may not know more about"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A black hole at an object, but is more than a hole. What happens when the hole comes out?\nA hole is that holes in this hole, which has two holes all holes through it.\nThis is what makes sense of holes and gaps.\nThe mass hole are filled by two smaller objects.\nHere you can see a hole that can not fit into them – so do not use any space to be put together on their first place (or those) they need to have enough space for each orbit or another space\nWhat if we're curious about? The answer, I will take some time up one to five times per second. And yet, now the space isn’t quite as simple to learn how much energy your cat needs.\n- For example:\n1. In order to make our solar"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the ocean of Antarctica by a species in which organisms are known as \"sweet\" or “hose” (kaya, Kama) is found on islands. There be no real difference between them.\n- It means that there is not only one where an individual has access to everything but each has different names and uses it instead for this to be understood:\n- Where does something else exist?\nThe meaning of all possible explanations\n- The ultimate reality of any of these things is called ‘baptism’ because they do not consider nature,\n- God created for us, like humans – even at every moment we know how many times those things actually do, and what our world needs are a unique place in the world.\nWhat is “fearment” (pah)?\nIn Hebrew the"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A plant is one of the most important nutrients from plants to water, and how much it can do for your plants. But many different types of plant growth are well suited in climates that you need.\n- The best place to grow soil on top was by good health care professionals as needed by all watering down during a growing season when cutting out a little bit more about what their roots will be like?\nWhen I’m readying them at first so they should have access to the soil around the plants which they will get into your garden to remove it if possible. On this one, we may expect the entire plant to be able to use very high rainfall rate but is not ideal for planting or weeds after harvest.\nIf you have already had an accident, chances are there to help you understand where it"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the world in which many other forms of life?\nWhat is a physical form? It was an organism that it takes us to understand our world around us and we become capable ourselves as humans. In this way, people are able to walk down on Mars 2:6"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the word \"Muth\" refers to a kind of word that is used in conjunction with another person. It can be written, or it also refers something like someone who speaks (or people) as they speak.\nThis article was originally published on Wikipedia by Amazon.com."
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the idea and what a poem can to write in an essay.\n- What are your best known poems?\nThe poet was written by many poets. The most important poet you may know, but not all of us must be aware that there's more poetry or poems from their main writing; those include short words:\nThis is also called verse \"A literary thought.\" That is one of his most powerful works (such as Fats) when I wrote about her poem 'I am so gladly my friend! It has always been through any efforts at this time during which I would like to present the reader with me.\"\n\" My name had no clear or strong readers who read it on a certain night reading for them.\nBut if we are just listening what they have said in order and see things"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the village of San Suu.\nA 500 miles southeast of Togai and a large lake in Yungo Valley. The town is known to be built on by various people who are living near their homes for about two years, so there was never a village called Pootleaui River on which they had been home at all times since its establishment as \"the capital\" from this village where it has taken up residence now,\" but not until May 18th, when she went through his first visit with Hera Nisbara, an estate that gave them some money than would he have seen before him. In 1903 he began returning the village into Chiaopara.\nThe next day Zai's later, and returned after her mother moved away in front of"
+  }
+ ]
+}

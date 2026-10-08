@@ -1,0 +1,95 @@
+{
+ "run": "sdm_ngram_unigram_s0_20M",
+ "arm": "sdm_ngram",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 688,
+  "train_name": "train"
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "plain",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2898432,
+  "frozen_store_values": 0,
+  "total_trainable": 35994112
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 1974272.0,
+  "total": 68165632.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T01:24:02Z",
+  "load": [
+   4.78,
+   4.5,
+   3.59
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 107.2
+ },
+ "resumed_from_step": 2441,
+ "stamp_end": {
+  "utc": "2026-10-01T01:24:02Z",
+  "load": [
+   4.78,
+   4.5,
+   3.59
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 107.2
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.5970556075721147,
+  "nats_per_token": 5.365864617566358,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.622769177834488,
+  "nats_per_token": 5.452258313695655,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.613827530326265,
+  "nats_per_token": 5.422215734239036,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

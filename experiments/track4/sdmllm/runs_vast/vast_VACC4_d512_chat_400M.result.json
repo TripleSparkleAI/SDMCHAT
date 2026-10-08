@@ -1,0 +1,151 @@
+{
+ "run": "vast_VACC4_d512_chat_400M",
+ "arm": "sdm_ngram",
+ "seed": 0,
+ "cfg": {
+  "d": 512,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 1376,
+  "train_name": "chat_mix"
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 400000000,
+ "steps": 48828,
+ "lr": 0.001,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 66191360,
+  "non_embedding_trainable": 7640064,
+  "frozen_store_values": 0,
+  "total_trainable": 73831424
+ },
+ "flops_per_token_fwd": {
+  "head": 132382720,
+  "body": 7634944.0,
+  "total": 140017664.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T11:55:18Z",
+  "load": [
+   4.2,
+   5.21,
+   4.73
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 480.8
+ },
+ "resumed_from_step": 0,
+ "init": "/root/settle/ck/vast_VA_d512_s0_3B/last.pt",
+ "train_name": "chat_mix",
+ "stamp_end": {
+  "utc": "2026-10-01T12:29:25Z",
+  "load": [
+   4.16,
+   4.25,
+   4.35
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 479.4
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.844539704259582
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.834904088873418
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.834303336120476
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.8159405510844933
+  },
+  {
+   "step": 25000,
+   "tokens": 204800000,
+   "bpb_quick": 1.7860496410682858
+  },
+  {
+   "step": 30000,
+   "tokens": 245760000,
+   "bpb_quick": 1.7773919989589326
+  },
+  {
+   "step": 35000,
+   "tokens": 286720000,
+   "bpb_quick": 1.7648307690799347
+  },
+  {
+   "step": 40000,
+   "tokens": 327680000,
+   "bpb_quick": 1.7569680664264171
+  },
+  {
+   "step": 45000,
+   "tokens": 368640000,
+   "bpb_quick": 1.7488484519965257
+  }
+ ],
+ "val_test": {
+  "bpb": 1.498678139658426,
+  "nats_per_token": 5.035331246191563,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_extra": {
+  "chat_test": {
+   "bpb": 1.1038451028947551,
+   "nats_per_token": 3.6051914396927702,
+   "tokens": 1022736,
+   "bytes": 4819015
+  }
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.6542125661608864,
+  "nats_per_token": 8.91775166045344,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 3.653924118001968,
+  "nats_per_token": 12.276630849357446,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

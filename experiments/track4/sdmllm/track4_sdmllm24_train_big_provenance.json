@@ -1,0 +1,63 @@
+{
+ "repo": "HuggingFaceFW/fineweb-edu",
+ "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+ "licence": "odc-by",
+ "config": "sample/10BT",
+ "files": [
+  {
+   "file": "sample/10BT/000_00000.parquet",
+   "lfs_sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+   "bytes": 2152819114,
+   "first_row": 66488,
+   "last_row": 725999
+  },
+  {
+   "file": "sample/10BT/001_00000.parquet",
+   "lfs_sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693",
+   "bytes": 2152222432,
+   "first_row": 0,
+   "last_row": 728999
+  },
+  {
+   "file": "sample/10BT/002_00000.parquet",
+   "lfs_sha256": "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7",
+   "bytes": 2151796315,
+   "first_row": 0,
+   "last_row": 726999
+  },
+  {
+   "file": "sample/10BT/003_00000.parquet",
+   "lfs_sha256": "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb",
+   "bytes": 2152437524,
+   "first_row": 0,
+   "last_row": 733999
+  },
+  {
+   "file": "sample/10BT/004_00000.parquet",
+   "lfs_sha256": "33557ddd87a07a4ae6fcaf7a4789c7b484e5cc0c273ca12a65b74200e6d8748b",
+   "bytes": 2152338550,
+   "first_row": 0,
+   "last_row": 120000
+  }
+ ],
+ "target_tokens": 3000000000,
+ "made_by": "track4_sdmllm24_extend_fineweb_edu_shards.py (lane SPARK24)",
+ "s0_reproduced": {
+  "val": "89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f",
+  "train": "c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7"
+ },
+ "split": {
+  "train_big": {
+   "tokens": 3018298789,
+   "s0_train_tokens_prefix": 65522263,
+   "new_docs": 2969479,
+   "new_tokens": 2952776526,
+   "new_utf8_bytes": 14146335386,
+   "new_token_bytes_sum_non_bos": 14146437986,
+   "skipped_exact_duplicates_of_val_docs": 34,
+   "sha256": "624b04a94bdbd7683d1b8746e1540579e19fa106a0e64c938f1d8416df3850f6"
+  }
+ },
+ "made_utc": "2026-10-01T01:36:15Z",
+ "seconds": 1937
+}

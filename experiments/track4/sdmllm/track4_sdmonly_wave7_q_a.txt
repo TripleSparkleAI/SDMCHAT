@@ -1,0 +1,2 @@
+w7_ch_d512_60M new sdmonly 0 60000000 train --d 512 --hop-mlp 192 --untie --conj 2 --ng-rows 65536 --ng-orders 2,3 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w7_mq_d512_60M new qwen 0 60000000 train --d 512 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon

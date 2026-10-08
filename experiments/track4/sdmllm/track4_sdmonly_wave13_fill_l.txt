@@ -1,0 +1,3 @@
+# wave 13 on box l (fill runner). Sealed in the plan before it runs.
+w13_cn_d768_B128_400M new sdmonly_none 0 400000000 train_big --d 768 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 128 --eval-every 5000 --ckpt-every 5000 --log-every 100
+w13_mq_d768_B128_400M new qwen 0 400000000 train_big --d 768 --qwen-f 2048 --body-opt muon --B 128 --eval-every 5000 --ckpt-every 5000 --log-every 100

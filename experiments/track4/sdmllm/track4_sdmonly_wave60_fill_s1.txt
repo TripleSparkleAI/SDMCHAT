@@ -1,0 +1,2 @@
+# Wave 60 on s1 GPU 1 (freed by the graded arm): the data sweep at width 1,024, hop MLP 3,072, 16 hops, memory off
+w60_cn_d1024_B512_hm3072_hops16_1600M new sdmonly_none 0 1600000000 train_big --d 1024 --hop-mlp 3072 --hops 16 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 1000 --log-every 100

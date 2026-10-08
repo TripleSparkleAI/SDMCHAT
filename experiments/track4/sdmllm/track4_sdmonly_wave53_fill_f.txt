@@ -1,0 +1,2 @@
+# Wave 53 on box f: 48 hops at width 1,024 moves here, since f GPU 1 frees first (about 02:15Z).
+w53_cn_d1024_B512_hm3072_hops48_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 48 --untie --conj 2 --body-opt muon --B 512 --accum 32 --eval-every 5000 --ckpt-every 1000 --log-every 100

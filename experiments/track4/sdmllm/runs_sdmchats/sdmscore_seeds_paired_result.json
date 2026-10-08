@@ -1,0 +1,77 @@
+{
+ "windows": 3892,
+ "bytes": 4824566,
+ "bootstrap": "2000 window resamples, numpy default_rng(0)",
+ "stamp": {
+  "utc": "2026-10-02T13:10:09Z",
+  "host": "spark-f9cd",
+  "load": [
+   1.0224609375,
+   1.2890625,
+   1.7099609375
+  ]
+ },
+ "bpb": {
+  "sdmchats_NW_d512_s0_300M": 1.4301214960563973,
+  "sdmchats_NW_d512_s1_300M": 1.4319648607774398,
+  "sdmchats_SW_d512_s0_300M": 1.4299475801703154,
+  "sdmchats_SW_d512_s1_300M": 1.432428492944594,
+  "spark_W2_d512_s0_300M": 1.4297724141358656
+ },
+ "pairs": {
+  "sdmchats_SW_d512_s0_300M - sdmchats_NW_d512_s0_300M": {
+   "delta_bpb": -0.0001739158860818444,
+   "se": 0.00032662717349816415,
+   "z": -0.5324599426900466,
+   "resolved": false
+  },
+  "sdmchats_SW_d512_s1_300M - sdmchats_NW_d512_s1_300M": {
+   "delta_bpb": 0.0004636321671542926,
+   "se": 0.0002914585123197835,
+   "z": 1.5907312621070506,
+   "resolved": false
+  },
+  "sdmchats_SW_d512_s1_300M - sdmchats_SW_d512_s0_300M": {
+   "delta_bpb": 0.0024809127742787544,
+   "se": 0.0004358838284065912,
+   "z": 5.69168345462123,
+   "resolved": true
+  },
+  "sdmchats_NW_d512_s1_300M - sdmchats_NW_d512_s0_300M": {
+   "delta_bpb": 0.0018433647210426174,
+   "se": 0.00039599983189126645,
+   "z": 4.654963392885399,
+   "resolved": true
+  },
+  "sdmchats_SW_d512_s0_300M - spark_W2_d512_s0_300M": {
+   "delta_bpb": 0.00017516603444971655,
+   "se": 0.0003364542458301844,
+   "z": 0.5206236408683235,
+   "resolved": false
+  },
+  "sdmchats_SW_d512_s1_300M - spark_W2_d512_s0_300M": {
+   "delta_bpb": 0.002656078808728471,
+   "se": 0.0004022489657425474,
+   "z": 6.603071816046505,
+   "resolved": true
+  },
+  "sdmchats_NW_d512_s1_300M - spark_W2_d512_s0_300M": {
+   "delta_bpb": 0.0021924466415741786,
+   "se": 0.00040240636487707214,
+   "z": 5.448339869683551,
+   "resolved": true
+  }
+ },
+ "means": {
+  "(sdmchats_SW_d512_s0_300M - sdmchats_NW_d512_s0_300M) + (sdmchats_SW_d512_s1_300M - sdmchats_NW_d512_s1_300M) / 2": {
+   "mean_delta_bpb": 0.00014485814053622408,
+   "window_se": 0.0002064391560543518,
+   "deltas": [
+    -0.0001739158860818444,
+    0.0004636321671542926
+   ],
+   "seed_half_spread": 0.0003187740266180685,
+   "resolved": false
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "repo": "HuggingFaceTB/smol-smoltalk",
+ "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+ "licence": "apache-2.0",
+ "template": "User: <text>\\n / Assistant: <text>\\n per turn, system messages dropped, [BOS 0] per conversation",
+ "made_by": "track4_sdmllm24_prepare_smoltalk_chat_shards.py (lane SPARK24)",
+ "chat_test": {
+  "conversations": 24229,
+  "tokens": 19809072,
+  "utf8_bytes": 92938994,
+  "sha256": "f88ec2c2cd858a5c40ab66d5c9b354da005493f8d9a9ca995a2f60b9b19c19bc",
+  "files": [
+   "data/test-00000-of-00001.parquet"
+  ]
+ },
+ "chat_train": {
+  "conversations": 460341,
+  "tokens": 378859013,
+  "utf8_bytes": 1777891598,
+  "sha256": "b280437d9373cb30cf7f50cb6081fccd1e4065509bed527d53d5b3be8f256046",
+  "files": [
+   "data/train-00000-of-00004.parquet",
+   "data/train-00001-of-00004.parquet",
+   "data/train-00002-of-00004.parquet",
+   "data/train-00003-of-00004.parquet"
+  ]
+ },
+ "chat_mix": {
+  "tokens": 757718026,
+  "chat_tokens": 378859013,
+  "web_tokens_from_end_of_train_big": 378859013,
+  "sha256": "1a2e1724e760342e997e283fe803f5867251820390067ae2707f1e362acaf977"
+ },
+ "made_utc": "2026-10-01T02:09:55Z"
+}

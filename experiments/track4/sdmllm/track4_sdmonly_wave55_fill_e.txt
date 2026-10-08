@@ -1,0 +1,3 @@
+# Wave 55 on box e GPU 1 (free after 32 hops at width 1,536, about 10:40Z, until the SDM twin ends): the hop push past 64 at width 1,024. 64 hops beat 48 (AU2 missed), so the curve still has not turned.
+w55_cn_d1024_B512_hm3072_hops96_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 96 --untie --conj 2 --body-opt muon --B 512 --accum 64 --eval-every 5000 --ckpt-every 1000 --log-every 100
+w55_cn_d1024_B512_hm3072_hops128_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 128 --untie --conj 2 --body-opt muon --B 512 --accum 128 --eval-every 5000 --ckpt-every 1000 --log-every 100

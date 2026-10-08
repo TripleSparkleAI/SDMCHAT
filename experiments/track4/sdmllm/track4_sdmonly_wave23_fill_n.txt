@@ -1,0 +1,2 @@
+# wave 23 on box n: the yardstick past B 512 at width 1,024, the mirror of wave 22. Sealed in the plan.
+w23_mq_d1024_B1024_400M new qwen 0 400000000 train_big --d 1024 --qwen-f 2736 --body-opt muon --B 1024 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

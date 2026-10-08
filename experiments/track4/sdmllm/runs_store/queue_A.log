@@ -1,0 +1,25 @@
+2026-09-30T15:55:09Z start sdm_storeopt_s0_20M load { 13.73 18.97 30.54 }  powermode            2
+2026-09-30T16:29:35Z end sdm_storeopt_s0_20M exit 0 load { 40.22 52.66 48.51 }
+2026-09-30T16:29:35Z start sdm_storeopt_qstop_s0_20M load { 40.22 52.66 48.51 }  powermode            2
+2026-09-30T17:00:33Z end sdm_storeopt_qstop_s0_20M exit 0 load { 25.26 29.21 31.41 }
+2026-09-30T17:00:34Z start qwen_s3_20M load { 25.26 29.21 31.41 }  powermode            2
+2026-09-30T17:28:13Z end qwen_s3_20M exit 0 load { 55.20 53.16 48.17 }
+2026-09-30T17:28:13Z start sdm_repro_s0_20M load { 55.20 53.16 48.17 }  powermode            2
+2026-09-30T18:00:34Z end sdm_repro_s0_20M exit 0 load { 63.07 64.43 61.98 }
+2026-09-30T18:00:34Z start sdm_storeopt_qstop_soft1_s0_20M load { 63.07 64.43 61.98 }  powermode            2
+2026-09-30T18:31:07Z end sdm_storeopt_qstop_soft1_s0_20M exit 0 load { 96.36 88.80 84.33 }
+2026-09-30T18:31:07Z start sdm_storeopt_qstop_soft4_s0_20M load { 96.36 88.80 84.33 }  powermode            2
+2026-09-30T19:06:50Z end sdm_storeopt_qstop_soft4_s0_20M exit 0 load { 98.20 97.46 101.85 }
+2026-09-30T19:06:50Z start sdm_ngram_s1_20M load { 98.20 97.46 101.85 }  powermode            2
+2026-09-30T19:34:30Z end sdm_ngram_s1_20M exit 0 load { 104.60 132.84 136.41 }
+2026-09-30T19:34:30Z start sdm_ngram_s2_20M load { 104.60 132.84 136.41 }  powermode            2
+2026-09-30T20:04:01Z end sdm_ngram_s2_20M exit 0 load { 112.24 147.09 153.64 }
+2026-09-30T20:04:03Z start sdm_storeopt_qstop_soft0p25_s1_20M load { 112.24 147.09 153.64 }  powermode            2
+2026-09-30T20:33:35Z end sdm_storeopt_qstop_soft0p25_s1_20M exit 0 load { 100.60 102.08 108.62 }
+2026-09-30T20:33:35Z start sdm_storeopt_qstop_soft0p25_s2_20M load { 100.60 102.08 108.62 }  powermode            2
+2026-09-30T20:58:57Z end sdm_storeopt_qstop_soft0p25_s2_20M exit 0 load { 88.81 86.12 90.93 }
+2026-09-30T20:58:57Z start sdm_ngram_unigram_s1_20M load { 88.81 86.12 90.93 }  powermode            2
+2026-09-30T21:18:12Z end sdm_ngram_unigram_s1_20M exit 0 load { 70.47 85.70 92.00 }
+2026-09-30T21:18:12Z start sdm_ngram_unigram_s2_20M load { 70.47 85.70 92.00 }  powermode            2
+2026-09-30T21:33:16Z end sdm_ngram_unigram_s2_20M exit 0 load { 144.22 104.78 93.20 }
+2026-09-30T21:33:16Z queue A empty

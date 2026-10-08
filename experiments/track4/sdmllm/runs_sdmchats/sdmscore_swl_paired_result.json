@@ -1,0 +1,55 @@
+{
+ "windows": 3892,
+ "bytes": 4824566,
+ "bootstrap": "2000 window resamples, numpy default_rng(0)",
+ "stamp": {
+  "utc": "2026-10-02T20:11:48Z",
+  "host": "spark-f9cd",
+  "load": [
+   0.11767578125,
+   0.07568359375,
+   0.09326171875
+  ]
+ },
+ "bpb": {
+  "epics_FW12": 1.4277829151997954,
+  "sdmchats_NW_d512_s0_300M": 1.4301214960563973,
+  "sdmchats_NW_d512_s1_300M": 1.4319648607774398,
+  "sdmchats_SWL_d768_s0_600M": 1.4028486989027882,
+  "sdmchats_SW_d512_s0_300M": 1.4299475801703154,
+  "sdmchats_SW_d512_s1_300M": 1.432428492944594
+ },
+ "pairs": {
+  "sdmchats_SWL_d768_s0_600M - sdmchats_SW_d512_s0_300M": {
+   "delta_bpb": -0.027098881267527228,
+   "se": 0.0004900047617461417,
+   "z": -55.303301892332286,
+   "resolved": true
+  },
+  "sdmchats_SWL_d768_s0_600M - sdmchats_SW_d512_s1_300M": {
+   "delta_bpb": -0.029579794041805982,
+   "se": 0.0004672671217735733,
+   "z": -63.30382058453421,
+   "resolved": true
+  },
+  "sdmchats_SWL_d768_s0_600M - sdmchats_NW_d512_s0_300M": {
+   "delta_bpb": -0.02727279715360907,
+   "se": 0.00044121152512455625,
+   "z": -61.81342870839519,
+   "resolved": true
+  },
+  "sdmchats_SWL_d768_s0_600M - sdmchats_NW_d512_s1_300M": {
+   "delta_bpb": -0.02911616187465169,
+   "se": 0.00045457854453443195,
+   "z": -64.05089334885292,
+   "resolved": true
+  },
+  "sdmchats_SWL_d768_s0_600M - epics_FW12": {
+   "delta_bpb": -0.02493421629700728,
+   "se": 0.0004521943229644381,
+   "z": -55.14048945494651,
+   "resolved": true
+  }
+ },
+ "means": {}
+}

@@ -1,0 +1,2 @@
+# wave 15 on box m: the batch lever with the mixer and with width. Sealed in the plan.
+w15_cn_d1536_B128_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 192 --untie --conj 2 --body-opt muon --B 128 --accum 2 --eval-every 5000 --ckpt-every 5000 --log-every 100

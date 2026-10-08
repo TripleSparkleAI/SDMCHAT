@@ -1,0 +1,2 @@
+# wave 43 on box n: 32 exact past tokens (two values past 8). Sealed in the plan.
+w43_cn_d1536_B512_hm3072_hops16_nb32_400M new sdmonly_none 0 400000000 train_big --hops 16 --n-back 32 --d 1536 --hop-mlp 3072 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

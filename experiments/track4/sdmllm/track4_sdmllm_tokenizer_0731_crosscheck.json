@@ -1,0 +1,12 @@
+{
+ "deepseek-ai/DeepSeek-V4-Flash-0731": {
+  "revision": "7872f01b1d1fe23eabc4c98b48bffcef5a386062",
+  "sha256": "8f9f37ca37fdc4f5fd36d5cf4d3b0e8392edb4e894fd10cc0d70b4957c8633cf",
+  "vocab_equal": true,
+  "merges_equal": true,
+  "added_tokens_equal": true,
+  "pre_tokenizer_equal": true,
+  "encode_equal_on_models_py": true,
+  "n_added": 1283
+ }
+}

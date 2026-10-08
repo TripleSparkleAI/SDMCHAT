@@ -1,0 +1,2 @@
+# Wave 54 on box f GPU 1 after 64 hops: the transformer yardstick on the same 2.0B tokens as the true runs, so the comparison is fair.
+w54_mq_d1536_B512_2B new qwen 0 2000000000 train_big --d 1536 --qwen-f 4096 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 1000 --log-every 100

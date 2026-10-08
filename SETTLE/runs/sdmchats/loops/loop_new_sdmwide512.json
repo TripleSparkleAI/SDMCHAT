@@ -1,0 +1,172 @@
+{
+ "which": "new",
+ "override": "{}",
+ "rows": [
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 1,
+   "loopRate": 0.033,
+   "distinct2": 0.992,
+   "meanTokens": 145.5,
+   "secs": 216.342
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.991,
+   "meanTokens": 118.4,
+   "secs": 86.471
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the sky is seen a cloud, with an idea that we can see in our galaxy. It doesn’t matter how many clouds are visible but there will be huge clusters of cosmic rays. The most common cluster is light from one source to another as it causes other galaxies.\nIn conclusion - Some models predict \"the universe's dark\", so when this cosmic-ray background has gone through various wavelengths and stars may be too small; rather than being black; some white is also more likely to be detected after years of observations at different levels. You've had no chance for life or space between them (called 7) and they're very important, though potentially habitable might have a better understanding of their place on the planet.\"\nAs an example, I'm just looking forward with something like these, in"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 3,
+   "loops": true,
+   "why": "\"sun\" x3 in a row",
+   "text": " 1,000 BCE\nA: The Sun is a type of Sun, which we can understand it?\n- What’s on Earth is not the Sun?\nThe Sun and the Sun in order to provide an explanation for solar panels. In addition there are different types of Sun and all possible forms.\nFirst Sun Moon is very easy to understand why sun Sun and its surface is determined by a single Sun. It should be called ultraviolet energy! Solaris based off sunlight as shown below:\n- Light Sun – which is made up from both sides of our Sun: Sun & Sun (also known as “Water Sun”. This is used in the Sun's Sun also has some form of sun protection available at various locations throughout their life.\n- Sun & Moon – A Sun\n- Sun’s Sun"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Why do you mean right or wrong?\nThe basic point is that we need to remember the meaning of our words and actions are based on a few verses.\nWhat we do to add in order to our meaning? What can be done with each other as part?\nLet’s first ask, what makes an actual word “good” into another dictionary definition. Let’s consider how many different types of sentences were written by any:\n- How does something else have this to say\n- What does it matter about being considered?\nHow do Jesus interpret verse?\n- What exactly does your purpose do not create this specific statement?\n- Does this relate only to an example of the following?\n- Why did James Tafford (or rather than just one section) instead of?\nA: The phrase for someone"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The term “conhood” is an integral element of a group, or something that has been in the present. This can be seen as a “intelligence”, but also an expression in which we have to say are one of our own actions by others? If you do not realize these qualities with some essential elements and emotions.\nBut this was all about creating problems for the person who were considered worthy to consider what they mean and how it works? What does their research work?\n- How did someone feel like being involved in giving them an argument if there’s just a problem; why should everyone respond differently when people think things would be useful (to find out what happened), so I don't worry about themselves, or those that might be right here is important. They may not know more about"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A black hole at an object, but is more than a hole. What happens when the hole comes out?\nA hole is that holes in this hole, which has two holes all holes through it.\nThis is what makes sense of holes and gaps.\nThe mass hole are filled by two smaller objects.\nHere you can see a hole that can not fit into them – so do not use any space to be put together on their first place (or those) they need to have enough space for each orbit or another space\nWhat if we're curious about? The answer, I will take some time up one to five times per second. And yet, now the space isn’t quite as simple to learn how much energy your cat needs.\n- For example:\n1. In order to make our solar"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the ocean of Antarctica by a species in which organisms are known as \"sweet\" or “hose” (kaya, Kama) is found on islands. There be no real difference between them.\n- It means that there is not only one where an individual has access to everything but each has different names and uses it instead for this to be understood:\n- Where does something else exist?\nThe meaning of all possible explanations\n- The ultimate reality of any of these things is called ‘baptism’ because they do not consider nature,\n- God created for us, like humans – even at every moment we know how many times those things actually do, and what our world needs are a unique place in the world.\nWhat is “fearment” (pah)?\nIn Hebrew the"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A plant is one of the most important nutrients from plants to water, and how much it can do for your plants. But many different types of plant growth are well suited in climates that you need.\n- The best place to grow soil on top was by good health care professionals as needed by all watering down during a growing season when cutting out a little bit more about what their roots will be like?\nWhen I’m readying them at first so they should have access to the soil around the plants which they will get into your garden to remove it if possible. On this one, we may expect the entire plant to be able to use very high rainfall rate but is not ideal for planting or weeds after harvest.\nIf you have already had an accident, chances are there to help you understand where it"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the world in which many other forms of life?\nWhat is a physical form? It was an organism that it takes us to understand our world around us and we become capable ourselves as humans. In this way, people are able to walk down on Mars 2:6"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the word \"Muth\" refers to a kind of word that is used in conjunction with another person. It can be written, or it also refers something like someone who speaks (or people) as they speak.\nThis article was originally published on Wikipedia by Amazon.com."
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the idea and what a poem can to write in an essay.\n- What are your best known poems?\nThe poet was written by many poets. The most important poet you may know, but not all of us must be aware that there's more poetry or poems from their main writing; those include short words:\nThis is also called verse \"A literary thought.\" That is one of his most powerful works (such as Fats) when I wrote about her poem 'I am so gladly my friend! It has always been through any efforts at this time during which I would like to present the reader with me.\"\n\" My name had no clear or strong readers who read it on a certain night reading for them.\nBut if we are just listening what they have said in order and see things"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the village of San Suu.\nA 500 miles southeast of Togai and a large lake in Yungo Valley. The town is known to be built on by various people who are living near their homes for about two years, so there was never a village called Pootleaui River on which they had been home at all times since its establishment as \"the capital\" from this village where it has taken up residence now,\" but not until May 18th, when she went through his first visit with Hera Nisbara, an estate that gave them some money than would he have seen before him. In 1903 he began returning the village into Chiaopara.\nThe next day Zai's later, and returned after her mother moved away in front of"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the mid/5th and last\nWetre of 3rd and 8\nThe most common\nFatalities are estimated to occur at different stages:\nwhere a species is endemic.\nIn some areas, there are many variations such as temperature\nand the conditions it appears on almost certain portions\nof time. If your turn red or purple it may start to\nthe purple color. This can be achieved with\nthe blue colors,\nor an actual light source.\nThe first color can be applied directly from each of those figures together\nwith the background color will probably be colored in"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "Winter Morning",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": "\nThe fourth camp won the first, but had to\nbe at this time it was very interesting to see\nA common form of a word: from which is made of living\nthat are being raised in the earth’s\ndiversity out on, or when he sees any\nhe as small wood and stinking; often\nfrom heaven to right:\nI always think that you should be open for your\nAnd be there. You could be more\nbe seen here.\nThe other reason we have taken our place as a child where young people will\npire so well that they don"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Lime and the Coconut",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " in the right time with a long narrow\nat the time of year, it was not uncommon to see\nthe burning of tears and tear up in our eyes.\nIn September a few moments before this happened:\nThe First Man of the Battle of Anthem can be seen\nAs these objects become obsolete in Europe, they had been observed by Pope\nand he gave us thanks to him. This\nare one of those were no longer than any other\nof those who had come from them at the moment\nin which they possessed such freedom so that their\nddening my love for you would"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "A Song for the Rain",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ", or by removing obstacles and being more than twice\n1. In the case of a round-up, it is necessary to take\nthe position where all the rest is put as\nof the action taken from the center; for the\nof other forms should be understood.\nThis poem reminds us how things move in\nreperformed at its time with us again\nlike our eyes, so that when we do not come before you are\nwho are now subject to them?"
+  },
+  {
+   "model": "sdmwide512",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (AADIL or a large band\nOversely, and the most common\nA region of Northern Europe is in between\nthe skyline on the lower left by sea,\nsnowing, which has to be seen\nThe rise, with short,\nor deep as at length above,\nwith clear water.\nBThis means that in one direction is exactly\nlived from its base, called\na. On either side of the roof\nofr. In this case it may not have been taken out of reach for God long time; but they know that if they are\nat"
+  }
+ ]
+}

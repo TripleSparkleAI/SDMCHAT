@@ -1,0 +1,8 @@
+w9_mix4_200M    new sdmonly_none 0 200000000 train --hops 0 --untie --conj 2 --mix-layers 4 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix4         new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 4 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix2         new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 2 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix4_T1024   new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 4 --T 1024 --B 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix4_nofade  new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 4 --mix-decays 1.0,1.0,1.0,1.0 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix4_k64     new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 4 --mix-k 64 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix4_n128    new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 4 --mix-n-sub 128 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon
+w9_mix8         new sdmonly_none 0 20000000  train --hops 0 --untie --conj 2 --mix-layers 8 --eval-every 1000 --ckpt-every 1000 --log-every 100 --body-opt muon

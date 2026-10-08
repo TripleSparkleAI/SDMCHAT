@@ -1,0 +1,6 @@
+# vast_sdmonly_true.list - the boxes that carry the true training run (from 2026-10-04 15:10Z). Moved out of
+# vast_sdmonly_fleet11.list so that list's 16:00Z deadline does not destroy them. No deadline destroy: a pull loop
+# copies results home, and the hourly idle sweep closes a box only after it has been idle for an hour and pulled.
+# instance   label              card               host            ssh_port  dph_total  down_$/TB  up_$/TB  machine  driver       rented_utc
+54033213     sdmonly-e-2x5090   2x_RTX_5090        179.255.106.231 26241     0.9252     6.67       6.67     152075   580.173.02   2026-10-03T16:06:14Z
+54033215     sdmonly-f-2x5090   2x_RTX_5090        154.37.220.220  30725     0.9519     4.00       6.67     146858   595.71.05    2026-10-03T16:06:16Z

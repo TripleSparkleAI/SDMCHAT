@@ -1,0 +1,55 @@
+{"event": "start", "run": "sdm_ngram_unigram_s0_20M", "arm": "sdm_ngram", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 3600, "k": 32, "hops": 2, "softness": 0.5, "n_layer": 4, "M_big": 16384, "value_init": "s0", "qgrad": 1.0, "ngram_orders": [1]}, "B": 32, "T": 256, "tokens_target": 20000000, "steps": 2441, "lr": 0.003, "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 2898432, "frozen_store_values": 0, "total_trainable": 35994112}, "flops_per_token_fwd": {"head": 66191360, "body": 1974272.0, "total": 68165632.0}, "device": "mps", "stamp_start": {"utc": "2026-09-30T19:37:13Z", "load": [135.5, 132.57, 135.4], "ncpu": 18, "powermode": "2", "macos_build": "25F71", "torch": "2.8.0", "host": "HappyRobots-MacBook-Pro.local"}, "resumed_from_step": 0}
+{"event": "step", "step": 50, "loss": 7.8775, "lr": 0.002999998836629469, "gnorm": 0.35, "tok_per_s": 9909.3, "load": 145.5791015625, "hop_stats": [{"read_rms": 0.0365}]}
+{"event": "step", "step": 100, "loss": 7.3218, "lr": 0.0029969752030447787, "gnorm": 0.326, "tok_per_s": 12091.5, "load": 161.8916015625, "hop_stats": [{"read_rms": 0.1223}]}
+{"event": "step", "step": 150, "loss": 6.8049, "lr": 0.0029881498328049637, "gnorm": 0.284, "tok_per_s": 13177.1, "load": 169.9189453125, "hop_stats": [{"read_rms": 0.1997}]}
+{"event": "step", "step": 200, "loss": 6.6984, "lr": 0.0029735607388399585, "gnorm": 0.414, "tok_per_s": 13352.3, "load": 185.1171875, "hop_stats": [{"read_rms": 0.2409}]}
+{"event": "step", "step": 250, "loss": 6.3918, "lr": 0.0029532707597833404, "gnorm": 0.251, "tok_per_s": 16832.7, "load": 174.02294921875, "hop_stats": [{"read_rms": 0.2673}]}
+{"event": "step", "step": 300, "loss": 6.4299, "lr": 0.002927367289311664, "gnorm": 0.298, "tok_per_s": 9172.6, "load": 161.1865234375, "hop_stats": [{"read_rms": 0.285}]}
+{"event": "step", "step": 350, "loss": 6.2897, "lr": 0.002895961899719501, "gnorm": 0.335, "tok_per_s": 11299.7, "load": 167.34716796875, "hop_stats": [{"read_rms": 0.3011}]}
+{"event": "step", "step": 400, "loss": 6.1699, "lr": 0.002859189861351509, "gnorm": 0.29, "tok_per_s": 12973.7, "load": 159.833984375, "hop_stats": [{"read_rms": 0.3218}]}
+{"event": "step", "step": 450, "loss": 5.947, "lr": 0.002817209559961489, "gnorm": 0.333, "tok_per_s": 13056.4, "load": 156.76025390625, "hop_stats": [{"read_rms": 0.3347}]}
+{"event": "step", "step": 500, "loss": 5.9664, "lr": 0.002770201814507961, "gnorm": 0.307, "tok_per_s": 16155.4, "load": 153.49609375, "hop_stats": [{"read_rms": 0.3437}]}
+{"event": "eval_quick", "step": 500, "bpb": 2.0661523720681783, "nats_per_token": 6.2296981844129675, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 550, "loss": 5.9375, "lr": 0.0027183690983247, "gnorm": 0.324, "tok_per_s": 9940.9, "load": 147.23876953125, "hop_stats": [{"read_rms": 0.3508}]}
+{"event": "step", "step": 600, "loss": 5.7893, "lr": 0.002661934667020818, "gnorm": 0.303, "tok_per_s": 13057.1, "load": 147.51953125, "hop_stats": [{"read_rms": 0.3676}]}
+{"event": "step", "step": 650, "loss": 5.8462, "lr": 0.0026011415968667374, "gnorm": 0.319, "tok_per_s": 13416.2, "load": 157.365234375, "hop_stats": [{"read_rms": 0.3747}]}
+{"event": "step", "step": 700, "loss": 5.7929, "lr": 0.0025362517378079456, "gnorm": 0.306, "tok_per_s": 12723.5, "load": 177.12890625, "hop_stats": [{"read_rms": 0.3799}]}
+{"event": "step", "step": 750, "loss": 5.8422, "lr": 0.0024675445856161514, "gnorm": 0.305, "tok_per_s": 14058.7, "load": 179.90185546875, "hop_stats": [{"read_rms": 0.3851}]}
+{"event": "step", "step": 800, "loss": 5.7639, "lr": 0.0023953160780357456, "gnorm": 0.325, "tok_per_s": 11318.4, "load": 167.2578125, "hop_stats": [{"read_rms": 0.3926}]}
+{"event": "step", "step": 850, "loss": 6.0311, "lr": 0.0023198773201108503, "gnorm": 0.555, "tok_per_s": 12833.9, "load": 157.63134765625, "hop_stats": [{"read_rms": 0.3939}]}
+{"event": "step", "step": 900, "loss": 5.8249, "lr": 0.002241553244183264, "gnorm": 0.322, "tok_per_s": 13067.1, "load": 159.38232421875, "hop_stats": [{"read_rms": 0.4006}]}
+{"event": "step", "step": 950, "loss": 5.7585, "lr": 0.0021606812103330104, "gnorm": 0.357, "tok_per_s": 13210.7, "load": 162.31982421875, "hop_stats": [{"read_rms": 0.4072}]}
+{"event": "step", "step": 1000, "loss": 5.8675, "lr": 0.002077609553289712, "gnorm": 0.355, "tok_per_s": 12533.1, "load": 162.767578125, "hop_stats": [{"read_rms": 0.4094}]}
+{"event": "eval_quick", "step": 1000, "bpb": 1.9406984283817412, "nats_per_token": 5.851439438457781, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 1050, "loss": 5.6554, "lr": 0.001992696082073596, "gnorm": 0.374, "tok_per_s": 11411.3, "load": 161.31982421875, "hop_stats": [{"read_rms": 0.417}]}
+{"event": "step", "step": 1100, "loss": 5.6177, "lr": 0.0019063065388285076, "gnorm": 0.323, "tok_per_s": 13101.2, "load": 161.7900390625, "hop_stats": [{"read_rms": 0.4217}]}
+{"event": "step", "step": 1150, "loss": 5.8131, "lr": 0.001818813023485115, "gnorm": 0.357, "tok_per_s": 12991.3, "load": 158.84423828125, "hop_stats": [{"read_rms": 0.4177}]}
+{"event": "step", "step": 1200, "loss": 5.6521, "lr": 0.0017305923910396388, "gnorm": 0.356, "tok_per_s": 13397.3, "load": 155.88427734375, "hop_stats": [{"read_rms": 0.4244}]}
+{"event": "step", "step": 1250, "loss": 5.5877, "lr": 0.0016420246283514073, "gnorm": 0.356, "tok_per_s": 13749.9, "load": 158.2421875, "hop_stats": [{"read_rms": 0.4316}]}
+{"event": "step", "step": 1300, "loss": 5.5219, "lr": 0.001553491217450742, "gnorm": 0.38, "tok_per_s": 11591.6, "load": 153.1552734375, "hop_stats": [{"read_rms": 0.4326}]}
+{"event": "step", "step": 1350, "loss": 5.671, "lr": 0.0014653734924067957, "gnorm": 0.384, "tok_per_s": 12683.5, "load": 153.64501953125, "hop_stats": [{"read_rms": 0.4325}]}
+{"event": "step", "step": 1400, "loss": 5.5177, "lr": 0.001378050996832694, "gnorm": 0.389, "tok_per_s": 13280.1, "load": 156.41357421875, "hop_stats": [{"read_rms": 0.4323}]}
+{"event": "step", "step": 1450, "loss": 5.611, "lr": 0.0012918998491025866, "gnorm": 0.492, "tok_per_s": 13518.3, "load": 162.16259765625, "hop_stats": [{"read_rms": 0.4351}]}
+{"event": "step", "step": 1500, "loss": 5.48, "lr": 0.0012072911223220046, "gnorm": 0.42, "tok_per_s": 13396.7, "load": 164.55322265625, "hop_stats": [{"read_rms": 0.4376}]}
+{"event": "eval_quick", "step": 1500, "bpb": 1.8831610269621943, "nats_per_token": 5.677957245176751, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 1550, "loss": 5.5443, "lr": 0.0011245892460293651, "gnorm": 0.436, "tok_per_s": 11348.7, "load": 158.619140625, "hop_stats": [{"read_rms": 0.4395}]}
+{"event": "step", "step": 1600, "loss": 5.5328, "lr": 0.0010441504365128757, "gnorm": 0.414, "tok_per_s": 12941.2, "load": 157.9169921875, "hop_stats": [{"read_rms": 0.4374}]}
+{"event": "step", "step": 1650, "loss": 5.6333, "lr": 0.0009663211625038165, "gnorm": 0.471, "tok_per_s": 12926.0, "load": 174.65234375, "hop_stats": [{"read_rms": 0.4419}]}
+{"event": "step", "step": 1700, "loss": 5.4556, "lr": 0.0008914366528548352, "gnorm": 0.39, "tok_per_s": 13372.0, "load": 188.8837890625, "hop_stats": [{"read_rms": 0.4422}]}
+{"event": "step", "step": 1750, "loss": 5.3927, "lr": 0.0008198194526310138, "gnorm": 0.413, "tok_per_s": 12857.6, "load": 188.5576171875, "hop_stats": [{"read_rms": 0.4401}]}
+{"event": "step", "step": 1800, "loss": 5.6011, "lr": 0.0007517780338329788, "gnorm": 0.42, "tok_per_s": 11806.1, "load": 176.396484375, "hop_stats": [{"read_rms": 0.442}]}
+{"event": "step", "step": 1850, "loss": 5.3069, "lr": 0.000687605466735976, "gnorm": 0.403, "tok_per_s": 12660.5, "load": 176.98388671875, "hop_stats": [{"read_rms": 0.4438}]}
+{"event": "step", "step": 1900, "loss": 5.4252, "lr": 0.0006275781575677816, "gnorm": 0.404, "tok_per_s": 12974.4, "load": 172.38134765625, "hop_stats": [{"read_rms": 0.4399}]}
+{"event": "step", "step": 1950, "loss": 5.4048, "lr": 0.000571954657962547, "gnorm": 0.419, "tok_per_s": 13101.1, "load": 176.65673828125, "hop_stats": [{"read_rms": 0.444}]}
+{"event": "step", "step": 2000, "loss": 5.4271, "lr": 0.0005209745513185531, "gnorm": 0.418, "tok_per_s": 12980.4, "load": 184.998046875, "hop_stats": [{"read_rms": 0.4383}]}
+{"event": "eval_quick", "step": 2000, "bpb": 1.8444971492916975, "nats_per_token": 5.561380998534709, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 2050, "loss": 5.4623, "lr": 0.00047485742085658306, "gnorm": 0.429, "tok_per_s": 10495.2, "load": 160.794921875, "hop_stats": [{"read_rms": 0.4412}]}
+{"event": "step", "step": 2100, "loss": 5.2664, "lr": 0.0004338019038237257, "gnorm": 0.412, "tok_per_s": 12938.0, "load": 165.61669921875, "hop_stats": [{"read_rms": 0.4434}]}
+{"event": "step", "step": 2150, "loss": 5.4682, "lr": 0.0003979848359163815, "gnorm": 0.423, "tok_per_s": 13904.9, "load": 173.1591796875, "hop_stats": [{"read_rms": 0.4399}]}
+{"event": "step", "step": 2200, "loss": 5.4301, "lr": 0.00036756048960763494, "gnorm": 0.43, "tok_per_s": 13299.7, "load": 170.82861328125, "hop_stats": [{"read_rms": 0.4407}]}
+{"event": "step", "step": 2250, "loss": 5.3195, "lr": 0.0003426599096596977, "gnorm": 0.463, "tok_per_s": 16286.2, "load": 164.4521484375, "hop_stats": [{"read_rms": 0.4454}]}
+{"event": "step", "step": 2300, "loss": 5.3274, "lr": 0.0003233903486835241, "gnorm": 0.448, "tok_per_s": 14133.2, "load": 144.16455078125, "hop_stats": [{"read_rms": 0.4418}]}
+{"event": "step", "step": 2350, "loss": 5.2877, "lr": 0.00030983480517677854, "gnorm": 0.462, "tok_per_s": 18642.4, "load": 138.22216796875, "hop_stats": [{"read_rms": 0.4391}]}
+{"event": "step", "step": 2400, "loss": 5.4513, "lr": 0.0003020516660299287, "gnorm": 0.433, "tok_per_s": 18139.5, "load": 132.93212890625, "hop_stats": [{"read_rms": 0.4432}]}
+{"event": "step", "step": 2441, "loss": 5.3656, "lr": 0.0003000011633705311, "gnorm": 0.447, "tok_per_s": 23323.6, "load": 133.91455078125, "hop_stats": [{"read_rms": 0.4426}]}
+{"event": "final", "val_test": {"bpb": 1.5970565706623547, "nats_per_token": 5.365867853403493, "tokens": 995323, "bytes": 4824566}}

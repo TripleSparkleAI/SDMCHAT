@@ -1,0 +1,110 @@
+{
+ "base": "http://localhost:5233",
+ "utc": "2026-10-02T10:03:05Z",
+ "surfaces": {
+  "llm": {
+   "status": "Running now: SDM read, wide 512, chat-tuned, which reads an SDM of 3,600 locations · 1.47952 test bpb · chat-tuned on half chat, half web text",
+   "replies": [
+    {
+     "prompt": "Write a poem about the sea.",
+     "autostart": true,
+     "live": false,
+     "text": " The poem \"Hakam\" is an Old English poem, as it's slightly more suitable than the poem. \n\nThe poem was written in the following passage for the first: \"In this poem I am writing\", but you could describe some poems that delve into its meaning and uses throughout all time period to describe the emotional toll on their backstories.\n\nSome of her poems are short and long, with many poems she still stands out by poet, like John Mithra (the poet). In his words he wrote at poetry were fascinated because they had never begun to take it from the wind when God began to be called a man.\" This type of poetic poetry has become known as the world only once",
+     "foot": "145 tokens · 8727 ms · 16.6 tok/s · SDM read, wide 512, chat-tuned · temp 0.80 · seed 1 · stopped at stop string",
+     "loops": []
+    },
+    {
+     "prompt": "Write a poem about the sea.",
+     "live": false,
+     "text": " You can see me edit written in 1999. The poem describes the poem's first poetry, including \"The poem is,\" which states how often speaks of love and beauty that leaves readers feel sad or full of joy than writing for someone.\n\nFor all those poems would not be an artist's novel. They've seen her own life beyond the surface; they must be able to evoke feelings while also being true.\n\nIn this way, both literary fiction works typically convey one's emotional journey through various sensory details like metaphors and similes to connect with others on canvas. Some might be poetic or humorous, allowing them to evoke emotions rather than simply telling us something entirely different from their nature",
+     "foot": "139 tokens · 8022 ms · 17.3 tok/s · SDM read, wide 512, chat-tuned · temp 0.80 · seed 2 · stopped at stop string",
+     "loops": []
+    },
+    {
+     "prompt": "What is a black hole?",
+     "live": false,
+     "text": " A poem in a piece together art form can be written as well. Each idea has its own unique characteristics but distinct voice is often a single choice for writing style. The author uses an expression of emotion and clarity, making it a powerful tool for exploring complex relationships between multiple people and the idea behind one or two worlds.\n",
+     "foot": "64 tokens · 3856 ms · 16.6 tok/s · SDM read, wide 512, chat-tuned · temp 0.80 · seed 3 · stopped at special token <｜begin▁of▁sentence｜>",
+     "loops": []
+    }
+   ]
+  },
+  "poem": {
+   "status": "the epic composer · reads an SDM · writes epic verse, 1.5488 bpb on held-out epic lines · line-break nudge +3 after 8 tokens · Blake primer on",
+   "replies": [
+    {
+     "prompt": "A Song for the Rain (a title)",
+     "autostart": true,
+     "live": false,
+     "text": "A Song for the Rain\nAt this my flying course I had trod\nBy that strange air a man should be\nMy faithful friend and fellow-sprangry.\nAs with the mighty hunter on its way,\nTo his great bow he saw not far away\nWith what might ensue to bear the feare.\n\nNo wonder all was heard there yet before:\nWhose voice (Said his voice) in haste did throw\nAnd bended o’er him struck: so fast\nThe king himself humbly raised it low,\nBut as she spoke: where that night lay\nHad made of men, and turned",
+     "foot": "120 tokens · 7656 ms · 15.7 tok/s · the epic composer · temp 0.90 · seed 1 · stopped at max tokens",
+     "loops": []
+    },
+    {
+     "prompt": "The Old Clock",
+     "live": false,
+     "text": "The Old Clock\nAnd now a little backward stood\nTo their native soil and fable found.\nHe was first to lift his eyes in sight,\nWhere clouds their spirits hidden?  Wherein they rove\nOver the broad deeps a lake arose;\nThat filled each other's hideous hue\nOf human spirits all the dismal deep:\nBut when two winds that beat my ship down\nAll trembling o’er the hills resound\nWhen from beneath it lay, before him near\nThe trembling rock—No cavern saw its fall\nBy waters green and dry grotto pine\nAbout his oars;",
+     "foot": "120 tokens · 8132 ms · 14.8 tok/s · the epic composer · temp 0.90 · seed 2 · stopped at max tokens",
+     "loops": []
+    },
+    {
+     "prompt": "Winter Morning",
+     "live": false,
+     "text": "Winter Morning\nAnd now with wonder are it brought\nThat this mighty town has built his quicks?\nHath the sun that shines by light beams,\nThat every day in a moment’s way:\nOn such high as heaven itself can lie\nAs many trees were glistened, and thick;\nOn stones on steep that hill they hold,\nAnd earth was full and dreadful.  There on that rock,\nWhere none could match at home nor lake could stand\nFondering down a tree whereon\nLike a shower of winds uprooting\nLike clouds which shake the sky above them rolled.\nOn",
+     "foot": "120 tokens · 7789 ms · 15.4 tok/s · the epic composer · temp 0.90 · seed 3 · stopped at max tokens",
+     "loops": []
+    }
+   ]
+  },
+  "wlg": {
+   "status": "live in your browser · dev build · the template is User: <your message>\\nGuy:",
+   "replies": [
+    {
+     "prompt": "is curiosity just chemicals?",
+     "live": false,
+     "text": "Look, I heard you. You said a search engine. But I can only think about one thing, and it is this. A search engine does exactly what it was built to do, which is to move symbols around. Whether anything is understood is a separate question, and the answer is: not by it.\n",
+     "foot": "63 tokens · 3927 ms · 16.0 tok/s · the weird little guy · temp 0.80 · seed 1 · stopped at his end of turn",
+     "loops": []
+    },
+    {
+     "prompt": "draw me a little animal",
+     "live": false,
+     "text": "People ask me about an umbrella all the time and I always give the same answer, which annoys them. Is a crossword puzzle a natural kind or a social one? It is both. The atoms are there anyway. Calling it a fire burns nothing down. So we know less than we thought. That is a start.\n",
+     "foot": "65 tokens · 3632 ms · 17.9 tok/s · the weird little guy · temp 0.80 · seed 2 · stopped at his end of turn",
+     "loops": []
+    },
+    {
+     "prompt": "show me your face",
+     "live": false,
+     "text": "My face, as best I can tell from the inside:\n   /|\\  \n  _______\n |  @ @  |\n |   3   |\n |_______|\nI have never seen my own ears. I believe in them on testimony.\n",
+     "foot": "48 tokens · 2773 ms · 17.3 tok/s · the weird little guy · temp 0.80 · seed 3 · stopped at his end of turn",
+     "loops": []
+    }
+   ]
+  },
+  "magic8": {
+   "answers": [
+    {
+     "q": "Is the sky blue?",
+     "readout": "LIVE SIMULATION IN YOUR BROWSER · ONE PASS, THEN A SETTLE\nSMALL EXPERIMENTAL MODEL · DO NOT TRUST ITS OUTPUT\nTHE ONE-PASS STUDENT lean +3.168 in 2.20 ms · decision YES\nYES\n100.0%\nUNSURE\n0.0%\nNO\n0.0%\nTHE SLOW TEACHER lean +3.235 in 77.5 ms · decision YES agrees\nTHE SETTLE You may rely on it. (YES, on",
+     "status": ""
+    },
+    {
+     "q": "Will it rain tomorrow?",
+     "readout": "LIVE SIMULATION IN YOUR BROWSER · ONE PASS, THEN A SETTLE\nSMALL EXPERIMENTAL MODEL · DO NOT TRUST ITS OUTPUT\nTHE ONE-PASS STUDENT lean +1.959 in 2.20 ms · decision UNSURE\nYES\n4.3%\nUNSURE\n74.7%\nNO\n21.0%\nTHE SLOW TEACHER lean +1.759 in 73.8 ms · decision NO disagrees\nTHE SETTLE Don't count on it. (NO,",
+     "status": ""
+    },
+    {
+     "q": "Should I learn the piano?",
+     "readout": "LIVE SIMULATION IN YOUR BROWSER · ONE PASS, THEN A SETTLE\nSMALL EXPERIMENTAL MODEL · DO NOT TRUST ITS OUTPUT\nTHE ONE-PASS STUDENT lean +1.358 in 2.10 ms · decision NO\nYES\n0.0%\nUNSURE\n0.2%\nNO\n99.8%\nTHE SLOW TEACHER lean +1.370 in 56.6 ms · decision NO agrees\nTHE SETTLE My sources say no. (NO, one of ",
+     "status": ""
+    },
+    {
+     "q": "Is Paris the capital of France?",
+     "readout": "LIVE SIMULATION IN YOUR BROWSER · ONE PASS, THEN A SETTLE\nSMALL EXPERIMENTAL MODEL · DO NOT TRUST ITS OUTPUT\nTHE ONE-PASS STUDENT lean +1.168 in 2.20 ms · decision NO\nYES\n0.0%\nUNSURE\n0.0%\nNO\n100.0%\nTHE SLOW TEACHER lean +1.426 in 56.0 ms · decision NO agrees\nTHE SETTLE Very doubtful. (NO, one of 5)",
+     "status": ""
+    }
+   ]
+  }
+ }
+}

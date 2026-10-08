@@ -1,0 +1,157 @@
+{
+ "base": "/root/settle/ck/vast_sdmread_s2_20M/last.pt",
+ "base_cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 2,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train"
+ },
+ "arm": "sdm",
+ "stamp_start": {
+  "utc": "2026-10-01T11:46:01Z",
+  "host": "41ac7b578b34",
+  "load": [
+   3.7,
+   4.19,
+   3.97
+  ],
+  "ncpu": 128,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "gpu_util_at_stamp": "0 %\n99 %\n99 %\n97 %"
+ },
+ "settings": {
+  "prepare": false,
+  "train": true,
+  "probe": false,
+  "corpus": null,
+  "prepared": "/root/settle/weirdguy/prep",
+  "base": "/root/settle/ck/vast_sdmread_s2_20M/last.pt",
+  "data": "/root/settle/sdmllm/data",
+  "out": "/root/settle/runs/wg_WG0",
+  "steps": 1200,
+  "B": 16,
+  "lr": 0.001,
+  "eval_every": 200,
+  "fw_windows": 256,
+  "seed": 0,
+  "cpu": false,
+  "tokenizer": null,
+  "prompts": null,
+  "checkpoints": null,
+  "names": null,
+  "samples": 3
+ },
+ "device": "cuda",
+ "before": {
+  "corpus_test_guy_bpb": {
+   "bpb": 2.013413676377992,
+   "tokens": 52111,
+   "bytes": 215225,
+   "windows": 235
+  },
+  "corpus_testswap_guy_bpb": {
+   "bpb": 2.017584745937032,
+   "tokens": 52089,
+   "bytes": 215096,
+   "windows": 235
+  },
+  "corpus_train_guy_bpb_first64": {
+   "bpb": 2.128953344600355,
+   "tokens": 14212,
+   "bytes": 58135,
+   "windows": 64
+  },
+  "fineweb_test_bpb": {
+   "bpb": 1.71363845446974,
+   "windows": 256,
+   "held_out": "TEST half of val.u32, first windows"
+  }
+ },
+ "curve": [
+  {
+   "step": 200,
+   "corpus_test_guy_bpb": 0.2788569195751191,
+   "train_loss": 0.34181448817253113
+  },
+  {
+   "step": 400,
+   "corpus_test_guy_bpb": 0.2918697119608903,
+   "train_loss": 0.22731506824493408
+  },
+  {
+   "step": 600,
+   "corpus_test_guy_bpb": 0.28333976764704083,
+   "train_loss": 0.181529700756073
+  },
+  {
+   "step": 800,
+   "corpus_test_guy_bpb": 0.27691225672894026,
+   "train_loss": 0.19286426901817322
+  },
+  {
+   "step": 1000,
+   "corpus_test_guy_bpb": 0.2751325536739168,
+   "train_loss": 0.19315806031227112
+  },
+  {
+   "step": 1200,
+   "corpus_test_guy_bpb": 0.2748005180685309,
+   "train_loss": 0.16711856424808502
+  }
+ ],
+ "after": {
+  "corpus_test_guy_bpb": {
+   "bpb": 0.2748005180685309,
+   "tokens": 52111,
+   "bytes": 215225,
+   "windows": 235
+  },
+  "corpus_testswap_guy_bpb": {
+   "bpb": 0.3037744704748239,
+   "tokens": 52089,
+   "bytes": 215096,
+   "windows": 235
+  },
+  "corpus_train_guy_bpb_first64": {
+   "bpb": 0.06639777674554259,
+   "tokens": 14212,
+   "bytes": 58135,
+   "windows": 64
+  },
+  "fineweb_test_bpb": {
+   "bpb": 3.502863305841561,
+   "windows": 256,
+   "held_out": "TEST half of val.u32, first windows"
+  }
+ },
+ "stamp_end": {
+  "utc": "2026-10-01T11:47:03Z",
+  "host": "41ac7b578b34",
+  "load": [
+   3.97,
+   4.19,
+   3.98
+  ],
+  "ncpu": 128,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "gpu_util_at_stamp": "65 %\n98 %\n99 %\n97 %"
+ },
+ "seconds": 61.8
+}

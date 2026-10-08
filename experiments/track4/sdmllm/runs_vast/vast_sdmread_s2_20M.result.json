@@ -1,0 +1,99 @@
+{
+ "run": "vast_sdmread_s2_20M",
+ "arm": "sdm",
+ "seed": 2,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 2,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train"
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2898432,
+  "frozen_store_values": 0,
+  "total_trainable": 35994112
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 5988352.0,
+  "total": 72179712.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-01T11:42:53Z",
+  "load": [
+   4.0,
+   4.16,
+   3.87
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 480.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-01T11:44:26Z",
+  "load": [
+   4.77,
+   4.49,
+   4.03
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "41ac7b578b34",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "570.181\n570.181\n570.181\n570.181",
+  "mem_available_gb": 478.6
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.602033097390655,
+  "nats_per_token": 5.382588228425597,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.616313075252864,
+  "nats_per_token": 5.430566788212219,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.6379667196272485,
+  "nats_per_token": 5.503319749122898,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_last_hop": 0.4469444453716278
+}

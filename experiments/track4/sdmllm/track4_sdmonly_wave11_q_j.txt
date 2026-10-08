@@ -1,0 +1,5 @@
+# wave 11, box j (2 GPUs: worker 0 takes lines 1,3,5..; worker 1 takes 2,4,6..). Sealed in the plan before it runs.
+w11_M4_nf_n256 new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --mix-n-sub 256 --eval-every 1000 --ckpt-every 1000 --log-every 100
+w11_M5_nf_k64 new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --mix-k 64 --eval-every 1000 --ckpt-every 1000 --log-every 100
+w11_M6_nf_da128 new sdmonly_none 0 200000000 train --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --mix-d-a 128 --eval-every 1000 --ckpt-every 1000 --log-every 100
+w11_M7_nf_reads new sdmonly 0 200000000 train --hop-mlp 192 --untie --conj 2 --body-opt muon --mix-layers 4 --mix-n-sub 128 --mix-decays 1.0,1.0,1.0,1.0 --eval-every 1000 --ckpt-every 1000 --log-every 100

@@ -1,0 +1,2 @@
+# wave 33 on box j: the hop MLP at width 768 with the base rate (the best rate at width 1,536). Sealed in the plan.
+w33_cn_d1536_B512_hm768_400M new sdmonly_none 0 400000000 train_big --d 1536 --hop-mlp 768 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

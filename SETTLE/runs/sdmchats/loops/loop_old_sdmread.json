@@ -1,0 +1,244 @@
+{
+ "which": "old",
+ "rows": [
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "replies": 30,
+   "looping": 2,
+   "loopRate": 0.067,
+   "distinct2": 0.943,
+   "meanTokens": 146.1,
+   "secs": 146.772
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "replies": 15,
+   "looping": 0,
+   "loopRate": 0,
+   "distinct2": 0.979,
+   "meanTokens": 119.1,
+   "secs": 55.812
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "replies": 24,
+   "looping": 1,
+   "loopRate": 0.042,
+   "distinct2": 0.952,
+   "meanTokens": 154.3,
+   "secs": 121.783
+  }
+ ],
+ "samples": [
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why is the sky blue?",
+   "seed": 1,
+   "loops": true,
+   "why": "3-gram \"? How do\" x6",
+   "text": " What is the two color? What about the Moon? How do you think? Is it a black? How do you want? How do they make it? Do you say if you think? Are you going to go on? How do we tell you if your family? Is a great thing for them?\n- How much do I mean it?\n- Why not do a lot? How does the change? What is a little bit? How will you do this? How do you know what are your answer? What do they do you. This is the same model of how important? How should we know? How do you want to say, when there is no question?\nHow do you tell, how to do it, or how do they work in the school? What does this mean?"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why do we have seasons?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The first time period was the beginning of the days before the day. The first time to start and start with the day and so many people don’t have any chance of that time and time.\nThe next time the history of the day was for the people and their lives is just how the air goes wrong. It does not think of as long as they grow, their own eyes, and even more people who are the people who are in front of them? What is the difference between the people of the people and the age of many Americans\n- 1th-century Chinese writers, who may find an example of a new generation of things that come up to their own, but also in particular an effort to make a real difference. The relationship between nature and behavior can be seen in their experience"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "How do magnets work?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " 1.16 and 6.4 months after age 15. The 3.9% of the population of the United States. This year, there are several important factors to be an increase in the 30th century, including:\n- M., and 4, 3 of which it is a lot of\nThe greatest concern for a man who cannot be in the form of the disease of the elderly and the other, including the first of the world. The most common reasons are the result of the symptoms of autism 11,000 people would have a much higher risk to being more than 50% of the Americans.\nThese new treatments may be found in the U.S., and the United States were the only one.\n- It was said to be a \"bad,\""
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "What is a black hole?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The American Academy of Justice\nThis is a vital aspect of the human body. It is the reason that the body is in our body, which is what we need to use or treat, and to do it. We will be able to control some of them:\n- If you believe I can hear any thing that is of a lot more likely to be given about the nature of the world.\nIf we’re looking for as much as possible (and then the people who are not able to live a few days to be found in order to meet the needs of which we want. The same would also make a difference between the two countries where the economy can have, and that the individual is supposed to be more likely to go into the country.”\nThe state also has been the most recent government has"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Why is the ocean salty?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the true meaning of life and the surrounding environment. The planet is a global planet is in the world, which means of climate change.\n- As a result, our government has no idea to have a strong role in the world. We do not live there for the purpose to maintain our water through. It is now the process of spreading in the environment when we reach the whole world, but in this sense, that they are not going out of the future. This is why we will make an effort to create a strong understanding, just because it is a bad thing that was to be at once.\nThe first time I think of these two words to say and what we do with. You do not know what is so important that you might have had the right place in the mind when there"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "How do plants drink water?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The water, temperature\nWhat is the water surface?\nWhat is the water?\nWhen the water vapor and water?\nIf you get a water in water and water are more common enough to eat. It’s important to do this, it’s not recommended to use water in an early morning with any tea or water source.\nBut when this plant is very close to every other plant. If you are interested in the area in the soil, I can be a great deal of water and water is made up of water, then the way our day. The water could be as high as 15 miles from the river. It was the beginning of 14 days or 1-4 years\nMatter-day, the world has been found for many decades ago.\nA 3.7 billion"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "What is photosynthesis?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " The idea of energy into the world. The greatest potential for the economy is the economy and the nation's economy, the world that has been around.\n- The first of this process is an important part of the world, it is a great deal. It doesn’t have a real decision. To explain it, we may not give it clear and clear, clear, reliable, or even a lot more, than in all those who are doing them.\nThe goal of this is to be a problem. The next thing is to say anything for people who are going against. If it is the person, and if you want to see, say, say you should always be able to do it at their own time, and so that the child does not do, however, that’s an active"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a poem about the sea.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the right about the moon and the day?\n- How do you know about the world of the planet? The first person to see in the future? Why does the use of an animal?\nA. What do we know about the origin of the word \"The 6:25 or more is more than a time when a woman doesn’t want you to remember that, but if you’re talking about to their own, it has been a part of the world’s history of history, but this is one of all who does not have a more or less or more of a decade before the 2010’s age. These numbers are in the form of a number of characters, such as the age of 3:5\nThe United States of America was more likely"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a short poem about autumn.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " It is a powerful figure of the artist's design, and the art of the painting. The more common story is that you should be able to write out the music for his people.\nWhen the music of the music in the music, the words it can find something like the sound; which can work, just as a game, just as your favorite music is only a musical instrument.\n- 3.5, the body and the other words have been used as a way to get the word in a given word.\n- This is that your mind is not a form of reading this. The article can help you understand the importance of the vocabulary of it by being an individual. It is also helpful at the end of the sentence, which is used in terms of a new word. A study may"
+  },
+  {
+   "model": "sdmread",
+   "surface": "chat",
+   "prompt": "Write a short story about a village in the mountains.",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " It is a lot about the way it takes away from a person. It is known to be one of the most important things to do. For example, if you want to drink, this is not the same as that the child is in fact you can add some of the ingredients used.\nThis work helps in the classroom (and, you need a lot more often than anyone else.\n- You have been told you that a group of people who get older and less than one of them. It's okay to keep them with this.\nDo we like to see what someone has in touch with your parents.\nTo find out how to be a happy, talk is an essential part of the body. Then that is not a good friend or a child for the school or family members, you will see in"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "The Sea at Night",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (the new energy are now a good thing if we are\nwanted by the 1990s, 200\nwhere it is 5m and 100 years that\nI have to say that there were more than 1,500, from\n- 15 miles between them — when compared with\nat least four days as\nthe size, the plant was made up of\nbecks and the ground around the\nf) 2nd or 3\nThe following:\nThere are some numbers of fish that work, though\nof the NIT have changed to\nof"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "Autumn Leaves",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " (the word we learn from a)\nA history of the ancient Roman Catholic Church\nThe Holy Family is the first one who can\na major name from the Temple in India from the city. The city is a capital city, which is born. The other famous for his time had never\n\n His country by the great kings and probably has always been\nas more than six years ago. He was not known to\nand those who were also who have been called\nthe most important part of their faith in\nin the present day has yet done, but\nreduction, when it is made"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "A Lantern in the Snow",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": ": The Tokels, is the suned and is\nThe sky is the Sun, in the\nthe universe has not been seen from Earth.\nIt has a high set of human beings. The Earth is said to be the first space around the object as it was observed across one particular sea is affected by the polar\n\n orbit of any ocean. We take up around 50 million years ago, as\nThe comet represents the Earth's gravity of the universe in\nthe planet is the universe and the earth.\nIn other words (although now, there are) that\ncould be the highest"
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "The Old Clock",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " system is an end in the United States\nWhere does it mean?\nThe first 1,000 years ago\nof World War II was also an extremely small population of Japan - a young man. It was the primary point of view of a foreign government were so far as an expression, because these new figures\n\n. His family \"anva\", which became, and said to be\nin a series of 1 million children\nThe world where they were first considered in the United States. As they were forced to be responsible for building our natural resources. The UN also looked on the land ("
+  },
+  {
+   "model": "sdmread",
+   "surface": "poem",
+   "prompt": "Morning Bread",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " and the People,\" one of which can be added to a\nbe found in a variety of methods. The\nwunting a variety of tools available in\nThe researchers looked as a standard for this method, which are based on the use of paper. Only using these tests for our model was carried by them.\nIn particular, those that first did not look with\ngays and the fact that their products are\nthat our ability to grow.\nIt is often surprising that the idea of a tree of 6.5 years ago"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "is an autopilot real?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " a team of studies by the researchers from the World Health Organization (CDC) is an important step towards finding the way that you find a healthy eating habits that are essential to those foods. If you are doing a healthy lifestyle, you may need to look at yourself.\nIf you are to talk about their family planning and your lifestyle. I will understand that if you live in any of the other hand, the family has a unique range of ways to promote healthy life.\nWhat is the difference between the people who have an interest in which you use of an individual who is already a job to help you manage. They are also known as a way that is good enough to grow up and look at the edge that you can see how the sun is doing the same time as it comes from the beginning of a"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "I have a question about a comet",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " a man, at one time: it’s time. It is the first time to take you to find out what is like a baby’s head and is not all possible.\nYou can also find the way you see how to use a food for humans?\nA small part of an hour of eating disorders that are going to make it an opportunity to find up in mind that you have to do is that it is good, but there is another reason why I can be able to get the first time to try to take their own eyes while on the other hand to get your heart. This would allow them to be a very good time and so is good to understand how the individual is going at every time.\n- The student has a chance of thinking is to have been in the process that helps"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "is curiosity just chemicals?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " I’ve tried to find the first ever imagined that they are. The most common things in my face is a good thing and that is in our lives, as well as 3 days. This is a very serious way to do this for life. On this time, you don’t find yourself there is a more time, but your story is very low, which is the same. If we can say that all your friends are not enough to be done.\nIf you have a chance to look at it. The process of turning or removing the other things too, or just a few seconds and see what you’re going to keep it.”\nHere are the tips for making sure you choose!\n- Have a good chance to use the answer to read.\n- The first time in a project"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "why does a bus ticket matter?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " Why is the price you're talking? How should we use a business?\nWhat is the first place? How do you have the same? How does this mean?\nThe difference of the origin of the same?\n- How can you compare your numbers of different reasons. How do you? It's different things:\n- How many people come to take advantage of your identity?\nSo how does it mean?\nIf you think about this one is, how well you can’t be able to get a question and how you might want to do about\na. If you put your paper about the problem. When we look at the point where you do not look? (Note: What are the things they must have, and how you will make it, you want to take part of the time, there"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "draw me a little animal",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " the sun, with one of us.\nWhat happens when we are looking for a small animal?\nBut it is a very simple answer to the problem of your dog's teeth? Can you understand the problem?\nIf you can make a difference between your brain and feel tired, or how does the things too many to do this?\nA doctor’s disease is one that is healthy. If you have a little different treatment, they might be able to understand the symptoms and may be a good way to learn to know about what they're doing at hand when you are going down, there can be a different chance to find out what they can do for your patients’ ability to make sure you have a degree. If you want to play a good job with your help, it’s important to be successful"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "show me your face",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the problem. The story will you keep a life of the day? Is it in a life that is, as they are in our body’s health and how their body works. This is why we see when the child is at first, even when they are working out or just at some point of time to find those things is good for everyone or you, but also a good thing to get them. I've been doing with our own, or by others, and then they have no idea about how to stop the emotions (but not) or doing it, in fact, because this can be done by a combination of something that happens if the brain is in the same way they’re thinking about what to do. The truth is so far as it does not be known that"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "what do you collect?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " A Guide to your baby’s, you get the best way to make a sense of smell, and how to get the energy in the future.\nA good time to work when you eat a lot of money. They will be able to look around for others!\n- Use your mind. Don't find things that you’re eating too! This is because people are in the same way. If you don’t eat much more, and when you have an activity or a lot of time. We can get you to eat and talk on something that is not so important that we can be better with others.\n- Do not have any things that would work, especially if you are doing it with any other way of life and that is the problem of an event. In this case, there’"
+  },
+  {
+   "model": "sdmread",
+   "surface": "wlg",
+   "prompt": "what is the capital of France?",
+   "seed": 1,
+   "loops": false,
+   "why": "",
+   "text": " What is the future does it mean? It refers to the fact that the earth is a “convent” of the Earth?\nThe earth has an image of its atmosphere is. The light is a common source of space in which the universe is different from these conditions, but they must always be at once one of the two. When we reach our own level we can reach the level of our planet and our own energy we cannot be able to generate our own power.\n- We have a good idea for the people that we’re free in this way, we believe that it has been the place that our bodies are not able to do a lot.\nA great deal of life is that we cannot expect to know what we think of it. I have all that is our understanding of our experiences that"
+  }
+ ]
+}

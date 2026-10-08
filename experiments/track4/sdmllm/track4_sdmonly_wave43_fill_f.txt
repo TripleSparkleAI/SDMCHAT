@@ -1,0 +1,2 @@
+# wave 43 on box f: 24 hops with the new body (between the best 16 and the much worse 32). Sealed in the plan.
+w43_cn_d1536_B512_hm3072_hops24_400M new sdmonly_none 0 400000000 train_big --hops 24 --d 1536 --hop-mlp 3072 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100

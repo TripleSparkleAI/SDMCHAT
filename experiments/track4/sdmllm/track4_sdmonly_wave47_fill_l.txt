@@ -1,0 +1,2 @@
+# wave 47 on box l: 24 hops at width 1,024. Sealed in the plan.
+w47_cn_d1024_B512_hm3072_hops24_400M new sdmonly_none 0 400000000 train_big --d 1024 --hop-mlp 3072 --hops 24 --untie --conj 2 --body-opt muon --B 512 --accum 8 --eval-every 5000 --ckpt-every 5000 --log-every 100
