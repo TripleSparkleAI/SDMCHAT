@@ -3396,3 +3396,182 @@ A winning shape does not change the running FULL base; it becomes the shape of t
 - `launch_chat_fullsdm_50M` started 08:48:42Z (step 60 at 09:21Z, chat loss 3.34, web 4.21). Its before-score is the
   base's TEST, 1.29216. The records are in runs_launch/.
 - The step-4,500 insurance copy is no longer needed; it stays until the chat lands.
+
+### 2026-10-08T09:24:01Z - heartbeat (JIMOTHY)
+- Lane FULLBASEDATA landed (7af278c64, learn-SDM tests 27/27): the SDM pages now show FULL's 1.29216 in place of "no
+  score yet".
+- `launch_chat_fullsdm_50M` runs at **5,539 tok/s**, not about 14,000: chain2 called the fine-tune without
+  `--compile`. It ends near 11:35Z instead of about 10:00Z. Accepted rather than restarted: killing the child would let
+  chain2 run straight on into the sweep with no chat. Any later fine-tune call carries `--compile`.
+- 0 Vast boxes.
+
+### 2026-10-08T09:43:43Z - heartbeat (JIMOTHY)
+- `launch_chat_fullsdm_50M` step 110 of about 381, loss 3.858 (chat 3.471), 5,422 tok/s. Ends near 11:35Z. 0 Vast
+  boxes.
+
+### 2026-10-08T14:23:21Z - the FULL chat and the sweep's noise arm scored; a frozen sweep resumed (JIMOTHY)
+- **FULL SDM CHAT** `launch_chat_fullsdm_50M` (50M tokens, half chat, half web, 5,588 tok/s uncompiled, ended
+  11:34Z): **chat_test 1.09621 bpb** (from the base's 1.38969, -0.29348) and **TEST 1.31007** (+0.01791 against the
+  base's 1.29216, the usual small cost of tuning). For reference the site's best chat model, the store model
+  sdmwide768chat, reads 1.06386 on chat turns at 700M tokens; FULL is 0.032 behind it.
+- **SW1, the noise arm:** `sw_seed1_d768_L12_50M` TEST **1.54149** against seed 0's 1.54457, so N = **0.00308**.
+  **VERDICT SW1: HOLDS** (N <= 0.010). The sweep's win/lose line is therefore max(2N, 0.010) = **0.010**.
+- **RED, now fixed:** the sweep script (`sweep.sh`, PID 59102) sat in state T (stopped) from about 12:34Z, after its
+  first arm's python finished, until 14:22Z: about 1 h 48 min of an idle GPU. I resumed it with SIGCONT by its PID;
+  `sw_slots4x_d768_L12_50M` started at 14:22:27Z. The sender is unknown: no tool of mine sends a stop, and the
+  Spark's job-queue scripts note that this box can SIGSTOP a keeper. The heartbeat now checks the chain's process
+  state, not only its log.
+- Records committed under runs_launch/.
+
+### 2026-10-08T23:02:10Z - wave SW scored, six of seven arms (JIMOTHY)
+Line: an arm WINS or LOSES only beyond 0.010 of the bake-off FULL (TEST 1.54457, 13,989 tok/s); N = 0.00308.
+
+| arm | change | TEST bpb | vs 1.54457 | call | median tok/s | weights |
+|---|---|---|---|---|---|---|
+| sw_seed1 | seed 1 | 1.54149 | -0.00308 | (noise) | | 97.9M |
+| sw_slots4x | 4x encyclopedia slots | 1.54708 | +0.00251 | TIE | 13,323 | 241.4M |
+| sw_k64 | read 64 slots | 1.54262 | -0.00195 | TIE | | 97.9M |
+| sw_heads8 | 8 encyclopedia heads | 1.54293 | -0.00164 | TIE | | 97.9M |
+| sw_diary4k | diary 4,096 slots a head | **1.62503** | **+0.08046** | **LOSES** | 5,720 | 98.0M |
+| sw_deep | width 512, 24 layers | **1.52777** | **-0.01680** | **WINS** | 8,560 | 83.5M |
+| sw_wide | width 1,024, 8 layers | running | | | | 119.8M |
+
+**Verdicts:** SW1 HOLDS (N 0.00308). SW2 MISSES (4x slots ties; the encyclopedia's size is not what FULL is short of).
+SW3 HOLDS. SW4 HOLDS. SW5 MISSES (the bigger diary is much WORSE, and 2.4x slower). SW6 MISSES in the other direction:
+the deep shape WINS with 15% fewer weights, at 61% of the speed. SW7 and SW8 wait on sw_wide (SW8 holds so far:
+1.52777 > 1.5043). SW9 MISSES (slots4x ran at 13,323 tok/s, not below 11,000).
+**BRACKETED / UNBRACKETED (rule a):** depth is UNBRACKETED (the best is the deepest tried, 24 layers); diary size is
+UNBRACKETED (the best is the smallest tried, 1,024 slots); slots, k and encyclopedia heads tie and need no push.
+
+### 2026-10-08T23:02:56Z - SEALED: wave SWB, push past wave SW's two open edges, before it fires (JIMOTHY)
+Rule (a) sends both UNBRACKETED axes at least two values further. Same recipe and seed as wave SW, read against the
+bake-off FULL (1.54457) and the noise line 0.010. Script `runs_launch/sweep2.sh` (sha256 0f16ea155456886e...), placed
+on the Spark; `chain3.sh` waits for chain2 (after sw_wide and the 1.1B transformer) and then fires it. About 8 hours.
+
+| arm | change | weights |
+|---|---|---|
+| swb_diary576 | diary 576 slots a head (n_sub 24) | 97.9M |
+| swb_diary256 | diary 256 slots a head (n_sub 16) | 97.9M |
+| swb_deep32 | width 512, 32 layers | 105.8M |
+| swb_deep48 | width 512, 48 layers | 150.3M |
+
+**Sealed predictions:**
+- SWB1: swb_diary576 beats the 1,024-slot diary (1.54457) by more than 0.010 (35%).
+- SWB2: swb_diary256 is worse than swb_diary576 (60%), so the diary curve turns between 256 and 1,024.
+- SWB3: swb_deep32 beats swb_deep (1.52777) by more than 0.010 (40%).
+- SWB4: swb_deep48 beats swb_deep32 (45%).
+- SWB5: the best arm of wave SWB is below 1.515 (40%).
+The winner on each axis becomes the shape of the next FULL base, priced by its speed, and its curve is pushed again if
+it still sits on an edge.
+
+### 2026-10-08T23:23:47Z - wave SW complete; the 1.1B transformer started (JIMOTHY)
+- `sw_wide_d1024_L8_50M`: TEST **1.54802** (+0.00345 against 1.54457), **TIE**, at **17,384 tok/s** (the fastest FULL
+  shape, 1.24x the bake-off FULL). 119.8M weights.
+- **VERDICT SW7: HOLDS** (wide ties). **VERDICT SW8: HOLDS** (the best arm, deep at 1.52777, stays above 1.5043).
+- **Wave SW scorecard: 5 of 9** (SW1, SW3, SW4, SW7, SW8 hold; SW2, SW5, SW6, SW9 miss).
+- **The width-depth line, at nearly matched weights:** d1024 L8 1.54802 · d768 L12 1.54457 · d512 L24 1.52777. Deeper is
+  better along the whole line and the best sits at the deep edge: UNBRACKETED, pushed by wave SWB (sealed).
+- chain2 started `launch_yard_d768_L12_T2048_1100M` at 23:21:36Z: the transformer at FULL's base tokens, for FB2.
+  `chain3` (PID 999609) waits on it, then fires wave SWB.
+
+### 2026-10-08T23:43:34Z - heartbeat (JIMOTHY)
+- `launch_yard_d768_L12_T2048_1100M` step 400 of 8,392, loss 4.156 (FULL was 4.97 at step 400), 45,816 tok/s, so it
+  ends near 06:05Z. chain2 and chain3 both alive. 0 Vast boxes.
+
+### 2026-10-08T23:43:51Z - correction to the entry above
+- "FULL was 4.97 at step 400" was written from memory, not read. The FULL base's log says **5.1219** at step 400. The
+  transformer's 4.156 is 0.966 nats lower at the same step.
+
+### 2026-10-09T00:03:41Z - heartbeat (JIMOTHY)
+- The 1.1B transformer's first quick eval, step 500 (about 66M tokens): **1.25067 bpb**, against the FULL base's
+  1.56858 at the same step (gap 0.318). Step 800, loss 3.782, 43,716 tok/s. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T00:23:28Z - heartbeat (JIMOTHY)
+- The 1.1B transformer's quick eval at step 1,000 (about 131M tokens): **1.16152 bpb**, against the FULL base's 1.49875
+  at the same step (gap 0.337, wider than 0.318 at step 500). The transformer at 131M tokens is already below the FULL
+  base's final full TEST (1.29216); FB2 is all but settled. Step 1,200, 44,248 tok/s. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T00:43:32Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 1,500: **1.12226** (FULL base 1.48266 at the same step; gap 0.360, still
+  widening). Step 1,650 of 8,392, 45,190 tok/s, ends near 06:05Z. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T02:24:48Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick evals: step 3,000 **1.06753** (FULL base 1.42899 at the same step, gap 0.361), step
+  3,500 **1.05591**. Step 3,700 of 8,392, 45,017 tok/s, ends near 05:45Z. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T02:43:22Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 4,000: **1.04906** (FULL base 1.39772 at the same step, gap 0.349; the gap
+  was 0.365 at step 3,500, so it narrowed a little). Step 4,100 of 8,392, 46,196 tok/s, ends near 05:20Z.
+  Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T02:47:59Z - THE GAP TURNS: where it happened (navigator asked for the level to be recorded)
+The gap between the FULL base and the 1.1B transformer (same shape d768 L12, same data, same order, same recipe)
+was widest at step 3,500 and first narrowed at step 4,000. Quick eval, 130,950 held-out tokens each:
+
+| step | tokens seen | FULL bpb | transformer bpb | gap |
+|---|---|---|---|---|
+| 3,000 | 393,216,000 | 1.42899 | 1.06753 | 0.361 |
+| 3,500 | 458,752,000 | 1.42091 | 1.05591 | **0.365 (widest)** |
+| 4,000 | 524,288,000 | 1.39772 | 1.04906 | **0.349 (first turn)** |
+
+- The turn sits between **459M and 524M tokens**, at gap level **0.365**, with both models still at peak learning
+  rate (3e-3; the WSD decay starts near step 6,714).
+- Between those evals FULL fell 0.02319 and the transformer fell 0.00685: FULL was still learning about 3.4x
+  faster per step there.
+- Caveat: one quick-eval point on 130,950 tokens is not a trend. It counts only if the gap keeps closing through
+  the decay; the final TEST on all 1,031,158 test tokens decides FB2.
+
+### 2026-10-09T02:48:35Z - THE SHAPE OF THE TWO CURVES, and the things worth remembering (navigator asked)
+Quick eval bpb by step (130,950 held-out tokens each; 131,072 tokens a step; both d768 L12, same data and order):
+
+| step | FULL | transformer | gap |
+|---|---|---|---|
+| 500 | 1.56858 | 1.25067 | 0.318 |
+| 1,000 | 1.49875 | 1.16152 | 0.337 |
+| 1,500 | 1.48266 | 1.12226 | 0.360 |
+| 2,000 | 1.44881 | 1.09741 | 0.351 |
+| 2,500 | 1.42910 | 1.08116 | 0.348 |
+| 3,000 | 1.42899 | 1.06753 | 0.361 |
+| 3,500 | 1.42091 | 1.05591 | 0.365 |
+| 4,000 | 1.39772 | 1.04906 | 0.349 |
+
+(Correction to the entry just above: the gap had already dipped once, 0.360 to 0.351 to 0.348 over steps 1,500 to
+2,500, and widened again. So step 4,000 is the second dip, not the first. Step 3,500 is still the widest point.)
+
+**The nature of each curve**
+- **The transformer descends smoothly.** Every step of 500 lowers it, and each drop is smaller than the last
+  (0.089, 0.039, 0.025, 0.016, 0.014, 0.012, 0.007). A plain bending curve with no plateaus.
+- **FULL descends in a STAIRCASE.** It drops, sits on a shelf, then drops again:
+  - drop to 1.483 by step 1,500, then a step down to 1.449 at 2,000
+  - **shelf 1, steps 2,500 to 3,000:** 1.42910 then 1.42899 (it moved 0.0001 in 65M tokens)
+  - drop to 1.398 at 4,000 and 1.383 at 4,500
+  - **shelf 2, steps 4,500 to 5,500:** 1.38315, 1.38261, 1.38176 (0.0014 in 131M tokens)
+  - then a steady glide as the learning rate decays from step ~6,714: 1.372, 1.367, 1.354, 1.339, 1.327 (step 8,000)
+  - final full TEST 1.29216
+- **The gap moves with FULL's staircase.** It narrows when FULL drops off a shelf and widens while FULL sits on
+  one, because the transformer keeps falling at a steady rate the whole time.
+
+**Highlights**
+- **The memory's steps are where FULL catches up.** The two drops after the shelves (2,000 and 3,500 to 4,500) are
+  the only stretches where FULL out-learns the transformer per step. Untested reading: the shelves may be the
+  SDM learning to use its slots (a store must be filled before it pays), and each drop a new use found. A probe of
+  slot usage across checkpoints would test it.
+- **FULL's gradients are about 3x calmer.** Median gradient norm 0.091 for FULL against 0.281 for the transformer.
+  Both start with a large first spike (step 50: 6.18 FULL, 2.30 transformer) that fades within 200 steps.
+- **FULL's one wobble came right after shelf 2 began:** at steps 4,500 to 4,650 its gradient norm doubled (0.079 to
+  0.165) and loss rose 4.372 to 4.499. It settled by itself in about 100 steps, without a restart.
+- **The learning-rate decay helped FULL more than any shelf ended:** from step 6,500 to 8,000 FULL fell 0.040,
+  steadily, the cleanest stretch of the run. Whether the transformer gains as much from its decay is the open
+  question for its final number.
+- **Speed:** FULL trains at about 14,000 tok/s and the transformer at about 45,000 tok/s on the same GPU, so the
+  transformer finishes the same 1.1B tokens in about 6.8 h against FULL's 21 h 48 min.
+
+### 2026-10-09T03:03:26Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 4,500: **1.04186** (FULL base 1.38315 at the same step, gap 0.341; down from
+  0.365 at 3,500 and 0.349 at 4,000). Two closing points in a row, both as FULL came off shelf 1. FULL then sat on
+  shelf 2 (steps 4,500 to 5,500), so the gap is expected to widen again at 5,000. Step 4,500 of 8,392,
+  43,792 tok/s. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T03:23:25Z - heartbeat (JIMOTHY)
+- Quiet beat. 1.1B transformer at step 4,950 of 8,392, loss 3.367, gnorm 0.122, 45,598 tok/s; the step-5,000 eval
+  is minutes away. Both chains alive. 0 Vast boxes.

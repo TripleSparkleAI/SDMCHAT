@@ -1,3 +1,14 @@
+<!-- settle-banner -->
+```text
+ ·● ●●  ● ●  ●● ● ●  ●  ●●●
+·   ● ● ●●● ●   ● ● ● ●  ●
+ ● ·● ● ●●● ●   ●●● ●●●  ●
+· ● ● ● ● ● ●   ● ● ● ●  ●
+●···●●· ● ●  ●● ● ● ● ●  ●
+↑↓↓↑↓↑↑↑↑↑ ●●●●●●●●
+✦ a language model built from sparse distributed memory instead of attention
+```
+
 # SDMCHAT
 
 SDMCHAT is a language model built from sparse distributed memory (SDM) instead of attention. It has no
