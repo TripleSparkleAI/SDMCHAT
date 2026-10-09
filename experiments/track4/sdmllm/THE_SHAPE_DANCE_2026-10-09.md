@@ -378,7 +378,7 @@ It explains the model, then celebrates what the sweeps measured. Every number is
    ┌── THE ENCYCLOPEDIA, one layer
    │
    │   4 heads
-   │   each head has 5,329 slots   (a 73 by 73 grid)
+   │   each head has 5,184 slots   (a 72 by 72 grid)
    │   each slot holds a learned vector
    │   training fills the slots; reading the text never changes them
    │
@@ -388,7 +388,7 @@ It explains the model, then celebrates what the sweeps measured. Every number is
    │   sized to have about as many weights as the MLP it replaces
    └──
 
-   73 by 73, drawn small. one word's 32 picks glow:
+   72 by 72, drawn small. one word's 32 picks glow:
 
    · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
    · · · · ✦ · · · · · · · · · · · · · · · · · ✦ · · · · · · · · · · · ·
@@ -410,31 +410,31 @@ It explains the model, then celebrates what the sweeps measured. Every number is
    · · · · · · · · ✦ · · · · · · · · · · · · · · · · · · · · · · · ✦ · ·
    · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
    · · · · · · · · · · · · · · · · · · ✦ · · · · · · · · · ✦ · · · · · ·
-   (a corner of the grid; the real one is 73 wide and 73 tall)
+   (a corner of the grid; the real one is 72 wide and 72 tall)
 
-   how does it find 32 out of 5,329 without checking all of them?
+   how does it find 32 out of 5,184 without checking all of them?
    PRODUCT KEYS:
 
      the word's question is split in two halves.
-     half A is scored against 73 row-keys.
-     half B is scored against 73 column-keys.
+     half A is scored against 72 row-keys.
+     half B is scored against 72 column-keys.
      a slot (row, column) scores the mean of the two.
      the best slots come from the best rows and best columns.
 
-     146 scores per head, not 5,329.
+     144 scores per head, not 5,184.
 
-         columns ▶  c1   c2   c3   c4   ...  c73
+         columns ▶  c1   c2   c3   c4   ...  c72
      rows  r1        ·    ·    ·    ·         ·
        ▼   r2        ·    ✦    ·    ·         ·
            r3        ·    ·    ·    ✦         ·
            ...
-           r73       ·    ·    ·    ·         ·
+           r72       ·    ·    ·    ·         ·
 
    the diary remembers THIS text.
    the encyclopedia remembers EVERY text it trained on.
 
      DIARY          written while reading      fades       256 slots a head
-     ENCYCLOPEDIA   written by training        never       5,329 slots a head
+     ENCYCLOPEDIA   written by training        never       5,184 slots a head
 
    two memories, one law, both SDM.
 
@@ -992,7 +992,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 ```
    ✦ LAYER 1 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
        o    o    o    o        o    o    o    o
       /|\  /|\  /|\  /|\      /|\  /|\  /|\  /|\
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1000,7 +1000,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 2 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       \o/  \o/  \o/  \o/      \o/  \o/  \o/  \o/
        |    |    |    |        |    |    |    |
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1008,7 +1008,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✦ LAYER 3 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
        o/   o/   o/   o/       o/   o/   o/   o/
       /|   /|   /|   /|       /|   /|   /|   /|
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1016,7 +1016,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 4 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       \o   \o   \o   \o       \o   \o   \o   \o
        |\   |\   |\   |\       |\   |\   |\   |\
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1024,7 +1024,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✦ LAYER 5 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       _o_  _o_  _o_  _o_      _o_  _o_  _o_  _o_
        |    |    |    |        |    |    |    |
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1032,7 +1032,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 6 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
        o    o    o    o        o    o    o    o
       /|\  /|\  /|\  /|\      /|\  /|\  /|\  /|\
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1040,7 +1040,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✦ LAYER 7 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       \o/  \o/  \o/  \o/      \o/  \o/  \o/  \o/
        |    |    |    |        |    |    |    |
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1048,7 +1048,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 8 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
        o/   o/   o/   o/       o/   o/   o/   o/
       /|   /|   /|   /|       /|   /|   /|   /|
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1056,7 +1056,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✦ LAYER 9 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       \o   \o   \o   \o       \o   \o   \o   \o
        |\   |\   |\   |\       |\   |\   |\   |\
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1064,7 +1064,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 10 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       _o_  _o_  _o_  _o_      _o_  _o_  _o_  _o_
        |    |    |    |        |    |    |    |
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1072,7 +1072,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✦ LAYER 11 ✦
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
        o    o    o    o        o    o    o    o
       /|\  /|\  /|\  /|\      /|\  /|\  /|\  /|\
       / \  / \  / \  / \      / \  / \  / \  / \
@@ -1080,7 +1080,7 @@ Each layer walks on with its four diary heads and its four encyclopedia heads.
 
    ✧ LAYER 12 ✧
      diary         fade 0 ●   fade 0.8 ●●●   fade 0.99 ●●●●●●●···   fade 1.0 ●●●●●●●●●●●●●···
-     encyclopedia  73×73 ▦   73×73 ▦   73×73 ▦   73×73 ▦
+     encyclopedia  72×72 ▦   72×72 ▦   72×72 ▦   72×72 ▦
       \o/  \o/  \o/  \o/      \o/  \o/  \o/  \o/   ✦
        |    |    |    |        |    |    |    |
       / \  / \  / \  / \      / \  / \  / \  / \

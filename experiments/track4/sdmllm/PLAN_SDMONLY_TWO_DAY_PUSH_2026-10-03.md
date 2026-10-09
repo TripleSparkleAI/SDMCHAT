@@ -3788,3 +3788,50 @@ Nothing on this list fires until the SDM queue (SWB, SWC, the new FULL base, its
 
 ### 2026-10-09T13:23:25Z - heartbeat (JIMOTHY)
 - swb_deep48 at step 350 of 381 (WSD cooldown, lr 0.00125), loss 4.9042. Ends about 13:40Z, TEST about 13:50Z. Vast 0. Lane FULLCONTEXT done and relayed to Claude 1; lane FULLPARTIALTRUTH (site audit, FULL and PARTIAL everywhere) running.
+
+### 2026-10-09T13:44:23Z - WAVE SWB COMPLETE; VERDICTS SWB4, SWB5 (JIMOTHY)
+- swb_deep48_d512_L48_50M: TEST **1.48134 bpb** (1,031,158 tokens), 133.5M body weights, about 4,300 tok/s on the
+  Spark (deep32 about 6,400). It beats swb_deep32 (1.48813) by 0.00679, INSIDE the 0.010 noise line.
+  **VERDICT SWB4: HOLDS as written** (sealed at 45%, no margin was sealed), but the pair is a TIE by the noise line.
+  **VERDICT SWB5: HOLDS** (sealed at 40%): the best arm, swb_diary256, scores 1.42911 < 1.515.
+
+| wave SWB (50M tokens) | TEST bpb |
+|---|---|
+| diary 576, d768 L12 | 1.50846 |
+| diary 256, d768 L12 | **1.42911** |
+| d512 L32 (diary 1,024) | 1.48813 |
+| d512 L48 (diary 1,024) | 1.48134 |
+
+- **BRACKETED / UNBRACKETED:** diary size UNBRACKETED (256 is the smallest tried; wave SWC runs 121 and 64 now).
+  Depth: UNDECIDABLE between 32 and 48 (tie inside the noise) and flattening (24 to 32 gained 0.040, 32 to 48 gained
+  0.007). Rule (c) applies: the pair goes again with more data before it is called.
+- Wave SWC fired by itself: swc_diary121_d768_L12_50M is training.
+
+### SEALED: wave SWD, the depth tie with more data, on the best diary (before it fires)
+Rule (c): the 32 / 48 tie reruns at 100M tokens. It runs on the BEST diary of waves SWB and SWC (the lowest TEST
+among diary 256, 121 and 64 at d768 L12; picked by the script from the result files), so it also answers whether
+depth and the small diary add up. Same recipe, seed 0, 100M tokens of fresh train_big_p200m.
+
+| arm | shape |
+|---|---|
+| swd_shallow | d768, 12 layers, best diary |
+| swd_deep32 | d512, 32 layers, best diary |
+| swd_deep48 | d512, 48 layers, best diary |
+
+**Sealed predictions:**
+- SWD1: swd_deep48 beats swd_deep32 by more than 0.010 (35%).
+- SWD2: swd_deep32 beats swd_shallow by more than 0.010 (60%).
+- SWD3: the best SWD arm scores below 1.38 (45%).
+Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 hours on the Spark.
+- 2026-10-09T13:44:58Z wave SWD placed: `runs_launch/sweep4.sh` (sha256 9605747aa75ce79b...) and `chain5.sh` in tmux launch5 (PID 2247563, waits for chain4 1672104), unfreeze guard on it. The deep48 log and result committed after its end.
+
+### 2026-10-09T14:03:30Z - heartbeat (JIMOTHY)
+- swc_diary121 at step 250 of 381, loss 4.9052, 23,871 tok/s (fastest shape yet). Ends about 14:12Z, TEST about 14:20Z; then diary64, deep24+diary256, then wave SWD. Vast 0. Lane FULLPARTIALTRUTH running.
+
+### 2026-10-09T14:23:59Z - VERDICT SWC1 (JIMOTHY)
+- swc_diary121_d768_L12_50M: TEST **1.40333 bpb**, the best SDM score so far (FULL, reads its memory). It beats
+  diary 256 (1.42911) by 0.02578, 2.6x the noise line, at about 24,000 tok/s (the fastest shape yet).
+  **VERDICT SWC1: HOLDS** (sealed at 45%). Diary line at d768 L12: 4,096 1.62503 · 1,024 1.54457 · 576 1.50846 ·
+  256 1.42911 · 121 1.40333. Still UNBRACKETED; diary 64 runs now and decides SWC2. Gap to the transformer at 50M:
+  0.18068 (was 0.206).
+- 2026-10-09T14:25:06Z RED, fixed: sweep3.sh (PID 2237204) was found STOPPED (state T) after diary121 ended, about 10 min lost; the third such stop, sender unknown (not memguard). SIGCONT sent by PID; diary64 started 14:24:19Z. New guard `runs_launch/unfreeze_tree.sh` CONTs any stopped process in the trees of chain4 1672104 and chain5 2247563 (guard PID 2282039).
