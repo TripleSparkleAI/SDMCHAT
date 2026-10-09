@@ -68,7 +68,7 @@ README); there is no other source for them.
 | smol-smoltalk (`HuggingFaceTB/smol-smoltalk`) | Apache-2.0 | chat shards may be shared with the licence and attribution |
 | DeepSeek V4 Flash tokenizer (`deepseek-ai/DeepSeek-V4-Flash`) | MIT, per the publisher's model card | the tokenizer copies may be shared with the MIT notice; check the card at the pinned revision before upload |
 | the epic poems (`experiments/track4/epics/`) | public domain translations (Butler, Pope, Dryden, Gummere, Milton and others) | free to share |
-| our own trained BPE tokenizers and all weights | ours | the navigator's licence decision applies (LICENCE.md) |
+| our own trained BPE tokenizers and all weights | ours | MIT (LICENSE), with the notice kept on every upload |
 
 ## Never uploaded
 

@@ -3575,3 +3575,131 @@ Quick eval bpb by step (130,950 held-out tokens each; 131,072 tokens a step; bot
 ### 2026-10-09T03:23:25Z - heartbeat (JIMOTHY)
 - Quiet beat. 1.1B transformer at step 4,950 of 8,392, loss 3.367, gnorm 0.122, 45,598 tok/s; the step-5,000 eval
   is minutes away. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T03:43:23Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 5,000: **1.03480** (FULL base 1.38261 at the same step, gap 0.348, up from
+  0.341). The widening predicted last beat happened: FULL sat on shelf 2 (it moved 0.0005) while the transformer
+  fell 0.0071. Step 5,350 of 8,392, 44,531 tok/s. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T04:03:23Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 5,500: **1.02992** (FULL base 1.38176 at the same step, gap 0.352, up from
+  0.348). FULL's last shelf-2 point. The transformer's per-500-step drop has slowed to 0.0049. Step 5,750 of 8,392,
+  46,370 tok/s. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T04:23:22Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 6,000: **1.02626** (FULL base 1.37215 at the same step, gap 0.346, down from
+  0.352). FULL came off shelf 2 (fell 0.0096) while the transformer fell only 0.0037, its smallest drop yet.
+  Step 6,150 of 8,392, 45,380 tok/s. Its decay starts near step 6,714. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T04:43:23Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 6,500: **1.02053** (FULL base 1.36687 at the same step, gap 0.346, flat:
+  both fell about 0.0053 in these 500 steps). Step 6,600 of 8,392, 44,746 tok/s; its learning-rate decay starts
+  near step 6,714, the stretch where FULL gained most. Both chains alive. 0 Vast boxes.
+
+### 2026-10-09T05:03:28Z - heartbeat (JIMOTHY)
+- 1.1B transformer quick eval at step 7,000, the first point inside its learning-rate decay: **1.01306** (FULL base
+  1.35355 at the same step, gap 0.340, down from 0.346). FULL fell 0.0133 in these 500 steps, the transformer 0.0075.
+  Step 7,000 of 8,392, lr 2.49e-3, 42,654 tok/s. Both chains alive. 0 Vast boxes.
+- Correction: the last several beats said this run ends near 05:10 to 05:20Z. That was wrong arithmetic. 1,392 steps
+  of 131,072 tokens at about 44,000 tok/s is about 69 minutes, so it ends near **06:15Z** (the 06:05Z first logged
+  was right).
+
+### 2026-10-09T05:11:45Z - THE TRANSFORMER COMPARISON IS HELD; SDM WORK FIRST (the navigator)
+- The navigator: hold the transformer comparison till later and run the SDM work now. The site should say this
+  comparison is in progress: from the evals so far FULL is somewhat behind, and the final result is awaited.
+- 05:10:15Z: stopped the 1.1B transformer (PID 1014601, by PID) at step 7,150 of 8,392. Its newest checkpoint is
+  step 7,000 (model + optimiser + step): ck/launch_yard_d768_L12_T2048_1100M/last.pt, with a copy hold_step7000.pt,
+  both sha256 81e790e28a20... Last quick eval 1.01306 at step 7,000 (FULL 1.35355 there, gap 0.340).
+- **TO PICK IT UP LATER:** `bash ~/sdmonly_base/launch/yard_resume.sh` on the Spark (copy in
+  runs_launch/yard_resume.sh). Same command as chain2's last step, so the trainer resumes from step 7,000. About
+  65 min left. Then score its TEST and write VERDICT FB2. Owed after the SDM queue below, or whenever a GPU is free.
+- 05:10:59Z: chain3 fired wave SWB as soon as chain2 exited. swb_diary576_d768_L12_50M started.
+- SDM queue now: wave SWB (4 FULL runs, about 8 h) -> the new FULL base in the winning shape -> its chat model and
+  the WEIRD LITTLE GUY -> then the held transformer resume.
+
+### 2026-10-09T05:14:46Z - lane MODELINFO fired (site)
+- Opus lane MODELINFO in _worktrees/dwarfstar-modelinfo (branch settle-modelinfo): richer data-derived postfixes
+  (class + how trained + headline score), every model listed, FULL base and FULL SDM CHAT shown as trained but not
+  yet runnable in the browser, and a section saying the transformer comparison is in progress and held at step
+  7,000 (FULL somewhat behind so far, final result awaited). I land it after its tests and build are green.
+
+### 2026-10-09T05:23:29Z - heartbeat (JIMOTHY)
+- Wave SWB run 1 of 4, swb_diary576_d768_L12_50M: step 50 of 381, loss 6.233, 10,933 tok/s, about 75 min per run
+  at that speed. chain3 alive. Transformer held at step 7,000. Lane MODELINFO running. Vast reporting stopped by the
+  navigator (0 boxes; the Spark is the whole fleet).
+
+### 2026-10-09T05:43:35Z - heartbeat (JIMOTHY)
+- swb_diary576: step 200 of 381, loss 5.205, **17,725 tok/s**, about 27% faster than the 1,024-slot base shape
+  (13,989 in wave SW). Ends near 06:10Z with its TEST. chain3 alive. Lane MODELINFO running.
+
+### 2026-10-09T06:04:19Z - heartbeat (JIMOTHY)
+- Lane MODELINFO LANDED (ad202331e, commits 9c87c7ac6 + 37fb5736c): the facts postfix
+  (-<class>-<tokens>-<kind>-<score>bpb, built from records, refuses on a missing fact), an EVERY MODEL list with FULL
+  base (-full-1.1B-base-1.292bpb) and FULL SDM CHAT (-full-1.15B-chat-1.096bpb) marked not yet runnable in the
+  browser, and the transformer comparison shown as in progress on #/sdmchat, #/sdm and #/sdmchat-model. Lane suite
+  3,614 of 3,663 (1 failure from the sparse checkout); re-running the full suite in the main checkout now.
+- swb_diary576 finished training (step 381 of 381, loss 4.919); its TEST is being scored.
+
+### 2026-10-09T06:18:45Z - SWB1 scored; the sweep was frozen again
+- **swb_diary576_d768_L12_50M: TEST 1.50846** against the 1,024-slot FULL at 1.54457: better by **0.03611**, beyond
+  the 0.010 line, and 27% faster to train (17,725 vs 13,989 tok/s). **VERDICT SWB1: HOLDS** (sealed at 35%).
+- Diary line now: 4,096 1.62503 · 1,024 1.54457 · 576 1.50846. Best at the small edge: UNBRACKETED until diary256
+  reports (running, started 06:18:04Z). If 256 wins too, the next wave goes to 128 and 64.
+- Found sweep2.sh (PID 1506863) stopped again (state T), the same unexplained stop as wave SW. The trainer had
+  finished at about 06:05Z and the sweep could not start the next arm: about 13 min lost. Sent SIGCONT by PID.
+  The memory guard is not the sender (it only cancels q jobs named SDMCHATS-*, last acted 2026-10-02). Started
+  unfreeze.sh on the Spark: every 60 s it sends SIGCONT to PIDs 999609 and 1506863 if stopped, and logs each one
+  to ~/sdmonly_base/launch/unfreeze.log.
+- Site: the full suite in the main checkout after the MODELINFO landing: 3,663 tests, 3,661 pass, 0 fail.
+
+### 2026-10-09T06:23:33Z - heartbeat (JIMOTHY)
+- swb_diary256 (run 2 of 4) started 06:18:04Z and is compiling; no step line yet. chain3 and sweep2 both running
+  (state S); the unfreeze guard has sent no SIGCONT so far.
+
+### 2026-10-09T06:43:30Z - heartbeat (JIMOTHY)
+- swb_diary256: step 200 of 381, train loss **5.051** (diary576 read 5.205 at the same step), **20,908 tok/s**
+  (49% faster than the 1,024-slot shape). Ends near 07:10Z with its TEST. Both chain scripts running; no SIGCONT
+  needed.
+
+### 2026-10-09T07:03:57Z - SWB2 scored: the 256-slot diary wins big; SEALED wave SWC before it fires (JIMOTHY)
+- **swb_diary256_d768_L12_50M: TEST 1.42911.** Better than 576 slots (1.50846) by 0.07935 and than 1,024 slots
+  (1.54457) by 0.11546, and the fastest shape yet (20,908 tok/s). **VERDICT SWB2: MISSES** (sealed at 60% that 256
+  would be worse than 576; it is far better).
+- Diary line (slots per head, d768 L12, 50M tokens): 4,096 1.62503 · 1,024 1.54457 · 576 1.50846 · **256 1.42911**.
+  Monotone, best at the smallest value tried: **UNBRACKETED** at the small edge.
+- Against the transformer at the same 50M tokens (1.22265) the gap is now 0.206, down from 0.322 for the 1,024-slot
+  FULL. The memory still counts: the memory-off arm read 1.75751.
+- swb_deep32_d512_L32_50M started 07:02:36Z (SWB run 3 of 4), then swb_deep48.
+
+**SEALED: wave SWC** (runs after SWB, by chain4.sh waiting on sweep2 PID 1506863; script runs_launch/sweep3.sh).
+Same recipe, 50M tokens, seed 0. Slots per head = n_sub squared.
+- swc_diary121_d768_L12_50M (--mem-n-sub 11), swc_diary64_d768_L12_50M (--mem-n-sub 8): two values past 256.
+- swc_deep24_diary256_d512_L24_50M: the best diary (256) on the best depth so far (d512, 24 layers).
+Predictions, sealed before any SWC arm runs:
+- SWC1: diary121 beats diary256 (1.42911) by more than 0.010 (45%).
+- SWC2: diary64 is worse than diary121, so the diary curve turns between 64 and 256 (50%).
+- SWC3: deep24 with diary256 beats d768 L12 diary256 (1.42911) by more than 0.010 (50%).
+- SWC4: the best SWC arm is below 1.42 (45%).
+
+### 2026-10-09T07:23:36Z - heartbeat (JIMOTHY)
+- swb_deep32 (SWB run 3 of 4) started 07:02:36Z; 21 min in it is still compiling (32 layers compile slowly), no
+  step line yet.
+- Correction: the stop guard for chain4 was pointed at PID 1672100, a short-lived shell from the launch; that PID
+  was gone and the guard exited at once. chain4 itself is PID 1672104 (alive, waiting on sweep2). New guard started
+  on 1672104. Guard on 999609 and 1506863 still running, no SIGCONT sent.
+
+### 2026-10-09T07:43:25Z - heartbeat (JIMOTHY)
+- swb_deep32 past compile: step 50 of 381, loss 6.525. Its 3,239 tok/s at step 50 still averages in the compile
+  (diary256 read 10,933 at step 50 and 20,908 by step 200). At the ~6,400 tok/s a 32-layer d512 should reach, it ends
+  near 09:40Z. All three chain scripts running; no SIGCONT sent.
+
+### 2026-10-09T08:03:24Z - heartbeat (JIMOTHY)
+- swb_deep32: step 100 of 381, loss 5.813, 6,266 tok/s. About 98 min of steps left: ends near 09:45Z with its TEST.
+  All three chain scripts running; no SIGCONT sent.
+
+### 2026-10-09T08:23:26Z - heartbeat (JIMOTHY)
+- swb_deep32: step 150 of 381, loss 5.597, 6,436 tok/s. Ends near 09:45Z. Chains running, no SIGCONT sent.
+
+### 2026-10-09T08:43:23Z - heartbeat (JIMOTHY)
+- swb_deep32: step 200 of 381, train loss 5.311, 6,450 tok/s (at step 200: diary256 read 5.051, diary576 5.205;
+  train loss only, the TEST decides). Ends near 09:45Z. Chains running, no SIGCONT sent.

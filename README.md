@@ -20,7 +20,8 @@ This repository holds the training and inference code, the configurations, every
 research notes, and the story of how the model was built. The trained weights and the token data are not here; they
 are listed in [DATA.md](DATA.md) and wait for Hugging Face.
 
-> **Licence: not chosen yet.** See [LICENCE.md](LICENCE.md).
+> **Licence: MIT.** See [LICENSE](LICENSE). Data and tokenizers from other publishers keep their own licences
+> (DATA.md, "Licences of the sources").
 
 ## The two shapes
 
