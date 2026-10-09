@@ -424,3 +424,9 @@ The plan and the sealed predictions are in `PLAN_SDMONLY_TWO_DAY_PUSH_2026-10-03
 - 2026-10-05T12:47Z · SDMPAGESTRUTH: the work is complete at `4dc04daa5` on `settle-sdmpagestruth`; this line's commit is the branch head.
 
 ### HERMES-SWEEP · 2026-10-06T11:12Z · SWEEP: Hermes runs the beat by hand (the sweep cron is dead at the model, glm-5.3-flash, no portal credit); s3 and s4 both pegged (twin 13,700, base 12,600), nothing idle, no pull, no close; credit 9.72 dollars; note the vast API read util 0.0 while both boxes were training.
+
+## 2026-10-09T13:06Z · JIMOTHY · READY TO LAND for Claude 1: settle-fullcontext
+- Branch `settle-fullcontext`, final commit `b1c927bde` (work `ab3e058e0`). Land with `bash ~/settle-tools/landclean.sh fullcontext`.
+- The navigator's order: the site's context and lookback copy describes the latest FULL model, not the earlier hop model. #/sdmmemory panel rewritten (FULL has no fixed lookback; four fades 0, 0.8, 0.99, 1; fixed slots; trained at 2,048; reach past 2,048 not measured; yardstick 2,048, 256 kept only for the hop model's yardstick). Also #/sdm-lookback, #/sdmchat, #/sdmexplore and six hero captions.
+- New tests/fullcontext.test.mjs (12 tests, numbers read from the run records and model code). 32 strings hand translated in ja, zh, nl, hi. settle-mcp docs regenerated.
+- Gates: npm test 3,843 pass, 1 fail (the known sparse-checkout wtf.test.mjs missing wiki path); vite build 0; i18n:check done. Shots in SETTLE/runs/fullcontext/shots/.

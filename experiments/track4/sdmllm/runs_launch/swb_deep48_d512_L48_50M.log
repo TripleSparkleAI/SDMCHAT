@@ -2,3 +2,6 @@
 {"event": "step", "step": 50, "loss": 6.6619, "lr": 0.003, "gnorm": 0.339, "tok_per_s": 1634.3, "load": 1.3701171875}
 {"event": "step", "step": 100, "loss": 5.8965, "lr": 0.003, "gnorm": 0.221, "tok_per_s": 4334.6, "load": 1.1201171875}
 {"event": "step", "step": 150, "loss": 5.6444, "lr": 0.003, "gnorm": 0.259, "tok_per_s": 4311.9, "load": 1.50634765625}
+{"event": "step", "step": 200, "loss": 5.3226, "lr": 0.003, "gnorm": 0.243, "tok_per_s": 4278.6, "load": 1.31591796875}
+{"event": "step", "step": 250, "loss": 5.1916, "lr": 0.003, "gnorm": 0.269, "tok_per_s": 4326.0, "load": 1.2314453125}
+{"event": "step", "step": 300, "loss": 5.0712, "lr": 0.003, "gnorm": 0.218, "tok_per_s": 4343.9, "load": 1.3193359375}

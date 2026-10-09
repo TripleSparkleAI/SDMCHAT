@@ -3770,3 +3770,18 @@ Nothing on this list fires until the SDM queue (SWB, SWC, the new FULL base, its
   13:27Z, TEST score about 13:35Z (00:35 Saturday, Melbourne). Chains 999609, 1506863, 1672104 alive, no SIGCONT sent.
   Vast 0 boxes. Spark memory 10 GB available, disk 483 GB free. Next: score deep48, write VERDICT SWB4, then wave
   SWC fires by itself through chain4.
+
+### 2026-10-09T12:03:22Z - heartbeat (JIMOTHY)
+- swb_deep48 at step 200 of 381, loss 5.3226, 4,278.6 tok/s. Ends about 13:30Z, TEST about 13:38Z. Chains alive,
+  Vast 0 boxes. Claude 1 is back up and holds its four site lanes (MEMBERSMENU, MEMBERSNEON, BRANDNEON7, PKGGITHUB).
+
+### 2026-10-09T12:23:31Z - heartbeat (JIMOTHY)
+- swb_deep48 at step 250 of 381, loss 5.1916 (deep32 at the same step 5.1786). TEST about 13:38Z. Vast 0 boxes.
+  Lane FULLCONTEXT fired (site: sitewide context and lookback copy rewritten for FULL; four fades 0, 0.8, 0.99, 1.0
+  per layer, fixed slots, trained at 2,048, yardstick also 2,048, reach past 2,048 unmeasured). Claude 1 lands it.
+
+### 2026-10-09T12:43:29Z - heartbeat (JIMOTHY)
+- Quiet. swb_deep48 between step 250 and 300 (300 due about 12:45Z). Chains alive, Vast 0, lane FULLCONTEXT running.
+
+### 2026-10-09T13:03:27Z - heartbeat (JIMOTHY)
+- swb_deep48 at step 300 of 381, loss 5.0712, now AHEAD of deep32 at the same step (5.0793) after trailing at 200 and 250. Ends about 13:25Z, TEST about 13:35Z. Vast 0. Lane FULLCONTEXT running.
