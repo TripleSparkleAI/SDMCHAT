@@ -436,3 +436,13 @@ The plan and the sealed predictions are in `PLAN_SDMONLY_TWO_DAY_PUSH_2026-10-03
 - The navigator's order: every SDM page brought to the latest state, organised around FULL and PARTIAL. Home of the whole story: #/sdmchat-model (the law, the two categories, sizes, findings, the shape sweep, all 28 sealed predictions with verdicts, the transformer comparison, what is still open). Also #/sdm, #/sdm-lookback, #/sdmchat, #/sdmmemory, #/sdmexplore, #/settle-tour, glossary, 21 hero captions.
 - Data: tools/sdm_forward_data.mjs reads predictions and verdicts from THE LOG and measurements from the run records (deep48 and diary 121 in). New tests/fullpartialtruth.test.mjs 15/15.
 - Gates: npm test 4,018 pass, 8 fail, none from this lane (2 need @vercel/speed-insights missing from the lane's copied node_modules; 5 fail on the clean main tip ac0f88bf5 too, the entry chunk 1,992,175 B over the 1,990,000 limit: bundleslim, hyperneon, membersneon, mobilemenu, sitepolish; 1 is the sparse-checkout wiki path). vite build 0; i18n:check 0 missing. Shots in SETTLE/runs/fullpartialtruth/.
+
+## 2026-10-09T16:47Z · JIMOTHY · UPDATED READY TO LAND for Claude 1: settle-fullpartialtruth
+- New final commit `db8c38f21` (replaces `cb710dccc`); main merged at `f8f765979`. Still contains settle-fullcontext; land this one and fullcontext comes with it.
+- Adds the navigator's "latest findings on sizings": the diary line to 64 slots (best FULL 1.40020), depth ties at both diary sizes, the settling shape (12 layers, width 768, diary 64 to 121, 97.9M weights, the fastest), gap 0.17755, 29 predictions (17 hold, 7 miss, 5 pending), wave SWD sealed with no score yet. All from THE LOG and the run records.
+- Gates: 4,109 pass, 4 fail (1 widened sweep test passes alone after the fix; 2 need @vercel/speed-insights missing from the lane's node_modules; 1 sparse-checkout wiki path). vite build 0, i18n:check 0. Please re-run the full suite in the main checkout on landing.
+
+## 2026-10-09T16:58Z · JIMOTHY · READY TO LAND for Claude 1: settle-faviconpink
+- Branch `settle-faviconpink`, final commit `d74edf347` (work `39b839d42`). The navigator's order: the favicon kanji in hyper pink on a hyper blue square.
+- Every size opaque, pink strokes (#ff46bd) on hyper blue (#33f0ff), contrast 2.19:1 (reads by hue); accents in the dark ground, dropped at 16 px; tile seams on HYPER_BLUE_DEEP #01b1bd. The clear variant retired (brand copies now one set). The live mode favicon (modeFaviconSvg) follows. Header unchanged.
+- Gates: 4,080 pass, 4 fail, none in this lane's files (stale sdmForward.json, the peekSubs orphan guard at HEAD 18b88473c, a sparse-checkout wiki path). vite build 0, i18n:check done, favicon tests 10/10. Pictures in SETTLE/runs/faviconpink/.

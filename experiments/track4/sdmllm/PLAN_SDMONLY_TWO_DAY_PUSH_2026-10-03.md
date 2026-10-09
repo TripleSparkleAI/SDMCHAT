@@ -3861,3 +3861,26 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T16:03:22Z - heartbeat (JIMOTHY)
 - swc_deep24_diary256 at step 300 of 381, loss 4.9173; 12-layer diary256 read 4.8819 at step 300 (gap down from 0.129 at step 150 to 0.035). TEST about 16:25Z. No stops. Vast 0.
+
+### 2026-10-09T16:23:35Z - WAVE SWC COMPLETE; VERDICTS SWC3, SWC4; wave SWD fired (JIMOTHY)
+- swc_deep24_diary256_d512_L24_50M: TEST **1.43550 bpb**, about 13,000 tok/s. It is 0.00639 WORSE than the 12-layer
+  diary 256 (1.42911), a tie inside the noise line. **VERDICT SWC3: MISSES** (sealed at 50% that it would win by more
+  than 0.010). With the small diary, 24 layers at width 512 buy nothing over 12 at width 768 at 50M tokens.
+- **VERDICT SWC4: HOLDS** (sealed at 45%): the best SWC arm, diary 64, scores 1.40020 < 1.42.
+
+| wave SWC (50M tokens) | TEST bpb |
+|---|---|
+| diary 121, d768 L12 | 1.40333 |
+| diary 64, d768 L12 | **1.40020** |
+| diary 256, d512 L24 | 1.43550 |
+
+- **BRACKETED / UNBRACKETED:** diary size flat between 121 and 64 (a tie, rerun at 100M in SWD). Depth: at the big
+  diary 32 and 48 tie; at the small diary 24 ties 12. Depth looks spent at 50M; SWD asks again at 100M.
+- Wave SWD fired 16:18:42Z by itself; the script picked diary 64 (n_sub 8). First arm swd_shallow_diary64_d768_L12_100M.
+  The tree guard sent SIGCONT to the new sweep4 shell at 16:19:05Z: a stop at the wave change again, caught in 23 s.
+
+### 2026-10-09T16:43:27Z - heartbeat (JIMOTHY)
+- swd_shallow_diary64_d768_L12_100M at step 250 of 763, loss 4.8758, 25,316 tok/s. TEST about 17:32Z. No stops since 16:19Z. Vast 0. Lanes: FULLPARTIALTRUTH (resumed: SWC and sizing notes), FAVICONPINK (kanji hyper pink on hyper blue).
+
+### 2026-10-09T17:03:25Z - heartbeat (JIMOTHY)
+- swd_shallow_diary64_d768_L12_100M at step 500 of 763, loss 4.4646, 23,799 tok/s. TEST about 17:30Z. No stops. Vast 0. Site lanes FULLPARTIALTRUTH (db8c38f21) and FAVICONPINK (d74edf347) relayed to Claude 1.
