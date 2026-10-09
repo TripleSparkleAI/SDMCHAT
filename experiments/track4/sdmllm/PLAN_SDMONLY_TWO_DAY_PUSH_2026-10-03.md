@@ -3920,3 +3920,6 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
   About 70 minutes after the 100M yardstick.
   - SWE1: diary 36 beats diary 64 by more than 0.010 (20%).
   - SWE2: diary 16 is worse than diary 64 by more than 0.010 (65%), so the diary curve turns between 16 and 64.
+
+### 2026-10-09T19:03:58Z - heartbeat (JIMOTHY)
+- swd_deep32_diary64_d512_L32_100M at 24 min, compiled, before its step-50 line (normal for 32 layers). Running (state S/l), no stops. Vast 0.
