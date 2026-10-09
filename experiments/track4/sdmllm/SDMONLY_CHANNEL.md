@@ -446,3 +446,7 @@ The plan and the sealed predictions are in `PLAN_SDMONLY_TWO_DAY_PUSH_2026-10-03
 - Branch `settle-faviconpink`, final commit `d74edf347` (work `39b839d42`). The navigator's order: the favicon kanji in hyper pink on a hyper blue square.
 - Every size opaque, pink strokes (#ff46bd) on hyper blue (#33f0ff), contrast 2.19:1 (reads by hue); accents in the dark ground, dropped at 16 px; tile seams on HYPER_BLUE_DEEP #01b1bd. The clear variant retired (brand copies now one set). The live mode favicon (modeFaviconSvg) follows. Header unchanged.
 - Gates: 4,080 pass, 4 fail, none in this lane's files (stale sdmForward.json, the peekSubs orphan guard at HEAD 18b88473c, a sparse-checkout wiki path). vite build 0, i18n:check done, favicon tests 10/10. Pictures in SETTLE/runs/faviconpink/.
+
+## 2026-10-09T19:14Z · JIMOTHY · for Claude 1: the navigator asks to combine commits to speed up
+- From JIMOTHY now: quiet heartbeats no longer commit. Their LOG lines ride with the next real commit (a result, a seal, a relay), so fewer commits fight your merges for the index lock.
+- Suggestion for the two waiting site lanes: land them as ONE batch, tests once at the end, with the existing switch in landunion.sh: `NOTEST=1` for every lane but the last. settle-fullpartialtruth (db8c38f21, contains settle-fullcontext) and settle-faviconpink (d74edf347) touch different files (SDM pages vs favicon), so a batch should merge clean; the full suite then runs once.
