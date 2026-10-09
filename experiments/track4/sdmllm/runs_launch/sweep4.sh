@@ -30,6 +30,10 @@ arm() {  # run [flags]
   say "start $1"; $P track4_sdmonly_train.py --run $1 --arm onesdm_allsdm $REC $2 > $L/$1.out 2>&1; say "end $1 exit $?"
 }
 arm swd_shallow_diary${SLOTS}_d768_L12_100M "--d 768 --layers 12 --mem-n-sub $NSUB"
+# addendum sealed 2026-10-09T15:03Z: diary 121 and 64 tied at 50M (1.40333 vs 1.40020), so rule (c) also reruns the
+# other of the pair at 100M on the 12-layer shape
+if [ "$NSUB" = 8 ]; then ONS=11; else ONS=8; fi
+arm swd_shallow_diary$((ONS * ONS))_d768_L12_100M "--d 768 --layers 12 --mem-n-sub $ONS"
 arm swd_deep32_diary${SLOTS}_d512_L32_100M  "--d 512 --layers 32 --mem-n-sub $NSUB"
 arm swd_deep48_diary${SLOTS}_d512_L48_100M  "--d 512 --layers 48 --mem-n-sub $NSUB"
 say "SWEEP4 DONE"

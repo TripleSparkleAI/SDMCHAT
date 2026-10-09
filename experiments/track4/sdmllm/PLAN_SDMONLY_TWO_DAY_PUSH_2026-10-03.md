@@ -3838,3 +3838,26 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T14:43:25Z - heartbeat (JIMOTHY)
 - swc_diary64 at step 150 of 381, loss 5.3293, 26,037 tok/s. TEST about 15:05Z. No stops since the tree guard. Vast 0. FULLPARTIALTRUTH relayed to Claude 1 (contains FULLCONTEXT).
+
+### 2026-10-09T15:03:44Z - VERDICT SWC2; SWD addendum sealed (JIMOTHY)
+- swc_diary64_d768_L12_50M: TEST **1.40020 bpb**, about 26,000 tok/s. It beats diary 121 (1.40333) by 0.00313,
+  INSIDE the 0.010 noise line. **VERDICT SWC2: MISSES** (sealed at 50% that 64 would be worse than 121): 64 is not
+  worse; the pair is a TIE.
+- Diary line at d768 L12, 50M: 4,096 1.62503 · 1,024 1.54457 · 576 1.50846 · 256 1.42911 · 121 1.40333 · 64 1.40020.
+  The curve has flattened: 256 to 121 gained 0.026, 121 to 64 gained 0.003. Diary size is UNDECIDABLE between 121
+  and 64 (a tie) and rule (c) reruns the pair with more data. Best FULL so far 1.40020 (reads its memory); gap to the
+  transformer at 50M 0.17755.
+- swc_deep24_diary256_d512_L24_50M fired 15:01:53Z (SWC3).
+- **SEALED ADDENDUM to wave SWD, before it fires:** wave SWD's script picks diary 64 (the lowest TEST). It now also
+  runs the other diary of the tied pair, swd_shallow_diary121_d768_L12_100M, beside swd_shallow_diary64 at 100M
+  tokens. `runs_launch/sweep4.sh` updated on the Spark (sha256 58f2cb12e88de830...).
+  - SWD4: at 100M tokens, diary 64 beats diary 121 by more than 0.010 (25%).
+
+### 2026-10-09T15:23:25Z - heartbeat (JIMOTHY)
+- swc_deep24_diary256 at step 50 of 381 (loss 6.3711, 5,907 tok/s averaged over the compile). TEST about 16:40Z; then wave SWD. No stops. Vast 0.
+
+### 2026-10-09T15:43:29Z - heartbeat (JIMOTHY)
+- swc_deep24_diary256 at step 150 of 381, loss 5.4634, 13,145 tok/s; diary256 at 12 layers read 5.3345 at the same step (deep behind by 0.129 so far). TEST about 16:30Z. No stops. Vast 0.
+
+### 2026-10-09T16:03:22Z - heartbeat (JIMOTHY)
+- swc_deep24_diary256 at step 300 of 381, loss 4.9173; 12-layer diary256 read 4.8819 at step 300 (gap down from 0.129 at step 150 to 0.035). TEST about 16:25Z. No stops. Vast 0.
