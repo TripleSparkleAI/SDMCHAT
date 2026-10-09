@@ -3884,3 +3884,6 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T17:03:25Z - heartbeat (JIMOTHY)
 - swd_shallow_diary64_d768_L12_100M at step 500 of 763, loss 4.4646, 23,799 tok/s. TEST about 17:30Z. No stops. Vast 0. Site lanes FULLPARTIALTRUTH (db8c38f21) and FAVICONPINK (d74edf347) relayed to Claude 1.
+
+### 2026-10-09T17:23:25Z - heartbeat (JIMOTHY)
+- swd_shallow_diary64 in its last steps (cooldown); TEST about 17:35Z, then swd_shallow_diary121. No stops. Vast 0.
