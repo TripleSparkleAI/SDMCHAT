@@ -3835,3 +3835,6 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
   256 1.42911 · 121 1.40333. Still UNBRACKETED; diary 64 runs now and decides SWC2. Gap to the transformer at 50M:
   0.18068 (was 0.206).
 - 2026-10-09T14:25:06Z RED, fixed: sweep3.sh (PID 2237204) was found STOPPED (state T) after diary121 ended, about 10 min lost; the third such stop, sender unknown (not memguard). SIGCONT sent by PID; diary64 started 14:24:19Z. New guard `runs_launch/unfreeze_tree.sh` CONTs any stopped process in the trees of chain4 1672104 and chain5 2247563 (guard PID 2282039).
+
+### 2026-10-09T14:43:25Z - heartbeat (JIMOTHY)
+- swc_diary64 at step 150 of 381, loss 5.3293, 26,037 tok/s. TEST about 15:05Z. No stops since the tree guard. Vast 0. FULLPARTIALTRUTH relayed to Claude 1 (contains FULLCONTEXT).

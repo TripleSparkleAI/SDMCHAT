@@ -1,10 +1,11 @@
 <!-- settle-banner -->
 ```text
- ████  ████   █   █   ████  █   █   ███   █████
-█      █   █  ██ ██  █      █   █  █   █    █
- ███   █   █  █ █ █  █      █████  █████    █
+ ░░░░  ░░░░   ░   ░   ░░░░  ░   ░   ░░░   ░░░░░
+▒      ▒   ▒  ▒▒ ▒▒  ▒      ▒   ▒  ▒   ▒    ▒
+ ▓▓▓   ▓   ▓  ▓ ▓ ▓  ▓      ▓▓▓▓▓  ▓▓▓▓▓    ▓
     █  █   █  █   █  █      █   █  █   █    █
 ████   ████   █   █   ████  █   █  █   █    █
+
 ✦ a language model built from sparse distributed memory instead of attention
 ```
 
