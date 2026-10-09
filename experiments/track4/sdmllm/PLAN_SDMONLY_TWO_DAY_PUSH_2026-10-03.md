@@ -3907,3 +3907,16 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T18:23:46Z - heartbeat (JIMOTHY)
 - swd_shallow_diary121 at step 600 of 763, loss 4.3603 (diary64 4.3270 at the same step, 121 behind by 0.033). TEST about 18:40Z, then swd_deep32. No stops. Vast 0.
+
+### 2026-10-09T18:44:35Z - VERDICT SWD4; wave SWE sealed (JIMOTHY)
+- swd_shallow_diary121_d768_L12_100M: TEST **1.28819 bpb**. Diary 64 at 100M (1.28077) leads it by 0.00742, inside
+  the 0.010 line. **VERDICT SWD4: MISSES** (sealed at 25% that 64 would win by more than 0.010). A tie again by the
+  line, but 64 leads at both budgets (0.00313 at 50M, 0.00742 at 100M) and is faster: the base shape takes diary 64.
+- swd_deep32_diary64_d512_L32_100M fired 18:39:20Z (SWD1, SWD2).
+- **Diary is still on its small edge** (64 is the smallest tried, and leads). Rule (a): push two values past it.
+- **SEALED: wave SWE, before it fires.** swe_diary36 (n_sub 6) and swe_diary16 (n_sub 4), d768 L12, 50M tokens,
+  same recipe, data and seed as wave SWC; read against diary 64 at 50M (1.40020). `runs_launch/sweep6.sh` (sha256
+  86047938d7ddb01d...) run by `chain7.sh` in tmux launch7 (PID 2678820, waits for chain6 2592656), tree guard 2678823.
+  About 70 minutes after the 100M yardstick.
+  - SWE1: diary 36 beats diary 64 by more than 0.010 (20%).
+  - SWE2: diary 16 is worse than diary 64 by more than 0.010 (65%), so the diary curve turns between 16 and 64.
