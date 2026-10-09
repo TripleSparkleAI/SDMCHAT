@@ -3785,3 +3785,6 @@ Nothing on this list fires until the SDM queue (SWB, SWC, the new FULL base, its
 
 ### 2026-10-09T13:03:27Z - heartbeat (JIMOTHY)
 - swb_deep48 at step 300 of 381, loss 5.0712, now AHEAD of deep32 at the same step (5.0793) after trailing at 200 and 250. Ends about 13:25Z, TEST about 13:35Z. Vast 0. Lane FULLCONTEXT running.
+
+### 2026-10-09T13:23:25Z - heartbeat (JIMOTHY)
+- swb_deep48 at step 350 of 381 (WSD cooldown, lr 0.00125), loss 4.9042. Ends about 13:40Z, TEST about 13:50Z. Vast 0. Lane FULLCONTEXT done and relayed to Claude 1; lane FULLPARTIALTRUTH (site audit, FULL and PARTIAL everywhere) running.
