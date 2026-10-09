@@ -3887,3 +3887,23 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T17:23:25Z - heartbeat (JIMOTHY)
 - swd_shallow_diary64 in its last steps (cooldown); TEST about 17:35Z, then swd_shallow_diary121. No stops. Vast 0.
+
+### 2026-10-09T17:43:57Z - SWD first result; SWD3 settled; the 100M yardstick sealed (JIMOTHY)
+- swd_shallow_diary64_d768_L12_100M: TEST **1.28077 bpb**, the best SDM score so far (FULL, reads its memory), about
+  25,000 tok/s. Twice the data took the same shape from 1.40020 to 1.28077 (-0.11943).
+- **VERDICT SWD3: HOLDS** (sealed at 45%): the best SWD arm is below 1.38 already, and a minimum can only fall.
+- swd_shallow_diary121_d768_L12_100M fired 17:26:59Z (the tie-break, SWD4).
+- No transformer exists at 100M on this shape and data, so the gap at 100M is not known. The 50M transformer
+  (1.22265) is NOT comparable to a 100M score.
+- **SEALED: the 100M yardstick, before it fires.** swd_yard_d768_L12_T2048_100M, a transformer of the same shape
+  (d768, 12 layers, 77.9M body weights), same data, recipe and seed, 100M tokens. `runs_launch/sweep5.sh` (sha256
+  1817f57d03c46ee6...) run by `chain6.sh` in tmux launch6 (PID 2592656, waits for chain5 2247563), tree guard 2592659.
+  About 45 minutes after wave SWD ends.
+  - YD3: the 100M transformer beats the best SWD FULL arm by more than 0.050 (60%).
+  - YD4: the gap at 100M is smaller than the gap at 50M on the same diary-64 shape (0.17755) (65%).
+
+### 2026-10-09T18:03:25Z - heartbeat (JIMOTHY)
+- swd_shallow_diary121_d768_L12_100M at step 350 of 763, loss 4.6734, 23,686 tok/s. TEST about 18:40Z. No stops. Vast 0.
+
+### 2026-10-09T18:23:46Z - heartbeat (JIMOTHY)
+- swd_shallow_diary121 at step 600 of 763, loss 4.3603 (diary64 4.3270 at the same step, 121 behind by 0.033). TEST about 18:40Z, then swd_deep32. No stops. Vast 0.
