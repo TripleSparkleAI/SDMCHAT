@@ -1,0 +1,177 @@
+2026-10-05T02:13:20Z true_cn_d1024_hm6144_hops16_2B finished; copying last.pt
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-05T03:03:13Z WEIGHTS MISMATCH true_cn_d1024_hm6144_hops16_2B box= home=5711070235
+2026-10-05T06:58:24Z true_cn_d1536_hm6144_hops16_2B finished; copying last.pt
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+Read from remote host 179.255.106.231: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+rsync(93123): error: unexpected end of file
+rsync(6426): error: unexpected end of file
+ssh: connect to host 179.255.106.231 port 26241: Operation timed out
+rsync(6838): error: unexpected end of file
+2026-10-05T08:24:56Z WEIGHTS MISMATCH true_cn_d1536_hm6144_hops16_2B box= home=2091352064
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+rsync: unrecognized option `--append-verify'
+usage: rsync [-0468BCDEFHIKLOPRSTWVabcdghiklnopqrtuvxyz] [-e program]
+	[-f filter] [--8-bit-output] [--address=sourceaddr] [--append]
+	[--backup-dir=dir] [--bwlimit=limit] [--cache | --no-cache]
+	[--checksum-seed=NUM] [--chmod=mode] [--compare-dest=dir] [--compress]
+	[--compress-level=NUM] [--contimeout] [--copy-dest=dir]
+	[--copy-unsafe-links] [--del]
+	[--delete-after | --delete-before | --delete-delay | --delete-during]
+	[--delete-excluded] [--delay-updates] [--dirs] [--no-dirs]
+	[--existing] [--exclude=pattern] [--exclude-from=file] [--executability]
+	[--extended-attributes]
+	[--existing] [--files-from=filespec] [--force] [--ignore-errors]
+	[--ignore-existing] [--ignore-non-existing] [--include=pattern]
+	[--include-from=file] [--inplace] [--itemize-changes]
+	[--keep-dirlinks] [--link-dest=dir] [--list-only]
+	[--max-delete=NUM] [--max-size=SIZE] [--min-size=SIZE]
+	[--modify-window=sec] [--no-implied-dirs] [--no-motd] [--numeric-ids]
+	[--out-format=FMT] [--partial] [--partial-dir] [--password-file=pwfile]
+	[--port=portnumber] [--progress] [--protocol=NUM] [--prune-empty-dirs]
+	[--read-batch=file] [--remove-source-files] [--rsync-path=program]
+	[--safe-links] [--size-only] [--sockopts=sockopts] [--specials]
+	[--stats] [--suffix] [--super] [--timeout=seconds]
+	[--only-write-batch=file | --write-batch=file]
+	source ... directory
+2026-10-05T09:46:01Z d1536 copy ended, home 2091352064 of 8654646347
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+Read from remote host 179.255.106.231: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+Read from remote host 179.255.106.231: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+Connection to 154.37.220.220 closed by remote host.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-05T13:40:34Z d1536 append ended, home 8654646347 of 8654646347
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+remote 19d0743b83811b1d9c59059dde9ace32a8e7f07a8d9c9ca06b0d18c264721430 home 19d0743b83811b1d9c59059dde9ace32a8e7f07a8d9c9ca06b0d18c264721430
+SHA MATCH
+Connection to 154.37.220.220 closed by remote host.
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-05T15:37:09Z d2048 append ended, home 11656942811 of 11656942811
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+d2048 remote d4e4181f3f9cb03c030954deb355909013267934d2d28678a973a99bf39b71a6 home d4e4181f3f9cb03c030954deb355909013267934d2d28678a973a99bf39b71a6
+d2048 SHA MATCH

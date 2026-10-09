@@ -1,0 +1,29 @@
+2026-10-03T11:37:26Z start w2_untie
+2026-10-03T11:39:54Z end w2_untie rc 0
+2026-10-03T11:39:54Z start w2_hopmlp
+2026-10-03T11:42:18Z end w2_hopmlp rc 0
+2026-10-03T11:42:18Z start w2_ng
+2026-10-03T11:44:45Z end w2_ng rc 0
+2026-10-03T11:44:45Z start w2_conj2
+2026-10-03T11:47:03Z end w2_conj2 rc 0
+2026-10-03T11:47:03Z start w2_conj3
+2026-10-03T11:49:22Z end w2_conj3 rc 0
+2026-10-03T11:49:22Z start w2_nb16
+2026-10-03T11:51:47Z end w2_nb16 rc 0
+2026-10-03T11:51:47Z start w2_nb16_none
+2026-10-03T11:53:22Z end w2_nb16_none rc 0
+2026-10-03T11:53:22Z start w2_slr30
+2026-10-03T11:55:32Z end w2_slr30 rc 0
+2026-10-03T11:55:32Z start w2_slr60
+2026-10-03T11:57:41Z end w2_slr60 rc 0
+2026-10-03T11:57:41Z start w2_B64
+2026-10-03T12:00:02Z end w2_B64 rc 0
+2026-10-03T12:00:02Z start w2_B128
+2026-10-03T12:02:24Z end w2_B128 rc 0
+2026-10-03T12:02:24Z start w2_muon
+2026-10-03T12:04:35Z end w2_muon rc 0
+2026-10-03T12:04:35Z start w2_sparse
+2026-10-03T12:06:47Z end w2_sparse rc 0
+2026-10-03T12:06:47Z start w2_ro_hop
+2026-10-03T12:09:09Z end w2_ro_hop rc 0
+2026-10-03T12:09:10Z WAVE2_DONE

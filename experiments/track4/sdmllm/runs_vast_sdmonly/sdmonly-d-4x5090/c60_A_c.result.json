@@ -1,0 +1,225 @@
+{
+ "run": "c60_A_c",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 60000000,
+ "steps": 7324,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 68489728,
+  "frozen_store_values": 0,
+  "total_trainable": 101585408
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 3211264.0,
+  "total": 69402624.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T12:02:54Z",
+  "load": [
+   37.06,
+   19.28,
+   12.92
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 290.9
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T12:08:54Z",
+  "load": [
+   21.75,
+   23.32,
+   16.77
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 296.2
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.1320545140244453
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 2.034810400925871
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 2.002650077185547
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.9716142170575766
+  },
+  {
+   "step": 2500,
+   "tokens": 20480000,
+   "bpb_quick": 1.9569596466115458
+  },
+  {
+   "step": 3000,
+   "tokens": 24576000,
+   "bpb_quick": 1.9324845285954961
+  },
+  {
+   "step": 3500,
+   "tokens": 28672000,
+   "bpb_quick": 1.9359949970521555
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "bpb_quick": 1.9182846951575845
+  },
+  {
+   "step": 4500,
+   "tokens": 36864000,
+   "bpb_quick": 1.9043905772417429
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.8989399819221253
+  },
+  {
+   "step": 5500,
+   "tokens": 45056000,
+   "bpb_quick": 1.8858501370796106
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "bpb_quick": 1.8831274101195346
+  },
+  {
+   "step": 6500,
+   "tokens": 53248000,
+   "bpb_quick": 1.880498652121999
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "bpb_quick": 1.8790223585892916
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6089325275222488,
+  "nats_per_token": 5.405769267237871,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "store_params": 67633152
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 2.250153171054553,
+  "nats_per_token": 7.560173376192955,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.933838153496562,
+  "nats_per_token": 6.497402892390209,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.082916259765625,
+  0.111053466796875,
+  0.0559234619140625,
+  0.0465850830078125
+ ]
+}

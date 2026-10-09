@@ -1,0 +1,73 @@
+2026-10-03T17:11:23Z gpu0 start w11_cn_d256_400M_s1
+2026-10-03T17:11:43Z gpu1 start w11_mq_d256_400M_s1
+2026-10-03T17:37:47Z gpu0 end w11_cn_d256_400M_s1 rc 0
+2026-10-03T17:37:47Z gpu0 start w11_cnmix_d256_T256_400M
+2026-10-03T17:41:02Z gpu1 end w11_mq_d256_400M_s1 rc 0
+2026-10-03T17:41:02Z gpu1 start w11_cn_d256_100M_s1
+2026-10-03T17:47:59Z gpu1 end w11_cn_d256_100M_s1 rc 0
+2026-10-03T17:49:42Z gpu1 start w11_mq_d512_400M (fill)
+2026-10-03T18:31:10Z gpu1 end w11_mq_d512_400M (fill) rc 0
+2026-10-03T18:32:44Z gpu1 start w11_cnmix_d512_T1024_100M (fill)
+2026-10-03T19:23:18Z gpu0 end w11_cnmix_d256_T256_400M rc 0
+2026-10-03T19:23:18Z WAVE7_DONE
+2026-10-03T19:24:47Z gpu0 start w11_mq_d256_400M (fill)
+2026-10-03T19:26:27Z gpu1 end w11_cnmix_d512_T1024_100M (fill) rc 0
+2026-10-03T19:27:48Z gpu1 start w11_cn_d1024_400M (fill)
+2026-10-03T19:54:11Z gpu0 end w11_mq_d256_400M (fill) rc 0
+2026-10-03T20:35:25Z gpu1 end w11_cn_d1024_400M (fill) rc 0
+2026-10-03T20:35:52Z FILL_DONE code_w7/track4_sdmonly_wave11_fill_m.txt
+2026-10-03T22:18:56Z gpu0 start w13_fastcheck_dense_100M_s1 (fill)
+2026-10-03T22:18:56Z gpu1 start w13_fastcheck_fast_100M_s1 (fill)
+2026-10-03T22:35:15Z gpu1 end w13_fastcheck_fast_100M_s1 (fill) rc 0
+2026-10-03T22:50:38Z gpu1 start w14_mq_d256_B512_400M (fill)
+2026-10-03T22:52:15Z gpu1 end w14_mq_d256_B512_400M (fill) rc 0
+2026-10-03T23:03:25Z gpu0 end w13_fastcheck_dense_100M_s1 (fill) rc 0
+2026-10-03T23:03:37Z gpu1 start w14_mq_d256_B512_400M (rerun with --accum 2 after OOM)
+2026-10-03T23:03:39Z FILL_DONE code_w7/track4_sdmonly_wave14_fill_m.txt
+2026-10-03T23:03:59Z FILL_DONE code_w7/track4_sdmonly_wave13_fill_m.txt
+2026-10-03T23:13:59Z gpu0 start w15_cn_d1536_B128_400M (fill)
+2026-10-03T23:44:47Z gpu1 start w16_mq_d256_B2048_400M (fill)
+2026-10-04T00:07:19Z gpu1 end w16_mq_d256_B2048_400M (fill) rc 0
+2026-10-04T00:10:18Z gpu1 start w18_cn_d1024_B512_400M (fill)
+2026-10-04T00:32:51Z gpu0 end w15_cn_d1536_B128_400M (fill) rc 0
+2026-10-04T00:50:08Z gpu0 start w20_cn_d3072_B128_400M (fill)
+2026-10-04T01:02:49Z gpu1 end w18_cn_d1024_B512_400M (fill) rc 0
+2026-10-04T01:09:36Z gpu1 start w22_cn_d1024_B1024_400M (fill)
+2026-10-04T02:01:16Z gpu1 end w22_cn_d1024_B1024_400M (fill) rc 0
+2026-10-04T02:02:40Z gpu1 start w22_cn_d1024_B2048_400M (fill)
+2026-10-04T02:54:07Z gpu1 end w22_cn_d1024_B2048_400M (fill) rc 0
+2026-10-04T03:02:42Z gpu1 start w30_cn_d1536_B512_lr4x_hops8_400M (fill)
+2026-10-04T03:46:05Z gpu0 end w20_cn_d3072_B128_400M (fill) rc 0
+2026-10-04T03:50:11Z gpu0 start w31_cn_d3072_B512_400M (fill)
+2026-10-04T04:18:13Z gpu1 end w30_cn_d1536_B512_lr4x_hops8_400M (fill) rc 0
+2026-10-04T04:29:51Z gpu1 start w34_cn_d1536_B512_lr4x_hops16_400M (fill)
+2026-10-04T05:49:24Z gpu1 end w34_cn_d1536_B512_lr4x_hops16_400M (fill) rc 0
+2026-10-04T05:50:56Z gpu1 start w34_cn_d1536_B512_lr4x_hops32_400M (fill)
+2026-10-04T06:31:58Z gpu0 end w31_cn_d3072_B512_400M (fill) rc 0
+2026-10-04T07:18:36Z gpu1 end w34_cn_d1536_B512_lr4x_hops32_400M (fill) rc 0
+2026-10-04T07:18:49Z FILL_DONE code_w7/track4_sdmonly_wave18_fill_m.txt
+2026-10-04T07:19:00Z FILL_DONE code_w7/track4_sdmonly_wave30_fill_m.txt
+2026-10-04T07:19:02Z FILL_DONE code_w7/track4_sdmonly_wave22_fill_m.txt
+2026-10-04T07:19:03Z FILL_DONE code_w7/track4_sdmonly_wave34_fill_m.txt
+2026-10-04T07:19:19Z FILL_DONE code_w7/track4_sdmonly_wave16_fill_m.txt
+2026-10-04T07:19:26Z FILL_DONE code_w7/track4_sdmonly_wave31_fill_m.txt
+2026-10-04T07:19:32Z FILL_DONE code_w7/track4_sdmonly_wave15_fill_m.txt
+2026-10-04T07:19:35Z FILL_DONE code_w7/track4_sdmonly_wave20_fill_m.txt
+2026-10-04T07:28:05Z gpu0 start w38_cn_d1536_B512_hm3072_hops16_400M (fill)
+2026-10-04T07:35:10Z gpu1 start w38_mq_d2048_B512_400M (fill)
+2026-10-04T09:33:50Z gpu0 end w38_cn_d1536_B512_hm3072_hops16_400M (fill) rc 0
+2026-10-04T09:49:29Z gpu1 end w38_mq_d2048_B512_400M (fill) rc 0
+2026-10-04T09:50:14Z FILL_DONE code_w7/track4_sdmonly_wave38_fill_m.txt
+2026-10-04T09:50:19Z FILL_DONE code_w7/track4_sdmonly_wave38b_fill_m.txt
+2026-10-04T09:51:23Z gpu0 start w41_cnmix_d768_T1024_B128_hm3072_400M (fill)
+2026-10-04T10:02:45Z gpu1 start w42_cn_d1536_B512_hm3072_hops16_nb16_400M (fill)
+2026-10-04T12:14:01Z gpu1 end w42_cn_d1536_B512_hm3072_hops16_nb16_400M (fill) rc 0
+2026-10-04T12:36:50Z gpu1 start w46_cn_d1536_B512_hm3072_hops16_nb4_400M (fill)
+2026-10-04T13:44:47Z gpu0 end w41_cnmix_d768_T1024_B128_hm3072_400M (fill) rc 0
+2026-10-04T13:49:49Z gpu0 start w52_cn_d512_B512_hm3072_hops16_400M (fill)
+2026-10-04T14:39:13Z gpu1 end w46_cn_d1536_B512_hm3072_hops16_nb4_400M (fill) rc 0
+2026-10-04T14:42:48Z gpu0 end w52_cn_d512_B512_hm3072_hops16_400M (fill) rc 0
+2026-10-04T14:42:53Z FILL_DONE code_w7/track4_sdmonly_wave52_fill_m.txt
+2026-10-04T14:42:59Z FILL_DONE code_w7/track4_sdmonly_wave46_fill_m.txt
+2026-10-04T14:43:04Z FILL_DONE code_w7/track4_sdmonly_wave42_fill_m.txt
+2026-10-04T14:43:43Z FILL_DONE code_w7/track4_sdmonly_wave41_fill_m.txt

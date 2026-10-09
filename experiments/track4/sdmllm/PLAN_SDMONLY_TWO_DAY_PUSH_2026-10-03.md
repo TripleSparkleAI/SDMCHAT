@@ -3750,3 +3750,23 @@ Nothing on this list fires until the SDM queue (SWB, SWC, the new FULL base, its
   resident. 48 layers at about 4,300 tok/s reach step 50 (6.5M tokens) about 25 min after a ~25 min compile, so
   the first line is due now. Chains running, no SIGCONT sent. Lane BRANDCAPS done (06fc9cd83), awaiting the
   navigator's look before landing.
+
+### 2026-10-09T10:45:49Z - heartbeat (JIMOTHY)
+- Lane BRANDCAPS landed (cbb862fbd): the caps pass now lives in BRAND/vague_12 (32 files) with
+  BRIEF_THE_BRAND_WORK.md; vague_10 is unchanged from BRANDNEON3. The landing gate went red on one site test
+  (learnsdm2: sdmForward.json differs from a fresh run) because the generator found THE TRANSFORMER LIST by its
+  last mention in this log, and my SITEFINAL-landed entry mentioned it in passing. Lane HELDLISTFIX landed
+  (23366cdfe): the parser anchors on the list's bold header; a new test is red against the old parser, green now.
+- swb_deep48: step 50 of 381 at about 10:40Z (67 min after start; 1,634 tok/s averaged over the compile). True
+  speed known at step 100. Chains running, no SIGCONT sent.
+
+### 2026-10-09T11:03:36Z - heartbeat (JIMOTHY)
+- Quiet. swb_deep48 still on its step-50 line (about 10:40Z); step 100 is due about now if it runs near 4,300 tok/s.
+  Chains running, no SIGCONT sent. Lane TRAININGSPEED landed (ae966793f, site suite 3,838 of 3,838). The finished
+  runs' small records committed (94273a75a, 1,573 files, no weights).
+
+### 2026-10-09T11:25:13Z - heartbeat (JIMOTHY)
+- swb_deep48 passed step 100 (loss 5.8965) at 4,334.6 tok/s, about 30 s a step. 281 steps left: training ends about
+  13:27Z, TEST score about 13:35Z (00:35 Saturday, Melbourne). Chains 999609, 1506863, 1672104 alive, no SIGCONT sent.
+  Vast 0 boxes. Spark memory 10 GB available, disk 483 GB free. Next: score deep48, write VERDICT SWB4, then wave
+  SWC fires by itself through chain4.

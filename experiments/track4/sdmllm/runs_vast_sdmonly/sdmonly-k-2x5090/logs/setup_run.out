@@ -1,0 +1,9 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-03T16:08:32Z STAMPED: driver 570.169, NVIDIA GeForce RTX 5090, 32607 MiB;570.169, NVIDIA GeForce RTX 5090, 32607 MiB;torch 2.8.0+cu128 12.8;nproc_all 144;cpu_max unknown;memory_max unknown;disk overlay         100G   85M  100G   1% /;
+2026-10-03T16:08:32Z DEPS start
+2026-10-03T16:14:23Z DEPS done
+2026-10-03T16:14:23Z DATA start (rebuild S0 shards from Hugging Face)
+2026-10-03T16:15:17Z sha train c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7 val 89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f token_bytes 69f96025
+2026-10-03T16:15:17Z DATA ALL_MATCH
+2026-10-03T16:15:24Z SELFTEST 32 of 32 checks pass
+2026-10-03T16:15:24Z READY

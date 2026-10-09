@@ -1,0 +1,143 @@
+{
+ "run": "sz_d1024_20M",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 1024,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 132382720,
+  "non_embedding_trainable": 283396096,
+  "frozen_store_values": 0,
+  "total_trainable": 415778816
+ },
+ "flops_per_token_fwd": {
+  "head": 264765440,
+  "body": 31719424.0,
+  "total": 296484864.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:16:04Z",
+  "load": [
+   1.11,
+   1.13,
+   1.04
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.6
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:20:39Z",
+  "load": [
+   1.21,
+   1.19,
+   1.09
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 119.3
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.0611871248581135
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.970886906779327
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.9184428920642185
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.8889830686185882
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6027323336113826,
+  "nats_per_token": 5.384937556074762,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "store_params": 269746176
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.9400608903771563,
+  "nats_per_token": 6.518310344512535,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.9372015426199107,
+  "nats_per_token": 6.508703369722693,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.047088623046875,
+  0.0388031005859375,
+  0.03118896484375,
+  0.059295654296875
+ ]
+}

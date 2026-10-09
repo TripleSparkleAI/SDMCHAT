@@ -1,0 +1,38 @@
+{
+ "stamp": {
+  "utc": "2026-10-06T03:44:02Z",
+  "load": [
+   11.74,
+   14.06,
+   13.42
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "f866f89214cd",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.173.02\n580.173.02",
+  "mem_available_gb": 451.1
+ },
+ "val": {
+  "test": {
+   "bpb": 1.022405433546315,
+   "nats_per_token": 3.4351271894745476,
+   "tokens": 995323,
+   "bytes": 4824566,
+   "windows": 3892,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 1.215767892520056,
+   "nats_per_token": 3.9707346504254275,
+   "tokens": 1022736,
+   "bytes": 4819015,
+   "windows": 4000,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ }
+}

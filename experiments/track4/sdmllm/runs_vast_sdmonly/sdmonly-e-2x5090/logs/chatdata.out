@@ -1,0 +1,4 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+chat_test {'conversations': 24229, 'tokens': 19809072, 'utf8_bytes': 92938994, 'sha256': 'f88ec2c2cd858a5c40ab66d5c9b354da005493f8d9a9ca995a2f60b9b19c19bc', 'files': ['data/test-00000-of-00001.parquet']}
+chat_train {'conversations': 460341, 'tokens': 378859013, 'utf8_bytes': 1777891598, 'sha256': 'b280437d9373cb30cf7f50cb6081fccd1e4065509bed527d53d5b3be8f256046', 'files': ['data/train-00000-of-00004.parquet', 'data/train-00001-of-00004.parquet', 'data/train-00002-of-00004.parquet', 'data/train-00003-of-00004.parquet']}
+DONE {"tokens": 757718026, "chat_tokens": 378859013, "web_tokens_from_end_of_train_big": 378859013, "sha256": "b5285d6c321066f9442aa65148aa186cde4ebecbbcd6ec51aff444f04c4e4aa1"}

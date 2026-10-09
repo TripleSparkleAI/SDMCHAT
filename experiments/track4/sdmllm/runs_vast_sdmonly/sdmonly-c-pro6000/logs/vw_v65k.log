@@ -1,0 +1,40 @@
+{"event": "vocab_wave", "name": "v65k", "V": 65536, "data": "/root/settle/sdmllm/data_v65k", "meta_sha256": "69afa930fac49f7555d06b706fc64e72a3db721df14d389369e148d837783f45", "bytes_per_token_train": 4.824481441342889, "bytes_target": 95417201, "tokens_target": 19777711, "steps": 2414, "tokens_trained": 19775488, "bytes_trained": 95406474.849499, "rule": "equal training bytes; tokens = round(bytes / bytes_per_token), bytes_per_token = train text bytes / train tokens including BOS", "tokenizer_sha256": "9405db9f5db93ee90e8cba1172f9a96b01923e71ee327d6e6d21630082157527"}
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0}
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "vw_v65k", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99]}, "B": 32, "T": 256, "tokens_target": 19777711, "steps": 2414, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 16777216, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 85266944}, "flops_per_token_fwd": {"head": 33554432, "body": 3211264.0, "total": 36765696.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T11:32:54Z", "load": [1.33, 1.28, 1.02], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.6}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 7.0215, "lr": 0.0029969057997308378, "gnorm": 0.361, "tok_per_s": 52112.4, "load": 1.25244140625}
+{"event": "step", "step": 200, "loss": 6.5821, "lr": 0.002972955898056192, "gnorm": 0.359, "tok_per_s": 313825.5, "load": 1.23193359375}
+{"event": "step", "step": 300, "loss": 6.3351, "lr": 0.0029257155688632067, "gnorm": 0.48, "tok_per_s": 312406.3, "load": 1.23193359375}
+{"event": "step", "step": 400, "loss": 6.2625, "lr": 0.0028560164706105105, "gnorm": 0.496, "tok_per_s": 314391.9, "load": 1.212890625}
+{"event": "step", "step": 500, "loss": 6.2443, "lr": 0.0027650856448029133, "gnorm": 1.07, "tok_per_s": 313655.3, "load": 1.212890625}
+eval 500 {'bpb': 2.0476377870188562, 'nats_per_token': 6.218175544456993, 'tokens': 16381, 'bytes': 71767}
+{"event": "step", "step": 600, "loss": 6.1011, "lr": 0.0026545239141214784, "gnorm": 0.609, "tok_per_s": 205036.2, "load": 1.19580078125}
+{"event": "step", "step": 700, "loss": 5.9328, "lr": 0.002526277700195621, "gnorm": 0.834, "tok_per_s": 313977.3, "load": 1.1796875}
+{"event": "step", "step": 800, "loss": 6.055, "lr": 0.002382604757160856, "gnorm": 0.596, "tok_per_s": 314400.7, "load": 1.1796875}
+{"event": "step", "step": 900, "loss": 5.8309, "lr": 0.0022260344242574525, "gnorm": 0.827, "tok_per_s": 313187.8, "load": 1.1650390625}
+{"event": "step", "step": 1000, "loss": 6.0216, "lr": 0.002059323097216641, "gnorm": 0.635, "tok_per_s": 313999.8, "load": 1.1650390625}
+eval 1000 {'bpb': 1.9764650174069194, 'nats_per_token': 6.00204123679873, 'tokens': 16381, 'bytes': 71767}
+{"event": "step", "step": 1100, "loss": 5.7985, "lr": 0.0018854057023535286, "gnorm": 0.783, "tok_per_s": 209649.7, "load": 1.0712890625}
+{"event": "step", "step": 1200, "loss": 5.8489, "lr": 0.0017073440276575626, "gnorm": 0.823, "tok_per_s": 314934.5, "load": 1.14599609375}
+{"event": "step", "step": 1300, "loss": 5.7606, "lr": 0.0015282728205034618, "gnorm": 1.197, "tok_per_s": 315614.3, "load": 1.14599609375}
+{"event": "step", "step": 1400, "loss": 5.7885, "lr": 0.0013513446009238085, "gnorm": 0.74, "tok_per_s": 315594.9, "load": 1.13427734375}
+{"event": "step", "step": 1500, "loss": 6.0191, "lr": 0.0011796741619968323, "gnorm": 1.086, "tok_per_s": 313654.8, "load": 1.13427734375}
+eval 1500 {'bpb': 1.9345437977531257, 'nats_per_token': 5.874736737683902, 'tokens': 16381, 'bytes': 71767}
+{"event": "step", "step": 1600, "loss": 5.8347, "lr": 0.0010162837344112096, "gnorm": 0.953, "tok_per_s": 207433.0, "load": 1.123046875}
+{"event": "step", "step": 1700, "loss": 5.7506, "lr": 0.00086404978057696, "gnorm": 1.166, "tok_per_s": 311353.3, "load": 1.123046875}
+{"event": "step", "step": 1800, "loss": 5.6499, "lr": 0.0007256523549636366, "gnorm": 0.904, "tok_per_s": 312308.4, "load": 1.11279296875}
+{"event": "step", "step": 1900, "loss": 5.8113, "lr": 0.0006035279221689702, "gnorm": 1.083, "tok_per_s": 311607.9, "load": 1.11279296875}
+{"event": "step", "step": 2000, "loss": 5.5327, "lr": 0.0004998264633483418, "gnorm": 0.989, "tok_per_s": 313715.0, "load": 1.103515625}
+eval 2000 {'bpb': 1.908631459014034, 'nats_per_token': 5.796047297555094, 'tokens': 16381, 'bytes': 71767}
+{"event": "step", "step": 2100, "loss": 5.6512, "lr": 0.0004163736261395587, "gnorm": 1.002, "tok_per_s": 208215.5, "load": 1.09521484375}
+{"event": "step", "step": 2200, "loss": 5.6635, "lr": 0.000354638584427454, "gnorm": 1.179, "tok_per_s": 313352.5, "load": 1.09521484375}
+{"event": "step", "step": 2300, "loss": 5.7789, "lr": 0.00031570817377204145, "gnorm": 0.834, "tok_per_s": 314305.8, "load": 1.08740234375}
+{"event": "step", "step": 2400, "loss": 5.555, "lr": 0.00030026775784187715, "gnorm": 0.79, "tok_per_s": 313212.4, "load": 1.08740234375}
+{"event": "step", "step": 2414, "loss": 5.5238, "lr": 0.0003000011900740184, "gnorm": 0.829, "tok_per_s": 2317418.5, "load": 1.08740234375}
+FINAL vw_v65k {"bpb": 1.6625180527790233, "nats_per_token": 5.644898561646735, "tokens": 986358, "bytes": 4831688}
+ABLATE vw_v65k {"val_test_ablate_zero_read": 2.43796, "val_test_ablate_shuffle_keys": 2.31915} used [0.062, 0.0588, 0.0527, 0.0842]
+NEXT -> python3 track4_sdmonly_summary.py
+VOCAB_WAVE vw_v65k {"V": 65536, "bytes_per_token": 4.8245, "tokens": 19777711, "test_bpb": 1.6625180527790233}
+NEXT -> python3 track4_sdmonly_vocab_score.py --run vw_v65k --data /root/settle/sdmllm/data_v65k

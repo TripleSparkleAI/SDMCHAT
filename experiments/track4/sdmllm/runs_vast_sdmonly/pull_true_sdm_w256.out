@@ -1,0 +1,4 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+Read from remote host 179.255.106.231: Connection reset by peer
+client_loop: send disconnect: Broken pipe
+rsync(63342): error: unexpected end of file

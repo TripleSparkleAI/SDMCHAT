@@ -1,0 +1,38 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 4, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false}
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "p0_A_heads4_s1", "arm": "sdmonly", "seed": 1, "cfg": {"d": 256, "T": 256, "seed": 1, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 4, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false}, "B": 32, "T": 256, "tokens_target": 20000000, "steps": 2441, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 70062592, "frozen_store_values": 0, "total_trainable": 103158272}, "flops_per_token_fwd": {"head": 66191360, "body": 6750208.0, "total": 72941568.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T12:20:01Z", "load": [12.51, 20.53, 19.62], "ncpu": 256, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "c181019dcdae", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03", "mem_available_gb": 274.0}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 7.1562, "lr": 0.0029969752030447787, "gnorm": 0.395, "tok_per_s": 27880.5, "load": 10.865234375}
+{"event": "step", "step": 200, "loss": 6.6569, "lr": 0.0029735607388399585, "gnorm": 0.327, "tok_per_s": 135025.4, "load": 10.7158203125}
+{"event": "step", "step": 300, "loss": 6.3911, "lr": 0.002927367289311664, "gnorm": 0.49, "tok_per_s": 135038.4, "load": 10.498046875}
+{"event": "step", "step": 400, "loss": 6.1818, "lr": 0.002859189861351509, "gnorm": 0.757, "tok_per_s": 134835.4, "load": 10.2978515625}
+{"event": "step", "step": 500, "loss": 6.4921, "lr": 0.0027702018145079606, "gnorm": 0.849, "tok_per_s": 135050.9, "load": 19.95458984375}
+eval 500 {'bpb': 2.0981480919271496, 'nats_per_token': 6.326169132349349, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 600, "loss": 5.8925, "lr": 0.002661934667020818, "gnorm": 0.752, "tok_per_s": 95642.6, "load": 18.9970703125}
+{"event": "step", "step": 700, "loss": 5.949, "lr": 0.0025362517378079456, "gnorm": 1.447, "tok_per_s": 135169.1, "load": 18.1162109375}
+{"event": "step", "step": 800, "loss": 5.8174, "lr": 0.0023953160780357456, "gnorm": 0.815, "tok_per_s": 134982.0, "load": 16.56005859375}
+{"event": "step", "step": 900, "loss": 5.8279, "lr": 0.002241553244183264, "gnorm": 0.68, "tok_per_s": 135064.7, "load": 15.87451171875}
+{"event": "step", "step": 1000, "loss": 6.0237, "lr": 0.002077609553289712, "gnorm": 0.773, "tok_per_s": 135175.9, "load": 15.24365234375}
+eval 1000 {'bpb': 2.0209102715275775, 'nats_per_token': 6.093287803742597, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 1100, "loss": 5.8669, "lr": 0.0019063065388285076, "gnorm": 0.672, "tok_per_s": 98092.2, "load": 14.1298828125}
+{"event": "step", "step": 1200, "loss": 5.741, "lr": 0.0017305923910396388, "gnorm": 0.891, "tok_per_s": 134987.7, "load": 13.638671875}
+{"event": "step", "step": 1300, "loss": 5.7554, "lr": 0.001553491217450742, "gnorm": 0.938, "tok_per_s": 134561.6, "load": 13.18701171875}
+{"event": "step", "step": 1400, "loss": 5.5627, "lr": 0.001378050996832694, "gnorm": 0.989, "tok_per_s": 134330.4, "load": 12.462890625}
+{"event": "step", "step": 1500, "loss": 5.7566, "lr": 0.0012072911223220046, "gnorm": 0.833, "tok_per_s": 134901.4, "load": 12.025390625}
+eval 1500 {'bpb': 1.9742258897891953, 'nats_per_token': 5.952528771597778, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 1600, "loss": 5.7878, "lr": 0.0010441504365128757, "gnorm": 1.148, "tok_per_s": 97324.0, "load": 11.62255859375}
+{"event": "step", "step": 1700, "loss": 5.7635, "lr": 0.0008914366528548352, "gnorm": 1.516, "tok_per_s": 135468.9, "load": 10.75732421875}
+{"event": "step", "step": 1800, "loss": 5.7313, "lr": 0.0007517780338329788, "gnorm": 1.169, "tok_per_s": 135414.2, "load": 11.17724609375}
+{"event": "step", "step": 1900, "loss": 5.4827, "lr": 0.0006275781575677816, "gnorm": 1.291, "tok_per_s": 135371.9, "load": 10.76220703125}
+{"event": "step", "step": 2000, "loss": 5.6076, "lr": 0.0005209745513185531, "gnorm": 0.632, "tok_per_s": 135183.7, "load": 10.38037109375}
+eval 2000 {'bpb': 1.9488306194657097, 'nats_per_token': 5.875958973762135, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 2100, "loss": 5.6435, "lr": 0.0004338019038237257, "gnorm": 1.535, "tok_per_s": 92904.3, "load": 9.70654296875}
+{"event": "step", "step": 2200, "loss": 5.5662, "lr": 0.00036756048960763494, "gnorm": 0.966, "tok_per_s": 135523.4, "load": 19.33984375}
+{"event": "step", "step": 2300, "loss": 5.6569, "lr": 0.0003233903486835241, "gnorm": 2.025, "tok_per_s": 136834.4, "load": 18.271484375}
+{"event": "step", "step": 2400, "loss": 5.7118, "lr": 0.0003020516660299287, "gnorm": 0.737, "tok_per_s": 136535.8, "load": 25.599609375}
+{"event": "step", "step": 2441, "loss": 5.5413, "lr": 0.0003000011633705311, "gnorm": 0.849, "tok_per_s": 333268.8, "load": 25.599609375}
+FINAL p0_A_heads4_s1 {"bpb": 1.667369977957773, "nats_per_token": 5.602110237549771, "tokens": 995323, "bytes": 4824566}
+ABLATE p0_A_heads4_s1 {"val_test_ablate_zero_read": 3.13969, "val_test_ablate_shuffle_keys": 2.9065} used [0.1676, 0.165, 0.1761, 0.2196]
+NEXT -> python3 track4_sdmonly_summary.py

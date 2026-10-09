@@ -1,0 +1,8 @@
+THE TOKENIZER WAVE · sdmonly centre (d 256, 4 hops, n_sub 256, seed 0) · equal training bytes
+bpb(doc) = nats / (ln2 x text bytes) over val docs 1,000-1,999 by document (comparable across tokenizers)
+trainerTEST = the trainer's window TEST by token offset (NOT comparable across tokenizers)
+delta = paired over the same documents (run minus first), SE by bootstrap over documents (2,000)
+vw_v129k     V 129,280  B/tok train 4.7709  tokens  19,996,672  bytes     95,401,324  bpb(doc) 1.65816  bpb(table) 1.65815  trainerTEST 1.66811
+vw_v65k      V  65,536  B/tok train 4.8245  tokens  19,775,488  bytes     95,406,475  bpb(doc) 1.65274  bpb(table) 1.65274  trainerTEST 1.66252  vs vw_v129k: -0.00543 (SE 0.00071, z -7.6)
+vw_v32k      V  32,768  B/tok train 4.6235  tokens  20,635,648  bytes     95,408,458  bpb(doc) 1.63747  bpb(table) 1.63747  trainerTEST 1.64753  vs vw_v129k: -0.02069 (SE 0.00082, z -25.2)
+vw_v16k      V  16,384  B/tok train 4.3213  tokens  22,077,440  bytes     95,403,829  bpb(doc) 1.63826  bpb(table) 1.63826  trainerTEST 1.64843  vs vw_v129k: -0.01990 (SE 0.00101, z -19.7)

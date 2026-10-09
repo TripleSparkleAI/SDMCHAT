@@ -1,0 +1,17 @@
+2026-10-03T17:23:48Z STAMPED: driver 595.84, NVIDIA GeForce RTX 5090, 32607 MiB;595.84, NVIDIA GeForce RTX 5090, 32607 MiB;torch 2.8.0+cu128 12.8;nproc_all 96;cpu_max 4608000 100000;memory_max 91573190656;disk overlay         100G   64M  100G   1% /;
+2026-10-03T17:23:48Z DEPS start
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_AU.UTF-8",
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("C.UTF-8").
+debconf: delaying package configuration, since apt-utils is not installed
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-03T17:24:13Z DEPS done
+2026-10-03T17:24:13Z DATA start (rebuild S0 shards from Hugging Face)
+2026-10-03T17:24:41Z sha train c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7 val 89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f token_bytes 69f96025
+2026-10-03T17:24:41Z DATA ALL_MATCH
+2026-10-03T17:24:44Z SELFTEST 32 of 32 checks pass
+2026-10-03T17:24:44Z READY

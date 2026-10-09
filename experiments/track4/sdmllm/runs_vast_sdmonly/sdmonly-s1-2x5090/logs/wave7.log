@@ -1,0 +1,7 @@
+2026-10-05T14:06:20Z gpu0 start w57_sdm_d1024_hm3072_hops16_qgrad1_400M (fill)
+2026-10-05T14:06:20Z gpu1 start w57_sdm_d1024_hm3072_hops16_qgrad1_graded_400M (fill)
+2026-10-05T17:41:15Z gpu0 end w57_sdm_d1024_hm3072_hops16_qgrad1_400M (fill) rc 0
+2026-10-05T17:45:47Z gpu0 start w55_cn_d1024_B512_hm3072_hops128_400M (fill)
+2026-10-05T22:15:45Z gpu1 end w57_sdm_d1024_hm3072_hops16_qgrad1_graded_400M (fill) rc 0
+2026-10-05T22:30:24Z gpu1 start w60_cn_d1024_B512_hm3072_hops16_1600M (fill)
+2026-10-06T04:11:38Z gpu0 end w55_cn_d1024_B512_hm3072_hops128_400M (fill) rc 0

@@ -1,0 +1,13 @@
+{"event": "decoded", "split": "train", "decoded_docs": 64488, "decoded_bytes": 312597547, "provenance_utf8_bytes": 312597547, "decoded_minus_provenance": 0, "capped": false, "source_sha256": "c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7", "secs": 3.8}
+{"event": "decoded", "split": "val", "decoded_docs": 2000, "decoded_bytes": 9623335, "provenance_utf8_bytes": 9623335, "decoded_minus_provenance": 0, "capped": false, "source_sha256": "89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f", "secs": 0.1}
+{"event": "built", "name": "v129k", "out": "/root/settle/sdmllm/data_v129k", "V": 129280, "bytes_per_token_train": 4.770860051033341}
+{"event": "encoded", "name": "v65k", "split": "train", "docs": 64488, "tokens": 64794020, "text_bytes": 312597547, "bytes_per_token": 4.824481441342889, "token_bytes_minus_text_bytes": 0, "encode_secs": 13.1}
+{"event": "encoded", "name": "v65k", "split": "val", "docs": 2000, "tokens": 1982600, "text_bytes": 9623335, "bytes_per_token": 4.853896398668415, "token_bytes_minus_text_bytes": 0, "encode_secs": 0.4}
+{"event": "built", "name": "v65k", "out": "/root/settle/sdmllm/data_v65k", "V": 65536, "bytes_per_token_train": 4.824481441342889}
+{"event": "encoded", "name": "v32k", "split": "train", "docs": 64488, "tokens": 67610913, "text_bytes": 312597547, "bytes_per_token": 4.6234776773388635, "token_bytes_minus_text_bytes": 0, "encode_secs": 13.2}
+{"event": "encoded", "name": "v32k", "split": "val", "docs": 2000, "tokens": 2065452, "text_bytes": 9623335, "bytes_per_token": 4.659190821185871, "token_bytes_minus_text_bytes": 0, "encode_secs": 0.5}
+{"event": "built", "name": "v32k", "out": "/root/settle/sdmllm/data_v32k", "V": 32768, "bytes_per_token_train": 4.6234776773388635}
+{"event": "encoded", "name": "v16k", "split": "train", "docs": 64488, "tokens": 72338329, "text_bytes": 312597547, "bytes_per_token": 4.321326623400438, "token_bytes_minus_text_bytes": 0, "encode_secs": 14.0}
+{"event": "encoded", "name": "v16k", "split": "val", "docs": 2000, "tokens": 2207260, "text_bytes": 9623335, "bytes_per_token": 4.359855658146299, "token_bytes_minus_text_bytes": 0, "encode_secs": 0.4}
+{"event": "built", "name": "v16k", "out": "/root/settle/sdmllm/data_v16k", "V": 16384, "bytes_per_token_train": 4.321326623400438}
+NEXT -> SDMLLM_DATA=<out-root>/data_<name> python3 track4_sdmonly_train_vocab.py --bytes N --arm sdmonly ...

@@ -1,0 +1,38 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": true}
+/root/settle/code_w5/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "w5_gr_qg1", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 1.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": true}, "B": 32, "T": 256, "tokens_target": 20000000, "steps": 2441, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 101585408}, "flops_per_token_fwd": {"head": 66191360, "body": 3211264.0, "total": 69402624.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T12:09:14Z", "load": [1.05, 1.16, 1.1], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 7.3412, "lr": 0.0029969752030447787, "gnorm": 0.506, "tok_per_s": 49887.3, "load": 1.28125}
+{"event": "step", "step": 200, "loss": 7.2134, "lr": 0.0029735607388399585, "gnorm": 0.396, "tok_per_s": 205545.4, "load": 1.25830078125}
+{"event": "step", "step": 300, "loss": 6.9195, "lr": 0.002927367289311664, "gnorm": 0.267, "tok_per_s": 205109.7, "load": 1.2373046875}
+{"event": "step", "step": 400, "loss": 6.6941, "lr": 0.002859189861351509, "gnorm": 0.336, "tok_per_s": 205974.1, "load": 1.2373046875}
+{"event": "step", "step": 500, "loss": 6.5861, "lr": 0.0027702018145079606, "gnorm": 0.308, "tok_per_s": 205651.1, "load": 1.21826171875}
+eval 500 {'bpb': 2.3442962298716763, 'nats_per_token': 7.068335406618231, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 600, "loss": 6.3864, "lr": 0.002661934667020818, "gnorm": 0.481, "tok_per_s": 147117.0, "load": 1.20068359375}
+{"event": "step", "step": 700, "loss": 6.4896, "lr": 0.0025362517378079456, "gnorm": 3.088, "tok_per_s": 205113.9, "load": 1.1845703125}
+{"event": "step", "step": 800, "loss": 6.7893, "lr": 0.0023953160780357456, "gnorm": 1.593, "tok_per_s": 205184.8, "load": 1.16943359375}
+{"event": "step", "step": 900, "loss": 7.1295, "lr": 0.002241553244183264, "gnorm": 123.374, "tok_per_s": 204740.3, "load": 1.15576171875}
+{"event": "step", "step": 1000, "loss": 7.4786, "lr": 0.002077609553289712, "gnorm": 970.617, "tok_per_s": 204943.3, "load": 1.14306640625}
+eval 1000 {'bpb': 2.5739577980928985, 'nats_per_token': 7.760792688045668, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 1100, "loss": 7.3049, "lr": 0.0019063065388285076, "gnorm": 23469.283, "tok_per_s": 145225.8, "load": 1.13134765625}
+{"event": "step", "step": 1200, "loss": 7.51, "lr": 0.0017305923910396388, "gnorm": 3576.91, "tok_per_s": 205670.7, "load": 1.12060546875}
+{"event": "step", "step": 1300, "loss": 7.3343, "lr": 0.001553491217450742, "gnorm": 11016.009, "tok_per_s": 205058.5, "load": 1.12060546875}
+{"event": "step", "step": 1400, "loss": 7.5312, "lr": 0.001378050996832694, "gnorm": 8182.482, "tok_per_s": 205847.1, "load": 1.11083984375}
+{"event": "step", "step": 1500, "loss": 7.7244, "lr": 0.0012072911223220046, "gnorm": 3096.826, "tok_per_s": 205770.3, "load": 1.1015625}
+eval 1500 {'bpb': 2.6174208162214945, 'nats_per_token': 7.891838921026925, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 1600, "loss": 7.5394, "lr": 0.0010441504365128757, "gnorm": 2057.067, "tok_per_s": 148323.5, "load": 1.09326171875}
+{"event": "step", "step": 1700, "loss": 7.4372, "lr": 0.0008914366528548352, "gnorm": 11845.604, "tok_per_s": 205364.9, "load": 1.08544921875}
+{"event": "step", "step": 1800, "loss": 7.6566, "lr": 0.0007517780338329788, "gnorm": 5322.456, "tok_per_s": 205754.6, "load": 1.078125}
+{"event": "step", "step": 1900, "loss": 7.4665, "lr": 0.0006275781575677816, "gnorm": 13512.151, "tok_per_s": 205445.2, "load": 1.078125}
+{"event": "step", "step": 2000, "loss": 7.5013, "lr": 0.0005209745513185531, "gnorm": 112164.18, "tok_per_s": 205706.4, "load": 1.07177734375}
+eval 2000 {'bpb': 2.6244915851604027, 'nats_per_token': 7.913158140759509, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 2100, "loss": 7.4007, "lr": 0.0004338019038237257, "gnorm": 78135.219, "tok_per_s": 147027.4, "load": 1.06591796875}
+{"event": "step", "step": 2200, "loss": 7.5357, "lr": 0.00036756048960763494, "gnorm": 58209.129, "tok_per_s": 205769.3, "load": 1.060546875}
+{"event": "step", "step": 2300, "loss": 7.5619, "lr": 0.0003233903486835241, "gnorm": 3857.45, "tok_per_s": 205787.9, "load": 1.0556640625}
+{"event": "step", "step": 2400, "loss": 7.5865, "lr": 0.0003020516660299287, "gnorm": 48355.742, "tok_per_s": 205642.7, "load": 0.970703125}
+{"event": "step", "step": 2441, "loss": 7.4558, "lr": 0.0003000011633705311, "gnorm": 69147.695, "tok_per_s": 508267.4, "load": 0.970703125}
+FINAL w5_gr_qg1 {"bpb": 2.2294095646065766, "nats_per_token": 7.490478004690437, "tokens": 995323, "bytes": 4824566}
+ABLATE w5_gr_qg1 {"val_test_ablate_zero_read": 2.2291, "val_test_ablate_shuffle_keys": 2.2291} used [0.0627, 0.0329, 0.0372, 0.0348]
+NEXT -> python3 track4_sdmonly_summary.py

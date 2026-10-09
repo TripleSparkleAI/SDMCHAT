@@ -1,0 +1,4 @@
+run             arm              TEST bpb     vs p0_A_c       SE       z  zero_read   shuffle  non-emb M    tok/s  load
+w7_mq_d512_60M  qwen              1.34633      -0.32155  0.00145  -221.9                            7.38   170697   1.0
+w7_ch_d512_60M  sdmonly           1.45053      -0.21736  0.00104  -209.5    1.50317   1.48306     273.17   115132   0.1
+NEXT -> record the table in PLAN_SDMONLY_TWO_DAY_PUSH_2026-10-03.md and score the sealed predictions

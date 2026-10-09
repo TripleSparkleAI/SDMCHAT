@@ -1,0 +1,162 @@
+{
+ "run": "c60_R_Q",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 4,
+  "decays": [
+   0.8,
+   0.97
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 60000000,
+ "steps": 7324,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 1.0,
+ "store_wd": 0.1,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2902784,
+  "frozen_store_values": 0,
+  "total_trainable": 35998464
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 6324224.0,
+  "total": 72515584.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T12:07:25Z",
+  "load": [
+   18.06,
+   20.77,
+   15.25
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 284.6
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T12:11:58Z",
+  "load": [
+   29.15,
+   27.98,
+   19.8
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 278.3
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.056658422011905
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9167708298595514
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.8406706034155835
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.7827936323359468
+  },
+  {
+   "step": 2500,
+   "tokens": 20480000,
+   "bpb_quick": 1.7567627268416062
+  },
+  {
+   "step": 3000,
+   "tokens": 24576000,
+   "bpb_quick": 1.7194963606443132
+  },
+  {
+   "step": 3500,
+   "tokens": 28672000,
+   "bpb_quick": 1.7019590470671464
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "bpb_quick": 1.6822176550883028
+  },
+  {
+   "step": 4500,
+   "tokens": 36864000,
+   "bpb_quick": 1.660225912112592
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.6420447371254252
+  },
+  {
+   "step": 5500,
+   "tokens": 45056000,
+   "bpb_quick": 1.629195667974807
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "bpb_quick": 1.6178728034809395
+  },
+  {
+   "step": 6500,
+   "tokens": 53248000,
+   "bpb_quick": 1.6076918833576086
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "bpb_quick": 1.6075453930220656
+  }
+ ],
+ "val_test": {
+  "bpb": 1.420130905369234,
+  "nats_per_token": 4.771424452162766,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

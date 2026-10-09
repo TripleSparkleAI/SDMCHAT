@@ -1,0 +1,28 @@
+PASS product-key top scores equal brute force
+PASS product-key top locations equal brute force
+PASS logits shape
+PASS zero-initialised values read nothing (equals the no-read floor)
+PASS values receive gradient
+PASS sub-keys receive gradient
+PASS query maps receive gradient
+PASS only the woken rows receive gradient (sparse write)
+PASS zero_read changes the output once values are non-zero
+PASS shuffle_keys changes the output
+PASS causal: earlier positions do not see a later token
+PASS causal control: later positions do change
+PASS dense control FLOPs within 2% of one read
+PASS every store parameter name starts with 'store.'
+PASS share_store keeps one value table
+PASS wave-2 options: logits shape
+PASS wave-2 options: causal
+PASS wave-2 options: zero_read also silences the n-gram tables
+PASS run-time write: zero-initialised output map leaves the model unchanged
+PASS run-time write: changes the output once its map is non-zero
+PASS run-time write: causal
+PASS run-time write: position 0 has nothing to read
+PASS run-time write: its address map receives gradient
+PASS graded read: runs, and with qgrad 1 the feature map receives gradient through the address
+PASS n-gram tables sit in the store group
+PASS untied input table exists and the default model has none
+PASS default model's parameter names are unchanged by the options
+27 of 27 checks pass

@@ -1,0 +1,178 @@
+{
+ "run": "w11_mq_d256_T1024_400M",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 1024,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 688,
+  "train_name": "train_big",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256
+ },
+ "B": 8,
+ "T": 1024,
+ "tokens_target": 400000000,
+ "steps": 48828,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2902784,
+  "frozen_store_values": 0,
+  "total_trainable": 35998464
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 7897088.0,
+  "total": 74088448.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T17:22:50Z",
+  "load": [
+   3.79,
+   5.61,
+   6.85
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "251caa0022de",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.71.05\n595.71.05",
+  "mem_available_gb": 429.0
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-03T18:03:44Z",
+  "load": [
+   9.41,
+   8.13,
+   7.42
+  ],
+  "ncpu": 128,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "251caa0022de",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.71.05\n595.71.05",
+  "mem_available_gb": 318.4
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.5398453704053845
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.4981016515206145
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.4862574658130578
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.4646084448959806
+  },
+  {
+   "step": 25000,
+   "tokens": 204800000,
+   "bpb_quick": 1.4560889290086831
+  },
+  {
+   "step": 30000,
+   "tokens": 245760000,
+   "bpb_quick": 1.4463293235200914
+  },
+  {
+   "step": 35000,
+   "tokens": 286720000,
+   "bpb_quick": 1.432977241137543
+  },
+  {
+   "step": 40000,
+   "tokens": 327680000,
+   "bpb_quick": 1.4253578095826924
+  },
+  {
+   "step": 45000,
+   "tokens": 368640000,
+   "bpb_quick": 1.4232729348274904
+  }
+ ],
+ "val_test": {
+  "bpb": 1.3240734426858787,
+  "nats_per_token": 4.4484581723863865,
+  "tokens": 998388,
+  "bytes": 4839175
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

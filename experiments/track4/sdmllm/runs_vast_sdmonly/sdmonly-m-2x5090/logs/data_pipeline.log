@@ -1,0 +1,75 @@
+row groups 726 rows 726000 cols ['text', 'id', 'dump', 'url', 'file_path', 'language', 'language_score', 'token_count', 'score', 'int_score']
+  row group 1: docs 1000 gpt2 tokens 1.1M  6s
+  row group 2: docs 2000 gpt2 tokens 2.2M  6s
+  row group 3: docs 3000 gpt2 tokens 3.2M  7s
+  row group 4: docs 4000 gpt2 tokens 4.1M  7s
+  row group 5: docs 5000 gpt2 tokens 5.2M  7s
+  row group 6: docs 6000 gpt2 tokens 6.4M  7s
+  row group 7: docs 7000 gpt2 tokens 7.4M  9s
+  row group 8: docs 8000 gpt2 tokens 8.3M  9s
+  row group 9: docs 9000 gpt2 tokens 9.3M  9s
+  row group 10: docs 10000 gpt2 tokens 10.3M  9s
+  row group 11: docs 11000 gpt2 tokens 11.3M  9s
+  row group 12: docs 12000 gpt2 tokens 12.3M  9s
+  row group 13: docs 13000 gpt2 tokens 13.2M  12s
+  row group 14: docs 14000 gpt2 tokens 14.2M  12s
+  row group 15: docs 15000 gpt2 tokens 15.3M  12s
+  row group 16: docs 16000 gpt2 tokens 16.4M  12s
+  row group 17: docs 17000 gpt2 tokens 17.4M  12s
+  row group 18: docs 18000 gpt2 tokens 18.4M  12s
+  row group 19: docs 19000 gpt2 tokens 19.4M  15s
+  row group 20: docs 20000 gpt2 tokens 20.8M  15s
+  row group 21: docs 21000 gpt2 tokens 22.0M  15s
+  row group 22: docs 22000 gpt2 tokens 23.3M  15s
+  row group 23: docs 23000 gpt2 tokens 24.5M  15s
+  row group 24: docs 24000 gpt2 tokens 25.8M  18s
+  row group 25: docs 25000 gpt2 tokens 26.8M  18s
+  row group 26: docs 26000 gpt2 tokens 27.9M  18s
+  row group 27: docs 27000 gpt2 tokens 29.0M  18s
+  row group 28: docs 28000 gpt2 tokens 30.1M  18s
+  row group 29: docs 29000 gpt2 tokens 31.1M  18s
+  row group 30: docs 30000 gpt2 tokens 32.1M  21s
+  row group 31: docs 31000 gpt2 tokens 33.1M  21s
+  row group 32: docs 32000 gpt2 tokens 34.0M  21s
+  row group 33: docs 33000 gpt2 tokens 35.0M  21s
+  row group 34: docs 34000 gpt2 tokens 35.9M  21s
+  row group 35: docs 35000 gpt2 tokens 36.9M  21s
+  row group 36: docs 36000 gpt2 tokens 38.0M  24s
+  row group 37: docs 37000 gpt2 tokens 38.9M  24s
+  row group 38: docs 38000 gpt2 tokens 39.9M  24s
+  row group 39: docs 39000 gpt2 tokens 40.9M  24s
+  row group 40: docs 40000 gpt2 tokens 41.9M  24s
+  row group 41: docs 41000 gpt2 tokens 42.9M  24s
+  row group 42: docs 42000 gpt2 tokens 44.0M  26s
+  row group 43: docs 43000 gpt2 tokens 45.1M  26s
+  row group 44: docs 44000 gpt2 tokens 46.2M  27s
+  row group 45: docs 45000 gpt2 tokens 47.3M  27s
+  row group 46: docs 46000 gpt2 tokens 48.5M  27s
+  row group 47: docs 47000 gpt2 tokens 49.6M  27s
+  row group 48: docs 48000 gpt2 tokens 50.8M  29s
+  row group 49: docs 49000 gpt2 tokens 51.8M  29s
+  row group 50: docs 50000 gpt2 tokens 52.9M  29s
+  row group 51: docs 51000 gpt2 tokens 53.9M  29s
+  row group 52: docs 52000 gpt2 tokens 55.0M  29s
+  row group 53: docs 53000 gpt2 tokens 56.0M  29s
+  row group 54: docs 54000 gpt2 tokens 57.1M  32s
+  row group 55: docs 55000 gpt2 tokens 58.1M  32s
+  row group 56: docs 56000 gpt2 tokens 59.1M  32s
+  row group 57: docs 57000 gpt2 tokens 60.1M  32s
+  row group 58: docs 58000 gpt2 tokens 61.3M  32s
+  row group 59: docs 59000 gpt2 tokens 62.3M  33s
+  row group 60: docs 60000 gpt2 tokens 63.4M  36s
+  row group 61: docs 61000 gpt2 tokens 64.4M  36s
+  row group 62: docs 62000 gpt2 tokens 65.4M  36s
+  row group 63: docs 63000 gpt2 tokens 66.4M  36s
+  row group 64: docs 64000 gpt2 tokens 67.4M  36s
+  row group 65: docs 65000 gpt2 tokens 68.5M  36s
+  row group 66: docs 66000 gpt2 tokens 69.5M  38s
+  row group 67: docs 66488 gpt2 tokens 70.0M  39s
+read 66488 docs in 39s
+tokenized in 5s
+train {'docs': 64488, 'tokens': 65522263, 'utf8_bytes': 312597547, 'token_bytes_sum_non_bos': 312597547, 'doc_index_range': [0, 64488], 'first_id': '<urn:uuid:0d8a309d-25c5-405d-a08a-c11239f0d717>', 'last_id': '<urn:uuid:4580767c-0523-43d1-a1a3-5dc110e521ca>', 'sha256': 'c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7'}
+val {'docs': 2000, 'tokens': 2000916, 'utf8_bytes': 9623335, 'token_bytes_sum_non_bos': 9623335, 'doc_index_range': [64488, 66488], 'first_id': '<urn:uuid:23a67428-4a53-4a7e-afd3-c553c8c32226>', 'last_id': '<urn:uuid:a4bc932f-9c96-47b4-b854-8fd2405988df>', 'sha256': '89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f'}
+train token_bytes - utf8 bytes = 0
+val token_bytes - utf8 bytes = 0
+done

@@ -1,0 +1,2 @@
+VOCAB_SCORE vw_v129k {"docs": [1000, 2000], "T": 256, "V": 129280, "set": "v129k", "tokens_scored": 945141, "text_bytes": 4593386, "table_bytes": 4593424, "table_minus_text_bytes": 38, "nats": 5279407.06617, "bpb": 1.65816, "bpb_table": 1.65815, "bytes_per_scored_token": 4.86, "trainer_window_test_bpb": 1.66811, "device": "cuda"}
+NEXT -> python3 track4_sdmonly_vocab_score.py --table vw_v129k

@@ -1,0 +1,179 @@
+{
+ "run": "w13_cnmix_d256_T2048_400M",
+ "arm": "sdmonly_none",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 2048,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train_big",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 192,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 4,
+  "mix_heads": 4,
+  "mix_n_sub": 128,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense"
+ },
+ "B": 4,
+ "T": 2048,
+ "tokens_target": 400000000,
+ "steps": 48828,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 38739712,
+  "frozen_store_values": 0,
+  "total_trainable": 71835392
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 47841280.0,
+  "total": 114032640.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T22:30:35Z",
+  "load": [
+   1.14,
+   1.03,
+   0.75
+  ],
+  "ncpu": 96,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "7a36453f97d9",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.84\n595.84",
+  "mem_available_gb": 115.3
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-04T05:30:28Z",
+  "load": [
+   2.04,
+   2.08,
+   2.08
+  ],
+  "ncpu": 96,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "7a36453f97d9",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.84\n595.84",
+  "mem_available_gb": 109.6
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.5694395750520973
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.5416619763291783
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.5302605691756335
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.5177223991400985
+  },
+  {
+   "step": 25000,
+   "tokens": 204800000,
+   "bpb_quick": 1.5106908805197143
+  },
+  {
+   "step": 30000,
+   "tokens": 245760000,
+   "bpb_quick": 1.4916437794967465
+  },
+  {
+   "step": 35000,
+   "tokens": 286720000,
+   "bpb_quick": 1.4738953937500183
+  },
+  {
+   "step": 40000,
+   "tokens": 327680000,
+   "bpb_quick": 1.4645338631354492
+  },
+  {
+   "step": 45000,
+   "tokens": 368640000,
+   "bpb_quick": 1.4599855425573844
+  }
+ ],
+ "val_test": {
+  "bpb": 1.4130744979640435,
+  "nats_per_token": 4.747676286164475,
+  "tokens": 998390,
+  "bytes": 4839392
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

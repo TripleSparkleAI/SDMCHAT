@@ -1,0 +1,281 @@
+{
+ "run": "w7_ch_rt8_200M",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 192,
+  "ng_rows": 65536,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 8,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 200000000,
+ "steps": 24414,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 136059136,
+  "frozen_store_values": 0,
+  "total_trainable": 169154816
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 6029312.0,
+  "total": 72220672.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T13:41:20Z",
+  "load": [
+   28.08,
+   15.14,
+   16.55
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 273.8
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T14:04:20Z",
+  "load": [
+   8.56,
+   11.45,
+   13.85
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 280.3
+ },
+ "curve": [
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.8773528275351308
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.7776172713539793
+  },
+  {
+   "step": 3000,
+   "tokens": 24576000,
+   "bpb_quick": 1.7434132017768518
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "bpb_quick": 1.73130568062608
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.713955988580181
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "bpb_quick": 1.7064312736176865
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "bpb_quick": 1.7019272494889128
+  },
+  {
+   "step": 8000,
+   "tokens": 65536000,
+   "bpb_quick": 1.7025071993486327
+  },
+  {
+   "step": 9000,
+   "tokens": 73728000,
+   "bpb_quick": 1.6953141442008963
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.697836910270987
+  },
+  {
+   "step": 11000,
+   "tokens": 90112000,
+   "bpb_quick": 1.6810348168174012
+  },
+  {
+   "step": 12000,
+   "tokens": 98304000,
+   "bpb_quick": 1.6943591094755475
+  },
+  {
+   "step": 13000,
+   "tokens": 106496000,
+   "bpb_quick": 1.6843601157948456
+  },
+  {
+   "step": 14000,
+   "tokens": 114688000,
+   "bpb_quick": 1.6811469784242046
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.6769606927824052
+  },
+  {
+   "step": 16000,
+   "tokens": 131072000,
+   "bpb_quick": 1.6714973626118037
+  },
+  {
+   "step": 17000,
+   "tokens": 139264000,
+   "bpb_quick": 1.6752487649572665
+  },
+  {
+   "step": 18000,
+   "tokens": 147456000,
+   "bpb_quick": 1.6716912329208835
+  },
+  {
+   "step": 19000,
+   "tokens": 155648000,
+   "bpb_quick": 1.6746011859199605
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.6679380113109943
+  },
+  {
+   "step": 21000,
+   "tokens": 172032000,
+   "bpb_quick": 1.6702046565892448
+  },
+  {
+   "step": 22000,
+   "tokens": 180224000,
+   "bpb_quick": 1.6608204160877222
+  },
+  {
+   "step": 23000,
+   "tokens": 188416000,
+   "bpb_quick": 1.66461223774283
+  },
+  {
+   "step": 24000,
+   "tokens": 196608000,
+   "bpb_quick": 1.6593536143694128
+  }
+ ],
+ "val_test": {
+  "bpb": 1.4674611032325482,
+  "nats_per_token": 4.9304467384582695,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 192,
+  "ng_rows": 65536,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 8,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "store_params": 101187584
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.5243614336109452,
+  "nats_per_token": 5.121623218511729,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.5492265838647363,
+  "nats_per_token": 5.205166352091231,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.08929443359375,
+  0.2194366455078125,
+  0.669708251953125,
+  0.171600341796875
+ ],
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

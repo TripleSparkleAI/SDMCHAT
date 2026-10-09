@@ -1,0 +1,10 @@
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 0, "loss": 4.0171, "train_acc": 0.0, "grad_mem": 13.6615, "grad_rest": 1.4775, "lr": 7.500000000000001e-05, "T": 29, "sec": 1.0}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 500, "loss": 1.6726, "train_acc": 0.3281, "grad_mem": 1.7001, "grad_rest": 1.6387, "lr": 0.002649375296051676, "T": 31, "sec": 75.8}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 1000, "loss": 1.3322, "train_acc": 0.4062, "grad_mem": 1.0837, "grad_rest": 1.609, "lr": 0.001693269629721735, "T": 21, "sec": 106.7}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 1500, "loss": 1.2995, "train_acc": 0.375, "grad_mem": 1.2809, "grad_rest": 1.6426, "lr": 0.0007108285566852934, "T": 30, "sec": 123.2}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 1999, "loss": 1.3158, "train_acc": 0.4219, "grad_mem": 1.3382, "grad_rest": 1.9405, "lr": 0.0003000017341684571, "T": 20, "sec": 136.8}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 16, "T": 31, "accuracy": 0.3671875, "n_scored": 512, "n_sequences": 256, "seconds": 0.04}}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 100, "T": 115, "accuracy": 0.337890625, "n_scored": 512, "n_sequences": 256, "seconds": 0.135}}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 1000, "T": 1015, "accuracy": 0.373046875, "n_scored": 512, "n_sequences": 256, "seconds": 0.943}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_tiny4pairs_addrbias1_recall_onesdm_s0.json"}
+NEXT -> python3 track4_onesdm_puzzles.py --cost --arms onesdm

@@ -1,0 +1,55 @@
+2026-10-03T12:02:48Z gpu0 start c60_A_c
+2026-10-03T12:03:08Z gpu1 start c60_A_none
+2026-10-03T12:03:28Z gpu2 start c60_A_dense
+2026-10-03T12:03:48Z gpu3 start c60_R_S
+2026-10-03T12:07:19Z gpu1 end c60_A_none rc 0
+2026-10-03T12:07:19Z gpu1 start c60_R_Q
+2026-10-03T12:07:55Z gpu2 end c60_A_dense rc 0
+2026-10-03T12:07:55Z gpu2 start p0_R_S_s1
+2026-10-03T12:08:47Z gpu3 end c60_R_S rc 0
+2026-10-03T12:08:47Z gpu3 start p0_R_N_s1
+2026-10-03T12:09:13Z gpu0 end c60_A_c rc 0
+2026-10-03T12:09:13Z gpu0 start c60_R_N
+2026-10-03T12:09:49Z gpu2 end p0_R_S_s1 rc 0
+2026-10-03T12:09:49Z gpu2 start p0_A_lr6_s1
+2026-10-03T12:10:31Z gpu3 end p0_R_N_s1 rc 0
+2026-10-03T12:10:31Z gpu3 start p0_A_lr10_s1
+2026-10-03T12:12:06Z gpu1 end c60_R_Q rc 0
+2026-10-03T12:12:06Z gpu1 start p0_A_lr1_s1
+2026-10-03T12:12:14Z gpu2 end p0_A_lr6_s1 rc 0
+2026-10-03T12:12:14Z gpu2 start p0_A_h2_s1
+2026-10-03T12:12:56Z gpu3 end p0_A_lr10_s1 rc 0
+2026-10-03T12:12:56Z gpu3 start p0_A_h8_s1
+2026-10-03T12:13:21Z gpu0 end c60_R_N rc 0
+2026-10-03T12:13:21Z gpu0 start p0_R_Q_s1
+2026-10-03T12:14:30Z gpu2 end p0_A_h2_s1 rc 0
+2026-10-03T12:14:30Z gpu2 start p0_A_k16_s1
+2026-10-03T12:14:30Z gpu1 end p0_A_lr1_s1 rc 0
+2026-10-03T12:14:30Z gpu1 start p0_A_slr10_s1
+2026-10-03T12:15:07Z gpu0 end p0_R_Q_s1 rc 0
+2026-10-03T12:15:07Z gpu0 start p0_A_slr1_s1
+2026-10-03T12:16:16Z gpu3 end p0_A_h8_s1 rc 0
+2026-10-03T12:16:16Z gpu3 start p0_A_k64_s1
+2026-10-03T12:16:57Z gpu1 end p0_A_slr10_s1 rc 0
+2026-10-03T12:16:57Z gpu1 start p0_A_n512_s1
+2026-10-03T12:17:02Z gpu2 end p0_A_k16_s1 rc 0
+2026-10-03T12:17:02Z gpu2 start p0_A_soft5_s1
+2026-10-03T12:17:31Z gpu0 end p0_A_slr1_s1 rc 0
+2026-10-03T12:17:31Z gpu0 start p0_A_n128_s1
+2026-10-03T12:19:19Z gpu3 end p0_A_k64_s1 rc 0
+2026-10-03T12:19:19Z gpu3 start p0_A_qg1_s1
+2026-10-03T12:19:40Z gpu2 end p0_A_soft5_s1 rc 0
+2026-10-03T12:19:40Z gpu2 start p0_A_wd_s1
+2026-10-03T12:19:55Z gpu0 end p0_A_n128_s1 rc 0
+2026-10-03T12:19:55Z gpu0 start p0_A_heads4_s1
+2026-10-03T12:20:29Z gpu1 end p0_A_n512_s1 rc 0
+2026-10-03T12:20:30Z gpu1 start p0_A_share_s1
+2026-10-03T12:21:58Z gpu3 end p0_A_qg1_s1 rc 0
+2026-10-03T12:22:08Z gpu2 end p0_A_wd_s1 rc 0
+2026-10-03T12:22:54Z gpu1 end p0_A_share_s1 rc 0
+2026-10-03T12:22:54Z gpu1 start p0_A_wsd_s1
+2026-10-03T12:23:34Z gpu0 end p0_A_heads4_s1 rc 0
+2026-10-03T12:23:34Z gpu0 start p0_A_ro_s1
+2026-10-03T12:25:20Z gpu1 end p0_A_wsd_s1 rc 0
+2026-10-03T12:26:15Z gpu0 end p0_A_ro_s1 rc 0
+2026-10-03T12:26:15Z QUEUE_DONE /root/settle/sdmllm/track4_sdmonly_wave4_queue.txt

@@ -1,0 +1,17 @@
+2026-10-03T12:14:51Z start w3_rt8
+2026-10-03T12:17:03Z end w3_rt8 rc 0
+2026-10-03T12:17:03Z start w3_rt8_shuf
+2026-10-03T12:19:17Z end w3_rt8_shuf rc 0
+2026-10-03T12:19:17Z start w3_rt8_none
+2026-10-03T12:20:45Z end w3_rt8_none rc 0
+2026-10-03T12:20:45Z start w3_rt8_dense
+2026-10-03T12:22:17Z end w3_rt8_dense rc 0
+2026-10-03T12:22:17Z start w3_rt32
+2026-10-03T12:24:28Z end w3_rt32 rc 0
+2026-10-03T12:24:28Z start p0_A_c_s1
+2026-10-03T12:26:28Z end p0_A_c_s1 rc 0
+2026-10-03T12:26:28Z start p0_A_none_s1
+2026-10-03T12:27:47Z end p0_A_none_s1 rc 0
+2026-10-03T12:27:47Z start p0_A_dense_s1
+2026-10-03T12:29:09Z end p0_A_dense_s1 rc 0
+2026-10-03T12:29:09Z WAVE3_DONE

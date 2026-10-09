@@ -1,0 +1,143 @@
+{
+ "run": "p0_A_qg1",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 68489728,
+  "frozen_store_values": 0,
+  "total_trainable": 101585408
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 3211264.0,
+  "total": 69402624.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T12:53:14Z",
+  "load": [
+   1.09,
+   1.2,
+   1.21
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 121.9
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T12:57:16Z",
+  "load": [
+   1.14,
+   1.19,
+   1.2
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 120.5
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.912116341775377
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 2.7403814184624746
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 2.713250174384042
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 2.7105445326898825
+  }
+ ],
+ "val_test": {
+  "bpb": 2.313539034043192,
+  "nats_per_token": 7.773140262162383,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "store_params": 67633152
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 2.3179704277498323,
+  "nats_per_token": 7.788029072911507,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.3179639308330167,
+  "nats_per_token": 7.788007244256387,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.06304931640625,
+  0.1103973388671875,
+  0.096099853515625,
+  0.0658416748046875
+ ]
+}

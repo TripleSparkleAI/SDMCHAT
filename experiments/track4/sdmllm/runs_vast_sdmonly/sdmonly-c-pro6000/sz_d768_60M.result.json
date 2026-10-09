@@ -1,0 +1,193 @@
+{
+ "run": "sz_d768_60M",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 768,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 60000000,
+ "steps": 7324,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 99287040,
+  "non_embedding_trainable": 210056704,
+  "frozen_store_values": 0,
+  "total_trainable": 309343744
+ },
+ "flops_per_token_fwd": {
+  "head": 198574080,
+  "body": 18808832.0,
+  "total": 217382912.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:05:01Z",
+  "load": [
+   1.04,
+   1.27,
+   1.01
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:15:36Z",
+  "load": [
+   1.08,
+   1.13,
+   1.04
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 120.3
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.0789845932482396
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9953886809741446
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.9515351537815229
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.9208436883192943
+  },
+  {
+   "step": 2500,
+   "tokens": 20480000,
+   "bpb_quick": 1.9009025727458255
+  },
+  {
+   "step": 3000,
+   "tokens": 24576000,
+   "bpb_quick": 1.8751367261685499
+  },
+  {
+   "step": 3500,
+   "tokens": 28672000,
+   "bpb_quick": 1.8726146719845391
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "bpb_quick": 1.8619450025181628
+  },
+  {
+   "step": 4500,
+   "tokens": 36864000,
+   "bpb_quick": 1.852389039274489
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.8456629022966826
+  },
+  {
+   "step": 5500,
+   "tokens": 45056000,
+   "bpb_quick": 1.8321933848782463
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "bpb_quick": 1.824482313959737
+  },
+  {
+   "step": 6500,
+   "tokens": 53248000,
+   "bpb_quick": 1.8199935558324536
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "bpb_quick": 1.8182566328960668
+  }
+ ],
+ "val_test": {
+  "bpb": 1.559515193379725,
+  "nats_per_token": 5.23973451959816,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "store_params": 202375168
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 2.5907144941065945,
+  "nats_per_token": 8.70440776904206,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.416049267019688,
+  "nats_per_token": 8.11755909733574,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.0676422119140625,
+  0.0587615966796875,
+  0.0424346923828125,
+  0.062896728515625
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "run": "p0_R_N_s1",
+ "arm": "sdm_nostore",
+ "seed": 1,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 1,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 1.0,
+ "store_wd": 0.1,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 1384704,
+  "frozen_store_values": 0,
+  "total_trainable": 34480384
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 3088384.0,
+  "total": 69279744.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T12:08:53Z",
+  "load": [
+   21.75,
+   23.32,
+   16.77
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 296.2
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T12:10:24Z",
+  "load": [
+   27.78,
+   25.09,
+   17.99
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 270.4
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.0528227007152062
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9539054180336184
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.8831824626430431
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.8466203890740842
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6019233699322974,
+  "nats_per_token": 5.382219560807773,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

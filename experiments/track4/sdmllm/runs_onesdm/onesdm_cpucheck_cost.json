@@ -1,0 +1,248 @@
+{
+ "lane": "ONESDMSTREAM",
+ "kind": "onesdm_cost",
+ "label": "cpucheck",
+ "model_cfg": {
+  "d": 256,
+  "layers": 4,
+  "mlp_f": 688,
+  "heads": 4,
+  "n_sub": 32,
+  "d_a": 32,
+  "k": 16,
+  "decays": [
+   0.0,
+   0.8,
+   0.99,
+   1.0
+  ],
+  "learn_decay": false,
+  "write_gate": true,
+  "gate_bias": 0.0,
+  "read_mode": "mean",
+  "out_norm": true,
+  "chunk": 128,
+  "mem_in_grad": 1.0,
+  "arc_d_c": 64,
+  "arc_n_sub": 16,
+  "arc_k": 4,
+  "arc_slot_keep": 4,
+  "arc_window": 16,
+  "arc_n_fetch": 4,
+  "arc_weighting": "soft",
+  "max_len": 16400
+ },
+ "reps": 2,
+ "rows": [
+  {
+   "arm": "onesdm",
+   "T": 1024,
+   "sec_per_token": 7.458365820312506e-05,
+   "sec_total": 0.07637366600000006,
+   "decode_state_bytes": 4259840,
+   "decode_state_bytes_per_token": 4160.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "onesdm",
+   "T": 4096,
+   "sec_per_token": 6.128368115234376e-05,
+   "sec_total": 0.25101795800000004,
+   "decode_state_bytes": 4259840,
+   "decode_state_bytes_per_token": 1040.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "onesdm",
+   "T": 16384,
+   "sec_per_token": 5.7513328552246095e-05,
+   "sec_total": 0.942298375,
+   "decode_state_bytes": 4259840,
+   "decode_state_bytes_per_token": 260.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "onesdm_archive",
+   "T": 1024,
+   "sec_per_token": 8.39531650390626e-05,
+   "sec_total": 0.0859680410000001,
+   "decode_state_bytes": 5857280,
+   "decode_state_bytes_per_token": 5720.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3121184,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "onesdm_archive",
+   "T": 4096,
+   "sec_per_token": 6.927695727539053e-05,
+   "sec_total": 0.2837584169999996,
+   "decode_state_bytes": 10575872,
+   "decode_state_bytes_per_token": 2582.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3121184,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "onesdm_archive",
+   "T": 16384,
+   "sec_per_token": 7.383070880126946e-05,
+   "sec_total": 1.2096423329999988,
+   "decode_state_bytes": 29450240,
+   "decode_state_bytes_per_token": 1797.5,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3121184,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "plain",
+   "T": 1024,
+   "sec_per_token": 6.064819335937707e-06,
+   "sec_total": 0.006210375000000212,
+   "decode_state_bytes": 0,
+   "decode_state_bytes_per_token": 0.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "plain",
+   "T": 4096,
+   "sec_per_token": 5.82720947265615e-06,
+   "sec_total": 0.02386824999999959,
+   "decode_state_bytes": 0,
+   "decode_state_bytes_per_token": 0.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "plain",
+   "T": 16384,
+   "sec_per_token": 4.552597045898404e-06,
+   "sec_total": 0.07458974999999946,
+   "decode_state_bytes": 0,
+   "decode_state_bytes_per_token": 0.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2923808,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "sdmonly",
+   "T": 1024,
+   "sec_per_token": 4.4585489257812846e-05,
+   "sec_total": 0.045655541000000355,
+   "decode_state_bytes": 13312,
+   "decode_state_bytes_per_token": 13.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3552768,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "sdmonly",
+   "T": 4096,
+   "sec_per_token": 2.822755957031242e-05,
+   "sec_total": 0.11562008399999968,
+   "decode_state_bytes": 13312,
+   "decode_state_bytes_per_token": 3.25,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3552768,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "sdmonly",
+   "T": 16384,
+   "sec_per_token": 2.555402630615236e-05,
+   "sec_total": 0.41867716700000024,
+   "decode_state_bytes": 13312,
+   "decode_state_bytes_per_token": 0.8125,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 3552768,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "yardstick_transformer",
+   "T": 1024,
+   "sec_per_token": 1.9322834960937632e-05,
+   "sec_total": 0.019786583000000135,
+   "decode_state_bytes": 4194304,
+   "decode_state_bytes_per_token": 4096.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2902784,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "yardstick_transformer",
+   "T": 4096,
+   "sec_per_token": 2.4339915039062708e-05,
+   "sec_total": 0.09969629200000085,
+   "decode_state_bytes": 16777216,
+   "decode_state_bytes_per_token": 4096.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2902784,
+    "embedding": 99328
+   }
+  },
+  {
+   "arm": "yardstick_transformer",
+   "T": 16384,
+   "sec_per_token": 6.79099680175781e-05,
+   "sec_total": 1.1126369159999996,
+   "decode_state_bytes": 67108864,
+   "decode_state_bytes_per_token": 4096.0,
+   "peak_mem_bytes": null,
+   "params": {
+    "non_embedding": 2902784,
+    "embedding": 99328
+   }
+  }
+ ],
+ "stamps": {
+  "host": "HappyRobots-MacBook-Pro.local",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "python": "3.9.6",
+  "loadavg": [
+   3.81591796875,
+   6.03369140625,
+   10.7119140625
+  ],
+  "cpu_count": 18,
+  "utc": "2026-10-06T12:42:56Z",
+  "git_sha": "930b7a95be101cc7dbdfed91124fa33b9c57a585"
+ },
+ "note": "forward pass over the whole sequence, B 1, best of reps after one warm run; on the CPU no peak memory"
+}

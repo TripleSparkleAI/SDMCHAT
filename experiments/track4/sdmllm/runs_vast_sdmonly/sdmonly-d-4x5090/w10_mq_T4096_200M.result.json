@@ -1,0 +1,253 @@
+{
+ "run": "w10_mq_T4096_200M",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 4096,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256
+ },
+ "B": 2,
+ "T": 4096,
+ "tokens_target": 200000000,
+ "steps": 24414,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2902784,
+  "frozen_store_values": 0,
+  "total_trainable": 35998464
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 14188544.0,
+  "total": 80379904.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T15:51:57Z",
+  "load": [
+   11.97,
+   16.49,
+   19.16
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 293.0
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T16:14:26Z",
+  "load": [
+   19.0,
+   19.15,
+   19.01
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "c181019dcdae",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.64.03\n575.64.03\n575.64.03\n575.64.03",
+  "mem_available_gb": 292.6
+ },
+ "curve": [
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.7108982652462275
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.5648334860691209
+  },
+  {
+   "step": 3000,
+   "tokens": 24576000,
+   "bpb_quick": 1.5192110031281678
+  },
+  {
+   "step": 4000,
+   "tokens": 32768000,
+   "bpb_quick": 1.4951182861545471
+  },
+  {
+   "step": 5000,
+   "tokens": 40960000,
+   "bpb_quick": 1.4759139012142464
+  },
+  {
+   "step": 6000,
+   "tokens": 49152000,
+   "bpb_quick": 1.4668830833975515
+  },
+  {
+   "step": 7000,
+   "tokens": 57344000,
+   "bpb_quick": 1.45437043753448
+  },
+  {
+   "step": 8000,
+   "tokens": 65536000,
+   "bpb_quick": 1.4500662910451583
+  },
+  {
+   "step": 9000,
+   "tokens": 73728000,
+   "bpb_quick": 1.4398608162039384
+  },
+  {
+   "step": 10000,
+   "tokens": 81920000,
+   "bpb_quick": 1.4338831988313199
+  },
+  {
+   "step": 11000,
+   "tokens": 90112000,
+   "bpb_quick": 1.4253208463539688
+  },
+  {
+   "step": 12000,
+   "tokens": 98304000,
+   "bpb_quick": 1.4244442419019605
+  },
+  {
+   "step": 13000,
+   "tokens": 106496000,
+   "bpb_quick": 1.4172164871226982
+  },
+  {
+   "step": 14000,
+   "tokens": 114688000,
+   "bpb_quick": 1.4123628461321216
+  },
+  {
+   "step": 15000,
+   "tokens": 122880000,
+   "bpb_quick": 1.402134881309038
+  },
+  {
+   "step": 16000,
+   "tokens": 131072000,
+   "bpb_quick": 1.3999409196913233
+  },
+  {
+   "step": 17000,
+   "tokens": 139264000,
+   "bpb_quick": 1.3960947128366832
+  },
+  {
+   "step": 18000,
+   "tokens": 147456000,
+   "bpb_quick": 1.3898736014252226
+  },
+  {
+   "step": 19000,
+   "tokens": 155648000,
+   "bpb_quick": 1.3857573271483226
+  },
+  {
+   "step": 20000,
+   "tokens": 163840000,
+   "bpb_quick": 1.38140787902688
+  },
+  {
+   "step": 21000,
+   "tokens": 172032000,
+   "bpb_quick": 1.3803272787342131
+  },
+  {
+   "step": 22000,
+   "tokens": 180224000,
+   "bpb_quick": 1.3764203033588522
+  },
+  {
+   "step": 23000,
+   "tokens": 188416000,
+   "bpb_quick": 1.3744588320403432
+  },
+  {
+   "step": 24000,
+   "tokens": 196608000,
+   "bpb_quick": 1.3748033433576754
+  }
+ ],
+ "val_test": {
+  "bpb": 1.3508329185802197,
+  "nats_per_token": 4.538562190094492,
+  "tokens": 998389,
+  "bytes": 4839394
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

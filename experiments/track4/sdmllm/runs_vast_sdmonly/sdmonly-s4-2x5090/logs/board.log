@@ -1,0 +1,9 @@
+2026-10-05T14:07:56Z code copy start
+2026-10-05T14:08:07Z code copy done
+2026-10-05T14:08:07Z data copy start
+2026-10-05T14:32:36Z data copy done: train_big 8037279356 bytes in 1469 s
+2026-10-05T14:33:30Z sha train_big 6ccc9836512c2cfa2181b36042166026bafb5731512066b80ccfa8ad64be200d
+2026-10-05T14:33:32Z sha train c2f7bc059eb399cad90a1ab38b2ecba0a679adc179d284aa0d34697dbdb9e5c7 val 89fbba2c788c0f15c4835cdc9197c035c1a9ad45365e83d3692c737653aa974f token_bytes 69f96025
+2026-10-05T14:33:32Z DATA ALL_MATCH (copied from box e)
+2026-10-05T14:36:19Z cleaner started
+2026-10-05T14:36:19Z fill started on track4_sdmonly_wave57_fill_s4.txt

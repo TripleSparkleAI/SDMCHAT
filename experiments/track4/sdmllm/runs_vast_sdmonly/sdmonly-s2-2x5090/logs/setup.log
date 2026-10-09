@@ -1,0 +1,14 @@
+2026-10-05T14:38:05Z STAMPED: driver 595.71.05, NVIDIA GeForce RTX 5090, 32607 MiB;595.71.05, NVIDIA GeForce RTX 5090, 32607 MiB;torch 2.8.0+cu128 12.8;nproc_all 128;cpu_max 3071999 100000;memory_max 259509977088;disk overlay         100G  7.8G   93G   8% /;
+2026-10-05T14:38:05Z DEPS start
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = "en_AU.UTF-8",
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("C.UTF-8").
+debconf: delaying package configuration, since apt-utils is not installed
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-05T14:39:17Z DEPS done
+2026-10-05T14:39:23Z SELFTEST 32 of 32 checks pass
+2026-10-05T14:39:23Z READY

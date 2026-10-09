@@ -1,0 +1,36 @@
+2026-10-03T12:09:11Z start w5_gr_qg1
+2026-10-03T12:11:30Z end w5_gr_qg1 rc 0
+2026-10-03T12:11:30Z start w5_combo
+2026-10-03T12:12:13Z end w5_combo rc 1
+2026-10-03T12:12:13Z start w5_combo_none
+2026-10-03T12:12:26Z end w5_combo_none rc 1
+2026-10-03T12:12:26Z start w5_gr
+2026-10-03T12:12:27Z end w5_gr rc 1
+2026-10-03T12:12:27Z start w5_combo_gr
+2026-10-03T12:12:27Z end w5_combo_gr rc 1
+2026-10-03T12:12:27Z start w5_combo_ng
+2026-10-03T12:12:27Z end w5_combo_ng rc 1
+2026-10-03T12:12:27Z start w5_gr_qg1_k64
+2026-10-03T12:12:27Z end w5_gr_qg1_k64 rc 1
+2026-10-03T12:12:27Z start w5_gr_qg1_h8
+2026-10-03T12:12:27Z end w5_gr_qg1_h8 rc 1
+2026-10-03T12:12:27Z start w5_gr_qg1_slr1
+2026-10-03T12:12:27Z end w5_gr_qg1_slr1 rc 1
+2026-10-03T12:12:27Z WAVE5_PASS1_DONE
+2026-10-03T12:19:36Z start w5_combo
+2026-10-03T12:21:57Z end w5_combo rc 0
+2026-10-03T12:21:57Z start w5_combo_none
+2026-10-03T12:23:36Z end w5_combo_none rc 0
+2026-10-03T12:23:36Z start w5_gr
+2026-10-03T12:25:54Z end w5_gr rc 0
+2026-10-03T12:25:54Z start w5_combo_gr
+2026-10-03T12:28:24Z end w5_combo_gr rc 0
+2026-10-03T12:28:24Z start w5_combo_ng
+2026-10-03T12:31:01Z end w5_combo_ng rc 0
+2026-10-03T12:31:01Z start w5_gr_qg1_k64
+2026-10-03T12:33:49Z end w5_gr_qg1_k64 rc 0
+2026-10-03T12:33:49Z start w5_gr_qg1_h8
+2026-10-03T12:36:52Z end w5_gr_qg1_h8 rc 0
+2026-10-03T12:36:52Z start w5_gr_qg1_slr1
+2026-10-03T12:39:06Z end w5_gr_qg1_slr1 rc 0
+2026-10-03T12:39:07Z WAVE5_DONE

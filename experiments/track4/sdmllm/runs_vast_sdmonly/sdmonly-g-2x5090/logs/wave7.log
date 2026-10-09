@@ -1,0 +1,23 @@
+2026-10-03T16:31:16Z gpu0 start w11_mq_d256_1600M
+2026-10-03T16:31:36Z gpu1 start w11_cn_d256_1600M
+2026-10-03T18:22:15Z gpu0 end w11_mq_d256_1600M rc 0
+2026-10-03T18:22:15Z gpu0 start w11_mq_d512_100M
+2026-10-03T18:33:06Z gpu0 end w11_mq_d512_100M rc 0
+2026-10-03T18:33:06Z gpu0 start w11_mq_d768_100M
+2026-10-03T18:48:13Z gpu0 end w11_mq_d768_100M rc 0
+2026-10-03T20:50:57Z gpu1 end w11_cn_d256_1600M rc 0
+2026-10-03T20:50:57Z gpu1 start w11_cn_d256_400M
+2026-10-03T21:55:10Z gpu1 end w11_cn_d256_400M rc 0
+2026-10-03T21:55:10Z gpu1 start w11_cn_d512_400M
+2026-10-03T22:17:49Z gpu0 start w13_cnmix_d1024_T1024_200M (fill)
+2026-10-03T23:27:59Z gpu1 end w11_cn_d512_400M rc 0
+2026-10-03T23:27:59Z WAVE7_DONE
+2026-10-03T23:44:30Z gpu1 start w16_mq_d256_B1024_400M (fill)
+2026-10-04T00:45:32Z gpu0 end w13_cnmix_d1024_T1024_200M (fill) rc 0
+2026-10-04T00:48:47Z gpu1 end w16_mq_d256_B1024_400M (fill) rc 0
+2026-10-04T00:48:54Z FILL_DONE code_w7/track4_sdmonly_wave13_fill_g.txt
+2026-10-04T00:49:32Z FILL_DONE code_w7/track4_sdmonly_wave16_fill_g.txt
+2026-10-04T00:50:13Z gpu0 start w20_cnmix_d1024_T1024_B32_400M (fill)
+2026-10-04T01:03:28Z gpu1 start w21_cn_d1536_B128_800M (fill)
+2026-10-04T05:21:25Z gpu0 end w20_cnmix_d1024_T1024_B32_400M (fill) rc 0
+2026-10-04T05:29:41Z gpu0 start w36_cnmix_d1024_T1024_B128_400M (fill)

@@ -1,0 +1,554 @@
+{
+ "run": "w61_chat_cn_w256_100M",
+ "finetune": {
+  "task": "chat",
+  "mix": [
+   {
+    "role": "chat",
+    "shard": "chat_train",
+    "path": "/root/settle/chatdata/chat_train.u32",
+    "frac": 0.5,
+    "rows_per_batch": 256,
+    "masked": false,
+    "tokens": 378859013,
+    "fingerprint": "bb1798e391ec640b"
+   },
+   {
+    "role": "web",
+    "shard": "train_big",
+    "path": "/root/settle/chatdata/train_big.u32",
+    "frac": 0.5,
+    "rows_per_batch": 256,
+    "masked": false,
+    "tokens": 2009319839,
+    "fingerprint": "b6e358690d04b090"
+   }
+  ],
+  "B": 512,
+  "T": 256,
+  "accum": 64,
+  "seed": 0,
+  "tokens": 100000000,
+  "steps_total": 762,
+  "warmup_steps": 15,
+  "cooldown_frac": 0.1,
+  "lr": 0.001,
+  "muon_lr": 0.006666666666666667,
+  "muon_wd": 0.0,
+  "store_lr_mult": 3.0,
+  "store_wd": 0.0,
+  "clip": 1.0,
+  "loss": "chunked",
+  "doc_start_frac": 0.7,
+  "eval_T": 256,
+  "body_opt": "muon",
+  "init": "/root/settle/ck/true_cn_d1536_hm6144_hops16_2B/last.pt",
+  "lineage": [
+   {
+    "what": "base",
+    "path": "/root/settle/ck/true_cn_d1536_hm6144_hops16_2B/last.pt",
+    "step": 15258,
+    "arm": "sdmonly_none"
+   },
+   {
+    "what": "chat",
+    "run": "w61_chat_cn_w256_100M",
+    "init": "/root/settle/ck/true_cn_d1536_hm6144_hops16_2B/last.pt",
+    "init_step": 15258
+   }
+  ]
+ },
+ "arm": "sdmonly_none",
+ "cfg": {
+  "d": 1536,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 16,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "finetune:chat",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 6144,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense",
+  "data": {
+   "finetune": true,
+   "task": "chat",
+   "B_global": 512,
+   "T": 256,
+   "train_n": null,
+   "fingerprint": "bb1798e391ec640b+b6e358690d04b090",
+   "shards": [
+    {
+     "role": "chat",
+     "shard": "chat_train",
+     "path": "/root/settle/chatdata/chat_train.u32",
+     "frac": 0.5,
+     "rows_per_batch": 256,
+     "masked": false,
+     "tokens": 378859013,
+     "fingerprint": "bb1798e391ec640b"
+    },
+    {
+     "role": "web",
+     "shard": "train_big",
+     "path": "/root/settle/chatdata/train_big.u32",
+     "frac": 0.5,
+     "rows_per_batch": 256,
+     "masked": false,
+     "tokens": 2009319839,
+     "fingerprint": "b6e358690d04b090"
+    }
+   ]
+  }
+ },
+ "before": {
+  "test": {
+   "bpb": 1.022405433546315,
+   "nats_per_token": 3.4351271894745476,
+   "tokens": 995323,
+   "bytes": 4824566,
+   "windows": 3892,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 1.215767892520056,
+   "nats_per_token": 3.9707346504254275,
+   "tokens": 1022736,
+   "bytes": 4819015,
+   "windows": 4000,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ },
+ "after": {
+  "test": {
+   "bpb": 1.039473405801485,
+   "nats_per_token": 3.4924729875691107,
+   "tokens": 995323,
+   "bytes": 4824566,
+   "windows": 3892,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 0.7490137734394541,
+   "nats_per_token": 2.4463016025839637,
+   "tokens": 1022736,
+   "bytes": 4819015,
+   "windows": 4000,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ },
+ "delta_bpb": {
+  "test": 0.017068,
+  "chat_test": -0.466754
+ },
+ "curve": [
+  {
+   "step": 1,
+   "loss": 3.6385
+  },
+  {
+   "step": 10,
+   "loss": 3.5184
+  },
+  {
+   "step": 20,
+   "loss": 3.3301
+  },
+  {
+   "step": 30,
+   "loss": 3.2982
+  },
+  {
+   "step": 40,
+   "loss": 3.2176
+  },
+  {
+   "step": 50,
+   "loss": 3.1661
+  },
+  {
+   "step": 60,
+   "loss": 3.1021
+  },
+  {
+   "step": 70,
+   "loss": 3.1288
+  },
+  {
+   "step": 80,
+   "loss": 3.1432
+  },
+  {
+   "step": 90,
+   "loss": 3.0746
+  },
+  {
+   "step": 100,
+   "loss": 3.1127
+  },
+  {
+   "step": 110,
+   "loss": 3.0417
+  },
+  {
+   "step": 120,
+   "loss": 3.0359
+  },
+  {
+   "step": 130,
+   "loss": 3.0453
+  },
+  {
+   "step": 140,
+   "loss": 3.0398
+  },
+  {
+   "step": 150,
+   "loss": 2.9623
+  },
+  {
+   "step": 160,
+   "loss": 3.0412
+  },
+  {
+   "step": 170,
+   "loss": 3.0007
+  },
+  {
+   "step": 180,
+   "loss": 3.0389
+  },
+  {
+   "step": 190,
+   "loss": 3.0085
+  },
+  {
+   "step": 200,
+   "loss": 2.999
+  },
+  {
+   "step": 210,
+   "loss": 2.9873
+  },
+  {
+   "step": 220,
+   "loss": 2.9563
+  },
+  {
+   "step": 230,
+   "loss": 2.936
+  },
+  {
+   "step": 240,
+   "loss": 3.0393
+  },
+  {
+   "step": 250,
+   "loss": 2.9614
+  },
+  {
+   "step": 260,
+   "loss": 2.9929
+  },
+  {
+   "step": 270,
+   "loss": 2.9976
+  },
+  {
+   "step": 280,
+   "loss": 2.9234
+  },
+  {
+   "step": 290,
+   "loss": 2.9411
+  },
+  {
+   "step": 300,
+   "loss": 2.9672
+  },
+  {
+   "step": 310,
+   "loss": 2.9996
+  },
+  {
+   "step": 320,
+   "loss": 2.9285
+  },
+  {
+   "step": 330,
+   "loss": 2.9947
+  },
+  {
+   "step": 340,
+   "loss": 2.9535
+  },
+  {
+   "step": 350,
+   "loss": 2.9581
+  },
+  {
+   "step": 360,
+   "loss": 2.9266
+  },
+  {
+   "step": 370,
+   "loss": 3.0056
+  },
+  {
+   "step": 380,
+   "loss": 3.0155
+  },
+  {
+   "step": 390,
+   "loss": 2.9631
+  },
+  {
+   "step": 400,
+   "loss": 2.9536
+  },
+  {
+   "step": 410,
+   "loss": 2.9261
+  },
+  {
+   "step": 420,
+   "loss": 2.9502
+  },
+  {
+   "step": 430,
+   "loss": 2.968
+  },
+  {
+   "step": 440,
+   "loss": 2.9464
+  },
+  {
+   "step": 450,
+   "loss": 2.9592
+  },
+  {
+   "step": 460,
+   "loss": 2.9376
+  },
+  {
+   "step": 470,
+   "loss": 2.9288
+  },
+  {
+   "step": 480,
+   "loss": 2.8902
+  },
+  {
+   "step": 490,
+   "loss": 2.9445
+  },
+  {
+   "step": 500,
+   "loss": 2.9283
+  },
+  {
+   "step": 510,
+   "loss": 2.991
+  },
+  {
+   "step": 520,
+   "loss": 2.9495
+  },
+  {
+   "step": 530,
+   "loss": 2.963
+  },
+  {
+   "step": 540,
+   "loss": 2.928
+  },
+  {
+   "step": 550,
+   "loss": 2.9077
+  },
+  {
+   "step": 560,
+   "loss": 2.95
+  },
+  {
+   "step": 570,
+   "loss": 2.8914
+  },
+  {
+   "step": 580,
+   "loss": 2.9374
+  },
+  {
+   "step": 590,
+   "loss": 2.9195
+  },
+  {
+   "step": 600,
+   "loss": 2.9735
+  },
+  {
+   "step": 610,
+   "loss": 2.8868
+  },
+  {
+   "step": 620,
+   "loss": 2.8884
+  },
+  {
+   "step": 630,
+   "loss": 2.9128
+  },
+  {
+   "step": 640,
+   "loss": 2.9166
+  },
+  {
+   "step": 650,
+   "loss": 2.8615
+  },
+  {
+   "step": 660,
+   "loss": 2.901
+  },
+  {
+   "step": 670,
+   "loss": 2.8659
+  },
+  {
+   "step": 680,
+   "loss": 2.9153
+  },
+  {
+   "step": 690,
+   "loss": 2.9206
+  },
+  {
+   "step": 700,
+   "loss": 2.9136
+  },
+  {
+   "step": 710,
+   "loss": 2.9118
+  },
+  {
+   "step": 720,
+   "loss": 2.8748
+  },
+  {
+   "step": 730,
+   "loss": 2.8825
+  },
+  {
+   "step": 740,
+   "loss": 2.9028
+  },
+  {
+   "step": 750,
+   "loss": 2.9029
+  },
+  {
+   "step": 760,
+   "loss": 2.9098
+  },
+  {
+   "step": 762,
+   "loss": 2.9188
+  }
+ ],
+ "quick_evals": [
+  {
+   "step": 500,
+   "test": 1.09383,
+   "chat_test": 0.75935
+  }
+ ],
+ "median_tok_per_s": 22494.9,
+ "seconds_this_session": 4512.0,
+ "device": "cuda",
+ "opt_state": "loaded from the init",
+ "stamp_start": {
+  "utc": "2026-10-06T03:44:23Z",
+  "load": [
+   13.19,
+   14.25,
+   13.5
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "f866f89214cd",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.173.02\n580.173.02",
+  "mem_available_gb": 450.0
+ },
+ "stamp_end": {
+  "utc": "2026-10-06T04:59:36Z",
+  "load": [
+   12.57,
+   12.38,
+   12.53
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "f866f89214cd",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.173.02\n580.173.02",
+  "mem_available_gb": 455.0
+ },
+ "checkpoint": "/root/settle/ck/w61_chat_cn_w256_100M/last.pt"
+}

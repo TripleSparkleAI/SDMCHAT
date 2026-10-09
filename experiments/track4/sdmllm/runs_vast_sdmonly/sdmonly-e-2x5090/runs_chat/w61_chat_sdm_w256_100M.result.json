@@ -1,0 +1,554 @@
+{
+ "run": "w61_chat_sdm_w256_100M",
+ "finetune": {
+  "task": "chat",
+  "mix": [
+   {
+    "role": "chat",
+    "shard": "chat_train",
+    "path": "/root/settle/chatdata/chat_train.u32",
+    "frac": 0.5,
+    "rows_per_batch": 256,
+    "masked": false,
+    "tokens": 378859013,
+    "fingerprint": "bb1798e391ec640b"
+   },
+   {
+    "role": "web",
+    "shard": "train_big",
+    "path": "/root/settle/chatdata/train_big.u32",
+    "frac": 0.5,
+    "rows_per_batch": 256,
+    "masked": false,
+    "tokens": 2009319839,
+    "fingerprint": "b6e358690d04b090"
+   }
+  ],
+  "B": 512,
+  "T": 256,
+  "accum": 64,
+  "seed": 0,
+  "tokens": 100000000,
+  "steps_total": 762,
+  "warmup_steps": 15,
+  "cooldown_frac": 0.1,
+  "lr": 0.001,
+  "muon_lr": 0.006666666666666667,
+  "muon_wd": 0.0,
+  "store_lr_mult": 3.0,
+  "store_wd": 0.0,
+  "clip": 1.0,
+  "loss": "chunked",
+  "doc_start_frac": 0.7,
+  "eval_T": 256,
+  "body_opt": "muon",
+  "init": "/root/settle/ck/true_sdm_d1536_hm6144_hops16_2B/last.pt",
+  "lineage": [
+   {
+    "what": "base",
+    "path": "/root/settle/ck/true_sdm_d1536_hm6144_hops16_2B/last.pt",
+    "step": 15258,
+    "arm": "sdmonly"
+   },
+   {
+    "what": "chat",
+    "run": "w61_chat_sdm_w256_100M",
+    "init": "/root/settle/ck/true_sdm_d1536_hm6144_hops16_2B/last.pt",
+    "init_step": 15258
+   }
+  ]
+ },
+ "arm": "sdmonly",
+ "cfg": {
+  "d": 1536,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 16,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "finetune:chat",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": true,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 6144,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense",
+  "data": {
+   "finetune": true,
+   "task": "chat",
+   "B_global": 512,
+   "T": 256,
+   "train_n": null,
+   "fingerprint": "bb1798e391ec640b+b6e358690d04b090",
+   "shards": [
+    {
+     "role": "chat",
+     "shard": "chat_train",
+     "path": "/root/settle/chatdata/chat_train.u32",
+     "frac": 0.5,
+     "rows_per_batch": 256,
+     "masked": false,
+     "tokens": 378859013,
+     "fingerprint": "bb1798e391ec640b"
+    },
+    {
+     "role": "web",
+     "shard": "train_big",
+     "path": "/root/settle/chatdata/train_big.u32",
+     "frac": 0.5,
+     "rows_per_batch": 256,
+     "masked": false,
+     "tokens": 2009319839,
+     "fingerprint": "b6e358690d04b090"
+    }
+   ]
+  }
+ },
+ "before": {
+  "test": {
+   "bpb": 1.0228374055089378,
+   "nats_per_token": 3.436578549752191,
+   "tokens": 995323,
+   "bytes": 4824566,
+   "windows": 3892,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 1.2179221699904133,
+   "nats_per_token": 3.9777705856979466,
+   "tokens": 1022736,
+   "bytes": 4819015,
+   "windows": 4000,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ },
+ "after": {
+  "test": {
+   "bpb": 1.0385963109344973,
+   "nats_per_token": 3.48952608184416,
+   "tokens": 995323,
+   "bytes": 4824566,
+   "windows": 3892,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(val, T, 'test')"
+  },
+  "chat_test": {
+   "bpb": 0.7584722027442283,
+   "nats_per_token": 2.4771931183166402,
+   "tokens": 1022736,
+   "bytes": 4819015,
+   "windows": 4000,
+   "T": 256,
+   "rule": "S0.eval_bpb on S0.val_windows(arr, T, 'all')"
+  }
+ },
+ "delta_bpb": {
+  "test": 0.015759,
+  "chat_test": -0.45945
+ },
+ "curve": [
+  {
+   "step": 1,
+   "loss": 3.6356
+  },
+  {
+   "step": 10,
+   "loss": 3.5074
+  },
+  {
+   "step": 20,
+   "loss": 3.3272
+  },
+  {
+   "step": 30,
+   "loss": 3.3097
+  },
+  {
+   "step": 40,
+   "loss": 3.2283
+  },
+  {
+   "step": 50,
+   "loss": 3.1664
+  },
+  {
+   "step": 60,
+   "loss": 3.1048
+  },
+  {
+   "step": 70,
+   "loss": 3.1283
+  },
+  {
+   "step": 80,
+   "loss": 3.1392
+  },
+  {
+   "step": 90,
+   "loss": 3.0691
+  },
+  {
+   "step": 100,
+   "loss": 3.1123
+  },
+  {
+   "step": 110,
+   "loss": 3.0427
+  },
+  {
+   "step": 120,
+   "loss": 3.0358
+  },
+  {
+   "step": 130,
+   "loss": 3.0436
+  },
+  {
+   "step": 140,
+   "loss": 3.0359
+  },
+  {
+   "step": 150,
+   "loss": 2.9612
+  },
+  {
+   "step": 160,
+   "loss": 3.0391
+  },
+  {
+   "step": 170,
+   "loss": 2.9962
+  },
+  {
+   "step": 180,
+   "loss": 3.0334
+  },
+  {
+   "step": 190,
+   "loss": 3.0028
+  },
+  {
+   "step": 200,
+   "loss": 2.994
+  },
+  {
+   "step": 210,
+   "loss": 2.9773
+  },
+  {
+   "step": 220,
+   "loss": 2.9491
+  },
+  {
+   "step": 230,
+   "loss": 2.9355
+  },
+  {
+   "step": 240,
+   "loss": 3.0382
+  },
+  {
+   "step": 250,
+   "loss": 2.9586
+  },
+  {
+   "step": 260,
+   "loss": 2.9889
+  },
+  {
+   "step": 270,
+   "loss": 2.9941
+  },
+  {
+   "step": 280,
+   "loss": 2.9239
+  },
+  {
+   "step": 290,
+   "loss": 2.9405
+  },
+  {
+   "step": 300,
+   "loss": 2.966
+  },
+  {
+   "step": 310,
+   "loss": 2.987
+  },
+  {
+   "step": 320,
+   "loss": 2.9243
+  },
+  {
+   "step": 330,
+   "loss": 2.9891
+  },
+  {
+   "step": 340,
+   "loss": 2.9536
+  },
+  {
+   "step": 350,
+   "loss": 2.9515
+  },
+  {
+   "step": 360,
+   "loss": 2.9203
+  },
+  {
+   "step": 370,
+   "loss": 2.9986
+  },
+  {
+   "step": 380,
+   "loss": 3.0103
+  },
+  {
+   "step": 390,
+   "loss": 2.9576
+  },
+  {
+   "step": 400,
+   "loss": 2.948
+  },
+  {
+   "step": 410,
+   "loss": 2.9195
+  },
+  {
+   "step": 420,
+   "loss": 2.948
+  },
+  {
+   "step": 430,
+   "loss": 2.9647
+  },
+  {
+   "step": 440,
+   "loss": 2.9427
+  },
+  {
+   "step": 450,
+   "loss": 2.9547
+  },
+  {
+   "step": 460,
+   "loss": 2.9322
+  },
+  {
+   "step": 470,
+   "loss": 2.922
+  },
+  {
+   "step": 480,
+   "loss": 2.8853
+  },
+  {
+   "step": 490,
+   "loss": 2.9356
+  },
+  {
+   "step": 500,
+   "loss": 2.9242
+  },
+  {
+   "step": 510,
+   "loss": 2.9882
+  },
+  {
+   "step": 520,
+   "loss": 2.9464
+  },
+  {
+   "step": 530,
+   "loss": 2.961
+  },
+  {
+   "step": 540,
+   "loss": 2.9262
+  },
+  {
+   "step": 550,
+   "loss": 2.9004
+  },
+  {
+   "step": 560,
+   "loss": 2.9462
+  },
+  {
+   "step": 570,
+   "loss": 2.8869
+  },
+  {
+   "step": 580,
+   "loss": 2.932
+  },
+  {
+   "step": 590,
+   "loss": 2.9153
+  },
+  {
+   "step": 600,
+   "loss": 2.9702
+  },
+  {
+   "step": 610,
+   "loss": 2.8836
+  },
+  {
+   "step": 620,
+   "loss": 2.8851
+  },
+  {
+   "step": 630,
+   "loss": 2.9091
+  },
+  {
+   "step": 640,
+   "loss": 2.9117
+  },
+  {
+   "step": 650,
+   "loss": 2.8584
+  },
+  {
+   "step": 660,
+   "loss": 2.8979
+  },
+  {
+   "step": 670,
+   "loss": 2.863
+  },
+  {
+   "step": 680,
+   "loss": 2.9088
+  },
+  {
+   "step": 690,
+   "loss": 2.9168
+  },
+  {
+   "step": 700,
+   "loss": 2.9098
+  },
+  {
+   "step": 710,
+   "loss": 2.9083
+  },
+  {
+   "step": 720,
+   "loss": 2.8674
+  },
+  {
+   "step": 730,
+   "loss": 2.8812
+  },
+  {
+   "step": 740,
+   "loss": 2.8982
+  },
+  {
+   "step": 750,
+   "loss": 2.895
+  },
+  {
+   "step": 760,
+   "loss": 2.9057
+  },
+  {
+   "step": 762,
+   "loss": 2.9151
+  }
+ ],
+ "quick_evals": [
+  {
+   "step": 500,
+   "test": 1.09279,
+   "chat_test": 0.7686
+  }
+ ],
+ "median_tok_per_s": 11768.2,
+ "seconds_this_session": 8600.5,
+ "device": "cuda",
+ "opt_state": "loaded from the init",
+ "stamp_start": {
+  "utc": "2026-10-06T03:44:51Z",
+  "load": [
+   14.02,
+   14.35,
+   13.55
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "f866f89214cd",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.173.02\n580.173.02",
+  "mem_available_gb": 449.7
+ },
+ "stamp_end": {
+  "utc": "2026-10-06T06:08:11Z",
+  "load": [
+   11.81,
+   12.3,
+   12.73
+  ],
+  "ncpu": 256,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "f866f89214cd",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.173.02\n580.173.02",
+  "mem_available_gb": 448.8
+ },
+ "checkpoint": "/root/settle/ck/w61_chat_sdm_w256_100M/last.pt"
+}

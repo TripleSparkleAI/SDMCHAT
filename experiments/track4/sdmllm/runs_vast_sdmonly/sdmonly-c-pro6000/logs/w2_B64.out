@@ -1,0 +1,24 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": false, "hop_mlp": 0, "ng_rows": 0, "ng_orders": [2, 3], "conj": 0}
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "w2_B64", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99]}, "B": 64, "T": 256, "tokens_target": 20000000, "steps": 1220, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 101585408}, "flops_per_token_fwd": {"head": 66191360, "body": 3211264.0, "total": 69402624.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T11:57:45Z", "load": [1.01, 1.02, 1.0], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 6.8976, "lr": 0.0029738868900257196, "gnorm": 0.22, "tok_per_s": 48600.7, "load": 1.80517578125}
+{"event": "step", "step": 200, "loss": 6.4043, "lr": 0.0028598618769825348, "gnorm": 0.347, "tok_per_s": 227168.9, "load": 1.740234375}
+{"event": "step", "step": 300, "loss": 6.1345, "lr": 0.0026628375285221067, "gnorm": 0.303, "tok_per_s": 226542.9, "load": 1.6259765625}
+{"event": "step", "step": 400, "loss": 5.9948, "lr": 0.0023963301726603373, "gnorm": 0.406, "tok_per_s": 226573.3, "load": 1.57568359375}
+{"event": "step", "step": 500, "loss": 5.8176, "lr": 0.0020786228331383344, "gnorm": 0.604, "tok_per_s": 226532.2, "load": 1.529296875}
+eval 500 {'bpb': 2.0151838599012435, 'nats_per_token': 6.076021983179682, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 600, "loss": 5.7123, "lr": 0.0017315109715200863, "gnorm": 0.425, "tok_per_s": 184711.8, "load": 1.44775390625}
+{"event": "step", "step": 700, "loss": 5.6822, "lr": 0.0013788072678956626, "gnorm": 0.465, "tok_per_s": 226733.2, "load": 1.37841796875}
+{"event": "step", "step": 800, "loss": 5.5736, "lr": 0.0010447080157072867, "gnorm": 0.491, "tok_per_s": 226893.5, "load": 1.34765625}
+{"event": "step", "step": 900, "loss": 5.5634, "lr": 0.0007521331998082652, "gnorm": 0.404, "tok_per_s": 226943.1, "load": 1.29345703125}
+{"event": "step", "step": 1000, "loss": 5.7496, "lr": 0.0005211541322561406, "gnorm": 0.633, "tok_per_s": 226944.8, "load": 1.26953125}
+eval 1000 {'bpb': 1.9107531777281048, 'nats_per_token': 5.761150902069724, 'tokens': 16379, 'bytes': 71247}
+{"event": "step", "step": 1100, "loss": 5.4682, "lr": 0.0003676165136774467, "gnorm": 0.434, "tok_per_s": 186957.4, "load": 1.2275390625}
+{"event": "step", "step": 1200, "loss": 5.5768, "lr": 0.0003020533813932378, "gnorm": 0.503, "tok_per_s": 227189.7, "load": 1.208984375}
+{"event": "step", "step": 1220, "loss": 5.5436, "lr": 0.00030000465737179966, "gnorm": 0.41, "tok_per_s": 1179108.0, "load": 1.19189453125}
+FINAL w2_B64 {"bpb": 1.6502295590060387, "nats_per_token": 5.544521029542671, "tokens": 995323, "bytes": 4824566}
+ABLATE w2_B64 {"val_test_ablate_zero_read": 2.05434, "val_test_ablate_shuffle_keys": 2.00971} used [0.0863, 0.0614, 0.0877, 0.1001]
+NEXT -> python3 track4_sdmonly_summary.py

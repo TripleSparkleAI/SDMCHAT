@@ -1,0 +1,190 @@
+{
+ "run": "vw_v32k",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20637539,
+ "steps": 2519,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 8388608,
+  "non_embedding_trainable": 68489728,
+  "frozen_store_values": 0,
+  "total_trainable": 76878336
+ },
+ "flops_per_token_fwd": {
+  "head": 16777216,
+  "body": 3211264.0,
+  "total": 19988480.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:34:37Z",
+  "load": [
+   1.22,
+   1.23,
+   1.02
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:35:50Z",
+  "load": [
+   1.15,
+   1.21,
+   1.03
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 119.3
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.031218372159715
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.941052525498752
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.87864750921722
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.8448665995416886
+  },
+  {
+   "step": 2500,
+   "tokens": 20480000,
+   "bpb_quick": 1.8326141067668351
+  }
+ ],
+ "val_test": {
+  "bpb": 1.647532377716322,
+  "nats_per_token": 5.371412107996983,
+  "tokens": 1027575,
+  "bytes": 4833287
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "store_params": 67633152
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 2.0545189466094844,
+  "nats_per_token": 6.698301104846362,
+  "tokens": 1027575,
+  "bytes": 4833287
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.958132384291981,
+  "nats_per_token": 6.384054201487726,
+  "tokens": 1027575,
+  "bytes": 4833287
+ },
+ "locations_used_fraction_per_store": [
+  0.074615478515625,
+  0.0655975341796875,
+  0.0705108642578125,
+  0.0564422607421875
+ ],
+ "vocab_wave": {
+  "name": "v32k",
+  "V": 32768,
+  "data": "/root/settle/sdmllm/data_v32k",
+  "meta_sha256": "491420fa01983f0cd059d2d75e77d543eb881843cba95b3b5a09de663b1e4616",
+  "bytes_per_token_train": 4.6234776773388635,
+  "bytes_target": 95417201,
+  "tokens_target": 20637539,
+  "steps": 2519,
+  "tokens_trained": 20635648,
+  "bytes_trained": 95408457.88542236,
+  "rule": "equal training bytes; tokens = round(bytes / bytes_per_token), bytes_per_token = train text bytes / train tokens including BOS",
+  "tokenizer_sha256": "1060c4b3c2044ded38fad1d368e322ff475dd36c1dc65aed04c2d1165450b366"
+ },
+ "vocab_score": {
+  "docs": [
+   1000,
+   2000
+  ],
+  "T": 256,
+  "V": 32768,
+  "set": "v32k",
+  "tokens_scored": 973217,
+  "text_bytes": 4593386,
+  "table_bytes": 4593386,
+  "table_minus_text_bytes": 0,
+  "nats": 5213518.281803131,
+  "bpb": 1.6374667773928269,
+  "bpb_table": 1.6374667773928269,
+  "bytes_per_scored_token": 4.719796304421316,
+  "trainer_window_test_bpb": 1.647532377716322,
+  "device": "cuda",
+  "rule": "val docs [lo, hi) by document, each from its own BOS, windows of T tiled, every text byte once"
+ }
+}

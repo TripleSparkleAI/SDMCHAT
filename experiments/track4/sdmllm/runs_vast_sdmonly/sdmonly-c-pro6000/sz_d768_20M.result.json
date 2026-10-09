@@ -1,0 +1,130 @@
+{
+ "run": "sz_d768_20M",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 768,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 99287040,
+  "non_embedding_trainable": 210056704,
+  "frozen_store_values": 0,
+  "total_trainable": 309343744
+ },
+ "flops_per_token_fwd": {
+  "head": 198574080,
+  "body": 18808832.0,
+  "total": 217382912.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:29:21Z",
+  "load": [
+   0.37,
+   0.34,
+   0.68
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.5
+ },
+ "resumed_from_step": 2441,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:29:21Z",
+  "load": [
+   0.37,
+   0.34,
+   0.68
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.5
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.6125626873856596,
+  "nats_per_token": 5.417966053796104,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "store_params": 202375168
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 2.1570291793458556,
+  "nats_per_token": 7.247290888077288,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 2.1365220410460615,
+  "nats_per_token": 7.178390013687768,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_per_store": [
+  0.0519256591796875,
+  0.0505218505859375,
+  0.0474395751953125,
+  0.0682525634765625
+ ]
+}

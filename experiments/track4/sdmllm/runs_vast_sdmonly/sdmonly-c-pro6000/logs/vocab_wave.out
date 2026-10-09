@@ -1,0 +1,26 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+2026-10-03T11:29:45Z SHARDS start
+2026-10-03T11:30:33Z SHARDS done: 4 sets built
+2026-10-03T11:30:33Z BYTES 95417201 = 20000000 DeepSeek tokens x the data_v129k train bytes per token
+2026-10-03T11:30:33Z TRAIN start vw_v129k
+2026-10-03T11:32:44Z TRAIN end vw_v129k rc 0
+2026-10-03T11:32:51Z SCORE vw_v129k rc 0 VOCAB_SCORE vw_v129k {"docs": [1000, 2000], "T": 256, "V": 129280, "set": "v129k", "tokens_scored": 945141, "text_bytes": 4593386, "table_bytes": 4593424, "table_minus_text_bytes": 38, "nats": 5279407
+2026-10-03T11:32:51Z TRAIN start vw_v65k
+2026-10-03T11:34:29Z TRAIN end vw_v65k rc 0
+2026-10-03T11:34:34Z SCORE vw_v65k rc 0 VOCAB_SCORE vw_v65k {"docs": [1000, 2000], "T": 256, "V": 65536, "set": "v65k", "tokens_scored": 934993, "text_bytes": 4593386, "table_bytes": 4593386, "table_minus_text_bytes": 0, "nats": 5262130.786
+2026-10-03T11:34:34Z TRAIN start vw_v32k
+2026-10-03T11:36:00Z TRAIN end vw_v32k rc 0
+2026-10-03T11:36:05Z SCORE vw_v32k rc 0 VOCAB_SCORE vw_v32k {"docs": [1000, 2000], "T": 256, "V": 32768, "set": "v32k", "tokens_scored": 973217, "text_bytes": 4593386, "table_bytes": 4593386, "table_minus_text_bytes": 0, "nats": 5213518.281
+2026-10-03T11:36:05Z TRAIN start vw_v16k
+2026-10-03T11:37:20Z TRAIN end vw_v16k rc 0
+2026-10-03T11:37:25Z SCORE vw_v16k rc 0 VOCAB_SCORE vw_v16k {"docs": [1000, 2000], "T": 256, "V": 16384, "set": "v16k", "tokens_scored": 1038147, "text_bytes": 4593386, "table_bytes": 4593386, "table_minus_text_bytes": 0, "nats": 5216055.28
+THE TOKENIZER WAVE · sdmonly centre (d 256, 4 hops, n_sub 256, seed 0) · equal training bytes
+bpb(doc) = nats / (ln2 x text bytes) over val docs 1,000-1,999 by document (comparable across tokenizers)
+trainerTEST = the trainer's window TEST by token offset (NOT comparable across tokenizers)
+delta = paired over the same documents (run minus first), SE by bootstrap over documents (2,000)
+vw_v129k     V 129,280  B/tok train 4.7709  tokens  19,996,672  bytes     95,401,324  bpb(doc) 1.65816  bpb(table) 1.65815  trainerTEST 1.66811
+vw_v65k      V  65,536  B/tok train 4.8245  tokens  19,775,488  bytes     95,406,475  bpb(doc) 1.65274  bpb(table) 1.65274  trainerTEST 1.66252  vs vw_v129k: -0.00543 (SE 0.00071, z -7.6)
+vw_v32k      V  32,768  B/tok train 4.6235  tokens  20,635,648  bytes     95,408,458  bpb(doc) 1.63747  bpb(table) 1.63747  trainerTEST 1.64753  vs vw_v129k: -0.02069 (SE 0.00082, z -25.2)
+vw_v16k      V  16,384  B/tok train 4.3213  tokens  22,077,440  bytes     95,403,829  bpb(doc) 1.63826  bpb(table) 1.63826  trainerTEST 1.64843  vs vw_v129k: -0.01990 (SE 0.00101, z -19.7)
+2026-10-03T11:37:26Z VOCAB_WAVE_DONE
+NEXT -> scp the table and runs/vw_*.result.json home; python3 track4_sdmonly_summary.py

@@ -1,0 +1,128 @@
+{
+ "run": "p0_R_S",
+ "arm": "sdm",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 3358976,
+  "frozen_store_values": 0,
+  "total_trainable": 36454656
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 7102464.0,
+  "total": 73293824.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:28:36Z",
+  "load": [
+   0.5,
+   0.28,
+   0.53
+  ],
+  "ncpu": 10,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d54f6e4002df",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.126.09",
+  "mem_available_gb": 54.7
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:30:02Z",
+  "load": [
+   0.97,
+   0.49,
+   0.59
+  ],
+  "ncpu": 10,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d54f6e4002df",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.126.09",
+  "mem_available_gb": 53.2
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.0571046163870657
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9391155101339623
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.887168708296404
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.850207820325821
+  }
+ ],
+ "val_test": {
+  "bpb": 1.5977839777106349,
+  "nats_per_token": 5.368311830760592,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.6046369464767474,
+  "nats_per_token": 5.391336766431601,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.6089988464184506,
+  "nats_per_token": 5.405992088670588,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "locations_used_fraction_last_hop": 0.47388890385627747
+}

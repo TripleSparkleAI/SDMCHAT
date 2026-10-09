@@ -1,0 +1,14 @@
+2026-10-03T13:42:29Z gpu0 start w7_ch_v32k
+2026-10-03T13:44:13Z gpu0 end w7_ch_v32k rc 0
+2026-10-03T13:44:13Z gpu0 start w7_ch_v129k
+2026-10-03T13:46:43Z gpu0 end w7_ch_v129k rc 0
+2026-10-03T13:46:43Z gpu0 start w7_mq_v32k
+2026-10-03T13:47:42Z gpu0 end w7_mq_v32k rc 0
+2026-10-03T13:47:43Z WAVE7_PASS_DONE
+2026-10-03T14:02:48Z gpu0 start w7r_ch_v129k
+2026-10-03T14:05:25Z gpu0 end w7r_ch_v129k rc 0
+2026-10-03T14:05:25Z gpu0 start w7r_mq_v32k
+2026-10-03T14:06:19Z gpu0 end w7r_mq_v32k rc 0
+2026-10-03T14:06:19Z gpu0 start w7r_mq_v129k
+2026-10-03T14:08:09Z gpu0 end w7r_mq_v129k rc 0
+2026-10-03T14:08:09Z WAVE7_DONE

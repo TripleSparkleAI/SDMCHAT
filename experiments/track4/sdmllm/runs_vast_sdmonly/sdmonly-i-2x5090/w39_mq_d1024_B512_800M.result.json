@@ -1,0 +1,139 @@
+{
+ "run": "w39_mq_d1024_B512_800M",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 1024,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 2736,
+  "train_name": "train_big",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense"
+ },
+ "B": 512,
+ "T": 256,
+ "tokens_target": 800000000,
+ "steps": 6103,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 132382720,
+  "non_embedding_trainable": 46214144,
+  "frozen_store_values": 0,
+  "total_trainable": 178596864
+ },
+ "flops_per_token_fwd": {
+  "head": 264765440,
+  "body": 94502912.0,
+  "total": 359268352.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-04T08:30:04Z",
+  "load": [
+   1.08,
+   1.11,
+   1.44
+  ],
+  "ncpu": 96,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "7a36453f97d9",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.84\n595.84",
+  "mem_available_gb": 113.3
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "stamp_end": {
+  "utc": "2026-10-04T10:32:20Z",
+  "load": [
+   2.07,
+   2.1,
+   2.09
+  ],
+  "ncpu": 96,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "7a36453f97d9",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.84\n595.84",
+  "mem_available_gb": 111.2
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 655360000,
+   "bpb_quick": 1.1029957779835509
+  }
+ ],
+ "val_test": {
+  "bpb": 1.0490355877116941,
+  "nats_per_token": 3.524600468500552,
+  "tokens": 995323,
+  "bytes": 4824566
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

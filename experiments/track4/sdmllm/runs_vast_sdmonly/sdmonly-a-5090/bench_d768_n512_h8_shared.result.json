@@ -1,0 +1,119 @@
+{
+ "run": "bench_d768_n512_h8_shared",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 768,
+  "T": 256,
+  "seed": 0,
+  "M": 262144,
+  "k": 32,
+  "hops": 8,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 1600000,
+ "steps": 195,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 99287040,
+  "non_embedding_trainable": 210715136,
+  "frozen_store_values": 0,
+  "total_trainable": 310002176
+ },
+ "flops_per_token_fwd": {
+  "head": 198574080,
+  "body": 22347776.0,
+  "total": 220921856.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T10:57:48Z",
+  "load": [
+   1.29,
+   0.89,
+   0.4
+  ],
+  "ncpu": 10,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d54f6e4002df",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.126.09",
+  "mem_available_gb": 53.6
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T10:58:24Z",
+  "load": [
+   1.16,
+   0.9,
+   0.43
+  ],
+  "ncpu": 10,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d54f6e4002df",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "580.126.09",
+  "mem_available_gb": 52.4
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.847391967271052,
+  "nats_per_token": 6.41757869720459,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 512,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": true,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "store_params": 203030528
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.876551457093372,
+  "nats_per_token": 6.518874645233154,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.8754468904083457,
+  "nats_per_token": 6.515037536621094,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "locations_used_fraction_per_store": [
+  0.022418975830078125
+ ]
+}

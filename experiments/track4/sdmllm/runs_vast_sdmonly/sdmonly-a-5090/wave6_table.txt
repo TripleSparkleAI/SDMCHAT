@@ -1,0 +1,12 @@
+run             arm              TEST bpb     vs p0_A_c       SE       z  zero_read   shuffle  non-emb M    tok/s  load
+w6_mu_combo     sdmonly           1.53229      -0.13559  0.00065  -209.2    1.55901   1.55205     135.80   182401   1.0
+w6_mu_combo_nonesdmonly_none      1.53959      -0.12830  0.00062  -207.5                           34.61   261695   1.1
+w6_mu_hopmlp    sdmonly           1.55298      -0.11490  0.00052  -222.7    1.56131   1.55824      69.08   199923   1.0
+w6_mu_dense     sdmonly_dense     1.55579      -0.11209  0.00052  -215.5                            1.45   278320   1.1
+w6_mu_B64       sdmonly           1.57896      -0.08892  0.00059  -150.0    1.98319   1.68062      68.49   234208   1.0
+w6_mu_rt8       sdmonly           1.58133      -0.08655  0.00077  -112.1    2.30606   1.75105      68.75   202625   1.1
+w6_mu_lr05      sdmonly           1.60839      -0.05949  0.00038  -157.1    2.80355   1.87110      68.49   212888   1.2
+w6_mu_c_s1      sdmonly           1.61487      -0.05301  0.00045  -116.6    2.38265   1.76280      68.49   212180   1.0
+w6_mu_lr2       sdmonly           1.62137      -0.04651  0.00034  -134.8    1.99134   1.71889      68.49   212902   1.9
+w6_mu_none      sdmonly_none      1.62819      -0.03969  0.00033  -121.2                            0.86   301018   1.1
+NEXT -> record the table in PLAN_SDMONLY_TWO_DAY_PUSH_2026-10-03.md and score the sealed predictions

@@ -1,0 +1,171 @@
+{
+ "run": "w8_ctx512",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 512,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 192,
+  "ng_rows": 65536,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false
+ },
+ "B": 16,
+ "T": 512,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 135796480,
+  "frozen_store_values": 0,
+  "total_trainable": 168892160
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 4849664.0,
+  "total": 71041024.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T14:03:53Z",
+  "load": [
+   0.8,
+   0.98,
+   0.91
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 121.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T14:08:23Z",
+  "load": [
+   1.19,
+   1.1,
+   1.0
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 119.2
+ },
+ "curve": [
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.7904453950962356
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.7007887992347173
+  }
+ ],
+ "val_test": {
+  "bpb": 1.5351151794786433,
+  "nats_per_token": 5.157422805574272,
+  "tokens": 997368,
+  "bytes": 4834168
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 192,
+  "ng_rows": 65536,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "store_params": 101187584
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.5604370887819923,
+  "nats_per_token": 5.242495114328412,
+  "tokens": 997368,
+  "bytes": 4834168
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.5543517303136762,
+  "nats_per_token": 5.2220505464131595,
+  "tokens": 997368,
+  "bytes": 4834168
+ },
+ "locations_used_fraction_per_store": [
+  0.6471405029296875,
+  0.614593505859375,
+  0.5047760009765625,
+  0.4304656982421875
+ ],
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ }
+}

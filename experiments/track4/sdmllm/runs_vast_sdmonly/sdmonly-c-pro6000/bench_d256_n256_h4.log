@@ -1,0 +1,12 @@
+{"event": "start", "run": "bench_d256_n256_h4", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99]}, "B": 32, "T": 256, "tokens_target": 1600000, "steps": 195, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 101585408}, "flops_per_token_fwd": {"head": 66191360, "body": 3211264.0, "total": 69402624.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T10:55:04Z", "load": [1.62, 1.4, 0.72], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 20, "loss": 8.2303, "lr": 0.002953999865490242, "gnorm": 0.846, "tok_per_s": 9709.6, "load": 2.166015625}
+{"event": "step", "step": 40, "loss": 7.7101, "lr": 0.002772483976608436, "gnorm": 0.337, "tok_per_s": 212265.7, "load": 2.166015625}
+{"event": "step", "step": 60, "loss": 7.4415, "lr": 0.002471827929161773, "gnorm": 0.269, "tok_per_s": 214026.1, "load": 2.166015625}
+{"event": "step", "step": 80, "loss": 7.1787, "lr": 0.002083943278159268, "gnorm": 0.39, "tok_per_s": 214457.6, "load": 2.166015625}
+{"event": "step", "step": 100, "loss": 7.0209, "lr": 0.0016500000000000002, "gnorm": 0.372, "tok_per_s": 214326.3, "load": 2.166015625}
+{"event": "step", "step": 120, "loss": 7.0241, "lr": 0.0012160567218407325, "gnorm": 0.283, "tok_per_s": 213949.3, "load": 2.166015625}
+{"event": "step", "step": 140, "loss": 6.8908, "lr": 0.0008281720708382271, "gnorm": 0.311, "tok_per_s": 213846.7, "load": 2.072265625}
+{"event": "step", "step": 160, "loss": 6.8359, "lr": 0.0005275160233915638, "gnorm": 0.294, "tok_per_s": 213576.8, "load": 2.072265625}
+{"event": "step", "step": 180, "loss": 6.8013, "lr": 0.00034600013450975794, "gnorm": 0.289, "tok_per_s": 213485.5, "load": 2.072265625}
+{"event": "step", "step": 195, "loss": 6.8575, "lr": 0.0003001807138220916, "gnorm": 0.413, "tok_per_s": 288822.5, "load": 2.072265625}
+{"event": "final", "val_test": {"bpb": 1.9281686393191322, "nats_per_token": 6.698185443878174, "tokens": 2048, "bytes": 10264}}

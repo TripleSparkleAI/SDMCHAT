@@ -1,0 +1,76 @@
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 0, "loss": 6.1874, "train_acc": 0.0, "grad_mem": 50.1473, "grad_rest": 6.5079, "lr": 0.00016666666666666666, "T": 36, "sec": 0.3}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 100, "loss": 4.5942, "train_acc": 0.0625, "grad_mem": 1.3028, "grad_rest": 2.3092, "lr": 0.0007914467697293183, "T": 46, "sec": 43.9}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 200, "loss": 4.4855, "train_acc": 0.0312, "grad_mem": 1.7351, "grad_rest": 2.5272, "lr": 0.0003333794173885978, "T": 67, "sec": 82.6}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 299, "loss": 4.4724, "train_acc": 0.1094, "grad_mem": 1.9456, "grad_rest": 2.5396, "lr": 0.00010002569114558753, "T": 47, "sec": 116.8}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 100, "T": 129, "accuracy": 0.109375, "n_scored": 64, "n_sequences": 16, "seconds": 0.146}}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 1000, "T": 1029, "accuracy": 0.015625, "n_scored": 64, "n_sequences": 16, "seconds": 0.976}}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "eval": {"setting": 16000, "T": 16029, "accuracy": 0.09375, "n_scored": 64, "n_sequences": 16, "seconds": 15.921}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_recall_onesdm_s0.json"}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "step": 0, "loss": 6.1324, "train_acc": 0.0, "grad_mem": 50.7127, "grad_rest": 6.5971, "lr": 0.00016666666666666666, "T": 36, "sec": 0.2}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "step": 100, "loss": 4.6757, "train_acc": 0.0781, "grad_mem": 1.6044, "grad_rest": 2.5928, "lr": 0.0007914467697293183, "T": 46, "sec": 24.8}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "step": 200, "loss": 4.4772, "train_acc": 0.0625, "grad_mem": 1.7932, "grad_rest": 2.6199, "lr": 0.0003333794173885978, "T": 67, "sec": 46.0}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "step": 299, "loss": 4.2812, "train_acc": 0.0625, "grad_mem": 2.0421, "grad_rest": 2.6914, "lr": 0.00010002569114558753, "T": 47, "sec": 96.0}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "eval": {"setting": 100, "T": 129, "accuracy": 0.09375, "n_scored": 64, "n_sequences": 16, "seconds": 0.893}}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "eval": {"setting": 1000, "T": 1029, "accuracy": 0.09375, "n_scored": 64, "n_sequences": 16, "seconds": 4.371}}
+{"puzzle": "recall", "arm": "onesdm_archive", "seed": 0, "eval": {"setting": 16000, "T": 16029, "accuracy": 0.140625, "n_scored": 64, "n_sequences": 16, "seconds": 64.001}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_recall_onesdm_archive_s0.json"}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "step": 0, "loss": 6.1874, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 6.5079, "lr": 0.00016666666666666666, "T": 36, "sec": 0.0}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "step": 100, "loss": 4.8473, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1575, "lr": 0.0007914467697293183, "T": 46, "sec": 3.9}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "step": 200, "loss": 4.9503, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1655, "lr": 0.0003333794173885978, "T": 67, "sec": 7.4}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "step": 299, "loss": 4.879, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1479, "lr": 0.00010002569114558753, "T": 47, "sec": 10.8}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "eval": {"setting": 100, "T": 129, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 0.016}}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "eval": {"setting": 1000, "T": 1029, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 0.091}}
+{"puzzle": "recall", "arm": "plain", "seed": 0, "eval": {"setting": 16000, "T": 16029, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 1.272}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_recall_plain_s0.json"}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "step": 0, "loss": 5.9667, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 3.5545, "lr": 0.00016666666666666666, "T": 36, "sec": 0.1}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "step": 100, "loss": 4.8561, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1507, "lr": 0.0007914467697293183, "T": 46, "sec": 12.7}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "step": 200, "loss": 4.9674, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1767, "lr": 0.0003333794173885978, "T": 67, "sec": 29.7}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "step": 299, "loss": 4.8785, "train_acc": 0.0156, "grad_mem": 0.0, "grad_rest": 2.1473, "lr": 0.00010002569114558753, "T": 47, "sec": 42.4}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "eval": {"setting": 100, "T": 129, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 0.075}}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "eval": {"setting": 1000, "T": 1029, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 0.414}}
+{"puzzle": "recall", "arm": "sdmonly", "seed": 0, "eval": {"setting": 16000, "T": 16029, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 11.681}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_recall_sdmonly_s0.json"}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "step": 0, "loss": 6.0681, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 10.0943, "lr": 0.00016666666666666666, "T": 36, "sec": 0.3}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "step": 100, "loss": 4.6345, "train_acc": 0.0625, "grad_mem": 0.0, "grad_rest": 2.9726, "lr": 0.0007914467697293183, "T": 46, "sec": 61.1}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "step": 200, "loss": 4.5762, "train_acc": 0.0469, "grad_mem": 0.0, "grad_rest": 2.9796, "lr": 0.0003333794173885978, "T": 67, "sec": 118.4}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "step": 299, "loss": 4.284, "train_acc": 0.0469, "grad_mem": 0.0, "grad_rest": 3.0909, "lr": 0.00010002569114558753, "T": 47, "sec": 183.9}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "eval": {"setting": 100, "T": 129, "accuracy": 0.078125, "n_scored": 64, "n_sequences": 16, "seconds": 0.348}}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "eval": {"setting": 1000, "T": 1029, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 1.117}}
+{"puzzle": "recall", "arm": "yardstick_transformer", "seed": 0, "eval": {"setting": 16000, "T": 16029, "accuracy": 0.015625, "n_scored": 64, "n_sequences": 16, "seconds": 72.383}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_recall_yardstick_transformer_s0.json"}
+NEXT -> python3 track4_onesdm_puzzles.py --cost --arms onesdm,onesdm_archive,plain,sdmonly,yardstick_transformer
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "step": 0, "loss": 6.0959, "train_acc": 0.0042, "grad_mem": 25.885, "grad_rest": 3.3862, "lr": 0.00016666666666666666, "T": 32, "sec": 0.4}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "step": 100, "loss": 5.8799, "train_acc": 0.0121, "grad_mem": 1.2668, "grad_rest": 1.1013, "lr": 0.0007914467697293183, "T": 64, "sec": 67.5}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "step": 200, "loss": 5.4356, "train_acc": 0.0903, "grad_mem": 2.1244, "grad_rest": 1.9772, "lr": 0.0003333794173885978, "T": 20, "sec": 215.1}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "step": 299, "loss": 5.3369, "train_acc": 0.0437, "grad_mem": 2.0192, "grad_rest": 1.8132, "lr": 0.00010002569114558753, "T": 22, "sec": 349.1}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "eval": {"setting": 32, "T": 66, "accuracy": 0.01953125, "n_scored": 512, "n_sequences": 16, "seconds": 0.494}}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "eval": {"setting": 128, "T": 258, "accuracy": 0.00537109375, "n_scored": 2048, "n_sequences": 16, "seconds": 1.705}}
+{"puzzle": "copy", "arm": "onesdm", "seed": 0, "eval": {"setting": 512, "T": 1026, "accuracy": 0.0025634765625, "n_scored": 8192, "n_sequences": 16, "seconds": 6.182}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_copy_onesdm_s0.json"}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "step": 0, "loss": 6.0959, "train_acc": 0.0042, "grad_mem": 0.0, "grad_rest": 3.3862, "lr": 0.00016666666666666666, "T": 32, "sec": 0.2}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "step": 100, "loss": 6.0249, "train_acc": 0.002, "grad_mem": 0.0, "grad_rest": 0.8167, "lr": 0.0007914467697293183, "T": 64, "sec": 24.3}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "step": 200, "loss": 5.9447, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 1.2691, "lr": 0.0003333794173885978, "T": 20, "sec": 47.7}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "step": 299, "loss": 5.9606, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 1.2146, "lr": 0.00010002569114558753, "T": 22, "sec": 72.5}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "eval": {"setting": 32, "T": 66, "accuracy": 0.001953125, "n_scored": 512, "n_sequences": 16, "seconds": 0.03}}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "eval": {"setting": 128, "T": 258, "accuracy": 0.0029296875, "n_scored": 2048, "n_sequences": 16, "seconds": 0.271}}
+{"puzzle": "copy", "arm": "plain", "seed": 0, "eval": {"setting": 512, "T": 1026, "accuracy": 0.002685546875, "n_scored": 8192, "n_sequences": 16, "seconds": 0.803}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_copy_plain_s0.json"}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "step": 0, "loss": 6.0177, "train_acc": 0.0, "grad_mem": 49.5414, "grad_rest": 6.537, "lr": 0.00016666666666666666, "T": 72, "sec": 1.4}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "step": 100, "loss": 4.8028, "train_acc": 0.0469, "grad_mem": 1.3977, "grad_rest": 2.4262, "lr": 0.0007914467697293183, "T": 102, "sec": 189.9}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "step": 200, "loss": 4.5521, "train_acc": 0.1094, "grad_mem": 1.4957, "grad_rest": 2.4027, "lr": 0.0003333794173885978, "T": 73, "sec": 461.9}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "step": 299, "loss": 4.4604, "train_acc": 0.1094, "grad_mem": 1.6573, "grad_rest": 2.3595, "lr": 0.00010002569114558753, "T": 89, "sec": 553.7}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "eval": {"setting": 0.0, "T": 165, "accuracy": 0.09375, "n_scored": 64, "n_sequences": 16, "seconds": 0.26}}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "eval": {"setting": 0.25, "T": 165, "accuracy": 0.140625, "n_scored": 64, "n_sequences": 16, "seconds": 0.244}}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "eval": {"setting": 0.5, "T": 165, "accuracy": 0.046875, "n_scored": 64, "n_sequences": 16, "seconds": 0.32}}
+{"puzzle": "blurry", "arm": "onesdm", "seed": 0, "eval": {"setting": 0.75, "T": 165, "accuracy": 0.125, "n_scored": 64, "n_sequences": 16, "seconds": 0.427}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_blurry_onesdm_s0.json"}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "step": 0, "loss": 6.0177, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 6.537, "lr": 0.00016666666666666666, "T": 72, "sec": 0.1}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "step": 100, "loss": 4.9088, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 2.1613, "lr": 0.0007914467697293183, "T": 102, "sec": 7.5}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "step": 200, "loss": 4.9074, "train_acc": 0.0156, "grad_mem": 0.0, "grad_rest": 2.0432, "lr": 0.0003333794173885978, "T": 73, "sec": 14.6}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "step": 299, "loss": 4.8614, "train_acc": 0.0, "grad_mem": 0.0, "grad_rest": 1.8748, "lr": 0.00010002569114558753, "T": 89, "sec": 21.6}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "eval": {"setting": 0.0, "T": 165, "accuracy": 0.015625, "n_scored": 64, "n_sequences": 16, "seconds": 0.03}}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "eval": {"setting": 0.25, "T": 165, "accuracy": 0.0, "n_scored": 64, "n_sequences": 16, "seconds": 0.025}}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "eval": {"setting": 0.5, "T": 165, "accuracy": 0.015625, "n_scored": 64, "n_sequences": 16, "seconds": 0.033}}
+{"puzzle": "blurry", "arm": "plain", "seed": 0, "eval": {"setting": 0.75, "T": 165, "accuracy": 0.015625, "n_scored": 64, "n_sequences": 16, "seconds": 0.033}}
+{"wrote": "/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/runs_onesdm/onesdm_cpucheck_blurry_plain_s0.json"}
+NEXT -> python3 track4_onesdm_puzzles.py --cost --arms onesdm,plain

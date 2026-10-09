@@ -1,0 +1,16 @@
+PASS product-key top scores equal brute force
+PASS product-key top locations equal brute force
+PASS logits shape
+PASS zero-initialised values read nothing (equals the no-read floor)
+PASS values receive gradient
+PASS sub-keys receive gradient
+PASS query maps receive gradient
+PASS only the woken rows receive gradient (sparse write)
+PASS zero_read changes the output once values are non-zero
+PASS shuffle_keys changes the output
+PASS causal: earlier positions do not see a later token
+PASS causal control: later positions do change
+PASS dense control FLOPs within 2% of one read
+PASS every store parameter name starts with 'store.'
+PASS share_store keeps one value table
+15 of 15 checks pass

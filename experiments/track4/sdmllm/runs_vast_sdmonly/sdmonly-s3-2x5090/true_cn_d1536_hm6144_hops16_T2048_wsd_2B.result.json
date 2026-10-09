@@ -1,0 +1,280 @@
+{
+ "run": "true_cn_d1536_hm6144_hops16_T2048_wsd_2B",
+ "arm": "sdmonly_none",
+ "seed": 0,
+ "cfg": {
+  "d": 1536,
+  "T": 2048,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 16,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train_big",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "wsd",
+  "wsd_decay": 0.2,
+  "untie": true,
+  "hop_mlp": 6144,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 2,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense",
+  "data": {
+   "train_name": "train_big",
+   "train_n": 2009319839,
+   "fingerprint": "b6e358690d04b090",
+   "B_global": 64,
+   "accum_global": 64,
+   "micro_B": 1,
+   "T": 2048,
+   "data_n_flag": null
+  }
+ },
+ "B": 32,
+ "T": 2048,
+ "tokens_target": 2000000000,
+ "steps": 15258,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 198574080,
+  "non_embedding_trainable": 684661248,
+  "frozen_store_values": 0,
+  "total_trainable": 883235328
+ },
+ "flops_per_token_fwd": {
+  "head": 397148160,
+  "body": 987758592.0,
+  "total": 1384906752.0
+ },
+ "device": "cuda:0",
+ "stamp_start": {
+  "utc": "2026-10-05T19:07:13Z",
+  "load": [
+   1.81,
+   2.19,
+   2.83
+  ],
+  "ncpu": 144,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "2061db46a67c",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.57.08\n575.57.08",
+  "mem_available_gb": 439.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big",
+ "world_size": 2,
+ "B_global": 64,
+ "accum": 32,
+ "accum_global": 64,
+ "single_device_equivalent": "--B 64 --accum 64",
+ "lr_flag": 0.003,
+ "lr_scale": "none",
+ "lr_ref_batch": 32,
+ "table_sync": "dense",
+ "sync_bn": false,
+ "backend": "nccl",
+ "gpus_visible": 2,
+ "ranks_share_a_gpu": false,
+ "table_bytes_dense": 0,
+ "trainer": "track4_sdmonly_train_ddp.py",
+ "stamp_end": {
+  "utc": "2026-10-06T13:02:23Z",
+  "load": [
+   2.16,
+   2.83,
+   3.69
+  ],
+  "ncpu": 144,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "2061db46a67c",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "575.57.08\n575.57.08",
+  "mem_available_gb": 424.0
+ },
+ "curve": [
+  {
+   "step": 5000,
+   "tokens": 655360000,
+   "bpb_quick": 1.1194405910663976
+  },
+  {
+   "step": 10000,
+   "tokens": 1310720000,
+   "bpb_quick": 1.0763550799522017
+  },
+  {
+   "step": 15000,
+   "tokens": 1966080000,
+   "bpb_quick": 1.023054062006509
+  }
+ ],
+ "rank_checks": [
+  {
+   "event": "rank_check",
+   "step": 1000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 2000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 3000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 4000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 5000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 6000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 7000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 8000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 9000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 10000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 11000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 12000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 13000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 14000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 15000,
+   "identical": true,
+   "tensors": 147
+  },
+  {
+   "event": "rank_check",
+   "step": 15258,
+   "identical": true,
+   "tensors": 147
+  }
+ ],
+ "tok_per_s_total": 31099.0,
+ "tok_per_s_per_rank": [
+  15549.5,
+  15549.5
+ ],
+ "val_test": {
+  "bpb": 0.9973441037753873,
+  "nats_per_token": 3.3508968971293784,
+  "tokens": 998390,
+  "bytes": 4839392
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0,
+  "keep_at": [
+   1600000000
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{"event": "vocab_wave", "name": "v32k", "V": 32768, "data": "/root/settle/sdmllm/data_v32k", "meta_sha256": "491420fa01983f0cd059d2d75e77d543eb881843cba95b3b5a09de663b1e4616", "bytes_per_token_train": 4.6234776773388635, "bytes_target": 95417201, "tokens_target": 20637539, "steps": 2519, "tokens_trained": 20635648, "bytes_trained": 95408457.88542236, "rule": "equal training bytes; tokens = round(bytes / bytes_per_token), bytes_per_token = train text bytes / train tokens including BOS", "tokenizer_sha256": "1060c4b3c2044ded38fad1d368e322ff475dd36c1dc65aed04c2d1165450b366"}
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": true, "hop_mlp": 192, "ng_rows": 65536, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "store_opt": "dense", "body_opt": "muon", "muon_lr": 0.02, "muon_wd": 0.0}
+/root/settle/code_w7/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "w7_ch_v32k", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": true, "hop_mlp": 192, "ng_rows": 65536, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false}, "B": 32, "T": 256, "tokens_target": 20637539, "steps": 2519, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 8388608, "non_embedding_trainable": 111089408, "frozen_store_values": 0, "total_trainable": 119478016}, "flops_per_token_fwd": {"head": 16777216, "body": 4521984.0, "total": 21299200.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T13:42:32Z", "load": [0.18, 0.45, 0.35], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 6.5001, "lr": 0.002997376912322628, "gnorm": 0.371, "tok_per_s": 50748.9, "load": 0.6806640625}
+{"event": "step", "step": 200, "loss": 6.0173, "lr": 0.0029758101810713855, "gnorm": 0.387, "tok_per_s": 314514.3, "load": 0.6806640625}
+{"event": "step", "step": 300, "loss": 5.7664, "lr": 0.0029328069987959466, "gnorm": 0.36, "tok_per_s": 315255.4, "load": 0.70654296875}
+{"event": "step", "step": 400, "loss": 5.694, "lr": 0.002869062665339299, "gnorm": 0.349, "tok_per_s": 314672.0, "load": 0.70654296875}
+{"event": "step", "step": 500, "loss": 5.5305, "lr": 0.0027856078352413794, "gnorm": 0.337, "tok_per_s": 314876.7, "load": 0.73046875}
+{"event": "step", "step": 600, "loss": 5.5096, "lr": 0.0026837918535318663, "gnorm": 0.326, "tok_per_s": 315650.0, "load": 0.73046875}
+{"event": "step", "step": 700, "loss": 5.4216, "lr": 0.0025652609387543774, "gnorm": 0.337, "tok_per_s": 315825.9, "load": 0.75244140625}
+{"event": "step", "step": 800, "loss": 5.2586, "lr": 0.002431931565971298, "gnorm": 0.332, "tok_per_s": 315738.1, "load": 0.75244140625}
+{"event": "step", "step": 900, "loss": 5.4285, "lr": 0.002285959480107926, "gnorm": 0.34, "tok_per_s": 315970.2, "load": 0.69189453125}
+{"event": "step", "step": 1000, "loss": 5.246, "lr": 0.002129704840645749, "gnorm": 0.342, "tok_per_s": 315799.8, "load": 0.69189453125}
+eval 1000 {'bpb': 1.7841981851173607, 'nats_per_token': 5.249816145610769, 'tokens': 16381, 'bytes': 69537}
+{"event": "step", "step": 1100, "loss": 5.0776, "lr": 0.001965694061225239, "gnorm": 0.336, "tok_per_s": 180660.3, "load": 0.716796875}
+{"event": "step", "step": 1200, "loss": 5.1592, "lr": 0.0017965789611570958, "gnorm": 0.338, "tok_per_s": 314579.2, "load": 0.73974609375}
+{"event": "step", "step": 1300, "loss": 5.2423, "lr": 0.001625093889303488, "gnorm": 0.347, "tok_per_s": 315670.1, "load": 0.73974609375}
+{"event": "step", "step": 1400, "loss": 5.2227, "lr": 0.0014540115135746878, "gnorm": 0.361, "tok_per_s": 313848.0, "load": 0.68017578125}
+{"event": "step", "step": 1500, "loss": 4.9326, "lr": 0.00128609799086161, "gnorm": 0.384, "tok_per_s": 314739.1, "load": 0.68017578125}
+{"event": "step", "step": 1600, "loss": 5.0918, "lr": 0.001124068242242195, "gnorm": 0.372, "tok_per_s": 314721.2, "load": 0.7060546875}
+{"event": "step", "step": 1700, "loss": 4.9233, "lr": 0.000970542056597484, "gnorm": 0.367, "tok_per_s": 314065.4, "load": 0.7060546875}
+{"event": "step", "step": 1800, "loss": 4.8914, "lr": 0.0008280017323790136, "gnorm": 0.38, "tok_per_s": 314450.3, "load": 0.72998046875}
+{"event": "step", "step": 1900, "loss": 4.9994, "lr": 0.0006987519423994588, "gnorm": 0.412, "tok_per_s": 315043.0, "load": 0.72998046875}
+{"event": "step", "step": 2000, "loss": 4.9586, "lr": 0.000584882470575357, "gnorm": 0.373, "tok_per_s": 314961.8, "load": 0.751953125}
+eval 2000 {'bpb': 1.674099102363791, 'nats_per_token': 4.925861134851353, 'tokens': 16381, 'bytes': 69537}
+{"event": "step", "step": 2100, "loss": 4.9969, "lr": 0.0004882344231153923, "gnorm": 0.393, "tok_per_s": 181837.7, "load": 0.77197265625}
+{"event": "step", "step": 2200, "loss": 4.9885, "lr": 0.000410370460470918, "gnorm": 0.383, "tok_per_s": 315205.2, "load": 0.77197265625}
+{"event": "step", "step": 2300, "loss": 4.9627, "lr": 0.00035254953135541286, "gnorm": 0.389, "tok_per_s": 315227.3, "load": 0.79052734375}
+{"event": "step", "step": 2400, "loss": 4.8666, "lr": 0.000315706517347593, "gnorm": 0.396, "tok_per_s": 313584.0, "load": 0.79052734375}
+{"event": "step", "step": 2500, "loss": 4.8061, "lr": 0.00030043711719577026, "gnorm": 0.4, "tok_per_s": 314912.9, "load": 0.8076171875}
+{"event": "step", "step": 2519, "loss": 4.7743, "lr": 0.00030000109285181976, "gnorm": 0.4, "tok_per_s": 1682300.3, "load": 0.8076171875}
+FINAL w7_ch_v32k {"bpb": 1.5216407011062631, "nats_per_token": 4.9609703557222105, "tokens": 1027575, "bytes": 4833287}
+ABLATE w7_ch_v32k {"val_test_ablate_zero_read": 1.54785, "val_test_ablate_shuffle_keys": 1.54353} used [0.4663, 0.51, 0.3939, 0.3269]
+NEXT -> python3 track4_sdmonly_summary.py
+VOCAB_WAVE w7_ch_v32k {"V": 32768, "bytes_per_token": 4.6235, "tokens": 20637539, "test_bpb": 1.5216407011062631}
+NEXT -> python3 track4_sdmonly_vocab_score.py --run w7_ch_v32k --data /root/settle/sdmllm/data_v32k
+VOCAB_SCORE w7_ch_v32k {"docs": [1000, 2000], "T": 256, "V": 32768, "set": "v32k", "tokens_scored": 973217, "text_bytes": 4593386, "table_bytes": 4593386, "table_minus_text_bytes": 0, "nats": 4816912.91419, "bpb": 1.5129, "bpb_table": 1.5129, "bytes_per_scored_token": 4.7198, "trainer_window_test_bpb": 1.52164, "device": "cuda"}
+NEXT -> python3 track4_sdmonly_vocab_score.py --table w7_ch_v32k

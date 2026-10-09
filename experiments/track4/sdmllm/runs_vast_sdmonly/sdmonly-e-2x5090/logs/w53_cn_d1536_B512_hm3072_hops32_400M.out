@@ -1,0 +1,36 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"event": "sdmonly", "arm": "sdmonly_none", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": true, "hop_mlp": 3072, "ng_rows": 0, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "mix_layers": 0, "mix_heads": 4, "mix_n_sub": 64, "mix_d_a": 64, "mix_k": 32, "mix_decays": [1.0, 0.999, 0.99, 0.9], "mix_f": 0, "mix_chunk": 256, "mix_impl": "dense", "store_opt": "dense", "body_opt": "muon", "muon_lr": 0.02, "muon_wd": 0.0}
+{"run": "w53_cn_d1536_B512_hm3072_hops32_400M", "arm": "sdmonly_none", "seed": 0, "cfg": {"d": 1536, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 32, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train_big", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2, "untie": true, "hop_mlp": 3072, "ng_rows": 0, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "mix_layers": 0, "mix_heads": 4, "mix_n_sub": 64, "mix_d_a": 64, "mix_k": 32, "mix_decays": [1.0, 0.999, 0.99, 0.9], "mix_f": 0, "mix_chunk": 256, "mix_impl": "dense"}, "B": 512, "T": 256, "tokens_target": 400000000, "steps": 3051, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 198574080, "non_embedding_trainable": 684710400, "frozen_store_values": 0, "total_trainable": 883284480}, "flops_per_token_fwd": {"head": 397148160, "body": 973996032.0, "total": 1371144192.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-05T06:58:13Z", "load": [13.35, 13.18, 13.6], "ncpu": 256, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "f866f89214cd", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "580.173.02\n580.173.02", "mem_available_gb": 449.8}, "resumed_from_step": 0, "init": null, "train_name": "train_big"}
+{"event": "step", "step": 100, "loss": 5.2157, "lr": 0.002998924103138985, "gnorm": 0.327, "tok_per_s": 30426.3, "load": 12.138671875}
+{"event": "step", "step": 200, "loss": 4.8378, "lr": 0.002985833639258919, "gnorm": 0.203, "tok_per_s": 32225.3, "load": 14.27197265625}
+{"event": "step", "step": 300, "loss": 4.6338, "lr": 0.0029580095315304028, "gnorm": 0.159, "tok_per_s": 32230.2, "load": 13.85302734375}
+{"event": "step", "step": 400, "loss": 4.5225, "lr": 0.0029157586673394277, "gnorm": 0.152, "tok_per_s": 32178.8, "load": 14.814453125}
+{"event": "step", "step": 500, "loss": 4.42, "lr": 0.0028595470547029987, "gnorm": 0.116, "tok_per_s": 32231.9, "load": 12.771484375}
+{"event": "step", "step": 600, "loss": 4.3988, "lr": 0.0027899946824104325, "gnorm": 0.108, "tok_per_s": 32232.0, "load": 13.92333984375}
+{"event": "step", "step": 700, "loss": 4.2951, "lr": 0.002707868681826038, "gnorm": 0.095, "tok_per_s": 32233.0, "load": 11.0849609375}
+{"event": "step", "step": 800, "loss": 4.2525, "lr": 0.002614074865775413, "gnorm": 0.097, "tok_per_s": 32237.4, "load": 11.2900390625}
+{"event": "step", "step": 900, "loss": 4.1593, "lr": 0.0025096477378376445, "gnorm": 0.094, "tok_per_s": 32207.7, "load": 12.45263671875}
+{"event": "step", "step": 1000, "loss": 4.109, "lr": 0.0023957390822364074, "gnorm": 0.091, "tok_per_s": 32246.4, "load": 11.9423828125}
+{"event": "step", "step": 1100, "loss": 4.0766, "lr": 0.0022736052601783365, "gnorm": 0.089, "tok_per_s": 31180.4, "load": 14.37841796875}
+{"event": "step", "step": 1200, "loss": 4.0274, "lr": 0.002144593352754348, "gnorm": 0.092, "tok_per_s": 32206.9, "load": 13.8544921875}
+{"event": "step", "step": 1300, "loss": 4.0265, "lr": 0.002010126303241457, "gnorm": 0.091, "tok_per_s": 32247.7, "load": 12.98388671875}
+{"event": "step", "step": 1400, "loss": 3.9706, "lr": 0.0018716872226788282, "gnorm": 0.094, "tok_per_s": 32238.2, "load": 12.8232421875}
+{"event": "step", "step": 1500, "loss": 3.9626, "lr": 0.0017308030318204945, "gnorm": 0.09, "tok_per_s": 32247.3, "load": 14.7900390625}
+{"event": "step", "step": 1600, "loss": 3.9154, "lr": 0.0015890276198866245, "gnorm": 0.089, "tok_per_s": 32250.0, "load": 13.4990234375}
+{"event": "step", "step": 1700, "loss": 3.8791, "lr": 0.0014479247058647557, "gnorm": 0.106, "tok_per_s": 32253.3, "load": 12.72216796875}
+{"event": "step", "step": 1800, "loss": 3.8817, "lr": 0.0013090505913931141, "gnorm": 0.093, "tok_per_s": 32234.2, "load": 13.23681640625}
+{"event": "step", "step": 1900, "loss": 3.9194, "lr": 0.001173936995453961, "gnorm": 0.105, "tok_per_s": 32233.4, "load": 14.0908203125}
+{"event": "step", "step": 2000, "loss": 3.8283, "lr": 0.0010440741602025655, "gnorm": 0.097, "tok_per_s": 32238.4, "load": 12.28125}
+{"event": "step", "step": 2100, "loss": 3.7853, "lr": 0.0009208944142669184, "gnorm": 0.097, "tok_per_s": 31122.7, "load": 13.181640625}
+{"event": "step", "step": 2200, "loss": 3.7831, "lr": 0.000805756374807586, "gnorm": 0.101, "tok_per_s": 32205.6, "load": 17.67578125}
+{"event": "step", "step": 2300, "loss": 3.7857, "lr": 0.0006999299625818738, "gnorm": 0.101, "tok_per_s": 32233.9, "load": 15.01220703125}
+{"event": "step", "step": 2400, "loss": 3.7475, "lr": 0.0006045823952894043, "gnorm": 0.102, "tok_per_s": 32237.6, "load": 11.0712890625}
+{"event": "step", "step": 2500, "loss": 3.7447, "lr": 0.0005207653136861938, "gnorm": 0.098, "tok_per_s": 32240.0, "load": 14.6474609375}
+{"event": "step", "step": 2600, "loss": 3.7809, "lr": 0.0004494031824604086, "gnorm": 0.102, "tok_per_s": 32205.6, "load": 11.45458984375}
+{"event": "step", "step": 2700, "loss": 3.7584, "lr": 0.00039128309380290693, "gnorm": 0.104, "tok_per_s": 32247.0, "load": 11.53125}
+{"event": "step", "step": 2800, "loss": 3.7158, "lr": 0.0003470460861346069, "gnorm": 0.125, "tok_per_s": 32244.9, "load": 16.4189453125}
+{"event": "step", "step": 2900, "loss": 3.7093, "lr": 0.0003171800737412033, "gnorm": 0.106, "tok_per_s": 32245.3, "load": 12.904296875}
+{"event": "step", "step": 3000, "loss": 3.698, "lr": 0.0003020144652981822, "gnorm": 0.109, "tok_per_s": 32213.6, "load": 11.14501953125}
+{"event": "step", "step": 3051, "loss": 3.7028, "lr": 0.0003000007451798479, "gnorm": 0.108, "tok_per_s": 58907.6, "load": 13.8544921875}
+FINAL w53_cn_d1536_B512_hm3072_hops32_400M {"bpb": 1.10482672606786, "nats_per_token": 3.7120502315893935, "tokens": 995323, "bytes": 4824566}
+NEXT -> python3 track4_sdmonly_summary.py

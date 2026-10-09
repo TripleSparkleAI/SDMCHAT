@@ -1,0 +1,112 @@
+{
+ "run": "p0_R_Q",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 3600,
+  "k": 32,
+  "hops": 2,
+  "softness": 0.5,
+  "n_layer": 4,
+  "M_big": 16384,
+  "value_init": "s0",
+  "qgrad": 1.0,
+  "ngram_orders": [
+   2,
+   3
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 4,
+  "decays": [
+   0.8,
+   0.97
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20000000,
+ "steps": 2441,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 1.0,
+ "store_wd": 0.1,
+ "params": {
+  "embedding": 33095680,
+  "non_embedding_trainable": 2902784,
+  "frozen_store_values": 0,
+  "total_trainable": 35998464
+ },
+ "flops_per_token_fwd": {
+  "head": 66191360,
+  "body": 6324224.0,
+  "total": 72515584.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T11:40:27Z",
+  "load": [
+   1.04,
+   1.02,
+   1.0
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 121.8
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:43:29Z",
+  "load": [
+   1.16,
+   1.11,
+   1.03
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 120.5
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 4096000,
+   "bpb_quick": 2.1737011943695244
+  },
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.9953118763759738
+  },
+  {
+   "step": 1500,
+   "tokens": 12288000,
+   "bpb_quick": 1.9050364161130757
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.8412946111138009
+  }
+ ],
+ "val_test": {
+  "bpb": 1.6005918670131978,
+  "nats_per_token": 5.377745912947355,
+  "tokens": 995323,
+  "bytes": 4824566
+ }
+}

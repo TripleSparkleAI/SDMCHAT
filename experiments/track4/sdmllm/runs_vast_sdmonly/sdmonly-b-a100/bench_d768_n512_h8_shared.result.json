@@ -1,0 +1,119 @@
+{
+ "run": "bench_d768_n512_h8_shared",
+ "arm": "sdmonly",
+ "seed": 0,
+ "cfg": {
+  "d": 768,
+  "T": 256,
+  "seed": 0,
+  "M": 262144,
+  "k": 32,
+  "hops": 8,
+  "softness": 0.25,
+  "n_layer": 0,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 0,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ]
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 1600000,
+ "steps": 195,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 99287040,
+  "non_embedding_trainable": 210715136,
+  "frozen_store_values": 0,
+  "total_trainable": 310002176
+ },
+ "flops_per_token_fwd": {
+  "head": 198574080,
+  "body": 22347776.0,
+  "total": 220921856.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T10:59:47Z",
+  "load": [
+   1.39,
+   1.52,
+   0.95
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 121.2
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T11:00:45Z",
+  "load": [
+   1.29,
+   1.47,
+   0.97
+  ],
+  "ncpu": 16,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "3ea027734f41",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "driver": "570.211.01",
+  "mem_available_gb": 120.7
+ },
+ "curve": [],
+ "val_test": {
+  "bpb": 1.8475793331869286,
+  "nats_per_token": 6.418229579925537,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "sdmonly": {
+  "d_a": 256,
+  "n_sub": 512,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": true,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "store_params": 203030528
+ },
+ "val_test_ablate_zero_read": {
+  "bpb": 1.8757914240705074,
+  "nats_per_token": 6.516234397888184,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "val_test_ablate_shuffle_keys": {
+  "bpb": 1.8747397041822669,
+  "nats_per_token": 6.512580871582031,
+  "tokens": 2048,
+  "bytes": 10264
+ },
+ "locations_used_fraction_per_store": [
+  0.02217864990234375
+ ]
+}

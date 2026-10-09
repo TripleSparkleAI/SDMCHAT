@@ -1,0 +1,162 @@
+{
+ "lane": "ONESDMSTREAM",
+ "kind": "onesdm_puzzle",
+ "puzzle": "recall",
+ "arm": "onesdm",
+ "seed": 0,
+ "label": "cpucheck_tiny4pairs",
+ "model_cfg": {
+  "d": 64,
+  "layers": 2,
+  "mlp_f": 128,
+  "heads": 2,
+  "n_sub": 8,
+  "d_a": 8,
+  "k": 8,
+  "decays": [
+   0.0,
+   1.0
+  ],
+  "learn_decay": false,
+  "write_gate": true,
+  "gate_bias": 0.0,
+  "read_mode": "mean",
+  "out_norm": true,
+  "chunk": 128,
+  "mem_in_grad": 1.0,
+  "arc_d_c": 64,
+  "arc_n_sub": 16,
+  "arc_k": 4,
+  "arc_slot_keep": 4,
+  "arc_window": 16,
+  "arc_n_fetch": 4,
+  "arc_weighting": "soft",
+  "max_len": 1031,
+  "seed": 0
+ },
+ "params": {
+  "non_embedding": 70600,
+  "embedding": 3328
+ },
+ "vocab": {
+  "nk": 16,
+  "nv": 16,
+  "nn_": 16,
+  "k0": 4,
+  "v0": 20,
+  "n0": 36,
+  "V": 52
+ },
+ "train": {
+  "steps": 2000,
+  "B": 32,
+  "lr": 0.003,
+  "mem_lr_mult": 1.0,
+  "mem_clip": 0.0,
+  "clip": 1.0,
+  "opt": "adamw",
+  "muon_lr": 0.02,
+  "bf16": false,
+  "train_gap": 16,
+  "train_len": 128,
+  "train_corrupt": 0.0,
+  "n_pairs": 4,
+  "n_queries": 2,
+  "key_len": 4,
+  "blurry_gap": 100,
+  "eval_n": 256
+ },
+ "train_seconds": 394.4,
+ "curve": [
+  {
+   "step": 0,
+   "loss": 4.0171,
+   "train_acc": 0.0,
+   "grad_mem": 7.6534,
+   "grad_rest": 1.4775,
+   "lr": 7.500000000000001e-05,
+   "T": 29,
+   "sec": 0.3
+  },
+  {
+   "step": 500,
+   "loss": 1.749,
+   "train_acc": 0.2344,
+   "grad_mem": 1.392,
+   "grad_rest": 1.9494,
+   "lr": 0.002649375296051676,
+   "T": 31,
+   "sec": 78.0
+  },
+  {
+   "step": 1000,
+   "loss": 1.4469,
+   "train_acc": 0.2812,
+   "grad_mem": 1.0784,
+   "grad_rest": 2.2229,
+   "lr": 0.001693269629721735,
+   "T": 21,
+   "sec": 167.4
+  },
+  {
+   "step": 1500,
+   "loss": 1.3825,
+   "train_acc": 0.2656,
+   "grad_mem": 0.6962,
+   "grad_rest": 1.938,
+   "lr": 0.0007108285566852934,
+   "T": 30,
+   "sec": 270.3
+  },
+  {
+   "step": 1999,
+   "loss": 1.2661,
+   "train_acc": 0.2969,
+   "grad_mem": 0.6238,
+   "grad_rest": 1.9004,
+   "lr": 0.0003000017341684571,
+   "T": 20,
+   "sec": 394.4
+  }
+ ],
+ "eval": [
+  {
+   "setting": 16,
+   "T": 31,
+   "accuracy": 0.287109375,
+   "n_scored": 512,
+   "n_sequences": 256,
+   "seconds": 0.415
+  },
+  {
+   "setting": 100,
+   "T": 115,
+   "accuracy": 0.31640625,
+   "n_scored": 512,
+   "n_sequences": 256,
+   "seconds": 0.738
+  },
+  {
+   "setting": 1000,
+   "T": 1015,
+   "accuracy": 0.298828125,
+   "n_scored": 512,
+   "n_sequences": 256,
+   "seconds": 7.319
+  }
+ ],
+ "stamps": {
+  "host": "HappyRobots-MacBook-Pro.local",
+  "torch": "2.8.0",
+  "device": "cpu",
+  "python": "3.9.6",
+  "loadavg": [
+   80.0986328125,
+   70.76953125,
+   55.19091796875
+  ],
+  "cpu_count": 18,
+  "utc": "2026-10-06T13:10:31Z",
+  "git_sha": "930b7a95be101cc7dbdfed91124fa33b9c57a585"
+ }
+}

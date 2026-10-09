@@ -1,0 +1,19 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"event": "sdmonly", "arm": "sdmonly", "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": false, "dense_f": null, "sched": "cosine", "wsd_decay": 0.2}
+/root/settle/sdmllm/track4_sdmllm_train_one_arm.py:227: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  rec = {"event": "step", "step": step, "loss": round(float(loss), 4), "lr": lr, "gnorm": round(float(gn), 3),
+{"run": "bench_d256_n256_h4", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99]}, "B": 32, "T": 256, "tokens_target": 1600000, "steps": 195, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 101585408}, "flops_per_token_fwd": {"head": 66191360, "body": 3211264.0, "total": 69402624.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T10:55:25Z", "load": [2.4, 1.24, 0.66], "ncpu": 16, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "3ea027734f41", "cuda": "12.8", "gpu": "NVIDIA A100-SXM4-40GB", "driver": "570.211.01", "mem_available_gb": 121.7}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 20, "loss": 8.2271, "lr": 0.002953999865490242, "gnorm": 0.832, "tok_per_s": 5468.2, "load": 3.001953125}
+{"event": "step", "step": 40, "loss": 7.715, "lr": 0.002772483976608436, "gnorm": 0.325, "tok_per_s": 164026.0, "load": 3.001953125}
+{"event": "step", "step": 60, "loss": 7.4531, "lr": 0.002471827929161773, "gnorm": 0.273, "tok_per_s": 164430.1, "load": 3.001953125}
+{"event": "step", "step": 80, "loss": 7.1871, "lr": 0.002083943278159268, "gnorm": 0.409, "tok_per_s": 164101.3, "load": 2.84130859375}
+{"event": "step", "step": 100, "loss": 7.0271, "lr": 0.0016500000000000002, "gnorm": 0.342, "tok_per_s": 163582.2, "load": 2.84130859375}
+{"event": "step", "step": 120, "loss": 7.035, "lr": 0.0012160567218407325, "gnorm": 0.288, "tok_per_s": 163164.6, "load": 2.84130859375}
+{"event": "step", "step": 140, "loss": 6.9013, "lr": 0.0008281720708382271, "gnorm": 0.302, "tok_per_s": 162756.9, "load": 2.84130859375}
+{"event": "step", "step": 160, "loss": 6.8458, "lr": 0.0005275160233915638, "gnorm": 0.294, "tok_per_s": 162560.7, "load": 2.69384765625}
+{"event": "step", "step": 180, "loss": 6.8075, "lr": 0.00034600013450975794, "gnorm": 0.283, "tok_per_s": 162630.6, "load": 2.69384765625}
+{"event": "step", "step": 195, "loss": 6.8679, "lr": 0.0003001807138220916, "gnorm": 0.407, "tok_per_s": 219705.5, "load": 2.69384765625}
+FINAL bench_d256_n256_h4 {"bpb": 1.9300427102711224, "nats_per_token": 6.704695701599121, "tokens": 2048, "bytes": 10264}
+ABLATE bench_d256_n256_h4 {"val_test_ablate_zero_read": 1.97707, "val_test_ablate_shuffle_keys": 1.97492} used [0.0298, 0.0463, 0.0391, 0.0547]
+NEXT -> python3 track4_sdmonly_summary.py

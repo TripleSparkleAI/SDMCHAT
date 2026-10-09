@@ -1,0 +1,334 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_AU.UTF-8)
+{"run": "true_base_sdm_d1536_hm6144_hops16_T2048_wsd_2B", "arm": "sdmonly", "seed": 0, "cfg": {"d": 1536, "T": 2048, "seed": 0, "M": 65536, "k": 32, "hops": 16, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train_big", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": true, "dense_f": null, "sched": "wsd", "wsd_decay": 0.2, "untie": true, "hop_mlp": 6144, "ng_rows": 0, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "mix_layers": 0, "mix_heads": 4, "mix_n_sub": 64, "mix_d_a": 64, "mix_k": 32, "mix_decays": [1.0, 0.999, 0.99, 0.9], "mix_f": 0, "mix_chunk": 256, "mix_impl": "dense", "data": {"train_name": "train_big", "train_n": 2009319839, "fingerprint": "b6e358690d04b090", "B_global": 64, "accum_global": 64, "micro_B": 1, "T": 2048, "data_n_flag": null}}, "B": 32, "T": 2048, "tokens_target": 2000000000, "steps": 15258, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 198574080, "non_embedding_trainable": 791681536, "frozen_store_values": 0, "total_trainable": 990255616}, "flops_per_token_fwd": {"head": 397148160, "body": 1005584384.0, "total": 1402732544.0}, "device": "cuda:0", "stamp_start": {"utc": "2026-10-05T18:46:33Z", "load": [44.62, 43.09, 41.58], "ncpu": 144, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "208b71d7896a", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "570.169\n570.169", "mem_available_gb": 391.1}, "resumed_from_step": 0, "init": null, "train_name": "train_big", "world_size": 2, "B_global": 64, "accum": 32, "accum_global": 64, "single_device_equivalent": "--B 64 --accum 64", "lr_flag": 0.003, "lr_scale": "none", "lr_ref_batch": 32, "table_sync": "dense", "sync_bn": false, "backend": "nccl", "gpus_visible": 2, "ranks_share_a_gpu": false, "table_bytes_dense": 402653184, "trainer": "track4_sdmonly_train_ddp.py"}
+{"event": "step", "step": 100, "loss": 5.8079, "loss_rank0": 5.7804, "lr": 0.0009836065573770492, "gnorm": 0.307, "tok_per_s": 25097.6, "tok_per_s_rank": [12550.4, 12547.2], "load": 51.25537109375}
+{"event": "step", "step": 200, "loss": 5.0101, "loss_rank0": 5.0433, "lr": 0.0019672131147540984, "gnorm": 0.265, "tok_per_s": 29809.8, "tok_per_s_rank": [14905.0, 14904.8], "load": 69.20703125}
+{"event": "step", "step": 300, "loss": 4.8335, "loss_rank0": 4.7828, "lr": 0.0029508196721311475, "gnorm": 0.224, "tok_per_s": 31077.6, "tok_per_s_rank": [15538.8, 15538.8], "load": 35.87060546875}
+{"event": "step", "step": 400, "loss": 4.6576, "loss_rank0": 4.5864, "lr": 0.003, "gnorm": 0.193, "tok_per_s": 31467.9, "tok_per_s_rank": [15734.0, 15733.9], "load": 21.65283203125}
+{"event": "step", "step": 500, "loss": 4.5753, "loss_rank0": 4.5484, "lr": 0.003, "gnorm": 0.154, "tok_per_s": 31605.3, "tok_per_s_rank": [15802.7, 15802.6], "load": 63.21533203125}
+{"event": "step", "step": 600, "loss": 4.4136, "loss_rank0": 4.3676, "lr": 0.003, "gnorm": 0.146, "tok_per_s": 31659.8, "tok_per_s_rank": [15829.9, 15829.9], "load": 32.48291015625}
+{"event": "step", "step": 700, "loss": 4.3706, "loss_rank0": 4.3452, "lr": 0.003, "gnorm": 0.127, "tok_per_s": 31675.8, "tok_per_s_rank": [15837.9, 15837.9], "load": 19.7001953125}
+{"event": "step", "step": 800, "loss": 4.3083, "loss_rank0": 4.2558, "lr": 0.003, "gnorm": 0.115, "tok_per_s": 31694.7, "tok_per_s_rank": [15847.3, 15847.4], "load": 49.47119140625}
+{"event": "step", "step": 900, "loss": 4.2504, "loss_rank0": 4.2187, "lr": 0.003, "gnorm": 0.119, "tok_per_s": 31713.6, "tok_per_s_rank": [15856.5, 15857.1], "load": 58.11669921875}
+{"event": "step", "step": 1000, "loss": 4.2046, "loss_rank0": 4.2525, "lr": 0.003, "gnorm": 0.104, "tok_per_s": 31732.6, "tok_per_s_rank": [15866.3, 15866.3], "load": 21.51025390625}
+{"event": "rank_check", "step": 1000, "identical": true, "tensors": 231}
+{"event": "step", "step": 1100, "loss": 4.0711, "loss_rank0": 4.0668, "lr": 0.003, "gnorm": 0.117, "tok_per_s": 30661.8, "tok_per_s_rank": [15330.9, 15330.9], "load": 42.1513671875}
+{"event": "step", "step": 1200, "loss": 4.1397, "loss_rank0": 4.1399, "lr": 0.003, "gnorm": 0.104, "tok_per_s": 31662.6, "tok_per_s_rank": [15831.3, 15831.3], "load": 23.8759765625}
+{"event": "step", "step": 1300, "loss": 4.0459, "loss_rank0": 4.062, "lr": 0.003, "gnorm": 0.129, "tok_per_s": 31799.4, "tok_per_s_rank": [15899.7, 15899.7], "load": 15.0732421875}
+{"event": "step", "step": 1400, "loss": 4.0503, "loss_rank0": 4.017, "lr": 0.003, "gnorm": 0.106, "tok_per_s": 31849.0, "tok_per_s_rank": [15924.5, 15924.5], "load": 38.11181640625}
+{"event": "step", "step": 1500, "loss": 4.0443, "loss_rank0": 4.0434, "lr": 0.003, "gnorm": 0.116, "tok_per_s": 31863.7, "tok_per_s_rank": [15931.8, 15931.9], "load": 61.32568359375}
+{"event": "step", "step": 1600, "loss": 4.0191, "loss_rank0": 4.0197, "lr": 0.003, "gnorm": 0.136, "tok_per_s": 31873.4, "tok_per_s_rank": [15936.7, 15936.7], "load": 19.6640625}
+{"event": "step", "step": 1700, "loss": 3.9318, "loss_rank0": 3.9293, "lr": 0.003, "gnorm": 0.104, "tok_per_s": 31899.6, "tok_per_s_rank": [15949.8, 15949.8], "load": 17.1298828125}
+{"event": "step", "step": 1800, "loss": 3.9841, "loss_rank0": 3.9965, "lr": 0.003, "gnorm": 0.11, "tok_per_s": 31905.6, "tok_per_s_rank": [15952.8, 15952.8], "load": 46.4658203125}
+{"event": "step", "step": 1900, "loss": 3.9697, "loss_rank0": 4.063, "lr": 0.003, "gnorm": 0.101, "tok_per_s": 31917.5, "tok_per_s_rank": [15958.8, 15958.7], "load": 29.34521484375}
+{"event": "step", "step": 2000, "loss": 3.974, "loss_rank0": 3.9431, "lr": 0.003, "gnorm": 0.133, "tok_per_s": 31921.5, "tok_per_s_rank": [15960.7, 15960.8], "load": 19.21728515625}
+{"event": "rank_check", "step": 2000, "identical": true, "tensors": 231}
+{"event": "step", "step": 2100, "loss": 3.8837, "loss_rank0": 3.9341, "lr": 0.003, "gnorm": 0.17, "tok_per_s": 30686.2, "tok_per_s_rank": [15343.1, 15343.1], "load": 43.619140625}
+{"event": "step", "step": 2200, "loss": 3.8952, "loss_rank0": 3.8606, "lr": 0.003, "gnorm": 0.096, "tok_per_s": 31924.6, "tok_per_s_rank": [15962.3, 15962.3], "load": 29.01220703125}
+{"event": "step", "step": 2300, "loss": 3.8687, "loss_rank0": 3.8324, "lr": 0.003, "gnorm": 0.205, "tok_per_s": 31931.2, "tok_per_s_rank": [15965.6, 15965.6], "load": 15.7236328125}
+{"event": "step", "step": 2400, "loss": 3.7655, "loss_rank0": 3.818, "lr": 0.003, "gnorm": 0.12, "tok_per_s": 31914.0, "tok_per_s_rank": [15957.0, 15957.0], "load": 27.32177734375}
+{"event": "step", "step": 2500, "loss": 3.9321, "loss_rank0": 3.9291, "lr": 0.003, "gnorm": 0.12, "tok_per_s": 31919.6, "tok_per_s_rank": [15959.8, 15959.8], "load": 26.68798828125}
+{"event": "step", "step": 2600, "loss": 3.9131, "loss_rank0": 3.8738, "lr": 0.003, "gnorm": 0.158, "tok_per_s": 31933.3, "tok_per_s_rank": [15966.7, 15966.6], "load": 31.15087890625}
+{"event": "step", "step": 2700, "loss": 3.8995, "loss_rank0": 3.8866, "lr": 0.003, "gnorm": 0.1, "tok_per_s": 31943.9, "tok_per_s_rank": [15971.9, 15972.0], "load": 11.423828125}
+{"event": "step", "step": 2800, "loss": 3.7754, "loss_rank0": 3.7679, "lr": 0.003, "gnorm": 0.204, "tok_per_s": 31948.2, "tok_per_s_rank": [15974.1, 15974.1], "load": 36.44091796875}
+{"event": "step", "step": 2900, "loss": 3.7793, "loss_rank0": 3.734, "lr": 0.003, "gnorm": 0.186, "tok_per_s": 31949.2, "tok_per_s_rank": [15974.6, 15974.6], "load": 27.12060546875}
+{"event": "step", "step": 3000, "loss": 3.834, "loss_rank0": 3.9225, "lr": 0.003, "gnorm": 0.098, "tok_per_s": 31947.0, "tok_per_s_rank": [15973.5, 15973.5], "load": 13.23779296875}
+{"event": "rank_check", "step": 3000, "identical": true, "tensors": 231}
+{"event": "step", "step": 3100, "loss": 3.7256, "loss_rank0": 3.682, "lr": 0.003, "gnorm": 0.13, "tok_per_s": 30774.2, "tok_per_s_rank": [15387.1, 15387.1], "load": 39.03857421875}
+{"event": "step", "step": 3200, "loss": 3.7518, "loss_rank0": 3.7284, "lr": 0.003, "gnorm": 0.19, "tok_per_s": 31947.6, "tok_per_s_rank": [15973.8, 15973.8], "load": 32.26318359375}
+{"event": "step", "step": 3300, "loss": 3.829, "loss_rank0": 3.8404, "lr": 0.003, "gnorm": 0.113, "tok_per_s": 31950.6, "tok_per_s_rank": [15975.3, 15975.3], "load": 27.42919921875}
+{"event": "step", "step": 3400, "loss": 3.7489, "loss_rank0": 3.8095, "lr": 0.003, "gnorm": 0.143, "tok_per_s": 31940.4, "tok_per_s_rank": [15970.1, 15970.3], "load": 10.681640625}
+{"event": "step", "step": 3500, "loss": 3.7747, "loss_rank0": 3.7741, "lr": 0.003, "gnorm": 0.16, "tok_per_s": 31947.4, "tok_per_s_rank": [15973.7, 15973.7], "load": 31.78125}
+{"event": "step", "step": 3600, "loss": 3.7437, "loss_rank0": 3.7804, "lr": 0.003, "gnorm": 0.146, "tok_per_s": 31953.6, "tok_per_s_rank": [15976.8, 15976.8], "load": 35.88720703125}
+{"event": "step", "step": 3700, "loss": 3.652, "loss_rank0": 3.5861, "lr": 0.003, "gnorm": 0.131, "tok_per_s": 31949.0, "tok_per_s_rank": [15974.5, 15974.5], "load": 14.82275390625}
+{"event": "step", "step": 3800, "loss": 3.6572, "loss_rank0": 3.6433, "lr": 0.003, "gnorm": 0.103, "tok_per_s": 31949.6, "tok_per_s_rank": [15974.8, 15974.8], "load": 41.2265625}
+{"event": "step", "step": 3900, "loss": 3.6871, "loss_rank0": 3.6242, "lr": 0.003, "gnorm": 0.35, "tok_per_s": 31948.4, "tok_per_s_rank": [15974.2, 15974.2], "load": 34.9677734375}
+{"event": "step", "step": 4000, "loss": 3.726, "loss_rank0": 3.7987, "lr": 0.003, "gnorm": 0.162, "tok_per_s": 31955.4, "tok_per_s_rank": [15977.7, 15977.7], "load": 15.73876953125}
+{"event": "rank_check", "step": 4000, "identical": true, "tensors": 231}
+{"event": "step", "step": 4100, "loss": 3.7067, "loss_rank0": 3.6849, "lr": 0.003, "gnorm": 0.109, "tok_per_s": 30750.8, "tok_per_s_rank": [15375.4, 15375.4], "load": 33.67333984375}
+{"event": "step", "step": 4200, "loss": 3.6699, "loss_rank0": 3.7569, "lr": 0.003, "gnorm": 0.175, "tok_per_s": 31960.6, "tok_per_s_rank": [15980.3, 15980.3], "load": 30.24658203125}
+{"event": "step", "step": 4300, "loss": 3.7224, "loss_rank0": 3.8003, "lr": 0.003, "gnorm": 0.223, "tok_per_s": 31954.6, "tok_per_s_rank": [15977.3, 15977.3], "load": 21.4169921875}
+{"event": "step", "step": 4400, "loss": 3.6618, "loss_rank0": 3.6954, "lr": 0.003, "gnorm": 0.092, "tok_per_s": 31968.2, "tok_per_s_rank": [15984.1, 15984.1], "load": 11.77685546875}
+{"event": "step", "step": 4500, "loss": 3.6324, "loss_rank0": 3.6305, "lr": 0.003, "gnorm": 0.116, "tok_per_s": 31876.9, "tok_per_s_rank": [15938.4, 15938.5], "load": 55.72119140625}
+{"event": "step", "step": 4600, "loss": 3.7403, "loss_rank0": 3.6812, "lr": 0.003, "gnorm": 0.111, "tok_per_s": 31971.8, "tok_per_s_rank": [15985.9, 15985.9], "load": 22.56640625}
+{"event": "step", "step": 4700, "loss": 3.6851, "loss_rank0": 3.6736, "lr": 0.003, "gnorm": 0.165, "tok_per_s": 31973.4, "tok_per_s_rank": [15986.7, 15986.7], "load": 21.17626953125}
+{"event": "step", "step": 4800, "loss": 3.7569, "loss_rank0": 3.7564, "lr": 0.003, "gnorm": 0.229, "tok_per_s": 31972.5, "tok_per_s_rank": [15986.2, 15986.3], "load": 29.67138671875}
+{"event": "step", "step": 4900, "loss": 3.7237, "loss_rank0": 3.7251, "lr": 0.003, "gnorm": 0.332, "tok_per_s": 31972.6, "tok_per_s_rank": [15986.3, 15986.3], "load": 29.62060546875}
+{"event": "step", "step": 5000, "loss": 3.6787, "loss_rank0": 3.6902, "lr": 0.003, "gnorm": 0.128, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 26.13818359375}
+/opt/conda/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+=== RESUME 2026-10-06T01:03:20Z after the step-5000 eval hang: same flags, --eval-every 100000000 (no quick evals) ===
+{"run": "true_base_sdm_d1536_hm6144_hops16_T2048_wsd_2B", "arm": "sdmonly", "seed": 0, "cfg": {"d": 1536, "T": 2048, "seed": 0, "M": 65536, "k": 32, "hops": 16, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train_big", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": true, "dense_f": null, "sched": "wsd", "wsd_decay": 0.2, "untie": true, "hop_mlp": 6144, "ng_rows": 0, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "mix_layers": 0, "mix_heads": 4, "mix_n_sub": 64, "mix_d_a": 64, "mix_k": 32, "mix_decays": [1.0, 0.999, 0.99, 0.9], "mix_f": 0, "mix_chunk": 256, "mix_impl": "dense", "data": {"train_name": "train_big", "train_n": 2009319839, "fingerprint": "b6e358690d04b090", "B_global": 64, "accum_global": 64, "micro_B": 1, "T": 2048, "data_n_flag": null}}, "B": 32, "T": 2048, "tokens_target": 2000000000, "steps": 15258, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 198574080, "non_embedding_trainable": 791681536, "frozen_store_values": 0, "total_trainable": 990255616}, "flops_per_token_fwd": {"head": 397148160, "body": 1005584384.0, "total": 1402732544.0}, "device": "cuda:0", "stamp_start": {"utc": "2026-10-06T01:04:01Z", "load": [18.53, 24.32, 25.92], "ncpu": 144, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "208b71d7896a", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "570.169\n570.169", "mem_available_gb": 461.1}, "resumed_from_step": 4000, "init": null, "train_name": "train_big", "world_size": 2, "B_global": 64, "accum": 32, "accum_global": 64, "single_device_equivalent": "--B 64 --accum 64", "lr_flag": 0.003, "lr_scale": "none", "lr_ref_batch": 32, "table_sync": "dense", "sync_bn": false, "backend": "nccl", "gpus_visible": 2, "ranks_share_a_gpu": false, "table_bytes_dense": 402653184, "trainer": "track4_sdmonly_train_ddp.py"}
+W1006 01:04:34.004000 20813 site-packages/torch/multiprocessing/spawn.py:169] Terminating process 20816 via signal SIGTERM
+Traceback (most recent call last):
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 1139, in <module>
+    main()
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 1135, in main
+    launch()
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 725, in launch
+    mp.spawn(_spawned, args=(world, a.argv, port), nprocs=world, join=True)
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 1 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 708, in _spawned
+    run_rank(rank, world, parse(argv), f"tcp://127.0.0.1:{port}")
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 697, in run_rank
+    res_path = train(a, rank, world, device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 563, in train
+    loss, gn, s = train_step(a, net, model, opt, tables, bns, xb, world, rank, device, step, dump)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 428, in train_step
+    lm = net(mb[:, :-1], mb[:, 1:])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1648, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/parallel/distributed.py", line 1474, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 375, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 736, in compile_wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 237, in forward
+    def forward(self, x, t):
+  File "/opt/conda/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 929, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/aot_autograd.py", line 1241, in forward
+    return compiled_fn(full_args)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 370, in runtime_wrapper
+    all_outs = call_func_at_runtime_with_args(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+                            ^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py", line 100, in g
+    return f(*args)
+           ^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/autograd/function.py", line 576, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 2074, in forward
+    fw_outs = call_func_at_runtime_with_args(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/utils.py", line 126, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+                            ^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 556, in wrapper
+    return compiled_fn(runtime_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 750, in inner_fn
+    outs = compiled_fn(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_inductor/output_code.py", line 584, in __call__
+    return self.current_callable(inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/_inductor/utils.py", line 2716, in run
+    out = model(new_inputs)
+          ^^^^^^^^^^^^^^^^^
+  File "/tmp/torchinductor_root/z7/cz745okaxwmr4e4a5kssyhmjqzukcsxh2xmbz7w7tvtfj76kqxpb.py", line 4746, in call
+    buf719 = empty_strided_cuda((2048, 1, 64, 1536), (98304, 1, 1536, 1), torch.bfloat16)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 384.00 MiB. GPU 1 has a total capacity of 31.37 GiB of which 14.44 MiB is free. Including non-PyTorch memory, this process has 31.34 GiB memory in use. Of the allocated memory 30.43 GiB is allocated by PyTorch, and 119.42 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+=== RESUME 2 2026-10-06T01:06:42Z: resume 1 ran out of GPU memory (the loaded checkpoint stayed on the GPU); trainer patched to load on CPU and drop the copies ===
+{"run": "true_base_sdm_d1536_hm6144_hops16_T2048_wsd_2B", "arm": "sdmonly", "seed": 0, "cfg": {"d": 1536, "T": 2048, "seed": 0, "M": 65536, "k": 32, "hops": 16, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train_big", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99], "d_a": 256, "n_sub": 256, "heads": 1, "readout_f": 0, "share_store": true, "dense_f": null, "sched": "wsd", "wsd_decay": 0.2, "untie": true, "hop_mlp": 6144, "ng_rows": 0, "ng_orders": [2, 3], "conj": 2, "rt_write": 0, "rt_buckets": 4096, "rt_shuffle": false, "graded": false, "mix_layers": 0, "mix_heads": 4, "mix_n_sub": 64, "mix_d_a": 64, "mix_k": 32, "mix_decays": [1.0, 0.999, 0.99, 0.9], "mix_f": 0, "mix_chunk": 256, "mix_impl": "dense", "data": {"train_name": "train_big", "train_n": 2009319839, "fingerprint": "b6e358690d04b090", "B_global": 64, "accum_global": 64, "micro_B": 1, "T": 2048, "data_n_flag": null}}, "B": 32, "T": 2048, "tokens_target": 2000000000, "steps": 15258, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 3.0, "store_wd": 0.0, "params": {"embedding": 198574080, "non_embedding_trainable": 791681536, "frozen_store_values": 0, "total_trainable": 990255616}, "flops_per_token_fwd": {"head": 397148160, "body": 1005584384.0, "total": 1402732544.0}, "device": "cuda:0", "stamp_start": {"utc": "2026-10-06T01:07:28Z", "load": [36.99, 26.15, 26.04], "ncpu": 144, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "208b71d7896a", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "driver": "570.169\n570.169", "mem_available_gb": 461.9}, "resumed_from_step": 4000, "init": null, "train_name": "train_big", "world_size": 2, "B_global": 64, "accum": 32, "accum_global": 64, "single_device_equivalent": "--B 64 --accum 64", "lr_flag": 0.003, "lr_scale": "none", "lr_ref_batch": 32, "table_sync": "dense", "sync_bn": false, "backend": "nccl", "gpus_visible": 2, "ranks_share_a_gpu": false, "table_bytes_dense": 402653184, "trainer": "track4_sdmonly_train_ddp.py"}
+{"event": "step", "step": 4100, "loss": 3.7068, "loss_rank0": 3.685, "lr": 0.003, "gnorm": 0.131, "tok_per_s": 30105.2, "tok_per_s_rank": [15053.2, 15052.0], "load": 20.75048828125}
+{"event": "step", "step": 4200, "loss": 3.6699, "loss_rank0": 3.7568, "lr": 0.003, "gnorm": 0.136, "tok_per_s": 31973.8, "tok_per_s_rank": [15986.9, 15986.9], "load": 12.70947265625}
+{"event": "step", "step": 4300, "loss": 3.7223, "loss_rank0": 3.8001, "lr": 0.003, "gnorm": 0.232, "tok_per_s": 31973.0, "tok_per_s_rank": [15986.5, 15986.5], "load": 31.3447265625}
+{"event": "step", "step": 4400, "loss": 3.6618, "loss_rank0": 3.6955, "lr": 0.003, "gnorm": 0.122, "tok_per_s": 31971.7, "tok_per_s_rank": [15985.8, 15985.9], "load": 22.76611328125}
+{"event": "step", "step": 4500, "loss": 3.6323, "loss_rank0": 3.6303, "lr": 0.003, "gnorm": 0.127, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 14.42236328125}
+{"event": "step", "step": 4600, "loss": 3.7403, "loss_rank0": 3.6811, "lr": 0.003, "gnorm": 0.091, "tok_per_s": 31972.3, "tok_per_s_rank": [15986.1, 15986.2], "load": 39.87548828125}
+{"event": "step", "step": 4700, "loss": 3.685, "loss_rank0": 3.6735, "lr": 0.003, "gnorm": 0.15, "tok_per_s": 31973.4, "tok_per_s_rank": [15986.7, 15986.7], "load": 27.708984375}
+{"event": "step", "step": 4800, "loss": 3.7568, "loss_rank0": 3.7562, "lr": 0.003, "gnorm": 0.192, "tok_per_s": 31972.8, "tok_per_s_rank": [15986.4, 15986.4], "load": 38.30908203125}
+{"event": "step", "step": 4900, "loss": 3.7239, "loss_rank0": 3.7255, "lr": 0.003, "gnorm": 0.347, "tok_per_s": 31971.9, "tok_per_s_rank": [15985.9, 15986.0], "load": 12.2158203125}
+{"event": "step", "step": 5000, "loss": 3.679, "loss_rank0": 3.6904, "lr": 0.003, "gnorm": 0.198, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 38.7451171875}
+{"event": "rank_check", "step": 5000, "identical": true, "tensors": 231}
+{"event": "step", "step": 5100, "loss": 3.7071, "loss_rank0": 3.6984, "lr": 0.003, "gnorm": 0.447, "tok_per_s": 30732.2, "tok_per_s_rank": [15366.1, 15366.1], "load": 28.6806640625}
+{"event": "step", "step": 5200, "loss": 3.6369, "loss_rank0": 3.6703, "lr": 0.003, "gnorm": 0.152, "tok_per_s": 31954.9, "tok_per_s_rank": [15977.4, 15977.5], "load": 15.37939453125}
+{"event": "step", "step": 5300, "loss": 3.6745, "loss_rank0": 3.6715, "lr": 0.003, "gnorm": 0.396, "tok_per_s": 31953.2, "tok_per_s_rank": [15976.6, 15976.6], "load": 59.21484375}
+{"event": "step", "step": 5400, "loss": 3.5823, "loss_rank0": 3.6382, "lr": 0.003, "gnorm": 0.26, "tok_per_s": 31957.3, "tok_per_s_rank": [15978.6, 15978.7], "load": 24.01171875}
+{"event": "step", "step": 5500, "loss": 3.5535, "loss_rank0": 3.5255, "lr": 0.003, "gnorm": 0.097, "tok_per_s": 31950.1, "tok_per_s_rank": [15975.0, 15975.1], "load": 13.89794921875}
+{"event": "step", "step": 5600, "loss": 3.5505, "loss_rank0": 3.6117, "lr": 0.003, "gnorm": 0.128, "tok_per_s": 31951.4, "tok_per_s_rank": [15975.7, 15975.7], "load": 21.72119140625}
+{"event": "step", "step": 5700, "loss": 3.6708, "loss_rank0": 3.666, "lr": 0.003, "gnorm": 0.111, "tok_per_s": 31953.8, "tok_per_s_rank": [15976.9, 15976.9], "load": 33.05810546875}
+{"event": "step", "step": 5800, "loss": 3.6473, "loss_rank0": 3.6688, "lr": 0.003, "gnorm": 0.088, "tok_per_s": 31952.6, "tok_per_s_rank": [15976.4, 15976.2], "load": 19.10791015625}
+{"event": "step", "step": 5900, "loss": 3.63, "loss_rank0": 3.6539, "lr": 0.003, "gnorm": 0.194, "tok_per_s": 31943.9, "tok_per_s_rank": [15971.9, 15972.0], "load": 17.65380859375}
+{"event": "step", "step": 6000, "loss": 3.5823, "loss_rank0": 3.5623, "lr": 0.003, "gnorm": 0.085, "tok_per_s": 31950.9, "tok_per_s_rank": [15975.4, 15975.5], "load": 46.77685546875}
+{"event": "rank_check", "step": 6000, "identical": true, "tensors": 231}
+{"event": "step", "step": 6100, "loss": 3.5658, "loss_rank0": 3.5878, "lr": 0.003, "gnorm": 0.193, "tok_per_s": 30645.2, "tok_per_s_rank": [15322.6, 15322.6], "load": 20.1044921875}
+{"event": "step", "step": 6200, "loss": 3.5882, "loss_rank0": 3.6866, "lr": 0.003, "gnorm": 0.117, "tok_per_s": 31943.2, "tok_per_s_rank": [15971.5, 15971.7], "load": 13.71484375}
+{"event": "step", "step": 6300, "loss": 3.5834, "loss_rank0": 3.6081, "lr": 0.003, "gnorm": 0.293, "tok_per_s": 31940.4, "tok_per_s_rank": [15970.2, 15970.2], "load": 57.560546875}
+{"event": "step", "step": 6400, "loss": 3.6002, "loss_rank0": 3.5947, "lr": 0.003, "gnorm": 0.092, "tok_per_s": 31951.0, "tok_per_s_rank": [15975.5, 15975.5], "load": 32.75390625}
+{"event": "step", "step": 6500, "loss": 3.5462, "loss_rank0": 3.5123, "lr": 0.003, "gnorm": 0.236, "tok_per_s": 31873.4, "tok_per_s_rank": [15936.6, 15936.8], "load": 21.07470703125}
+{"event": "step", "step": 6600, "loss": 3.5281, "loss_rank0": 3.5279, "lr": 0.003, "gnorm": 0.172, "tok_per_s": 31957.4, "tok_per_s_rank": [15978.7, 15978.7], "load": 22.62646484375}
+{"event": "step", "step": 6700, "loss": 3.5358, "loss_rank0": 3.492, "lr": 0.003, "gnorm": 0.133, "tok_per_s": 31959.2, "tok_per_s_rank": [15979.6, 15979.6], "load": 39.3427734375}
+{"event": "step", "step": 6800, "loss": 3.5856, "loss_rank0": 3.6944, "lr": 0.003, "gnorm": 0.377, "tok_per_s": 31954.4, "tok_per_s_rank": [15977.1, 15977.3], "load": 23.00390625}
+{"event": "step", "step": 6900, "loss": 3.634, "loss_rank0": 3.636, "lr": 0.003, "gnorm": 0.288, "tok_per_s": 31954.5, "tok_per_s_rank": [15977.2, 15977.3], "load": 20.25439453125}
+{"event": "step", "step": 7000, "loss": 3.5992, "loss_rank0": 3.5253, "lr": 0.003, "gnorm": 0.577, "tok_per_s": 31951.8, "tok_per_s_rank": [15975.9, 15975.9], "load": 35.9443359375}
+{"event": "rank_check", "step": 7000, "identical": true, "tensors": 231}
+{"event": "step", "step": 7100, "loss": 3.4499, "loss_rank0": 3.4707, "lr": 0.003, "gnorm": 0.117, "tok_per_s": 30790.8, "tok_per_s_rank": [15395.4, 15395.4], "load": 24.4296875}
+{"event": "step", "step": 7200, "loss": 3.5037, "loss_rank0": 3.4047, "lr": 0.003, "gnorm": 0.104, "tok_per_s": 31954.4, "tok_per_s_rank": [15977.2, 15977.2], "load": 31.97705078125}
+{"event": "step", "step": 7300, "loss": 3.5761, "loss_rank0": 3.5455, "lr": 0.003, "gnorm": 0.235, "tok_per_s": 31970.4, "tok_per_s_rank": [15985.2, 15985.2], "load": 20.833984375}
+{"event": "step", "step": 7400, "loss": 3.5607, "loss_rank0": 3.5115, "lr": 0.003, "gnorm": 0.115, "tok_per_s": 31973.7, "tok_per_s_rank": [15986.8, 15986.9], "load": 31.09912109375}
+{"event": "step", "step": 7500, "loss": 3.5016, "loss_rank0": 3.4455, "lr": 0.003, "gnorm": 0.328, "tok_per_s": 31971.4, "tok_per_s_rank": [15985.6, 15985.8], "load": 31.35693359375}
+{"event": "step", "step": 7600, "loss": 3.5337, "loss_rank0": 3.6142, "lr": 0.003, "gnorm": 0.191, "tok_per_s": 31962.0, "tok_per_s_rank": [15981.0, 15981.0], "load": 16.26611328125}
+{"event": "step", "step": 7700, "loss": 3.4869, "loss_rank0": 3.5268, "lr": 0.003, "gnorm": 0.478, "tok_per_s": 31968.4, "tok_per_s_rank": [15984.2, 15984.2], "load": 42.787109375}
+{"event": "step", "step": 7800, "loss": 3.5665, "loss_rank0": 3.5144, "lr": 0.003, "gnorm": 0.209, "tok_per_s": 31974.2, "tok_per_s_rank": [15987.1, 15987.1], "load": 29.5341796875}
+{"event": "step", "step": 7900, "loss": 3.5145, "loss_rank0": 3.5719, "lr": 0.003, "gnorm": 0.281, "tok_per_s": 31972.1, "tok_per_s_rank": [15986.0, 15986.1], "load": 18.1162109375}
+{"event": "step", "step": 8000, "loss": 3.5848, "loss_rank0": 3.5755, "lr": 0.003, "gnorm": 0.228, "tok_per_s": 31964.2, "tok_per_s_rank": [15982.1, 15982.1], "load": 10.7841796875}
+{"event": "rank_check", "step": 8000, "identical": true, "tensors": 231}
+{"event": "step", "step": 8100, "loss": 3.5794, "loss_rank0": 3.6134, "lr": 0.003, "gnorm": 0.448, "tok_per_s": 30853.0, "tok_per_s_rank": [15426.5, 15426.5], "load": 42.7958984375}
+{"event": "step", "step": 8200, "loss": 3.5161, "loss_rank0": 3.4304, "lr": 0.003, "gnorm": 0.1, "tok_per_s": 31972.6, "tok_per_s_rank": [15986.3, 15986.3], "load": 27.53271484375}
+{"event": "step", "step": 8300, "loss": 3.4673, "loss_rank0": 3.3977, "lr": 0.003, "gnorm": 0.089, "tok_per_s": 31963.8, "tok_per_s_rank": [15981.9, 15981.9], "load": 15.1044921875}
+{"event": "step", "step": 8400, "loss": 3.5187, "loss_rank0": 3.5152, "lr": 0.003, "gnorm": 0.188, "tok_per_s": 31972.8, "tok_per_s_rank": [15986.4, 15986.4], "load": 43.57080078125}
+{"event": "step", "step": 8500, "loss": 3.4984, "loss_rank0": 3.5212, "lr": 0.003, "gnorm": 0.165, "tok_per_s": 31973.8, "tok_per_s_rank": [15986.9, 15986.9], "load": 22.830078125}
+{"event": "step", "step": 8600, "loss": 3.4589, "loss_rank0": 3.438, "lr": 0.003, "gnorm": 0.393, "tok_per_s": 31940.4, "tok_per_s_rank": [15970.2, 15970.2], "load": 25.77099609375}
+{"event": "step", "step": 8700, "loss": 3.4593, "loss_rank0": 3.4021, "lr": 0.003, "gnorm": 0.187, "tok_per_s": 31951.1, "tok_per_s_rank": [15975.5, 15975.6], "load": 27.60595703125}
+{"event": "step", "step": 8800, "loss": 3.4888, "loss_rank0": 3.4156, "lr": 0.003, "gnorm": 0.172, "tok_per_s": 31969.3, "tok_per_s_rank": [15984.6, 15984.7], "load": 40.1513671875}
+{"event": "step", "step": 8900, "loss": 3.5854, "loss_rank0": 3.64, "lr": 0.003, "gnorm": 0.123, "tok_per_s": 31959.4, "tok_per_s_rank": [15979.7, 15979.7], "load": 26.7802734375}
+{"event": "step", "step": 9000, "loss": 3.5007, "loss_rank0": 3.5489, "lr": 0.003, "gnorm": 0.276, "tok_per_s": 31963.4, "tok_per_s_rank": [15981.7, 15981.7], "load": 19.99609375}
+{"event": "rank_check", "step": 9000, "identical": true, "tensors": 231}
+{"event": "step", "step": 9100, "loss": 3.5455, "loss_rank0": 3.5799, "lr": 0.003, "gnorm": 0.233, "tok_per_s": 30428.9, "tok_per_s_rank": [15214.4, 15214.5], "load": 43.2734375}
+{"event": "step", "step": 9200, "loss": 3.431, "loss_rank0": 3.4611, "lr": 0.003, "gnorm": 0.187, "tok_per_s": 31967.5, "tok_per_s_rank": [15983.7, 15983.8], "load": 24.50390625}
+{"event": "step", "step": 9300, "loss": 3.502, "loss_rank0": 3.4092, "lr": 0.003, "gnorm": 0.194, "tok_per_s": 31962.4, "tok_per_s_rank": [15981.2, 15981.2], "load": 12.60498046875}
+{"event": "step", "step": 9400, "loss": 3.496, "loss_rank0": 3.5129, "lr": 0.003, "gnorm": 0.378, "tok_per_s": 31964.4, "tok_per_s_rank": [15982.2, 15982.2], "load": 41.796875}
+{"event": "step", "step": 9500, "loss": 3.4674, "loss_rank0": 3.4993, "lr": 0.003, "gnorm": 0.112, "tok_per_s": 31964.4, "tok_per_s_rank": [15982.2, 15982.2], "load": 58.06787109375}
+{"event": "step", "step": 9600, "loss": 3.468, "loss_rank0": 3.5031, "lr": 0.003, "gnorm": 0.152, "tok_per_s": 31965.5, "tok_per_s_rank": [15982.8, 15982.7], "load": 24.671875}
+{"event": "step", "step": 9700, "loss": 3.5101, "loss_rank0": 3.4783, "lr": 0.003, "gnorm": 0.424, "tok_per_s": 31972.4, "tok_per_s_rank": [15986.2, 15986.2], "load": 11.55908203125}
+{"event": "step", "step": 9800, "loss": 3.4809, "loss_rank0": 3.5186, "lr": 0.003, "gnorm": 0.106, "tok_per_s": 31965.8, "tok_per_s_rank": [15982.9, 15982.9], "load": 39.35009765625}
+{"event": "step", "step": 9900, "loss": 3.5092, "loss_rank0": 3.5172, "lr": 0.003, "gnorm": 0.226, "tok_per_s": 31968.3, "tok_per_s_rank": [15984.1, 15984.2], "load": 28.99609375}
+{"event": "step", "step": 10000, "loss": 3.4282, "loss_rank0": 3.3179, "lr": 0.003, "gnorm": 0.094, "tok_per_s": 31969.0, "tok_per_s_rank": [15984.5, 15984.5], "load": 14.248046875}
+{"event": "rank_check", "step": 10000, "identical": true, "tensors": 231}
+{"event": "step", "step": 10100, "loss": 3.4393, "loss_rank0": 3.4087, "lr": 0.003, "gnorm": 0.547, "tok_per_s": 30620.4, "tok_per_s_rank": [15310.2, 15310.2], "load": 34.720703125}
+{"event": "step", "step": 10200, "loss": 3.4965, "loss_rank0": 3.5125, "lr": 0.003, "gnorm": 0.144, "tok_per_s": 31958.8, "tok_per_s_rank": [15979.4, 15979.4], "load": 20.98681640625}
+{"event": "step", "step": 10300, "loss": 3.4582, "loss_rank0": 3.4356, "lr": 0.003, "gnorm": 0.38, "tok_per_s": 31961.9, "tok_per_s_rank": [15981.0, 15980.9], "load": 25.35009765625}
+{"event": "step", "step": 10400, "loss": 3.4693, "loss_rank0": 3.4259, "lr": 0.003, "gnorm": 0.296, "tok_per_s": 31960.6, "tok_per_s_rank": [15980.3, 15980.3], "load": 39.60693359375}
+{"event": "step", "step": 10500, "loss": 3.5516, "loss_rank0": 3.6211, "lr": 0.003, "gnorm": 0.095, "tok_per_s": 31964.6, "tok_per_s_rank": [15982.3, 15982.3], "load": 43.98291015625}
+{"event": "step", "step": 10600, "loss": 3.4445, "loss_rank0": 3.4095, "lr": 0.003, "gnorm": 0.093, "tok_per_s": 31970.4, "tok_per_s_rank": [15985.2, 15985.2], "load": 39.47412109375}
+{"event": "step", "step": 10700, "loss": 3.464, "loss_rank0": 3.5096, "lr": 0.003, "gnorm": 0.145, "tok_per_s": 31961.4, "tok_per_s_rank": [15980.7, 15980.7], "load": 33.126953125}
+{"event": "step", "step": 10800, "loss": 3.4057, "loss_rank0": 3.436, "lr": 0.003, "gnorm": 0.124, "tok_per_s": 31928.6, "tok_per_s_rank": [15964.2, 15964.4], "load": 43.33837890625}
+{"event": "step", "step": 10900, "loss": 3.418, "loss_rank0": 3.411, "lr": 0.003, "gnorm": 0.315, "tok_per_s": 31965.6, "tok_per_s_rank": [15982.8, 15982.8], "load": 54.0205078125}
+{"event": "step", "step": 11000, "loss": 3.4662, "loss_rank0": 3.4773, "lr": 0.003, "gnorm": 0.199, "tok_per_s": 31968.5, "tok_per_s_rank": [15984.2, 15984.3], "load": 30.97314453125}
+{"event": "rank_check", "step": 11000, "identical": true, "tensors": 231}
+{"event": "step", "step": 11100, "loss": 3.4625, "loss_rank0": 3.442, "lr": 0.003, "gnorm": 0.257, "tok_per_s": 30734.6, "tok_per_s_rank": [15367.3, 15367.3], "load": 48.27490234375}
+{"event": "step", "step": 11200, "loss": 3.4638, "loss_rank0": 3.4382, "lr": 0.003, "gnorm": 0.114, "tok_per_s": 31962.9, "tok_per_s_rank": [15981.4, 15981.5], "load": 34.072265625}
+{"event": "step", "step": 11300, "loss": 3.3459, "loss_rank0": 3.3423, "lr": 0.003, "gnorm": 0.505, "tok_per_s": 31966.7, "tok_per_s_rank": [15983.3, 15983.4], "load": 34.49853515625}
+{"event": "step", "step": 11400, "loss": 3.4378, "loss_rank0": 3.4378, "lr": 0.003, "gnorm": 0.17, "tok_per_s": 31971.8, "tok_per_s_rank": [15985.9, 15985.9], "load": 13.94287109375}
+{"event": "step", "step": 11500, "loss": 3.3923, "loss_rank0": 3.3357, "lr": 0.003, "gnorm": 0.288, "tok_per_s": 31968.2, "tok_per_s_rank": [15984.1, 15984.1], "load": 68.65234375}
+{"event": "step", "step": 11600, "loss": 3.3465, "loss_rank0": 3.353, "lr": 0.003, "gnorm": 0.294, "tok_per_s": 31967.7, "tok_per_s_rank": [15983.8, 15983.9], "load": 44.1103515625}
+{"event": "step", "step": 11700, "loss": 3.4633, "loss_rank0": 3.5214, "lr": 0.003, "gnorm": 0.216, "tok_per_s": 31967.2, "tok_per_s_rank": [15983.6, 15983.6], "load": 20.69189453125}
+{"event": "step", "step": 11800, "loss": 3.417, "loss_rank0": 3.3996, "lr": 0.003, "gnorm": 0.294, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 42.28076171875}
+{"event": "step", "step": 11900, "loss": 3.4089, "loss_rank0": 3.3704, "lr": 0.003, "gnorm": 0.314, "tok_per_s": 31971.8, "tok_per_s_rank": [15985.9, 15985.9], "load": 37.35888671875}
+{"event": "step", "step": 12000, "loss": 3.4662, "loss_rank0": 3.5093, "lr": 0.003, "gnorm": 0.521, "tok_per_s": 31971.8, "tok_per_s_rank": [15985.9, 15985.9], "load": 23.013671875}
+{"event": "rank_check", "step": 12000, "identical": true, "tensors": 231}
+{"event": "step", "step": 12100, "loss": 3.3369, "loss_rank0": 3.2757, "lr": 0.003, "gnorm": 0.352, "tok_per_s": 30542.6, "tok_per_s_rank": [15271.3, 15271.3], "load": 45.8798828125}
+{"event": "step", "step": 12200, "loss": 3.3806, "loss_rank0": 3.3155, "lr": 0.003, "gnorm": 0.146, "tok_per_s": 31973.8, "tok_per_s_rank": [15986.9, 15986.9], "load": 38.49755859375}
+{"event": "keep", "path": "/root/settle/ck/true_base_sdm_d1536_hm6144_hops16_T2048_wsd_2B/keep_1600000000.pt", "step": 12208, "tokens": 1600126976}
+{"event": "step", "step": 12300, "loss": 3.4633, "loss_rank0": 3.4094, "lr": 0.002908584534731324, "gnorm": 0.175, "tok_per_s": 30800.2, "tok_per_s_rank": [15400.1, 15400.1], "load": 21.685546875}
+{"event": "step", "step": 12400, "loss": 3.5024, "loss_rank0": 3.4927, "lr": 0.0028102883355176933, "gnorm": 0.177, "tok_per_s": 31973.8, "tok_per_s_rank": [15986.9, 15986.9], "load": 48.7177734375}
+{"event": "step", "step": 12500, "loss": 3.4123, "loss_rank0": 3.4827, "lr": 0.002711992136304063, "gnorm": 0.143, "tok_per_s": 31970.6, "tok_per_s_rank": [15985.3, 15985.3], "load": 33.2294921875}
+{"event": "step", "step": 12600, "loss": 3.3905, "loss_rank0": 3.3727, "lr": 0.0026136959370904327, "gnorm": 0.368, "tok_per_s": 31975.8, "tok_per_s_rank": [15987.9, 15987.9], "load": 19.625}
+{"event": "step", "step": 12700, "loss": 3.4388, "loss_rank0": 3.4801, "lr": 0.002515399737876802, "gnorm": 0.124, "tok_per_s": 31971.2, "tok_per_s_rank": [15985.6, 15985.6], "load": 16.11572265625}
+{"event": "step", "step": 12800, "loss": 3.3348, "loss_rank0": 3.3123, "lr": 0.0024171035386631717, "gnorm": 0.123, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 42.400390625}
+{"event": "step", "step": 12900, "loss": 3.3197, "loss_rank0": 3.3299, "lr": 0.0023188073394495414, "gnorm": 0.143, "tok_per_s": 31972.2, "tok_per_s_rank": [15986.1, 15986.1], "load": 24.84375}
+{"event": "step", "step": 13000, "loss": 3.3535, "loss_rank0": 3.362, "lr": 0.002220511140235911, "gnorm": 0.189, "tok_per_s": 31927.2, "tok_per_s_rank": [15963.6, 15963.6], "load": 28.82373046875}
+{"event": "rank_check", "step": 13000, "identical": true, "tensors": 231}
+{"event": "step", "step": 13100, "loss": 3.2821, "loss_rank0": 3.2637, "lr": 0.0021222149410222804, "gnorm": 0.518, "tok_per_s": 30723.1, "tok_per_s_rank": [15361.5, 15361.6], "load": 41.26123046875}
+{"event": "step", "step": 13200, "loss": 3.3662, "loss_rank0": 3.2911, "lr": 0.00202391874180865, "gnorm": 0.149, "tok_per_s": 31972.5, "tok_per_s_rank": [15986.3, 15986.2], "load": 39.62939453125}
+{"event": "step", "step": 13300, "loss": 3.3639, "loss_rank0": 3.4249, "lr": 0.0019256225425950198, "gnorm": 0.49, "tok_per_s": 31972.7, "tok_per_s_rank": [15986.3, 15986.4], "load": 26.96044921875}
+{"event": "step", "step": 13400, "loss": 3.2714, "loss_rank0": 3.2804, "lr": 0.0018273263433813893, "gnorm": 0.234, "tok_per_s": 31972.6, "tok_per_s_rank": [15986.3, 15986.3], "load": 16.31591796875}
+{"event": "step", "step": 13500, "loss": 3.3586, "loss_rank0": 3.3632, "lr": 0.0017290301441677588, "gnorm": 0.098, "tok_per_s": 31972.6, "tok_per_s_rank": [15986.3, 15986.3], "load": 40.0712890625}
+{"event": "step", "step": 13600, "loss": 3.2764, "loss_rank0": 3.2701, "lr": 0.0016307339449541285, "gnorm": 0.369, "tok_per_s": 31972.1, "tok_per_s_rank": [15986.0, 15986.1], "load": 21.84326171875}
+{"event": "step", "step": 13700, "loss": 3.4217, "loss_rank0": 3.4176, "lr": 0.001532437745740498, "gnorm": 0.102, "tok_per_s": 31973.1, "tok_per_s_rank": [15986.6, 15986.5], "load": 23.17919921875}
+{"event": "step", "step": 13800, "loss": 3.3446, "loss_rank0": 3.4585, "lr": 0.0014341415465268677, "gnorm": 0.153, "tok_per_s": 31970.2, "tok_per_s_rank": [15985.1, 15985.1], "load": 32.17333984375}
+{"event": "step", "step": 13900, "loss": 3.2872, "loss_rank0": 3.2655, "lr": 0.0013358453473132372, "gnorm": 0.101, "tok_per_s": 31975.0, "tok_per_s_rank": [15987.5, 15987.5], "load": 99.37646484375}
+{"event": "step", "step": 14000, "loss": 3.2939, "loss_rank0": 3.2787, "lr": 0.001237549148099607, "gnorm": 0.155, "tok_per_s": 31972.5, "tok_per_s_rank": [15986.3, 15986.2], "load": 22.91845703125}
+{"event": "rank_check", "step": 14000, "identical": true, "tensors": 231}
+{"event": "step", "step": 14100, "loss": 3.2808, "loss_rank0": 3.2682, "lr": 0.0011392529488859764, "gnorm": 0.145, "tok_per_s": 30692.4, "tok_per_s_rank": [15346.2, 15346.2], "load": 23.30615234375}
+{"event": "step", "step": 14200, "loss": 3.2963, "loss_rank0": 3.2661, "lr": 0.001040956749672346, "gnorm": 0.137, "tok_per_s": 31973.2, "tok_per_s_rank": [15986.6, 15986.6], "load": 33.60400390625}
+{"event": "step", "step": 14300, "loss": 3.3454, "loss_rank0": 3.4301, "lr": 0.0009426605504587156, "gnorm": 0.196, "tok_per_s": 31972.8, "tok_per_s_rank": [15986.4, 15986.4], "load": 22.67041015625}
+{"event": "step", "step": 14400, "loss": 3.2684, "loss_rank0": 3.3186, "lr": 0.0008443643512450852, "gnorm": 0.115, "tok_per_s": 31980.4, "tok_per_s_rank": [15990.2, 15990.2], "load": 19.86328125}
+{"event": "step", "step": 14500, "loss": 3.2775, "loss_rank0": 3.2801, "lr": 0.0007460681520314548, "gnorm": 0.192, "tok_per_s": 31972.3, "tok_per_s_rank": [15986.1, 15986.2], "load": 45.00390625}
+{"event": "step", "step": 14600, "loss": 3.296, "loss_rank0": 3.3041, "lr": 0.0006477719528178243, "gnorm": 0.099, "tok_per_s": 31973.1, "tok_per_s_rank": [15986.5, 15986.6], "load": 28.556640625}
+{"event": "step", "step": 14700, "loss": 3.2956, "loss_rank0": 3.3244, "lr": 0.000549475753604194, "gnorm": 0.102, "tok_per_s": 31972.8, "tok_per_s_rank": [15986.4, 15986.4], "load": 20.12060546875}
+{"event": "step", "step": 14800, "loss": 3.3091, "loss_rank0": 3.2932, "lr": 0.0004511795543905635, "gnorm": 0.17, "tok_per_s": 31972.5, "tok_per_s_rank": [15986.2, 15986.3], "load": 15.26513671875}
+{"event": "step", "step": 14900, "loss": 3.3086, "loss_rank0": 3.2227, "lr": 0.0003528833551769332, "gnorm": 0.188, "tok_per_s": 31980.6, "tok_per_s_rank": [15990.3, 15990.3], "load": 33.80322265625}
+{"event": "step", "step": 15000, "loss": 3.1953, "loss_rank0": 3.1236, "lr": 0.0002545871559633028, "gnorm": 0.175, "tok_per_s": 31979.6, "tok_per_s_rank": [15989.8, 15989.8], "load": 31.078125}
+{"event": "rank_check", "step": 15000, "identical": true, "tensors": 231}
+{"event": "step", "step": 15100, "loss": 3.2405, "loss_rank0": 3.2793, "lr": 0.00015629095674967234, "gnorm": 0.081, "tok_per_s": 30798.2, "tok_per_s_rank": [15399.1, 15399.1], "load": 16.904296875}
+{"event": "step", "step": 15200, "loss": 3.2335, "loss_rank0": 3.2428, "lr": 5.7994757536041946e-05, "gnorm": 0.09, "tok_per_s": 31904.2, "tok_per_s_rank": [15952.1, 15952.1], "load": 45.50830078125}
+{"event": "step", "step": 15258, "loss": 3.217, "loss_rank0": 3.1816, "lr": 9.82961992136304e-07, "gnorm": 0.152, "tok_per_s": 55136.3, "tok_per_s_rank": [27568.2, 27568.1], "load": 59.32958984375}
+{"event": "rank_check", "step": 15258, "identical": true, "tensors": 231}
+Traceback (most recent call last):
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 1142, in <module>
+    main()
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 1138, in main
+    launch()
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 728, in launch
+    mp.spawn(_spawned, args=(world, a.argv, port), nprocs=world, join=True)
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 340, in spawn
+    return start_processes(fn, args, nprocs, join, daemon, start_method="spawn")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 296, in start_processes
+    while not context.join():
+              ^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 215, in join
+    raise ProcessRaisedException(msg, error_index, failed_process.pid)
+torch.multiprocessing.spawn.ProcessRaisedException: 
+
+-- Process 0 terminated with the following error:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.11/site-packages/torch/multiprocessing/spawn.py", line 90, in _wrap
+    fn(i, *args)
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 711, in _spawned
+    run_rank(rank, world, parse(argv), f"tcp://127.0.0.1:{port}")
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 700, in run_rank
+    res_path = train(a, rank, world, device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/settle/code_ddp/track4_sdmonly_train_ddp.py", line 612, in train
+    res["val_test"] = S0.eval_bpb(model, val_arr, starts, a.T, tb, device)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/settle/code_ddp/track4_sdmllm_train_one_arm.py", line 119, in eval_bpb
+    nll = F.cross_entropy(logits.float().reshape(-1, V), tgt.reshape(-1), reduction="none")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/functional.py", line 3462, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.95 GiB. GPU 0 has a total capacity of 31.37 GiB of which 3.56 GiB is free. Including non-PyTorch memory, this process has 27.80 GiB memory in use. Of the allocated memory 22.56 GiB is allocated by PyTorch, and 4.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+

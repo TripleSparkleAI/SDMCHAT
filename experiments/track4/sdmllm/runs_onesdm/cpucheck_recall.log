@@ -1,0 +1,6 @@
+/Users/happyrobot/Code/TripleSparkle/_flows/dwarfstar/experiments/track4/sdmllm/track4_onesdm_puzzles.py:307: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rec = {"step": step, "loss": round(float(loss), 4), "train_acc": round(acc, 4), "grad_mem": round(gm, 4),
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 0, "loss": 6.0921, "train_acc": 0.0, "grad_mem": 36.8112, "grad_rest": 4.6838, "lr": 8.333333333333333e-05, "T": 36, "sec": 0.2}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 100, "loss": 4.4945, "train_acc": 0.0703, "grad_mem": 1.5328, "grad_rest": 1.8756, "lr": 0.0009511710109953803, "T": 65, "sec": 27.0}
+{"puzzle": "recall", "arm": "onesdm", "seed": 0, "step": 200, "loss": 4.1701, "train_acc": 0.0859, "grad_mem": 1.6138, "grad_rest": 1.9048, "lr": 0.0007914467697293183, "T": 34, "sec": 138.3}

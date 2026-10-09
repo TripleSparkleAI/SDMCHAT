@@ -1,0 +1,5 @@
+2026-10-05T14:37:19Z gpu0 start w57_cnmix_d1024_T1024_B128_hm3072_hops16_fade_400M (fill)
+2026-10-05T14:37:19Z gpu1 start w57_cnmix_d1024_T1024_B128_hm3072_hops16_fade_wd_400M (fill)
+2026-10-05T18:38:13Z gpu1 end w57_cnmix_d1024_T1024_B128_hm3072_hops16_fade_wd_400M (fill) rc 0
+2026-10-05T18:40:41Z gpu0 end w57_cnmix_d1024_T1024_B128_hm3072_hops16_fade_400M (fill) rc 0
+2026-10-05T18:41:34Z FILL_DONE code_w7/track4_sdmonly_wave57_fill_s4.txt

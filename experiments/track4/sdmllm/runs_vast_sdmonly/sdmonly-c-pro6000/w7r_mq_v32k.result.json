@@ -1,0 +1,164 @@
+{
+ "run": "w7r_mq_v32k",
+ "arm": "qwen",
+ "seed": 0,
+ "cfg": {
+  "d": 256,
+  "T": 256,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 4,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 688,
+  "train_name": "train",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "cosine",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false
+ },
+ "B": 32,
+ "T": 256,
+ "tokens_target": 20637539,
+ "steps": 2519,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 8388608,
+  "non_embedding_trainable": 2902784,
+  "frozen_store_values": 0,
+  "total_trainable": 11291392
+ },
+ "flops_per_token_fwd": {
+  "head": 16777216,
+  "body": 6324224.0,
+  "total": 23101440.0
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-03T14:05:28Z",
+  "load": [
+   1.02,
+   0.48,
+   0.34
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 121.5
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train",
+ "stamp_end": {
+  "utc": "2026-10-03T14:06:13Z",
+  "load": [
+   1.05,
+   0.57,
+   0.38
+  ],
+  "ncpu": 64,
+  "powermode": "unknown",
+  "torch": "2.8.0+cu128",
+  "host": "d67eed29e237",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "driver": "595.84",
+  "mem_available_gb": 120.5
+ },
+ "curve": [
+  {
+   "step": 1000,
+   "tokens": 8192000,
+   "bpb_quick": 1.7005717450206037
+  },
+  {
+   "step": 2000,
+   "tokens": 16384000,
+   "bpb_quick": 1.5617590025038461
+  }
+ ],
+ "val_test": {
+  "bpb": 1.4430075871311825,
+  "nats_per_token": 4.704604613714327,
+  "tokens": 1027575,
+  "bytes": 4833287
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ },
+ "vocab_wave": {
+  "name": "v32k",
+  "V": 32768,
+  "data": "/root/settle/sdmllm/data_v32k",
+  "meta_sha256": "491420fa01983f0cd059d2d75e77d543eb881843cba95b3b5a09de663b1e4616",
+  "bytes_per_token_train": 4.6234776773388635,
+  "bytes_target": 95417201,
+  "tokens_target": 20637539,
+  "steps": 2519,
+  "tokens_trained": 20635648,
+  "bytes_trained": 95408457.88542236,
+  "rule": "equal training bytes; tokens = round(bytes / bytes_per_token), bytes_per_token = train text bytes / train tokens including BOS",
+  "tokenizer_sha256": "1060c4b3c2044ded38fad1d368e322ff475dd36c1dc65aed04c2d1165450b366"
+ },
+ "vocab_score": {
+  "docs": [
+   1000,
+   2000
+  ],
+  "T": 256,
+  "V": 32768,
+  "set": "v32k",
+  "tokens_scored": 973217,
+  "text_bytes": 4593386,
+  "table_bytes": 4593386,
+  "table_minus_text_bytes": 0,
+  "nats": 4565148.664535999,
+  "bpb": 1.43382623172687,
+  "bpb_table": 1.43382623172687,
+  "bytes_per_scored_token": 4.719796304421316,
+  "trainer_window_test_bpb": 1.4430075871311825,
+  "device": "cuda",
+  "rule": "val docs [lo, hi) by document, each from its own BOS, windows of T tiled, every text byte once"
+ }
+}

@@ -1,0 +1,1 @@
+no result files under /root/settle/runs with prefix w7_. Runs still training have a .log and no .result.json.

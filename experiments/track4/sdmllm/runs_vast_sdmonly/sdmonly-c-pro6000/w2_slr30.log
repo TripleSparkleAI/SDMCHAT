@@ -1,0 +1,31 @@
+{"event": "start", "run": "w2_slr30", "arm": "sdmonly", "seed": 0, "cfg": {"d": 256, "T": 256, "seed": 0, "M": 65536, "k": 32, "hops": 4, "softness": 0.25, "n_layer": 0, "M_big": 0, "value_init": "zero", "qgrad": 0.0, "ngram_orders": [1], "f": 0, "train_name": "train", "n_back": 8, "decays": [0.5, 0.8, 0.9, 0.97, 0.99]}, "B": 32, "T": 256, "tokens_target": 20000000, "steps": 2441, "lr": 0.003, "loss_path": "chunked", "store_lr_mult": 30.0, "store_wd": 0.0, "params": {"embedding": 33095680, "non_embedding_trainable": 68489728, "frozen_store_values": 0, "total_trainable": 101585408}, "flops_per_token_fwd": {"head": 66191360, "body": 3211264.0, "total": 69402624.0}, "device": "cuda", "stamp_start": {"utc": "2026-10-03T11:53:25Z", "load": [1.04, 1.02, 1.0], "ncpu": 64, "powermode": "unknown", "torch": "2.8.0+cu128", "host": "d67eed29e237", "cuda": "12.8", "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition", "driver": "595.84", "mem_available_gb": 121.5}, "resumed_from_step": 0, "init": null, "train_name": "train"}
+{"event": "step", "step": 100, "loss": 7.0632, "lr": 0.0029969752030447787, "gnorm": 0.834, "tok_per_s": 91398.3, "load": 1.03564453125}
+{"event": "step", "step": 200, "loss": 6.6535, "lr": 0.0029735607388399585, "gnorm": 0.584, "tok_per_s": 207290.2, "load": 1.03271484375}
+{"event": "step", "step": 300, "loss": 6.4456, "lr": 0.002927367289311664, "gnorm": 0.714, "tok_per_s": 207146.1, "load": 1.03271484375}
+{"event": "step", "step": 400, "loss": 6.2769, "lr": 0.002859189861351509, "gnorm": 0.812, "tok_per_s": 207044.5, "load": 1.02978515625}
+{"event": "step", "step": 500, "loss": 6.0821, "lr": 0.0027702018145079606, "gnorm": 0.712, "tok_per_s": 207439.9, "load": 1.02734375}
+{"event": "eval_quick", "step": 500, "bpb": 2.1247128328829263, "nats_per_token": 6.406265024955736, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 600, "loss": 5.9195, "lr": 0.002661934667020818, "gnorm": 0.793, "tok_per_s": 146221.6, "load": 1.02490234375}
+{"event": "step", "step": 700, "loss": 5.9577, "lr": 0.0025362517378079456, "gnorm": 0.869, "tok_per_s": 207127.1, "load": 1.0224609375}
+{"event": "step", "step": 800, "loss": 5.9484, "lr": 0.0023953160780357456, "gnorm": 1.443, "tok_per_s": 207111.8, "load": 1.0205078125}
+{"event": "step", "step": 900, "loss": 5.9845, "lr": 0.002241553244183264, "gnorm": 0.846, "tok_per_s": 206894.2, "load": 1.0185546875}
+{"event": "step", "step": 1000, "loss": 6.0563, "lr": 0.002077609553289712, "gnorm": 1.11, "tok_per_s": 206602.9, "load": 1.0185546875}
+{"event": "eval_quick", "step": 1000, "bpb": 2.030495422100525, "nats_per_token": 6.122188186855119, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 1100, "loss": 5.8251, "lr": 0.0019063065388285076, "gnorm": 1.337, "tok_per_s": 146662.4, "load": 1.0166015625}
+{"event": "step", "step": 1200, "loss": 5.8538, "lr": 0.0017305923910396388, "gnorm": 0.868, "tok_per_s": 207839.2, "load": 1.01513671875}
+{"event": "step", "step": 1300, "loss": 5.7286, "lr": 0.001553491217450742, "gnorm": 1.472, "tok_per_s": 207843.9, "load": 1.013671875}
+{"event": "step", "step": 1400, "loss": 5.7585, "lr": 0.001378050996832694, "gnorm": 1.224, "tok_per_s": 207240.8, "load": 1.01220703125}
+{"event": "step", "step": 1500, "loss": 5.6939, "lr": 0.0012072911223220046, "gnorm": 1.233, "tok_per_s": 207939.0, "load": 1.0107421875}
+{"event": "eval_quick", "step": 1500, "bpb": 1.9893265755119338, "nats_per_token": 5.998059157305086, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 1600, "loss": 5.7586, "lr": 0.0010441504365128757, "gnorm": 2.353, "tok_per_s": 146979.8, "load": 1.009765625}
+{"event": "step", "step": 1700, "loss": 5.7066, "lr": 0.0008914366528548352, "gnorm": 1.037, "tok_per_s": 207410.5, "load": 1.0087890625}
+{"event": "step", "step": 1800, "loss": 5.8461, "lr": 0.0007517780338329788, "gnorm": 1.337, "tok_per_s": 207593.0, "load": 1.0087890625}
+{"event": "step", "step": 1900, "loss": 5.6481, "lr": 0.0006275781575677816, "gnorm": 1.479, "tok_per_s": 207951.4, "load": 1.0078125}
+{"event": "step", "step": 2000, "loss": 5.6699, "lr": 0.0005209745513185531, "gnorm": 1.316, "tok_per_s": 207318.6, "load": 1.0068359375}
+{"event": "eval_quick", "step": 2000, "bpb": 1.958549683720123, "nats_per_token": 5.905263122748641, "tokens": 16379, "bytes": 71247}
+{"event": "step", "step": 2100, "loss": 5.5373, "lr": 0.0004338019038237257, "gnorm": 1.447, "tok_per_s": 147828.5, "load": 1.005859375}
+{"event": "step", "step": 2200, "loss": 5.6787, "lr": 0.00036756048960763494, "gnorm": 1.444, "tok_per_s": 206805.8, "load": 1.00537109375}
+{"event": "step", "step": 2300, "loss": 5.5699, "lr": 0.0003233903486835241, "gnorm": 1.678, "tok_per_s": 208110.7, "load": 1.0048828125}
+{"event": "step", "step": 2400, "loss": 5.696, "lr": 0.0003020516660299287, "gnorm": 1.312, "tok_per_s": 207542.0, "load": 1.0048828125}
+{"event": "step", "step": 2441, "loss": 5.5914, "lr": 0.0003000011633705311, "gnorm": 1.352, "tok_per_s": 511600.4, "load": 1.00439453125}
+{"event": "final", "val_test": {"bpb": 1.670201203947248, "nats_per_token": 5.611622727465105, "tokens": 995323, "bytes": 4824566}}

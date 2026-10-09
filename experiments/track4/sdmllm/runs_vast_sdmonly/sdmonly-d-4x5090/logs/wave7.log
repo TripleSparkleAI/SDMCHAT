@@ -1,0 +1,69 @@
+2026-10-03T13:40:33Z gpu0 start w7_ch_200M
+2026-10-03T13:40:53Z gpu1 start w7_mq_200M
+2026-10-03T13:41:13Z gpu2 start w7_ch_rt8_200M
+2026-10-03T13:41:33Z gpu3 start w7_ch_none_200M
+2026-10-03T13:56:40Z gpu3 end w7_ch_none_200M rc 0
+2026-10-03T13:56:40Z gpu3 start w7_ch_nong
+2026-10-03T13:59:30Z gpu3 end w7_ch_nong rc 0
+2026-10-03T14:01:32Z gpu1 end w7_mq_200M rc 0
+2026-10-03T14:01:32Z gpu1 start w7_mq_20M
+2026-10-03T14:02:44Z gpu0 end w7_ch_200M rc 0
+2026-10-03T14:02:44Z gpu0 start w7_ch_s1
+2026-10-03T14:03:56Z gpu1 end w7_mq_20M rc 0
+2026-10-03T14:03:56Z gpu1 start w7_mq_s1
+2026-10-03T14:04:42Z gpu2 end w7_ch_rt8_200M rc 0
+2026-10-03T14:04:42Z gpu2 start w7_ch_B64
+2026-10-03T14:05:32Z gpu0 end w7_ch_s1 rc 0
+2026-10-03T14:05:32Z gpu0 start w7_ch_rt8
+2026-10-03T14:06:19Z gpu1 end w7_mq_s1 rc 0
+2026-10-03T14:07:34Z gpu2 end w7_ch_B64 rc 0
+2026-10-03T14:08:34Z gpu0 end w7_ch_rt8 rc 0
+2026-10-03T14:08:35Z WAVE7_PASS_DONE
+2026-10-03T14:23:23Z gpu0 start w9_mix4_200M
+2026-10-03T14:23:43Z gpu1 start w9_mix4
+2026-10-03T14:24:03Z gpu2 start w9_mix2
+2026-10-03T14:24:23Z gpu3 start w9_mix4_T1024
+2026-10-03T14:26:50Z gpu2 end w9_mix2 rc 0
+2026-10-03T14:26:50Z gpu2 start w9_mix4_n128
+2026-10-03T14:26:52Z gpu3 end w9_mix4_T1024 rc 0
+2026-10-03T14:26:52Z gpu3 start w9_mix8
+2026-10-03T14:27:19Z gpu1 end w9_mix4 rc 0
+2026-10-03T14:27:19Z gpu1 start w9_mix4_k64
+2026-10-03T14:31:06Z gpu1 end w9_mix4_k64 rc 0
+2026-10-03T14:33:01Z gpu3 end w9_mix8 rc 0
+2026-10-03T14:33:13Z gpu2 end w9_mix4_n128 rc 0
+2026-10-03T14:52:08Z gpu0 end w9_mix4_200M rc 0
+2026-10-03T14:52:08Z gpu0 start w9_mix4_nofade
+2026-10-03T14:55:33Z gpu0 end w9_mix4_nofade rc 0
+2026-10-03T14:55:33Z WAVE7_DONE
+2026-10-03T14:59:27Z WAVE7_DONE
+2026-10-03T15:00:34Z gpu0 start w9_mix4_T1024
+2026-10-03T15:00:54Z gpu1 start w10_cn_mix4_200M
+2026-10-03T15:01:14Z gpu2 start w10_cn_mix4_T1024_200M
+2026-10-03T15:01:34Z gpu3 start w10_cn_T1024_200M
+2026-10-03T15:04:37Z gpu0 end w9_mix4_T1024 rc 0
+2026-10-03T15:04:37Z gpu0 start w10_cn_mix4_nofade_200M
+2026-10-03T15:16:49Z gpu3 end w10_cn_T1024_200M rc 0
+2026-10-03T15:18:57Z gpu3 start w10_mq_T1024_200M (by hand)
+2026-10-03T15:51:51Z gpu3 start w10_mq_T4096_200M (by hand)
+2026-10-03T15:54:30Z gpu1 end w10_cn_mix4_200M rc 0
+2026-10-03T15:54:30Z gpu1 start w10_cn_mix4_T4096_200M
+2026-10-03T15:55:38Z gpu1 end w10_cn_mix4_T4096_200M rc 0
+2026-10-03T15:57:58Z gpu0 end w10_cn_mix4_nofade_200M rc 0
+2026-10-03T16:07:33Z gpu1 start w10_cn_mix4_T4096_200M (rerun, by hand)
+2026-10-03T16:07:33Z gpu0 start w10_mq_T16384_200M (by hand)
+2026-10-03T16:12:14Z gpu1 start w10_cn_mix4_T4096_200M (rerun 2, sparse mixer, by hand)
+2026-10-03T16:14:21Z gpu1 STOPPED w10_cn_mix4_T4096_200M by JIMOTHY: 12.6k tok/s, cannot finish before 18:45Z; the fleet runs the never-fading twin (w11_M2)
+2026-10-03T16:16:09Z gpu2 end w10_cn_mix4_T1024_200M rc 0
+2026-10-03T16:16:09Z gpu2 start w10_cn_mix4_500M
+2026-10-03T16:27:12Z gpu2 STOPPED w10_cn_mix4_500M by JIMOTHY (dropped, see the plan 16:16Z)
+2026-10-03T16:27:12Z gpu2 end w10_cn_mix4_500M rc 0
+2026-10-03T16:27:12Z WAVE7_DONE
+2026-10-03T16:27:17Z gpu0 start w10_mq_T4096_B4_200M (by hand, control)
+2026-10-03T16:27:17Z gpu1 start w10_mq_T1024_B16_200M (by hand, control)
+2026-10-03T16:27:17Z gpu2 start w10_cn_B64_200M (by hand, control)
+2026-10-03T16:27:17Z gpu3 start w10_mq_T16384_200M_s1 (by hand, control)
+2026-10-03T16:55:30Z gpu0 start w10_mq_B64_200M (by hand, control)
+2026-10-03T16:55:30Z gpu1 start w10_mq_B128_200M (by hand, control)
+2026-10-03T16:55:30Z gpu2 start w10_cn_B128_200M (by hand, control)
+2026-10-03T16:55:30Z gpu3 start w10_cn_B256_200M (by hand, control)
