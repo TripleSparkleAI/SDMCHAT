@@ -3935,3 +3935,7 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T20:23:30Z - heartbeat (JIMOTHY)
 - swd_deep32 at step 300 of 763, loss 4.8910, 12,723 tok/s. TEST about 21:45Z. No stops. Vast 0.
+
+### 2026-10-09T20:43:41Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 450 of 763, loss 4.6586 (12-layer 4.5924 at step 450; the gap 0.066, down from 0.247 at step 100), 12,950 tok/s. TEST about 21:40Z. No stops. Vast 0.
+- Fix: six run logs I committed were copies of the shell's .out (stderr included); the pull loop (runs_launch/pull_launch.sh) replaces them with the trainer's own runs/*.log, the canonical record. Those are committed now.
