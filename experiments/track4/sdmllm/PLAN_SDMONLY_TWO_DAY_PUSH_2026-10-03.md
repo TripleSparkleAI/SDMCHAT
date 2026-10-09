@@ -3703,3 +3703,50 @@ Predictions, sealed before any SWC arm runs:
 ### 2026-10-09T08:43:23Z - heartbeat (JIMOTHY)
 - swb_deep32: step 200 of 381, train loss 5.311, 6,450 tok/s (at step 200: diary256 read 5.051, diary576 5.205;
   train loss only, the TEST decides). Ends near 09:45Z. Chains running, no SIGCONT sent.
+
+### 2026-10-09T09:03:26Z - heartbeat (JIMOTHY)
+- swb_deep32: step 300 of 381, train loss 5.079 (diary576 read 5.111 at step 300), 6,469 tok/s. About 27 min of
+  steps left; TEST near 09:35Z. Chains running, no SIGCONT sent.
+
+### 2026-10-09T09:23:22Z - heartbeat (JIMOTHY)
+- swb_deep32: step 350 of 381, in its cooldown, train loss 4.917 (diary576 read 4.977 at step 350), 6,507 tok/s.
+  TEST near 09:40Z. Chains running, no SIGCONT sent.
+
+### 2026-10-09T09:43:33Z - SWB3 scored: 32 layers beat 24; THE TRANSFORMER LIST, held for later (JIMOTHY)
+- **swb_deep32_d512_L32_50M: TEST 1.48813**, better than 24 layers (1.52777) by 0.03964, beyond 0.010.
+  **VERDICT SWB3: HOLDS** (sealed at 40%). Depth line at d512-ish weights: 8 1.54802 · 12 1.54457 · 24 1.52777 ·
+  32 1.48813. Best at the deep edge: **UNBRACKETED** until deep48 reports (started 09:33:09Z).
+- Wave SWB so far: diary256 1.42911 (best), deep32 1.48813, diary576 1.50846.
+
+**THE TRANSFORMER LIST: every side-by-side transformer run is HELD for later (the navigator: SDM work first).**
+Nothing on this list fires until the SDM queue (SWB, SWC, the new FULL base, its chat, the Little Guy) is done.
+1. Resume the 1.1B yardstick d768 L12 from step 7,000: `bash ~/sdmonly_base/launch/yard_resume.sh` (~65 min),
+   then VERDICT FB2.
+2. A transformer at the winning depth shape (d512, 32 or 48 layers) at 50M tokens, so the deep FULL arms have a
+   same-shape yardstick (the existing 50M yardstick is d768 L12 only, which matches the diary arms).
+3. A transformer at the new FULL base's final shape and token budget, trained on the same data in the same order.
+
+### 2026-10-09T09:44:42Z - lane SITEFINAL fired (site, "update all pages, final final")
+- Opus lane SITEFINAL: every SDM-LM page brought up to the newest results, the shape sweep (SW, SWB, SWC when it
+  lands) generated from the records so later runs update the pages with no code change, stale numbers audited, and
+  the held-transformer note. Build + tests green, committed on settle-sitefinal; I land it. Nothing deploys (the
+  site's own law: local-only, no publishing live).
+- SWB records committed home (35590508c): diary576 1.50846, diary256 1.42911, deep32 1.48813.
+
+### 2026-10-09T10:03:23Z - heartbeat (JIMOTHY)
+- swb_deep48 (SWB run 4 of 4) started 09:33:09Z; 30 min in, still compiling 48 layers, no step line yet. Chains
+  running, no SIGCONT sent. Lane SITEFINAL running.
+
+### 2026-10-09T10:14:07Z - lane SITEFINAL landed (JIMOTHY)
+- Landed d3cbe3c8d (c9116c0af + 45cfc85f0): THE SHAPE SWEEP on #/sdm and #/sdmchat-model (memory and depth lines,
+  BRACKETED/UNBRACKETED, best row lit, generated from sw/swb/swc records and the sweep scripts so new records update
+  the pages with no code change), the opening lines on the best FULL (1.42911) and the narrowed gap (0.322 to 0.206),
+  and THE TRANSFORMER LIST shown as held for later. Full suite in the main checkout: 3,839 tests, 3,837 pass, 0 fail.
+- Lane BRANDCAPS running (vague_10 caps pass: TRIPLESPARKLE in capitals, rendered-dot background, angled scanlines,
+  a misty red heart behind the kanji, bigger logo stars).
+
+### 2026-10-09T10:23:44Z - heartbeat (JIMOTHY)
+- swb_deep48: 50 min in, no step-50 line yet, but alive and working: python at 99.9% CPU, GPU at 95%, 22 GB
+  resident. 48 layers at about 4,300 tok/s reach step 50 (6.5M tokens) about 25 min after a ~25 min compile, so
+  the first line is due now. Chains running, no SIGCONT sent. Lane BRANDCAPS done (06fc9cd83), awaiting the
+  navigator's look before landing.
