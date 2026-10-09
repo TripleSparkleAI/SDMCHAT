@@ -3923,3 +3923,15 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 
 ### 2026-10-09T19:03:58Z - heartbeat (JIMOTHY)
 - swd_deep32_diary64_d512_L32_100M at 24 min, compiled, before its step-50 line (normal for 32 layers). Running (state S/l), no stops. Vast 0.
+
+### 2026-10-09T19:23:25Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 50 of 763, loss 6.5126 (12-layer diary64 read 6.1816 at step 50), 2,576 tok/s averaged over the compile; the true rate comes at step 100. No stops. Vast 0. (Quiet beat: not committed alone.)
+
+### 2026-10-09T19:43:24Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 100 of 763, loss 5.7664 (12-layer 5.5194), 5,883 tok/s: TEST about 00:00Z. deep48 then about 6.5 h, the yardstick 45 min, wave SWE 70 min: the queue clears about 09:00Z. Spark load 2.1. No stops. Vast 0.
+
+### 2026-10-09T20:03:26Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 200 of 763, loss 5.1876, now 12,932 tok/s (Spark load fell from 2.1 to 1.1): TEST about 21:50Z, earlier than the 00:00Z said at 19:43Z. No stops. Vast 0.
+
+### 2026-10-09T20:23:30Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 300 of 763, loss 4.8910, 12,723 tok/s. TEST about 21:45Z. No stops. Vast 0.
