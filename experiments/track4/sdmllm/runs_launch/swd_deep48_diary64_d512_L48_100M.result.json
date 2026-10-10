@@ -1,0 +1,184 @@
+{
+ "run": "swd_deep48_diary64_d512_L48_100M",
+ "arm": "onesdm_allsdm",
+ "seed": 0,
+ "cfg": {
+  "d": 512,
+  "T": 2048,
+  "seed": 0,
+  "M": 65536,
+  "k": 32,
+  "hops": 4,
+  "softness": 0.25,
+  "n_layer": 48,
+  "M_big": 0,
+  "value_init": "zero",
+  "qgrad": 0.0,
+  "ngram_orders": [
+   1
+  ],
+  "f": 1376,
+  "train_name": "train_big_p200m",
+  "n_back": 8,
+  "decays": [
+   0.5,
+   0.8,
+   0.9,
+   0.97,
+   0.99
+  ],
+  "d_a": 256,
+  "n_sub": 256,
+  "heads": 1,
+  "readout_f": 0,
+  "share_store": false,
+  "dense_f": null,
+  "sched": "wsd",
+  "wsd_decay": 0.2,
+  "untie": false,
+  "hop_mlp": 0,
+  "ng_rows": 0,
+  "ng_orders": [
+   2,
+   3
+  ],
+  "conj": 0,
+  "rt_write": 0,
+  "rt_buckets": 4096,
+  "rt_shuffle": false,
+  "graded": false,
+  "mix_layers": 0,
+  "mix_heads": 4,
+  "mix_n_sub": 64,
+  "mix_d_a": 64,
+  "mix_k": 32,
+  "mix_decays": [
+   1.0,
+   0.999,
+   0.99,
+   0.9
+  ],
+  "mix_f": 0,
+  "mix_chunk": 256,
+  "mix_impl": "dense",
+  "data": {
+   "train_name": "train_big_p200m",
+   "train_n": 206568143,
+   "fingerprint": "665d29b281867892",
+   "B_global": 64,
+   "accum_global": 8,
+   "micro_B": 8,
+   "T": 2048,
+   "data_n_flag": null
+  },
+  "onesdm": {
+   "d": 512,
+   "layers": 48,
+   "mlp_f": 1376,
+   "heads": 4,
+   "n_sub": 8,
+   "d_a": 32,
+   "k": 16,
+   "decays": [
+    0.0,
+    0.8,
+    0.99,
+    1.0
+   ],
+   "chunk": 128,
+   "addr_bias": 0.0,
+   "learn_decay": false,
+   "read_mode": "mean",
+   "reset_at_bos": false,
+   "bos_id": 0,
+   "sdm_n_sub": 0,
+   "sdm_heads": 4,
+   "sdm_d_a": 0,
+   "sdm_k": 32,
+   "sdm_big_mult": 4,
+   "yard_heads": 4,
+   "yard_kv": 2,
+   "max_len": 20000,
+   "tie": true,
+   "seed": 0
+  }
+ },
+ "B": 64,
+ "T": 2048,
+ "tokens_target": 100000000,
+ "steps": 762,
+ "lr": 0.003,
+ "loss_path": "chunked",
+ "store_lr_mult": 3.0,
+ "store_wd": 0.0,
+ "params": {
+  "embedding": 16777216,
+  "non_embedding_trainable": 133325888,
+  "frozen_store_values": 0,
+  "total_trainable": 150103104
+ },
+ "flops_per_token_fwd": {
+  "head": 33554432,
+  "body": 112816128,
+  "total": 146370560
+ },
+ "device": "cuda",
+ "stamp_start": {
+  "utc": "2026-10-09T21:38:58Z",
+  "load": [
+   0.94,
+   1.09,
+   1.2
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 64.8
+ },
+ "resumed_from_step": 0,
+ "init": null,
+ "train_name": "train_big_p200m",
+ "stamp_end": {
+  "utc": "2026-10-10T01:40:06Z",
+  "load": [
+   1.06,
+   1.14,
+   1.18
+  ],
+  "ncpu": 20,
+  "powermode": "unknown",
+  "torch": "2.14.1+cu130",
+  "host": "spark-f9cd",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GB10",
+  "driver": "580.159.03",
+  "mem_available_gb": 24.4
+ },
+ "curve": [
+  {
+   "step": 500,
+   "tokens": 65536000,
+   "bpb_quick": 1.4168825091093549
+  }
+ ],
+ "val_test": {
+  "bpb": 1.2776833605355762,
+  "nats_per_token": 4.1655589232718215,
+  "tokens": 1031158,
+  "bytes": 4850090
+ },
+ "sdmonly_opt": {
+  "store_opt": "dense",
+  "body_opt": "muon",
+  "muon_lr": 0.02,
+  "muon_wd": 0.0
+ },
+ "vocab": {
+  "V": 32768,
+  "from": "/home/hologram/sdmonly_base/data32k/token_bytes.i32"
+ }
+}

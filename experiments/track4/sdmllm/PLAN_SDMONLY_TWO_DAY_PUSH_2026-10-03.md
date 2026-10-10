@@ -3939,3 +3939,110 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 ### 2026-10-09T20:43:41Z - heartbeat (JIMOTHY)
 - swd_deep32 at step 450 of 763, loss 4.6586 (12-layer 4.5924 at step 450; the gap 0.066, down from 0.247 at step 100), 12,950 tok/s. TEST about 21:40Z. No stops. Vast 0.
 - Fix: six run logs I committed were copies of the shell's .out (stderr included); the pull loop (runs_launch/pull_launch.sh) replaces them with the trainer's own runs/*.log, the canonical record. Those are committed now.
+
+### 2026-10-09T21:03:22Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 550 of 763, loss 4.4648, 12,605 tok/s. TEST about 21:45Z. No stops. Vast 0.
+
+### 2026-10-09T21:23:22Z - heartbeat (JIMOTHY)
+- swd_deep32 at step 650 of 763 (cooldown, lr 0.0022), loss 4.3115. TEST about 21:45Z. No stops. Vast 0.
+
+### 2026-10-09T21:43:32Z - VERDICT SWD2 (JIMOTHY)
+- swd_deep32_diary64_d512_L32_100M: TEST **1.28256 bpb**, 88.9M body weights, about 12,700 tok/s. It is 0.00179 WORSE
+  than 12 layers at width 768 (1.28077, 72.8M body, about 25,000 tok/s): a tie, inside the noise.
+  **VERDICT SWD2: MISSES** (sealed at 60% that 32 layers would win by more than 0.010).
+- Depth has now tied three times (32 vs 48 at the big diary, 12 vs 24 at diary 256, 12 vs 32 at diary 64 and 100M).
+  At this budget depth buys nothing and halves the speed: the base shape stays 12 layers, width 768.
+- swd_deep48_diary64_d512_L48_100M fired 21:38:55Z (SWD1, sealed); then the 100M transformer, then wave SWE.
+
+### 2026-10-09T22:03:21Z - heartbeat (JIMOTHY)
+- swd_deep48 at 24 min, compiling, before its step-50 line (normal for 48 layers). No stops. Vast 0.
+- 2026-10-09T22:23:24Z swd_deep48 at 44 min, before step 50 (the 50M deep48 took about 67 min to its step 50). Running. Vast 0.
+- 2026-10-09T22:43:22Z swd_deep48 reached step 50 of 763 (loss 6.5847) after 64 min; compile done, GPU 94%. True speed at step 100. Vast 0.
+- 2026-10-09T23:03:23Z swd_deep48 at step 100 of 763, loss 5.8402, 8,580 tok/s: TEST about 02:00Z; the 100M yardstick about 02:50Z; wave SWE done about 04:00Z. Vast 0.
+- 2026-10-09T23:23:22Z swd_deep48 at step 200 of 763, loss 5.2330 (deep32 5.1876 at step 200), 8,823 tok/s. TEST about 02:00Z. Vast 0.
+- 2026-10-09T23:43:22Z swd_deep48 at step 250 of 763, loss 5.0700, 8,708 tok/s. TEST about 02:00Z. Vast 0.
+- 2026-10-10T00:03:21Z swd_deep48 at step 350 of 763, loss 4.7760 (deep32 4.7473 at step 350), 8,693 tok/s. TEST about 02:00Z. Vast 0.
+- 2026-10-10T00:23:22Z swd_deep48 at step 450 of 763, loss 4.6741 (deep32 4.6586, the gap 0.016), 8,764 tok/s. TEST about 02:00Z. Vast 0.
+- 2026-10-10T00:43:22Z swd_deep48 at step 500 of 763, loss 4.5183, 8,639 tok/s. TEST about 02:00Z. Vast 0.
+- 2026-10-10T01:03:22Z swd_deep48 at step 600 of 763, loss 4.3523, 8,518 tok/s. TEST about 01:50Z. Vast 0.
+- 2026-10-10T01:23:25Z swd_deep48 at step 650 of 763 (cooldown), loss 4.2980 (deep32 4.3115 at step 650). TEST about 01:55Z. Vast 0.
+- 2026-10-10T01:43:23Z swd_deep48 finished training (step 762 loss 4.1470; deep32's was 4.1665); TEST scoring now. Vast 0.
+
+### 2026-10-10T01:50:16Z - WAVE SWD COMPLETE; VERDICT SWD1; the 100M yardstick fired (JIMOTHY)
+- swd_deep48_diary64_d512_L48_100M: TEST **1.27768 bpb**, 133.3M body weights, about 8,700 tok/s. It beats deep32
+  (1.28256) by 0.00488 and the 12-layer shape (1.28077) by 0.00309: both inside the 0.010 line.
+  **VERDICT SWD1: MISSES** (sealed at 35% that 48 would beat 32 by more than 0.010).
+
+| wave SWD (100M tokens, diary 64 unless named) | TEST bpb | tok/s |
+|---|---|---|
+| d768 L12 | 1.28077 | about 25,000 |
+| d768 L12, diary 121 | 1.28819 | about 24,000 |
+| d512 L32 | 1.28256 | about 12,700 |
+| d512 L48 | **1.27768** | about 8,700 |
+
+- Verdicts: SWD1 MISSES, SWD2 MISSES, SWD3 HOLDS, SWD4 MISSES.
+- **Depth: BRACKETED as flat.** 12, 32 and 48 layers sit within 0.005 of each other at 100M; the lowest number (48) is
+  inside the noise of the others and costs 2.9x the time. The base shape stays 12 layers, width 768, diary 64.
+- The 100M yardstick swd_yard_d768_L12_T2048_100M fired 01:43:45Z (YD3, YD4); then wave SWE.
+- Vast 0 boxes, nothing idle.
+- 2026-10-10T02:03:23Z swd_yard at step 350 of 763, loss 4.1437, 44,508 tok/s (the SDM diary64 read 4.6449 at step 350). TEST about 02:28Z; then wave SWE. Vast 0.
+
+### 2026-10-10T02:20:53Z - RED found and fixed: wave SWE started early; VERDICT SWE1 (JIMOTHY)
+- **A wrong PID.** chain7 was told to wait for chain6 as PID 2592656; chain6 is really 2592634 (my pgrep caught a
+  transient shell). So chain7 thought chain6 was gone and fired wave SWE at 18:44:11Z, alongside swd_deep32. That is
+  why deep32 ran at 5,883 tok/s with Spark load 2.1 until about 20:00Z. Scores are unaffected (same data and steps);
+  only the times were. The tree guards were aimed at the same wrong PIDs and exited at once.
+- **Two shells stopped again.** sweep6 (2678780) has sat in state T since swe_diary36 ended (19:46Z), so diary16 never
+  started; sweep5 (3276625) is in state T while its yardstick child trains. Fix: `resume_after_yard.sh` (PID 3307411)
+  waits for the yardstick (PID 3276627) to end, sends SIGCONT to both shells (so diary16 runs after it, alone), then
+  guards the real chain PIDs 2592634 and 2678777 with unfreeze_tree.sh.
+- swe_diary36_d768_L12_50M: TEST **1.38990 bpb**. It beats diary 64 at 50M (1.40020) by 0.01030.
+  **VERDICT SWE1: HOLDS** (sealed at 20%). Diary is still UNBRACKETED at its small edge; diary 16 decides SWE2.
+
+### 2026-10-10T02:23:46Z - VERDICTS YD3, YD4: the gap at 100M (JIMOTHY)
+- swd_yard_d768_L12_T2048_100M (transformer, same shape, data and recipe, 100M tokens): TEST **1.13512 bpb**, about
+  44,500 tok/s.
+- Gap at 100M to the base-shape FULL (12 layers, diary 64, 1.28077): **0.14565**. To the lowest FULL (48 layers,
+  1.27768): 0.14256. **VERDICT YD3: HOLDS** (sealed at 60%: the transformer leads by more than 0.050).
+  **VERDICT YD4: HOLDS** (sealed at 65%): the gap on the diary-64 shape shrank from 0.17755 at 50M to 0.14565 at 100M.
+  More data closes the gap: FULL gained 0.11943 from 50M to 100M, the transformer 0.08753.
+- Fix: the waiter could not see the yardstick end (its child stayed a zombie under the stopped shell), so SIGCONT was
+  sent by hand at 02:23Z. sweep5 finished; swe_diary16_d768_L12_50M fired 02:23:25Z (SWE2).
+- 2026-10-10T02:43:26Z swe_diary16 at step 150 of 381, loss 5.3775 (diary36 5.3287 at step 150: 16 behind by 0.049), 26,949 tok/s. TEST about 03:06Z. The waiter woke and guards chain6/chain7. Vast 0.
+
+### 2026-10-10T03:04:25Z - WAVE SWE COMPLETE; SHAPESOLVE DONE; THE NEW FULL BASE SEALED (JIMOTHY)
+- swe_diary16_d768_L12_50M: TEST **1.40701 bpb**, 0.01711 WORSE than diary 36 (1.38990), beyond the 0.010 line.
+  **VERDICT SWE2: HOLDS** (sealed at 65%): the diary curve turns between 16 and 64.
+
+| diary slots a head (d768 L12, 50M) | TEST bpb |
+|---|---|
+| 4,096 | 1.62503 |
+| 1,024 | 1.54457 |
+| 576 | 1.50846 |
+| 256 | 1.42911 |
+| 121 | 1.40333 |
+| 64 | 1.40020 |
+| **36** | **1.38990** |
+| 16 | 1.40701 |
+
+- **BRACKETED / UNBRACKETED: diary BRACKETED** (best 36, worse on both sides). **Depth BRACKETED as flat** (12, 32 and
+  48 layers within 0.005 at 100M). **THE SHAPE IS SOLVED: FULL, d768, 12 layers, diary 36 slots a head.**
+- ⚠ Rule (c) caveat, stated: 36 beats 64 by 0.01030 at 50M, only 0.0003 past the line, measured once. It is taken
+  because 64 also beat 121 at both budgets, so the smaller-is-better direction held three times.
+
+### SEALED: THE NEW FULL BASE, before it fires
+- `base2_fullsdm_d768_L12_diary36_T2048_2000M`: FULL (arm onesdm_allsdm), d768, 12 layers, diary 36 (n_sub 6), the
+  shape-sweep recipe (T 2048, B 64, accum 8, lr 3e-3, Muon 0.02, WSD, chunked loss), **2.0B tokens of train_big**
+  (3.1B in the file, one pass), seed 0, a kept checkpoint at 1.1B. On the Spark, about 21 h at about 26,000 tok/s.
+  Script `runs_launch/base2.sh` (sha256 34ae1fd88e33ad71...). It reads its SDM; it meets the law.
+- **Sealed predictions:**
+  - BASE1: TEST below 1.15 bpb (55%).
+  - BASE2: it beats the old FULL base (diary 1,024, 1.1B tokens, 1.29216) by more than 0.10 (80%).
+  - BASE3: TEST below 1.10 bpb (30%).
+- Then: its chat model, the WEIRD LITTLE GUY, and THE TRANSFORMER LIST (item 3 becomes a transformer at this shape
+  and 2.0B tokens).
+- 2026-10-10T03:05:10Z FIRED 03:04:32Z: base2_fullsdm_d768_L12_diary36_T2048_2000M in tmux base2 (shell 3381620, trainer 3381625), tree guard 3381681 on the real tmux shell PID (read from tmux, not from pgrep). Vast 0.
+- 2026-10-10T03:23:27Z base2 at step 200 of 15,259 (2.0B / 131,072), loss 5.3719, lr warming up (0.00197), 26,014 tok/s: end about 00:30Z Sunday 11 Oct (11:30 am Melbourne; I told the navigator midnight, which was wrong: 03:04Z + 21.4 h). No checkpoint folder yet. Vast 0.
+- 2026-10-10T03:43:29Z base2 at step 450 of 15,259, loss 4.6729, 26,497 tok/s. First checkpoint written: ck/base2_.../last.pt (1.08 GB, 03:25Z). Vast 0.
+- 2026-10-10T04:03:27Z base2 at step 650 of 15,259, loss 4.4192, 25,054 tok/s; last.pt refreshed 03:47Z (about every 20 min). Vast 0.
+- 2026-10-10T04:23:27Z base2 at step 900 of 15,259, loss 4.2230, 25,920 tok/s, last.pt 04:09Z. M5: killed by PID an orphaned site test (memberstore.test.mjs, 55391, from the removed herostrip worktree, hung 13 h 52 min) and its embedded postgres (55456). Live site check: sdmwide768chat.bin 165.9 MB takes about 40 s from settle.garden (brotli 22% smaller, hides the total); fix options put to the navigator. Vast 0.
