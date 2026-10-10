@@ -4046,3 +4046,5 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T03:43:29Z base2 at step 450 of 15,259, loss 4.6729, 26,497 tok/s. First checkpoint written: ck/base2_.../last.pt (1.08 GB, 03:25Z). Vast 0.
 - 2026-10-10T04:03:27Z base2 at step 650 of 15,259, loss 4.4192, 25,054 tok/s; last.pt refreshed 03:47Z (about every 20 min). Vast 0.
 - 2026-10-10T04:23:27Z base2 at step 900 of 15,259, loss 4.2230, 25,920 tok/s, last.pt 04:09Z. M5: killed by PID an orphaned site test (memberstore.test.mjs, 55391, from the removed herostrip worktree, hung 13 h 52 min) and its embedded postgres (55456). Live site check: sdmwide768chat.bin 165.9 MB takes about 40 s from settle.garden (brotli 22% smaller, hides the total); fix options put to the navigator. Vast 0.
+- 2026-10-10T04:43:29Z base2 at step 1,150 of 15,259, loss 4.1212, 25,337 tok/s, last.pt 04:30Z. Vast 0.
+- 2026-10-10T05:03:34Z base2 at step 1,350 of 15,259, loss 4.0887, 25,459 tok/s, last.pt 04:51Z. Vast 0.
