@@ -4049,3 +4049,7 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T04:43:29Z base2 at step 1,150 of 15,259, loss 4.1212, 25,337 tok/s, last.pt 04:30Z. Vast 0.
 - 2026-10-10T05:03:34Z base2 at step 1,350 of 15,259, loss 4.0887, 25,459 tok/s, last.pt 04:51Z. Vast 0.
 - 2026-10-10T05:24:49Z base2 at step 1,600 of 15,259, loss 4.0019, 24,833 tok/s. Prep for after the base: the Guy corpus guy3 (129k ids) re-encoded into the base's 32k BPE with masks and starts kept and per-chunk verification on (retok/run_guy3.sh on the Spark, 6 workers, niced): data32k/guy3_train.u32 41.6M tokens, guy3_test.u32 1.03M. The chat tune will run with --compile (the old one ran uncompiled at about 5,500 tok/s). Vast 0.
+- 2026-10-10T05:43:24Z base2 at step 1,850 of 15,259, loss 3.9433, 24,121 tok/s, last.pt 05:34Z. Vast 0.
+- 2026-10-10T06:03:24Z base2 at step 2,050 of 15,259, loss 3.9236, 25,346 tok/s, last.pt 05:55Z. Vast 0.
+- 2026-10-10T06:23:25Z base2 at step 2,300 of 15,259, loss 3.9568 (step noise; 3.9236 at 2,050), 25,126 tok/s, last.pt 06:16Z. Vast 0.
+- 2026-10-10T06:43:23Z base2 at step 2,550 of 15,259, loss 3.8766, 24,757 tok/s, last.pt 06:38Z. Vast 0.
