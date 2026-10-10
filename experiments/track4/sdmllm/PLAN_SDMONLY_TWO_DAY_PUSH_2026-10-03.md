@@ -4066,3 +4066,5 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T10:23:31Z base2 at step 5,100 of 15,259, loss 3.7319, 24,863 tok/s, last.pt 10:11Z. Vast 0.
 - 2026-10-10T10:43:24Z base2 at step 5,350 of 15,259, loss 3.6914 (a new low), 26,233 tok/s, last.pt 10:32Z. Vast 0.
 - 2026-10-10T11:03:24Z base2 at step 5,600 of 15,259, loss 3.6364 (a new low), 25,497 tok/s, last.pt 10:54Z. Vast 0.
+- 2026-10-10T11:23:24Z base2 at step 5,800 of 15,259, loss 3.6597, 24,653 tok/s, last.pt 11:15Z. Vast 0, credit $0.18.
+- 2026-10-10T11:43:25Z base2 at step 6,050 of 15,259, loss 3.6729, 24,915 tok/s, last.pt 11:37Z. Vast 0.
