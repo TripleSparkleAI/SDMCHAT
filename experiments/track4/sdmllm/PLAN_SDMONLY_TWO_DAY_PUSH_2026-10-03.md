@@ -4115,3 +4115,4 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
   - GUY1: the Guy's guy_test falls by more than 0.20 from its before-score (70%).
 - 2026-10-10T23:25:37Z base2 decaying: step 14,250 of 15,259, lr 0.000992, loss 3.4452, 26,057 tok/s, last.pt 23:19Z. Vast 0.
 - 2026-10-10T23:25:47Z FIRED chain8 in tmux after2 (pane 901024, chain 901026, waits on trainer 3381625 and base2's result), tree guard in tmux after2guard on the pane PID. Vast 0.
+- 2026-10-10T23:43:27Z base2 decaying: step 14,500 of 15,259, lr 0.000746, loss 3.4590, 25,564 tok/s, last.pt 23:40Z. chain8 (901026) waiting. Vast 0.
