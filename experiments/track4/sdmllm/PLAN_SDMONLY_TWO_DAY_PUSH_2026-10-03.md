@@ -4068,3 +4068,37 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T11:03:24Z base2 at step 5,600 of 15,259, loss 3.6364 (a new low), 25,497 tok/s, last.pt 10:54Z. Vast 0.
 - 2026-10-10T11:23:24Z base2 at step 5,800 of 15,259, loss 3.6597, 24,653 tok/s, last.pt 11:15Z. Vast 0, credit $0.18.
 - 2026-10-10T11:43:25Z base2 at step 6,050 of 15,259, loss 3.6729, 24,915 tok/s, last.pt 11:37Z. Vast 0.
+- 2026-10-10T12:03:23Z base2 at step 6,300 of 15,259, loss 3.6837, 24,892 tok/s, last.pt 11:58Z. Vast 0.
+- 2026-10-10T12:23:22Z base2 at step 6,500 of 15,259, loss 3.5915 (a new low, first under 3.6), 25,844 tok/s, last.pt 12:19Z. Vast 0.
+- 2026-10-10T12:43:23Z base2 at step 6,750 of 15,259, loss 3.6412 (last four 3.63 to 3.66, so 3.5915 was a dip, not a new floor), 25,479 tok/s, last.pt 12:41Z. Vast 0.
+- 2026-10-10T13:03:24Z base2 at step 7,000 of 15,259, loss 3.6594, 24,697 tok/s, last.pt 13:03Z. Loss flat near 3.6 to 3.7 in the WSD stable phase (lr 3e-3); the drop is expected in the decay. Vast 0.
+- 2026-10-10T13:23:23Z base2 at step 7,200 of 15,259, loss 3.6040 (3.5623 at 7,150, a new low), 25,532 tok/s, last.pt 13:03Z (next due about 13:24Z). Vast 0.
+- 2026-10-10T13:43:22Z base2 at step 7,450 of 15,259, loss 3.6304, 25,409 tok/s, last.pt 13:24Z. Vast 0.
+- 2026-10-10T14:03:23Z base2 past halfway: step 7,700 of 15,259, loss 3.6671, 25,383 tok/s, last.pt 13:45Z. Vast 0.
+- 2026-10-10T14:23:24Z base2 at step 7,900 of 15,259, loss 3.6474, 26,408 tok/s, last.pt 14:07Z. Vast 0.
+- 2026-10-10T14:43:22Z base2 at step 8,150 of 15,259, loss 3.6007 (3.5542 at 8,100, a new low), 25,823 tok/s, last.pt 14:28Z. Vast 0.
+- 2026-10-10T15:03:29Z base2 at step 8,400 of 15,259, loss 3.6175, 25,203 tok/s, last.pt 14:50Z. The 1.1B-token keep landed at step 8,393 (1,100,087,296 tokens): ck/base2_.../keep_1100000000.pt, 1,075,963,253 B, sha256 f8ba5cc4f21ed84f. It is mid-plateau (lr still 3e-3, no decay), so it is NOT a fair score against the old base's decayed 1.29216 at 1.1B. Kept as a fork point only. Vast 0.
+- 2026-10-10T15:23:22Z base2 at step 8,600 of 15,259, loss 3.6203, 25,783 tok/s, last.pt 15:11Z. Vast 0.
+- 2026-10-10T15:43:24Z base2 at step 8,850 of 15,259, loss 3.6118, 25,531 tok/s, last.pt 15:32Z. Vast 0.
+- 2026-10-10T16:03:22Z base2 at step 9,100 of 15,259, loss 3.5655, 25,793 tok/s, last.pt 15:53Z. Vast 0.
+- 2026-10-10T16:23:24Z base2 at step 9,350 of 15,259, loss 3.6343 (3.5236 at 9,250, a new low), 26,173 tok/s, last.pt 16:14Z. Vast 0.
+- 2026-10-10T16:43:23Z base2 at step 9,550 of 15,259, loss 3.5951, 25,324 tok/s, last.pt 16:36Z. Vast 0.
+- 2026-10-10T17:03:23Z base2 at step 9,800 of 15,259, loss 3.5758, 25,347 tok/s, last.pt 16:57Z. Vast 0.
+- 2026-10-10T17:23:24Z base2 passed step 10,000 of 15,259, loss 3.5831 (3.5506 at 10,000), 25,094 tok/s, last.pt 17:18Z. Vast 0.
+- 2026-10-10T17:43:22Z base2 at step 10,250 of 15,259, loss 3.5726, 26,753 tok/s, last.pt 17:39Z. Decay starts at step 12,207 (wsd-decay default 0.2), about 20:30Z. Vast 0.
+- 2026-10-10T18:03:23Z base2 at step 10,500 of 15,259, loss 3.6249, 26,234 tok/s, last.pt 18:00Z. Vast 0.
+- 2026-10-10T18:23:23Z base2 at step 10,750 of 15,259, loss 3.5729, 26,234 tok/s, last.pt 18:21Z. Vast 0.
+- 2026-10-10T18:43:24Z base2 at step 11,000 of 15,259, loss 3.5262, 25,844 tok/s, last.pt 18:42Z. Vast 0.
+- 2026-10-10T19:03:24Z base2 at step 11,200 of 15,259, loss 3.6249, 26,160 tok/s, last.pt 18:42Z. Vast 0.
+- 2026-10-10T19:23:23Z base2 at step 11,450 of 15,259, loss 3.5304, 25,860 tok/s, last.pt 19:04Z. Vast 0.
+- 2026-10-10T19:43:25Z base2 at step 11,700 of 15,259, loss 3.5490 (3.5246 at 11,650), 25,381 tok/s, last.pt 19:25Z. Vast 0.
+- 2026-10-10T20:03:24Z base2 at step 11,900 of 15,259, loss 3.5938 (3.5109 at 11,800, the lowest yet), 25,873 tok/s, last.pt 19:46Z. Vast 0.
+- 2026-10-10T20:23:23Z base2 at step 12,150 of 15,259, loss 3.5030 (the lowest yet, still at lr 3e-3), 25,718 tok/s, last.pt 20:07Z. Decay starts at 12,207. Vast 0.
+- 2026-10-10T20:43:24Z base2 DECAY STARTED: step 12,400 of 15,259, lr 0.002810 (was 0.003 to step 12,207), loss 3.5479 (3.4974 at 12,250, the first under 3.5), 25,756 tok/s, last.pt 20:28Z. Vast 0.
+- 2026-10-10T21:03:23Z base2 decaying: step 12,650 of 15,259, lr 0.002565, loss 3.5145, 25,527 tok/s, last.pt 20:50Z. Vast 0.
+- 2026-10-10T21:23:23Z base2 decaying: step 12,850 of 15,259, lr 0.002368, loss 3.5442, 25,589 tok/s, last.pt 21:11Z. Vast 0.
+- 2026-10-10T21:43:25Z base2 decaying: step 13,100 of 15,259, lr 0.002122, loss 3.5008, 25,980 tok/s, last.pt 21:33Z. Vast 0.
+- 2026-10-10T22:03:24Z base2 decaying: step 13,350 of 15,259, lr 0.001876, loss 3.4999, 25,893 tok/s, last.pt 21:54Z. Vast 0.
+- 2026-10-10T22:23:24Z base2 decaying: step 13,550 of 15,259, lr 0.001680, loss 3.4836 (3.4228 at 13,500, the lowest yet; all three readings under 3.5), 24,630 tok/s, last.pt 22:15Z. Vast 0.
+- 2026-10-10T22:43:24Z base2 decaying, past the decay's halfway: step 13,800 of 15,259, lr 0.001434, loss 3.4779, 25,497 tok/s, last.pt 22:37Z. Vast 0.
+- 2026-10-10T23:03:24Z base2 decaying: step 14,050 of 15,259, lr 0.001188, loss 3.5260 (this beat 3.52 to 3.56, back above last beat's 3.48; batch noise), 23,670 tok/s, last.pt 22:58Z. Vast 0.
