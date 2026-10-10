@@ -4102,3 +4102,16 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T22:23:24Z base2 decaying: step 13,550 of 15,259, lr 0.001680, loss 3.4836 (3.4228 at 13,500, the lowest yet; all three readings under 3.5), 24,630 tok/s, last.pt 22:15Z. Vast 0.
 - 2026-10-10T22:43:24Z base2 decaying, past the decay's halfway: step 13,800 of 15,259, lr 0.001434, loss 3.4779, 25,497 tok/s, last.pt 22:37Z. Vast 0.
 - 2026-10-10T23:03:24Z base2 decaying: step 14,050 of 15,259, lr 0.001188, loss 3.5260 (this beat 3.52 to 3.56, back above last beat's 3.48; batch noise), 23,670 tok/s, last.pt 22:58Z. Vast 0.
+
+### SEALED: SDM CHAT and THE WEIRD LITTLE GUY on the new base, before they fire
+- Script `runs_launch/chain8.sh` (sha256 ac090076f0507746...): waits for base2's result, then
+  `chat2_fullsdm_diary36_on_base2_50M` (--task chat on base2's last.pt, 50M tokens, half chat, half web, B 64,
+  accum 8, --compile), then `guy2_fullsdm_on_chat2_20M` (--task guy on chat2's last.pt, guy3 in the 32k BPE, 20M
+  tokens, B 64, accum 64). Both read their SDM; both meet the law. finetune --selftest 31 of 31 on the Spark first.
+- **Sealed predictions:**
+  - CHAT1: chat2's chat_test beats the old FULL chat (launch_chat_fullsdm_50M, 1.09621) (75%).
+  - CHAT2: chat2's chat_test below 1.00 (35%).
+  - CHAT3: the tune costs base2's TEST less than 0.02 bpb (70%).
+  - GUY1: the Guy's guy_test falls by more than 0.20 from its before-score (70%).
+- 2026-10-10T23:25:37Z base2 decaying: step 14,250 of 15,259, lr 0.000992, loss 3.4452, 26,057 tok/s, last.pt 23:19Z. Vast 0.
+- 2026-10-10T23:25:47Z FIRED chain8 in tmux after2 (pane 901024, chain 901026, waits on trainer 3381625 and base2's result), tree guard in tmux after2guard on the pane PID. Vast 0.
