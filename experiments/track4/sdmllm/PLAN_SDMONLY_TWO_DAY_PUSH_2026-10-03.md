@@ -4053,3 +4053,15 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T06:03:24Z base2 at step 2,050 of 15,259, loss 3.9236, 25,346 tok/s, last.pt 05:55Z. Vast 0.
 - 2026-10-10T06:23:25Z base2 at step 2,300 of 15,259, loss 3.9568 (step noise; 3.9236 at 2,050), 25,126 tok/s, last.pt 06:16Z. Vast 0.
 - 2026-10-10T06:43:23Z base2 at step 2,550 of 15,259, loss 3.8766, 24,757 tok/s, last.pt 06:38Z. Vast 0.
+- 2026-10-10T07:03:26Z base2 at step 2,750 of 15,259, loss 3.8304, 25,852 tok/s, last.pt 06:59Z. Vast 0.
+- 2026-10-10T07:23:23Z base2 at step 3,000 of 15,259, loss 3.9014 (batch noise; 3.8304 at 2,750), 26,112 tok/s, last.pt 07:20Z. Vast 0.
+- 2026-10-10T07:43:24Z base2 at step 3,250 of 15,259, loss 3.8483, 26,330 tok/s, last.pt 07:41Z. Vast 0.
+- 2026-10-10T08:03:22Z base2 at step 3,500 of 15,259, loss 3.7947 (a new low), 25,309 tok/s, last.pt 08:02Z. Vast 0.
+- 2026-10-10T08:23:30Z base2 at step 3,700 of 15,259, loss 3.7900, 24,729 tok/s, last.pt 08:02Z (next due now). Vast 0.
+- 2026-10-10T08:43:37Z base2 at step 3,950 of 15,259, loss 3.7999, 25,772 tok/s, last.pt 08:24Z. Vast 0.
+- 2026-10-10T09:03:22Z base2 at step 4,150 of 15,259, loss 3.7215 (a new low), 25,525 tok/s, last.pt 08:46Z. Vast 0.
+- 2026-10-10T09:23:24Z base2 at step 4,400 of 15,259, loss 3.7251, 25,479 tok/s, last.pt 09:07Z. Vast 0.
+- 2026-10-10T09:43:25Z base2 at step 4,650 of 15,259, loss 3.7755, 25,410 tok/s, last.pt 09:29Z. Vast 0.
+- 2026-10-10T10:03:30Z base2 at step 4,900 of 15,259, loss 3.7010 (a new low), 26,507 tok/s, last.pt 09:50Z. Vast 0.
+- 2026-10-10T10:23:31Z base2 at step 5,100 of 15,259, loss 3.7319, 24,863 tok/s, last.pt 10:11Z. Vast 0.
+- 2026-10-10T10:43:24Z base2 at step 5,350 of 15,259, loss 3.6914 (a new low), 26,233 tok/s, last.pt 10:32Z. Vast 0.
