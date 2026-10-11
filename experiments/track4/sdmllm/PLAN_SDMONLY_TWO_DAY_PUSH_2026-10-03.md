@@ -4193,3 +4193,19 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-11T07:03:22Z yard2 at step 3,700 of 15,259, loss 3.3908, 44,302 tok/s, last.pt 06:51Z. Vast 0.
 - 2026-10-11T07:23:25Z yard2 at step 4,100 of 15,259, loss 3.3423, 45,553 tok/s, last.pt 07:16Z. Vast 0.
 - 2026-10-11T07:43:21Z yard2 at step 4,550 of 15,259, loss 3.3693, 43,185 tok/s, last.pt 07:40Z. Vast 0.
+- 2026-10-11T08:03:22Z yard2 at step 4,950 of 15,259, loss 3.3651, 45,302 tok/s, last.pt 07:52Z. Vast 0.
+- 2026-10-11T08:23:23Z yard2 at step 5,350 of 15,259, loss 3.2979 (base2 was 3.6914 at step 5,350), 44,709 tok/s, last.pt 08:16Z. Vast 0.
+- 2026-10-11T08:43:22Z yard2 at step 5,750 of 15,259, loss 3.3155 (base2 was 3.6968 at 5,750), 45,298 tok/s, last.pt 08:41Z. Vast 0.
+- 2026-10-11T09:03:21Z yard2 at step 6,150 of 15,259, loss 3.2823, 45,602 tok/s, last.pt 08:53Z. Vast 0.
+- 2026-10-11T09:23:24Z yard2 at step 6,600 of 15,259, loss 3.2399, 47,198 tok/s, last.pt 09:18Z. Vast 0.
+- 2026-10-11T09:43:25Z yard2 at step 7,000 of 15,259, loss 3.2593 (base2 was 3.6594 at step 7,000), 47,260 tok/s, last.pt 09:41Z. Vast 0.
+- 2026-10-11T10:03:22Z yard2 at step 7,400 of 15,259, loss 3.3472 (base2 was 3.7435 at 7,400), 46,303 tok/s, last.pt 09:53Z. Vast 0.
+- 2026-10-11T10:23:26Z yard2 past halfway: step 7,850 of 15,259, loss 3.1990, 44,198 tok/s, last.pt 10:17Z; the 1.1B keep lands at step 8,393. Vast 0.
+- 2026-10-11T10:43:23Z yard2 at step 8,250 of 15,259, loss 3.1798, 44,518 tok/s, last.pt 10:42Z; 1.1B keep at step 8,393 in a few minutes. Vast 0.
+- 2026-10-11T11:03:25Z yard2 at step 8,650 of 15,259, loss 3.2112, 44,653 tok/s; its 1.1B keep landed at step 8,393 (keep_1100000000.pt, 925,249,585 B), the twin of base2's keep at the same step. last.pt 10:54Z. Vast 0.
+- 2026-10-11T11:23:23Z yard2 at step 9,050 of 15,259, loss 3.2645, 44,361 tok/s, last.pt 11:19Z. Vast 0.
+- 2026-10-11T11:43:24Z yard2 at step 9,500 of 15,259, loss 3.2835, 40,555 tok/s (one slow reading), last.pt 11:31Z. Vast 0.
+- 2026-10-11T12:03:22Z yard2 at step 9,900 of 15,259, loss 3.1728 (lowest yet), 44,432 tok/s (speed back), last.pt 11:55Z. Vast 0.
+- 2026-10-11T12:23:25Z yard2 at step 10,300 of 15,259, loss 3.1724, 45,131 tok/s, last.pt 12:19Z. Vast 0.
+- 2026-10-11T12:43:25Z yard2 at step 10,700 of 15,259, loss 3.2900, 44,240 tok/s, last.pt 12:32Z. Vast 0.
+- 2026-10-11T13:03:23Z yard2 at step 11,100 of 15,259, loss 3.2629, 44,516 tok/s, last.pt 12:57Z; decay starts at 12,207 (about 13:55Z). Vast 0.
