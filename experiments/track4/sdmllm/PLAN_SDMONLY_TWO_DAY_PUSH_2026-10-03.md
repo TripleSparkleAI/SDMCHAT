@@ -4214,3 +4214,16 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-11T14:03:36Z yard2 DECAY STARTED: step 12,350 of 15,259, lr 0.002859, loss 3.1481 (lowest yet), 46,561 tok/s, last.pt 13:57Z. Vast 0.
 - 2026-10-11T14:23:35Z yard2 decaying: step 12,750 of 15,259, lr 0.002466, loss 3.1369 (base2 was 3.5313 at 12,750), 46,659 tok/s, last.pt 14:21Z. Vast 0.
 - 2026-10-11T14:43:27Z yard2 decaying: step 13,200 of 15,259, lr 0.002024, loss 3.1038 (lowest yet), 45,588 tok/s, last.pt 14:33Z. Vast 0.
+- 2026-10-11T15:04:25Z yard2 decaying: step 13,600 of 15,259, lr 0.001631, loss 3.1061, 44,290 tok/s. Vast 0.
+
+### SEALED: THE BASE TOWARD 3.0B, before it fires (the 2026-10-05 order: "2.0B tokens first, then toward the Spark's 3.0B")
+- Script `runs_launch/chain10.sh` (sha256 8c952183e5d82634...): waits for yard2's result, copies base2's
+  keep_1100000000.pt (step 8,393, constant phase) into `base3_fullsdm_d768_L12_diary36_T2048_3000M` and resumes it with
+  --tokens 3.0B (same recipe and flags as base2; WSD decay from step 18,311; keep at 2.0B). 14,496 steps left, about
+  21 h at about 25,500 tok/s. It reads its SDM; it meets the law. The data check (train file, fingerprint, batch, T) is
+  the trainer's own and must pass at resume.
+- **Sealed predictions:**
+  - B3A: base3's TEST is below base2's 1.04959 (85%).
+  - B3B: base3's TEST is below 1.03 (45%).
+  - B3C: base3 still loses to yard2 (the 2.0B transformer) on TEST (90%).
+- 2026-10-11T15:04:37Z FIRED chain10 in tmux after4 (pane 2242281, chain 2242283, waits on chain9 1158128 and yard2's result), tree guard in tmux after4guard. Vast 0.
