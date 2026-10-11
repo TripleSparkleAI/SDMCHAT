@@ -4244,3 +4244,4 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - chain10 seeded `base3_fullsdm_d768_L12_diary36_T2048_3000M` from base2's keep at 1.1B and started it 16:24:27Z. Its
   losses match base2's at the same steps (8,500: 3.5855 vs 3.5857; 8,550: 3.6298 vs 3.6296; 8,600: 3.6203 vs 3.6203),
   so the resume is the same run as base2's constant phase, as designed. lr 0.003, 25,556 tok/s, about 21 h.
+- 2026-10-11T17:03:26Z base3 at step 8,800 of 22,889, loss 3.6168, lr 0.003, 25,731 tok/s, last.pt 16:55Z (first own checkpoint). Vast 0.
