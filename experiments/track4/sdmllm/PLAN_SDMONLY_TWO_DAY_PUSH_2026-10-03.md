@@ -4118,3 +4118,73 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T23:43:27Z base2 decaying: step 14,500 of 15,259, lr 0.000746, loss 3.4590, 25,564 tok/s, last.pt 23:40Z. chain8 (901026) waiting. Vast 0.
 - 2026-10-11T00:03:25Z base2 decaying: step 14,750 of 15,259, lr 0.000500, loss 3.4422 (3.4042 at 14,700, the lowest yet), 26,535 tok/s, last.pt 00:02Z. chain8 waiting. Vast 0.
 - 2026-10-11T00:23:26Z base2 decaying: step 15,000 of 15,259, lr 0.000255, loss 3.4625, 25,345 tok/s. In-run quick eval at step 15,000: 1.07922 bpb on 130,950 tokens (a sample, not the full TEST). last.pt 00:02Z. chain8 waiting. Vast 0.
+- 2026-10-11T00:43:23Z base2 at step 15,200 of 15,259, lr 0.000058, loss 3.3916 (the lowest yet), 25,940 tok/s, last.pt 00:23Z. 59 steps then the final TEST eval. chain8 waiting. Vast 0.
+
+### 2026-10-11T00:50:23Z - THE NEW FULL BASE IS DONE: TEST 1.04959 (JIMOTHY)
+- `base2_fullsdm_d768_L12_diary36_T2048_2000M` finished 00:46Z after 15,258 steps (2.0B tokens, 21.7 h on the Spark):
+  **TEST 1.04959 bpb** (1,031,158 tokens, 4,850,090 bytes). FULL: no attention, no MLP; it reads its SDM. 97.9M
+  trainable parameters (72.7M non-embedding). Final last.pt 1,075,954,071 B, sha256 26e9e8f31527ca43, on the Spark.
+- **Verdicts on the sealed predictions:**
+  - BASE1 (TEST below 1.15, 55%): **HIT**, 1.04959.
+  - BASE2 (beats the old FULL base 1.29216 by more than 0.10, 80%): **HIT**, by 0.24257.
+  - BASE3 (TEST below 1.10, 30%): **HIT**, by 0.05041.
+- ⚠ No transformer has run at this shape and 2.0B tokens, so there is no same-data yardstick yet. The 100M yardstick
+  (1.13512) is not comparable: different token budget. That run is THE TRANSFORMER LIST's first item.
+- chain8 started chat2_fullsdm_diary36_on_base2_50M at 00:46:38Z on its own. Result and log copied home to runs_launch/.
+- 2026-10-11T01:03:27Z chat2 running (PID 1039338): before-scores TEST 1.04959, chat_test 1.08943 (the base alone already edges the old FULL chat's 1.09621). Step 70 of about 381, loss 3.0607 (chat 2.61, web 3.51), 20,551 tok/s compiled (the old chat ran 5,588 uncompiled); ends about 01:35Z, then the Guy. Vast 0.
+- 2026-10-11T01:23:24Z chat2 at step 260 of about 381, loss 3.1339 (chat 2.73, web 3.54), lr 0.001 (cooldown is the last 10%); ends about 01:40Z, then the Guy. Vast 0.
+
+### 2026-10-11T01:43:41Z - SDM CHAT ON THE NEW BASE IS DONE: chat_test 0.81675 (JIMOTHY)
+- `chat2_fullsdm_diary36_on_base2_50M` (381 steps, 50M tokens, half chat, half web, 20,530 tok/s compiled, 49.7 min)
+  finished 01:41Z: **chat_test 0.81675** (from 1.08943, -0.27269); **TEST 1.06398** (from 1.04959, +0.01439).
+  FULL, reads its SDM. last.pt sha256 5b3754656f15f72e, on the Spark. Result, log and before-scores copied home.
+- **Verdicts on the sealed predictions:**
+  - CHAT1 (beats the old FULL chat 1.09621, 75%): **HIT**, by 0.27946.
+  - CHAT2 (chat_test below 1.00, 35%): **HIT**, 0.81675.
+  - CHAT3 (the tune costs TEST less than 0.02, 70%): **HIT**, +0.01439.
+- chain8 started THE WEIRD LITTLE GUY `guy2_fullsdm_on_chat2_20M` at 01:41:17Z on its own (152 steps; it is scoring
+  its before-scores now).
+- 2026-10-11T02:03:23Z The Guy (PID 1121418) before-scores: guy_test 1.19702, chat_test 0.81675, TEST 1.06398. Step 40 of 152, loss 3.1665 (guy 3.39 from 3.54 at step 30), 5,500 tok/s (uncompiled, accum 64); ends about 02:55Z. Vast 0.
+
+### SEALED: THE TRANSFORMER LIST, before it fires
+- Script `runs_launch/chain9.sh` (sha256 100451f060a86fab...): waits for the Guy's result, then
+  1. resumes the held 1.1B transformer `launch_yard_d768_L12_T2048_1100M` from step 7,000 (`yard_resume.sh`, about
+     65 min) and decides FB2 (sealed earlier: it beats the old FULL base by at least 0.007);
+  2. runs `yard2_transformer_d768_L12_T2048_2000M`: a transformer at base2's exact shape, recipe and data (d768, 12
+     layers, T 2048, B 64, accum 8, lr 3e-3, Muon 0.02, WSD, 2.0B tokens of train_big, seed 0, keep at 1.1B), about
+     12.5 h at about 45,000 tok/s. A yardstick only.
+- **Sealed predictions:**
+  - YD2B1: the 2.0B transformer's TEST is below base2's 1.04959 (90%).
+  - YD2B2: the gap to base2 is smaller than the 100M gap (0.14565) (55%).
+  - YD2B3: the gap is smaller than 0.10 (35%).
+- 2026-10-11T02:23:53Z the Guy at step 90 of 152, guy loss 3.0127 (from 3.5435 at step 30), 5,500 tok/s; ends about 02:55Z. Vast 0.
+- 2026-10-11T02:24:02Z FIRED chain9 in tmux after3 (pane 1158126, chain 1158128, waits on chain8 901026 and the Guy's result), tree guard in tmux after3guard. Vast 0.
+- 2026-10-11T02:43:21Z the Guy at step 140 of 152, guy loss 2.4147 (from 3.5435 at step 30), cooling down (lr 0.000406); then his after-scores. chain9 waiting. Vast 0.
+
+### 2026-10-11T03:03:38Z - THE WEIRD LITTLE GUY ON THE NEW BASE IS DONE: guy_test 1.05673 (JIMOTHY)
+- `guy2_fullsdm_on_chat2_20M` (152 steps, 20M tokens: about half guy3, a quarter chat, a quarter web; 5,531 tok/s,
+  65 min) finished 02:52Z: **guy_test 1.05673** (from 1.19702, -0.14029); chat_test 0.82439 (+0.00764); TEST 1.07088
+  (+0.00689). FULL, reads its SDM. last.pt sha256 097ef42ec89799b5, on the Spark. Result, log, before-scores home.
+- **Verdict:** GUY1 (guy_test falls by more than 0.20, 70%): **MISS**, it fell 0.14029. The tune still moved the guy
+  text 18x more than it cost chat or web text.
+- The lineage base2 -> chat2 -> guy2 is complete: all three FULL, all three read their SDM.
+- chain9 resumed the held 1.1B transformer at 02:52:54Z (step 7,200 of 8,392 at 03:03Z, 45,366 tok/s; ends about
+  03:50Z), then the 2.0B transformer.
+- 2026-10-11T03:23:22Z the 1.1B transformer at step 7,600 of 8,392, loss 3.2281, lr 0.001417, 45,166 tok/s; ends about 03:45Z, then FB2, then the 2.0B transformer. Vast 0.
+- 2026-10-11T03:43:22Z the 1.1B transformer at step 8,000 of 8,392, lr 0.000702, quick eval 0.98756 on 130,950 tokens (a sample, not the full TEST); ends about 03:55Z, then FB2, then yard2. Vast 0.
+
+### 2026-10-11T04:03:28Z - THE 1.1B TRANSFORMER YARDSTICK IS DONE: TEST 0.95634; FB2 decided (JIMOTHY)
+- `launch_yard_d768_L12_T2048_1100M` (resumed from step 7,000, 8,392 steps, 1.1B tokens) finished 04:01Z:
+  **TEST 0.95634 bpb** (1,031,158 tokens). A yardstick only.
+- **Verdict:** FB2 (the transformer at 1.1B beats the FULL base by at least 0.007): **HIT**, 0.95634 against the old FULL
+  base's 1.29216, by 0.33582.
+- ⚠ Stated plainly: this 1.1B transformer also beats the NEW FULL base (base2, 2.0B tokens, 1.04959) by 0.09325, with
+  little more than half its tokens. The gap from the old FULL base to the transformer at 1.1B was 0.33582; base2 closed
+  72% of it (0.24257). The same-data comparison is yard2 (2.0B), which started 04:01:33Z.
+- Result and log copied home.
+- 2026-10-11T04:23:23Z yard2 at step 400 of 15,259, loss 4.2272 (base2 was 4.6729 at step 450), lr 0.003, 45,123 tok/s, last.pt 04:13Z; ends about 16:25Z. Vast 0.
+- 2026-10-11T04:43:27Z yard2 at step 850 of 15,259, loss 3.7436 (base2 was 4.2230 at step 900), 44,327 tok/s, last.pt 04:38Z. Vast 0.
+- 2026-10-11T05:03:21Z yard2 at step 1,250 of 15,259, loss 3.6500, 47,217 tok/s, last.pt 05:01Z. Vast 0.
+- 2026-10-11T05:23:23Z yard2 at step 1,650 of 15,259, loss 3.5918 (base2 was 4.0019 at step 1,600), 44,223 tok/s, last.pt 05:13Z. Vast 0.
+- 2026-10-11T05:43:24Z yard2 at step 2,100 of 15,259, loss 3.4657 (base2 was 3.9236 at step 2,050), 44,775 tok/s, last.pt 05:38Z. Vast 0.
+- 2026-10-11T06:03:24Z yard2 at step 2,500 of 15,259, loss 3.4091, 46,531 tok/s, last.pt 06:02Z. Vast 0.
