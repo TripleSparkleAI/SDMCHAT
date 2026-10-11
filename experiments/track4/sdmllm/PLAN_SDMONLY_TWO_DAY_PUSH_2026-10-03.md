@@ -4227,3 +4227,4 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
   - B3B: base3's TEST is below 1.03 (45%).
   - B3C: base3 still loses to yard2 (the 2.0B transformer) on TEST (90%).
 - 2026-10-11T15:04:37Z FIRED chain10 in tmux after4 (pane 2242281, chain 2242283, waits on chain9 1158128 and yard2's result), tree guard in tmux after4guard. Vast 0.
+- 2026-10-11T15:23:24Z yard2 decaying: step 14,000 of 15,259, lr 0.001238, loss 3.1240, 45,854 tok/s; quick eval 0.96936 on 130,950 tokens (base2's quick eval at 15,000 was 1.07922). chain10 (2242283) waiting. Vast 0.
