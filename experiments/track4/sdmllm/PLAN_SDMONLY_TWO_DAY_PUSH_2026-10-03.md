@@ -4116,3 +4116,4 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-10T23:25:37Z base2 decaying: step 14,250 of 15,259, lr 0.000992, loss 3.4452, 26,057 tok/s, last.pt 23:19Z. Vast 0.
 - 2026-10-10T23:25:47Z FIRED chain8 in tmux after2 (pane 901024, chain 901026, waits on trainer 3381625 and base2's result), tree guard in tmux after2guard on the pane PID. Vast 0.
 - 2026-10-10T23:43:27Z base2 decaying: step 14,500 of 15,259, lr 0.000746, loss 3.4590, 25,564 tok/s, last.pt 23:40Z. chain8 (901026) waiting. Vast 0.
+- 2026-10-11T00:03:25Z base2 decaying: step 14,750 of 15,259, lr 0.000500, loss 3.4422 (3.4042 at 14,700, the lowest yet), 26,535 tok/s, last.pt 00:02Z. chain8 waiting. Vast 0.
