@@ -4230,3 +4230,17 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-11T15:23:24Z yard2 decaying: step 14,000 of 15,259, lr 0.001238, loss 3.1240, 45,854 tok/s; quick eval 0.96936 on 130,950 tokens (base2's quick eval at 15,000 was 1.07922). chain10 (2242283) waiting. Vast 0.
 - 2026-10-11T15:43:25Z yard2 decaying: step 14,400 of 15,259, lr 0.000844, loss 3.0442 (lowest yet), 44,468 tok/s; ends about 16:20Z. Vast 0.
 - 2026-10-11T16:04:49Z yard2 decaying: step 14,850 of 15,259, lr 0.000402, loss 3.0440, 45,881 tok/s; ends about 16:20Z then the final TEST. Vast 0.
+- 2026-10-11T16:23:32Z yard2 at step 15,250 of 15,259, loss 3.0328, lr ~0; final TEST scoring now (trainer 1310474 alive). chain10 waiting. Vast 0.
+
+### 2026-10-11T16:43:41Z - THE SAME-DATA TRANSFORMER IS DONE: TEST 0.93353; YD2B1 to YD2B3 (JIMOTHY)
+- `yard2_transformer_d768_L12_T2048_2000M` (base2's exact shape, recipe and 2.0B tokens; a yardstick only) finished
+  16:24Z: **TEST 0.93353 bpb** (1,031,158 tokens). Result and log copied home.
+- **The same-data comparison:** FULL SDM base2 **1.04959** against the transformer **0.93353**: gap **0.11606**.
+  At 100M the gap was 0.14565; at 2.0B it is 0.11606, so it narrowed by 0.02959 with 20x the data.
+- **Verdicts:**
+  - YD2B1 (the transformer is below base2, 90%): **HIT**.
+  - YD2B2 (the gap is smaller than the 100M gap 0.14565, 55%): **HIT**, 0.11606.
+  - YD2B3 (the gap is smaller than 0.10, 35%): **MISS**, by 0.01606.
+- chain10 seeded `base3_fullsdm_d768_L12_diary36_T2048_3000M` from base2's keep at 1.1B and started it 16:24:27Z. Its
+  losses match base2's at the same steps (8,500: 3.5855 vs 3.5857; 8,550: 3.6298 vs 3.6296; 8,600: 3.6203 vs 3.6203),
+  so the resume is the same run as base2's constant phase, as designed. lr 0.003, 25,556 tok/s, about 21 h.
