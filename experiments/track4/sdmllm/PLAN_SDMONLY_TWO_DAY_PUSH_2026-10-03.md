@@ -4209,3 +4209,8 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-11T12:23:25Z yard2 at step 10,300 of 15,259, loss 3.1724, 45,131 tok/s, last.pt 12:19Z. Vast 0.
 - 2026-10-11T12:43:25Z yard2 at step 10,700 of 15,259, loss 3.2900, 44,240 tok/s, last.pt 12:32Z. Vast 0.
 - 2026-10-11T13:03:23Z yard2 at step 11,100 of 15,259, loss 3.2629, 44,516 tok/s, last.pt 12:57Z; decay starts at 12,207 (about 13:55Z). Vast 0.
+- 2026-10-11T13:23:22Z yard2 at step 11,500 of 15,259, loss 3.1565 (lowest yet), 45,919 tok/s, last.pt 13:21Z. Vast 0.
+- 2026-10-11T13:43:32Z yard2 at step 11,950 of 15,259, loss 3.1624, 46,687 tok/s, last.pt 13:33Z; the decay starts at 12,207 within minutes. Vast 0.
+- 2026-10-11T14:03:36Z yard2 DECAY STARTED: step 12,350 of 15,259, lr 0.002859, loss 3.1481 (lowest yet), 46,561 tok/s, last.pt 13:57Z. Vast 0.
+- 2026-10-11T14:23:35Z yard2 decaying: step 12,750 of 15,259, lr 0.002466, loss 3.1369 (base2 was 3.5313 at 12,750), 46,659 tok/s, last.pt 14:21Z. Vast 0.
+- 2026-10-11T14:43:27Z yard2 decaying: step 13,200 of 15,259, lr 0.002024, loss 3.1038 (lowest yet), 45,588 tok/s, last.pt 14:33Z. Vast 0.
