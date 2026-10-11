@@ -4192,3 +4192,4 @@ Script `runs_launch/sweep4.sh`, chained by `chain5.sh` after wave SWC. About 12 
 - 2026-10-11T06:43:23Z yard2 at step 3,300 of 15,259, loss 3.4062, 45,490 tok/s, last.pt 06:39Z. Vast 0.
 - 2026-10-11T07:03:22Z yard2 at step 3,700 of 15,259, loss 3.3908, 44,302 tok/s, last.pt 06:51Z. Vast 0.
 - 2026-10-11T07:23:25Z yard2 at step 4,100 of 15,259, loss 3.3423, 45,553 tok/s, last.pt 07:16Z. Vast 0.
+- 2026-10-11T07:43:21Z yard2 at step 4,550 of 15,259, loss 3.3693, 43,185 tok/s, last.pt 07:40Z. Vast 0.
